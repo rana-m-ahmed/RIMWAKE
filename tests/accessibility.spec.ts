@@ -62,7 +62,9 @@ test('mobile menu and observer sheet remain accessible at 320px; primary control
 });
 test('sites without refined events show an explicit neutral state', async ({ page }) => {
   await page.goto('/explore');
-  await page.getByRole('button', { name: '10-min detail', exact: true }).click();
+  await page
+    .getByRole('combobox', { name: 'Sampling window', exact: true })
+    .selectOption('refined');
   await page.getByRole('button', { name: 'Choose places' }).click();
   await page.getByRole('combobox', { name: 'Observation site A' }).selectOption('im2');
   await page.getByRole('button', { name: 'Compare these observers' }).click();

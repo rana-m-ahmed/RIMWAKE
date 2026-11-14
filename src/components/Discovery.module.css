@@ -362,3 +362,77 @@
     padding-block: 5px;
   }
 }
+
+.results button[aria-current='true'] {
+  border-color: #edf0e9;
+  background: #1d2d3b;
+  box-shadow: inset 3px 0 #dae5ee;
+}
+.selectionReceipt {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  border-top: 1px solid #506278;
+  margin-top: 22px;
+  padding-top: 18px;
+  font: 12px var(--font-data);
+}
+.selectionReceipt button {
+  white-space: nowrap;
+}
+.selectionReceipt > span {
+  line-height: 1.7;
+}
+@media (max-width: 700px) {
+  .selectionReceipt {
+    display: block;
+    font-size: 11px;
+  }
+  .selectionReceipt button {
+    margin-top: 12px;
+  }
+}
+
+.caseChoice {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin: 16px 0 22px;
+  font-size: 11px;
+  color: #bbc8d6;
+}
+.caseChoice select {
+  min-height: 44px;
+  max-width: 100%;
+  background: #142331;
+  color: #edf0e9;
+  border: 1px solid #75899c;
+  padding: 9px 12px;
+  font-size: 13px;
+}
+.secondaryCase {
+  display: block;
+}
+@media (max-width: 700px) {
+  .bar {
+    gap: 0 12px;
+  }
+  .bar button {
+    font-size: 12px;
+  }
+  .bar .secondaryCase {
+    display: none;
+  }
+  .caseChoice {
+    display: block;
+  }
+  .caseChoice > span {
+    display: block;
+    margin-bottom: 8px;
+  }
+  .caseChoice select {
+    width: 100%;
+    font-size: 12px;
+  }
+}

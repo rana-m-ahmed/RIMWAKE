@@ -1,0 +1,106 @@
+.title {
+  font: 600 44px/1 var(--font-display);
+  margin: 25px 0;
+}
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-size: 14px;
+  margin: 25px 0;
+}
+.field input,
+.field select {
+  min-height: 48px;
+  padding: 10px 12px;
+  width: 100%;
+  font-size: 16px;
+  color: #17212b;
+  background: #fff;
+  border: 1px solid #7c8d9d;
+  border-radius: 0;
+}
+.range {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #526371;
+}
+.error {
+  border-top: 1px solid #9aabba;
+  padding-top: 14px;
+  margin-top: 22px;
+}
+.error p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.error button {
+  min-height: 48px;
+  padding: 10px 16px;
+  border: 1px solid #647787;
+  background: #e5ebed;
+  color: #17212b;
+  font-size: 14px;
+  line-height: 1.5;
+}
+.help {
+  border-block: 1px solid #344354;
+  margin: 24px 0 0;
+  color: #bbc8d5;
+}
+.help summary {
+  cursor: pointer;
+  min-height: 48px;
+  padding: 14px 0;
+  font-size: 14px;
+  color: #e9eee8;
+}
+.helpContent {
+  display: grid;
+  grid-template-columns: 0.8fr 1.2fr;
+  gap: 45px;
+  padding: 15px 0 25px;
+}
+.help h3 {
+  font-size: 16px;
+  color: #e7ebe8;
+  font-weight: 500;
+  margin: 0 0 10px;
+}
+.help p {
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0 0 23px;
+}
+.help svg {
+  width: 100%;
+  max-width: 430px;
+}
+.help small {
+  font-size: 11px;
+  color: #aab9c9;
+}
+.help summary::marker {
+  color: #dbe2e9;
+}
+@media (max-width: 700px) {
+  .title {
+    font-size: 36px;
+  }
+  .helpContent {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .help p {
+    font-size: 13px;
+  }
+  .help h3 {
+    font-size: 15px;
+  }
+  .help summary {
+    font-size: 13px;
+  }
+  .error button {
+    font-size: 13px;
+  }
+}

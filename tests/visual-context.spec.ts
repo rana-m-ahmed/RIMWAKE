@@ -44,8 +44,8 @@ test('failed lunar model retains the illustrated poster and working story links'
   await page.route('**/assets/moon-cinema.glb', (r) => r.abort());
   await page.goto('/');
   await expect(page.locator('img[src="/assets/moon-opening-desktop.webp"]')).toBeVisible();
-  await expect(page.getByRole('link', { name: 'Go straight to Explorer' })).toBeVisible();
-  await page.getByRole('link', { name: 'Go straight to Explorer' }).click();
+  await expect(page.getByRole('link', { name: 'Compare two lunar skies' })).toBeVisible();
+  await page.getByRole('link', { name: 'Compare two lunar skies' }).click();
   await expect(page.getByRole('slider')).toBeVisible();
 });
 test('repeated navigation releases story scenes and restores exactly two Explorer views', async ({
@@ -56,7 +56,7 @@ test('repeated navigation releases story scenes and restores exactly two Explore
   for (let i = 0; i < 3; i++) {
     await page.goto('/');
     await page.waitForLoadState('networkidle');
-    await page.getByRole('link', { name: 'Go straight to Explorer' }).click();
+    await page.getByRole('link', { name: 'Compare two lunar skies' }).click();
     await expect(page.locator('canvas')).toHaveCount(2);
     await page
       .getByRole('navigation', { name: 'Primary', exact: true })

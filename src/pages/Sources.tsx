@@ -34,7 +34,7 @@ export default function Sources() {
           target="_blank"
           rel="noreferrer"
         >
-          Official challenge Resources &nearr;
+          Official challenge Resources {String.fromCharCode(8599)}
         </a>
         <br />
         <a className="quietLink" href="/data/resource-qualification.json" download>

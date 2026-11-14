@@ -43,7 +43,7 @@ test('finder returns real sampled runs, crossing brackets and honest no-match re
   await page.goto('/explore');
   await page.getByRole('button', { name: 'Find a moment', exact: true }).click();
   const finder = page.getByRole('region', { name: 'Find a moment' });
-  await expect(finder).toContainText('matching samples');
+  await expect(finder).toContainText('matching times');
   await finder.getByRole('button', { name: 'Next matching run' }).click();
   await expect(page.getByRole('slider')).not.toHaveValue('0');
   await finder.getByRole('combobox', { name: 'Observation condition' }).selectOption('crossing');

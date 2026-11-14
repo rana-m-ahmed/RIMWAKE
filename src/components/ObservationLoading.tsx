@@ -11,21 +11,29 @@ export default function ObservatoryLoading() {
     >
       <header className={s.heading}>
         <div>
-          <p className="eyebrow">YOUR LOCAL SKY</p>
-          <h1>CHANGE YOUR VIEW.</h1>
+          <p className="eyebrow">TWO PLACES / ONE SHARED TIME</p>
+          <h1>COMPARE THE SKIES.</h1>
         </div>
         <div className={s.tools}>
           <button disabled>Choose places</button>
+          <button disabled className={s.desktopSwap}>
+            Swap A and B
+          </button>
           <button disabled>Evidence &amp; method</button>
         </div>
       </header>
       <div className={s.contextLine}>
-        <span>Geometric horizon &middot; terrain excluded</span>
-        <span>Checking the source release</span>
+        <span>
+          Geometric model &middot; terrain excluded{' '}
+          <span className={s.mobileModelStatus}>&middot; science provisional</span>
+        </span>
+        <span className={s.modelStatus}>Checking the source release</span>
       </div>
       <div className={d.bar}>
-        <button disabled>Explore a real observation</button>
-        <button disabled>Follow a crossing</button>
+        <button disabled>Guided discovery</button>
+        <button className={d.secondaryCase} disabled>
+          Follow a crossing
+        </button>
         <button disabled>Find a moment</button>
         <button disabled>Share &amp; export</button>
       </div>
@@ -35,6 +43,9 @@ export default function ObservatoryLoading() {
       <div className={s.mobileSwitch}>
         <button disabled>A / Observer</button>
         <button disabled>B / Observer</button>
+        <button disabled className={s.mobileSwap} aria-label="Swap A and B">
+          &#8644;
+        </button>
       </div>
       <div className={s.mobileTime}>SHARED UTC / CHECKING</div>
       <div className={s.workspace}>

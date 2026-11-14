@@ -1,0 +1,23 @@
+import {chromium} from '@playwright/test';
+import {readFile,writeFile} from 'node:fs/promises';
+import {resolve} from 'node:path';
+import {pathToFileURL} from 'node:url';
+const browser=await chromium.launch({channel:'chrome'});
+const page=await browser.newPage({viewport:{width:1280,height:720}});
+await page.goto(pathToFileURL(resolve('docs/demo-slides.html')).href);
+await page.evaluate(()=>document.fonts.ready);
+await page.emulateMedia({media:'print'});
+await page.pdf({path:'docs/demo-slides.pdf',printBackground:true,preferCSSPageSize:true});
+const content=await page.locator('.slide').evaluateAll(slides=>slides.map((slide,i)=>{
+ const box=slide.getBoundingClientRect();
+ return {slide:i+1,contentFits:[...slide.children].filter(el=>el.tagName!=='FOOTER').every(el=>el.getBoundingClientRect().bottom<=box.bottom-34)};
+}));
+await page.emulateMedia({media:'screen'});
+for(const n of [1,3,4,6])await page.locator('.slide').nth(n-1).screenshot({path:`docs/qa/cinema/product-final/demo-slide-${n}.png`});
+await browser.close();
+const pdf=await readFile('docs/demo-slides.pdf');
+const pages=(pdf.toString('latin1').match(/\/Type\s*\/Page\b/g)||[]).length;
+const result={pages,content,scope:'Local review demo. No publication or submission.'};
+await writeFile('docs/qa/cinema/product-final/demo-render.json',JSON.stringify(result,null,2));
+console.log(JSON.stringify(result));
+if(pages!==6||content.some(row=>!row.contentFits))process.exitCode=1;

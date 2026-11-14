@@ -28,6 +28,7 @@ export default function ObservationScene({
     camera.lookAt(0, 0, 0);
     camera.updateMatrixWorld();
     const inputs = [
+      { text: 'YOU', color: '#dce4e9', point: [0, 0, 0] as [number, number, number] },
       ...(
         [
           ['N', 0],

@@ -13,8 +13,8 @@ export function both(a: State, b: State): State {
 }
 export const stateLabel = (s: State) =>
   ({
-    visible: 'Above tangent plane',
-    blocked: 'Below tangent plane',
+    visible: 'Above geometric horizon',
+    blocked: 'Below geometric horizon',
     boundary: 'At numerical boundary',
     unknown: 'Data unknown',
   })[s];

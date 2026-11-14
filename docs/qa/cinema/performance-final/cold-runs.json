@@ -1,5 +1,5 @@
 {
-  "measured_at_utc": "2026-11-14T11:51:33.830Z",
+  "measured_at_utc": "2026-11-14T12:49:15.187Z",
   "profile": {
     "viewport": "390x844",
     "latency_ms": 150,
@@ -10,12 +10,12 @@
   "scope": "Twelve local production-preview lab runs. Actual transfer sizes and response Content-Encoding reported; build gzip sizes are separate. Not deployed CDN results or field INP. Script-to-two-frame sample paint is a diagnostic, not field interaction latency.",
   "assets": [
     {
-      "name": "Evidence-C25QyCSj.js",
+      "name": "Evidence-BR678quv.js",
       "bytes": 5367,
-      "gzipBytes": 2347
+      "gzipBytes": 2346
     },
     {
-      "name": "FieldGuide-CjaNo5Dc.js",
+      "name": "FieldGuide-BvgNXu-4.js",
       "bytes": 5208,
       "gzipBytes": 2145
     },
@@ -25,39 +25,39 @@
       "gzipBytes": 249
     },
     {
-      "name": "index-CuYvdqPU.js",
-      "bytes": 363725,
-      "gzipBytes": 124760
+      "name": "index-DOxQtdr6.js",
+      "bytes": 364732,
+      "gzipBytes": 125109
     },
     {
-      "name": "LocalSky-DyrmJNuE.js",
+      "name": "LocalSky-BwIgE2vL.js",
       "bytes": 955548,
-      "gzipBytes": 257131
+      "gzipBytes": 257130
     },
     {
-      "name": "ObservationScene-c9OqWgQK.js",
-      "bytes": 2198,
-      "gzipBytes": 1240
+      "name": "ObservationScene-B_ROaY5r.js",
+      "bytes": 2241,
+      "gzipBytes": 1258
     },
     {
-      "name": "Observatory-B9ysxwC9.js",
-      "bytes": 38323,
-      "gzipBytes": 13270
+      "name": "Observatory-D_ZkWV1Z.js",
+      "bytes": 46343,
+      "gzipBytes": 15501
     },
     {
-      "name": "science-ClQDVr-b.js",
-      "bytes": 96343,
-      "gzipBytes": 27859
+      "name": "science-D14gx0_I.js",
+      "bytes": 96351,
+      "gzipBytes": 27862
     },
     {
-      "name": "Sources-DlZhK3yJ.js",
-      "bytes": 6636,
-      "gzipBytes": 2812
+      "name": "Sources-Duc06OSP.js",
+      "bytes": 6775,
+      "gzipBytes": 2862
     },
     {
-      "name": "StoryScene-CS6EyMe3.js",
-      "bytes": 74878,
-      "gzipBytes": 22543
+      "name": "StoryScene-DexGFkEA.js",
+      "bytes": 75124,
+      "gzipBytes": 22621
     }
   ],
   "reports": [
@@ -65,77 +65,77 @@
       "motion": "no-preference",
       "route": "/",
       "run": 1,
-      "readyMs": 3061.2999999523163,
-      "lcp": 2140,
+      "readyMs": 3639.5999999046326,
+      "lcp": 2756,
       "cls": 0,
       "resources": [
         {
           "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
           "transferSize": 22608,
           "encodedBodySize": 22308,
-          "duration": 699.2999999523163
+          "duration": 677.6000001430511
         },
         {
           "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
           "transferSize": 22888,
           "encodedBodySize": 22588,
-          "duration": 693.5999999046326
+          "duration": 690.7000000476837
         },
         {
-          "name": "moon-context-mobile.webp",
-          "transferSize": 31536,
-          "encodedBodySize": 31236,
-          "duration": 886.0999999046326
+          "name": "moon-opening-mobile.webp",
+          "transferSize": 19856,
+          "encodedBodySize": 19556,
+          "duration": 654
         },
         {
-          "name": "index-CuYvdqPU.js",
-          "transferSize": 125060,
-          "encodedBodySize": 124760,
-          "duration": 1695.3999998569489
+          "name": "index-DOxQtdr6.js",
+          "transferSize": 125409,
+          "encodedBodySize": 125109,
+          "duration": 1604.7999999523163
         },
         {
-          "name": "index-E1_DUNzl.css",
-          "transferSize": 8575,
-          "encodedBodySize": 8275,
-          "duration": 404.10000014305115
+          "name": "index-DWas5HD6.css",
+          "transferSize": 9367,
+          "encodedBodySize": 9067,
+          "duration": 439.7000000476837
         },
         {
           "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
           "transferSize": 24552,
           "encodedBodySize": 24252,
-          "duration": 682
+          "duration": 628
         },
         {
           "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
           "transferSize": 24484,
           "encodedBodySize": 24184,
-          "duration": 679.2999999523163
+          "duration": 658.2999999523163
         },
         {
           "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
           "transferSize": 15008,
           "encodedBodySize": 14708,
-          "duration": 632
+          "duration": 524.0999999046326
         },
         {
           "name": "favicon.svg",
           "transferSize": 582,
           "encodedBodySize": 282,
-          "duration": 175.19999980926514
+          "duration": 171.09999990463257
         }
       ],
       "encodings": {
         "": "gzip",
-        "moon-context-mobile.webp": "identity",
-        "index-E1_DUNzl.css": "gzip",
+        "moon-opening-mobile.webp": "identity",
+        "index-DWas5HD6.css": "gzip",
         "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
         "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
         "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
         "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
         "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
-        "index-CuYvdqPU.js": "gzip",
-        "release.json": "gzip",
+        "index-DOxQtdr6.js": "gzip",
         "manifest.json": "identity",
+        "release.json": "gzip",
         "favicon.svg": "identity"
       },
       "samplePaintMs": null,
@@ -145,662 +145,8 @@
       "motion": "no-preference",
       "route": "/",
       "run": 2,
-      "readyMs": 3139.5,
-      "lcp": 2316,
-      "cls": 0,
-      "resources": [
-        {
-          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
-          "transferSize": 22608,
-          "encodedBodySize": 22308,
-          "duration": 699.2999999523163
-        },
-        {
-          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
-          "transferSize": 22888,
-          "encodedBodySize": 22588,
-          "duration": 700.3999998569489
-        },
-        {
-          "name": "moon-context-mobile.webp",
-          "transferSize": 31536,
-          "encodedBodySize": 31236,
-          "duration": 916.0999999046326
-        },
-        {
-          "name": "index-CuYvdqPU.js",
-          "transferSize": 125060,
-          "encodedBodySize": 124760,
-          "duration": 1678.5999999046326
-        },
-        {
-          "name": "index-E1_DUNzl.css",
-          "transferSize": 8575,
-          "encodedBodySize": 8275,
-          "duration": 390.09999990463257
-        },
-        {
-          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
-          "transferSize": 24552,
-          "encodedBodySize": 24252,
-          "duration": 699.5
-        },
-        {
-          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
-          "transferSize": 24484,
-          "encodedBodySize": 24184,
-          "duration": 698.4000000953674
-        },
-        {
-          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-          "transferSize": 15008,
-          "encodedBodySize": 14708,
-          "duration": 654.5
-        },
-        {
-          "name": "favicon.svg",
-          "transferSize": 582,
-          "encodedBodySize": 282,
-          "duration": 161.90000009536743
-        }
-      ],
-      "encodings": {
-        "": "gzip",
-        "moon-context-mobile.webp": "identity",
-        "index-E1_DUNzl.css": "gzip",
-        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
-        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
-        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
-        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
-        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
-        "index-CuYvdqPU.js": "gzip",
-        "release.json": "gzip",
-        "manifest.json": "identity",
-        "favicon.svg": "identity"
-      },
-      "samplePaintMs": null,
-      "errors": []
-    },
-    {
-      "motion": "no-preference",
-      "route": "/",
-      "run": 3,
-      "readyMs": 3639.9000000953674,
-      "lcp": 2676,
-      "cls": 0,
-      "resources": [
-        {
-          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
-          "transferSize": 22608,
-          "encodedBodySize": 22308,
-          "duration": 696.7000000476837
-        },
-        {
-          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
-          "transferSize": 22888,
-          "encodedBodySize": 22588,
-          "duration": 707.2999999523163
-        },
-        {
-          "name": "moon-context-mobile.webp",
-          "transferSize": 31536,
-          "encodedBodySize": 31236,
-          "duration": 922.2999999523163
-        },
-        {
-          "name": "index-CuYvdqPU.js",
-          "transferSize": 125060,
-          "encodedBodySize": 124760,
-          "duration": 1672.2000000476837
-        },
-        {
-          "name": "index-E1_DUNzl.css",
-          "transferSize": 8575,
-          "encodedBodySize": 8275,
-          "duration": 384.7000000476837
-        },
-        {
-          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
-          "transferSize": 24552,
-          "encodedBodySize": 24252,
-          "duration": 691.9000000953674
-        },
-        {
-          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
-          "transferSize": 24484,
-          "encodedBodySize": 24184,
-          "duration": 711.8999998569489
-        },
-        {
-          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-          "transferSize": 15008,
-          "encodedBodySize": 14708,
-          "duration": 650.4000000953674
-        }
-      ],
-      "encodings": {
-        "": "gzip",
-        "moon-context-mobile.webp": "identity",
-        "index-E1_DUNzl.css": "gzip",
-        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
-        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
-        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
-        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
-        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
-        "index-CuYvdqPU.js": "gzip",
-        "release.json": "gzip",
-        "manifest.json": "identity",
-        "favicon.svg": "identity"
-      },
-      "samplePaintMs": null,
-      "errors": []
-    },
-    {
-      "motion": "no-preference",
-      "route": "/explore",
-      "run": 1,
-      "readyMs": 4885.799999952316,
-      "lcp": 1436,
-      "cls": 0,
-      "resources": [
-        {
-          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
-          "transferSize": 22608,
-          "encodedBodySize": 22308,
-          "duration": 575.4000000953674
-        },
-        {
-          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
-          "transferSize": 22888,
-          "encodedBodySize": 22588,
-          "duration": 593.5999999046326
-        },
-        {
-          "name": "index-CuYvdqPU.js",
-          "transferSize": 125060,
-          "encodedBodySize": 124760,
-          "duration": 1386
-        },
-        {
-          "name": "index-E1_DUNzl.css",
-          "transferSize": 8575,
-          "encodedBodySize": 8275,
-          "duration": 351.69999980926514
-        },
-        {
-          "name": "Observatory-DgDwHzm-.css",
-          "transferSize": 1908,
-          "encodedBodySize": 1608,
-          "duration": 235.90000009536743
-        },
-        {
-          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
-          "transferSize": 24552,
-          "encodedBodySize": 24252,
-          "duration": 521.2000000476837
-        },
-        {
-          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-          "transferSize": 15008,
-          "encodedBodySize": 14708,
-          "duration": 429
-        },
-        {
-          "name": "release.json",
-          "transferSize": 68405,
-          "encodedBodySize": 68105,
-          "duration": 803.7000000476837
-        },
-        {
-          "name": "manifest.json",
-          "transferSize": 613,
-          "encodedBodySize": 313,
-          "duration": 168.80000019073486
-        },
-        {
-          "name": "favicon.svg",
-          "transferSize": 582,
-          "encodedBodySize": 282,
-          "duration": 174.90000009536743
-        },
-        {
-          "name": "Observatory-B9ysxwC9.js",
-          "transferSize": 13570,
-          "encodedBodySize": 13270,
-          "duration": 412
-        },
-        {
-          "name": "science-ClQDVr-b.js",
-          "transferSize": 28159,
-          "encodedBodySize": 27859,
-          "duration": 566.7000000476837
-        },
-        {
-          "name": "Evidence-C25QyCSj.js",
-          "transferSize": 2647,
-          "encodedBodySize": 2347,
-          "duration": 229.40000009536743
-        },
-        {
-          "name": "Evidence-YXhEk7LN.css",
-          "transferSize": 982,
-          "encodedBodySize": 682,
-          "duration": 250.29999995231628
-        }
-      ],
-      "encodings": {
-        "explore": "gzip",
-        "index-E1_DUNzl.css": "gzip",
-        "Observatory-DgDwHzm-.css": "gzip",
-        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
-        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
-        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
-        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
-        "index-CuYvdqPU.js": "gzip",
-        "manifest.json": "identity",
-        "release.json": "gzip",
-        "favicon.svg": "identity",
-        "Evidence-C25QyCSj.js": "gzip",
-        "Evidence-YXhEk7LN.css": "gzip",
-        "Observatory-B9ysxwC9.js": "gzip",
-        "science-ClQDVr-b.js": "gzip"
-      },
-      "samplePaintMs": 117.79999995231628,
-      "errors": []
-    },
-    {
-      "motion": "no-preference",
-      "route": "/explore",
-      "run": 2,
-      "readyMs": 4998.100000143051,
-      "lcp": 1508,
-      "cls": 0,
-      "resources": [
-        {
-          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
-          "transferSize": 22608,
-          "encodedBodySize": 22308,
-          "duration": 600.7999999523163
-        },
-        {
-          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
-          "transferSize": 22888,
-          "encodedBodySize": 22588,
-          "duration": 596.3000001907349
-        },
-        {
-          "name": "index-CuYvdqPU.js",
-          "transferSize": 125060,
-          "encodedBodySize": 124760,
-          "duration": 1368.6999998092651
-        },
-        {
-          "name": "index-E1_DUNzl.css",
-          "transferSize": 8575,
-          "encodedBodySize": 8275,
-          "duration": 364.40000009536743
-        },
-        {
-          "name": "Observatory-DgDwHzm-.css",
-          "transferSize": 1908,
-          "encodedBodySize": 1608,
-          "duration": 255.39999985694885
-        },
-        {
-          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
-          "transferSize": 24552,
-          "encodedBodySize": 24252,
-          "duration": 505.7999999523163
-        },
-        {
-          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-          "transferSize": 15008,
-          "encodedBodySize": 14708,
-          "duration": 415.2999999523163
-        },
-        {
-          "name": "release.json",
-          "transferSize": 68405,
-          "encodedBodySize": 68105,
-          "duration": 812.2000000476837
-        },
-        {
-          "name": "manifest.json",
-          "transferSize": 613,
-          "encodedBodySize": 313,
-          "duration": 174.39999985694885
-        },
-        {
-          "name": "favicon.svg",
-          "transferSize": 582,
-          "encodedBodySize": 282,
-          "duration": 170.59999990463257
-        },
-        {
-          "name": "Observatory-B9ysxwC9.js",
-          "transferSize": 13570,
-          "encodedBodySize": 13270,
-          "duration": 406.7999999523163
-        },
-        {
-          "name": "science-ClQDVr-b.js",
-          "transferSize": 28159,
-          "encodedBodySize": 27859,
-          "duration": 560.3000001907349
-        },
-        {
-          "name": "Evidence-C25QyCSj.js",
-          "transferSize": 2647,
-          "encodedBodySize": 2347,
-          "duration": 200.60000014305115
-        },
-        {
-          "name": "Evidence-YXhEk7LN.css",
-          "transferSize": 982,
-          "encodedBodySize": 682,
-          "duration": 220.60000014305115
-        }
-      ],
-      "encodings": {
-        "explore": "gzip",
-        "index-E1_DUNzl.css": "gzip",
-        "Observatory-DgDwHzm-.css": "gzip",
-        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
-        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
-        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
-        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
-        "index-CuYvdqPU.js": "gzip",
-        "release.json": "gzip",
-        "manifest.json": "identity",
-        "favicon.svg": "identity",
-        "Evidence-C25QyCSj.js": "gzip",
-        "Evidence-YXhEk7LN.css": "gzip",
-        "Observatory-B9ysxwC9.js": "gzip",
-        "science-ClQDVr-b.js": "gzip"
-      },
-      "samplePaintMs": 38.59999990463257,
-      "errors": []
-    },
-    {
-      "motion": "no-preference",
-      "route": "/explore",
-      "run": 3,
-      "readyMs": 5561.300000190735,
-      "lcp": 1412,
-      "cls": 0,
-      "resources": [
-        {
-          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
-          "transferSize": 22608,
-          "encodedBodySize": 22308,
-          "duration": 596.3000001907349
-        },
-        {
-          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
-          "transferSize": 22888,
-          "encodedBodySize": 22588,
-          "duration": 594.2000000476837
-        },
-        {
-          "name": "index-CuYvdqPU.js",
-          "transferSize": 125060,
-          "encodedBodySize": 124760,
-          "duration": 1383.1999998092651
-        },
-        {
-          "name": "index-E1_DUNzl.css",
-          "transferSize": 8575,
-          "encodedBodySize": 8275,
-          "duration": 358.90000009536743
-        },
-        {
-          "name": "Observatory-DgDwHzm-.css",
-          "transferSize": 1908,
-          "encodedBodySize": 1608,
-          "duration": 220.09999990463257
-        },
-        {
-          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
-          "transferSize": 24552,
-          "encodedBodySize": 24252,
-          "duration": 502.7000000476837
-        },
-        {
-          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-          "transferSize": 15008,
-          "encodedBodySize": 14708,
-          "duration": 401.10000014305115
-        },
-        {
-          "name": "release.json",
-          "transferSize": 68405,
-          "encodedBodySize": 68105,
-          "duration": 795.6000001430511
-        },
-        {
-          "name": "manifest.json",
-          "transferSize": 613,
-          "encodedBodySize": 313,
-          "duration": 170.79999995231628
-        },
-        {
-          "name": "favicon.svg",
-          "transferSize": 582,
-          "encodedBodySize": 282,
-          "duration": 170.09999990463257
-        },
-        {
-          "name": "Observatory-B9ysxwC9.js",
-          "transferSize": 13570,
-          "encodedBodySize": 13270,
-          "duration": 403.2000000476837
-        },
-        {
-          "name": "science-ClQDVr-b.js",
-          "transferSize": 28159,
-          "encodedBodySize": 27859,
-          "duration": 559.5999999046326
-        },
-        {
-          "name": "Evidence-C25QyCSj.js",
-          "transferSize": 2647,
-          "encodedBodySize": 2347,
-          "duration": 253.39999985694885
-        },
-        {
-          "name": "Evidence-YXhEk7LN.css",
-          "transferSize": 982,
-          "encodedBodySize": 682,
-          "duration": 186.70000004768372
-        }
-      ],
-      "encodings": {
-        "explore": "gzip",
-        "Observatory-DgDwHzm-.css": "gzip",
-        "index-E1_DUNzl.css": "gzip",
-        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
-        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
-        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
-        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
-        "index-CuYvdqPU.js": "gzip",
-        "release.json": "gzip",
-        "manifest.json": "identity",
-        "favicon.svg": "identity",
-        "Evidence-YXhEk7LN.css": "gzip",
-        "Evidence-C25QyCSj.js": "gzip",
-        "Observatory-B9ysxwC9.js": "gzip",
-        "science-ClQDVr-b.js": "gzip",
-        "ObservationScene-c9OqWgQK.js": "gzip"
-      },
-      "samplePaintMs": 195.39999985694885,
-      "errors": []
-    },
-    {
-      "motion": "reduce",
-      "route": "/",
-      "run": 1,
-      "readyMs": 3288.7000000476837,
-      "lcp": 2320,
-      "cls": 0,
-      "resources": [
-        {
-          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
-          "transferSize": 22608,
-          "encodedBodySize": 22308,
-          "duration": 705.5999999046326
-        },
-        {
-          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
-          "transferSize": 22888,
-          "encodedBodySize": 22588,
-          "duration": 697.0999999046326
-        },
-        {
-          "name": "moon-context-mobile.webp",
-          "transferSize": 31536,
-          "encodedBodySize": 31236,
-          "duration": 858.2000000476837
-        },
-        {
-          "name": "index-CuYvdqPU.js",
-          "transferSize": 125060,
-          "encodedBodySize": 124760,
-          "duration": 1661.5
-        },
-        {
-          "name": "index-E1_DUNzl.css",
-          "transferSize": 8575,
-          "encodedBodySize": 8275,
-          "duration": 396
-        },
-        {
-          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
-          "transferSize": 24552,
-          "encodedBodySize": 24252,
-          "duration": 674.8999998569489
-        },
-        {
-          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
-          "transferSize": 24484,
-          "encodedBodySize": 24184,
-          "duration": 682.2000000476837
-        },
-        {
-          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-          "transferSize": 15008,
-          "encodedBodySize": 14708,
-          "duration": 604.6000001430511
-        },
-        {
-          "name": "favicon.svg",
-          "transferSize": 582,
-          "encodedBodySize": 282,
-          "duration": 165.70000004768372
-        }
-      ],
-      "encodings": {
-        "": "gzip",
-        "moon-context-mobile.webp": "identity",
-        "index-E1_DUNzl.css": "gzip",
-        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
-        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
-        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
-        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
-        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
-        "index-CuYvdqPU.js": "gzip",
-        "release.json": "gzip",
-        "manifest.json": "identity",
-        "favicon.svg": "identity"
-      },
-      "samplePaintMs": null,
-      "errors": []
-    },
-    {
-      "motion": "reduce",
-      "route": "/",
-      "run": 2,
-      "readyMs": 3549.5,
-      "lcp": 2384,
-      "cls": 0,
-      "resources": [
-        {
-          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
-          "transferSize": 22608,
-          "encodedBodySize": 22308,
-          "duration": 695.5
-        },
-        {
-          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
-          "transferSize": 22888,
-          "encodedBodySize": 22588,
-          "duration": 703.6000001430511
-        },
-        {
-          "name": "moon-context-mobile.webp",
-          "transferSize": 31536,
-          "encodedBodySize": 31236,
-          "duration": 888.7999999523163
-        },
-        {
-          "name": "index-CuYvdqPU.js",
-          "transferSize": 125060,
-          "encodedBodySize": 124760,
-          "duration": 1669.7000000476837
-        },
-        {
-          "name": "index-E1_DUNzl.css",
-          "transferSize": 8575,
-          "encodedBodySize": 8275,
-          "duration": 401.7999999523163
-        },
-        {
-          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
-          "transferSize": 24552,
-          "encodedBodySize": 24252,
-          "duration": 686.3999998569489
-        },
-        {
-          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
-          "transferSize": 24484,
-          "encodedBodySize": 24184,
-          "duration": 684.6000001430511
-        },
-        {
-          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
-          "transferSize": 15008,
-          "encodedBodySize": 14708,
-          "duration": 633.9000000953674
-        },
-        {
-          "name": "favicon.svg",
-          "transferSize": 582,
-          "encodedBodySize": 282,
-          "duration": 168.20000004768372
-        }
-      ],
-      "encodings": {
-        "": "gzip",
-        "moon-context-mobile.webp": "identity",
-        "index-E1_DUNzl.css": "gzip",
-        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
-        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
-        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
-        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
-        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
-        "index-CuYvdqPU.js": "gzip",
-        "favicon.svg": "identity",
-        "release.json": "gzip",
-        "manifest.json": "identity"
-      },
-      "samplePaintMs": null,
-      "errors": []
-    },
-    {
-      "motion": "reduce",
-      "route": "/",
-      "run": 3,
-      "readyMs": 3534,
-      "lcp": 2552,
+      "readyMs": 3554.600000143051,
+      "lcp": 2420,
       "cls": 0,
       "resources": [
         {
@@ -813,61 +159,616 @@
           "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
           "transferSize": 22888,
           "encodedBodySize": 22588,
-          "duration": 705.2999999523163
+          "duration": 711.5
         },
         {
-          "name": "moon-context-mobile.webp",
-          "transferSize": 31536,
-          "encodedBodySize": 31236,
-          "duration": 862.5
+          "name": "moon-opening-mobile.webp",
+          "transferSize": 19856,
+          "encodedBodySize": 19556,
+          "duration": 660.7999999523163
         },
         {
-          "name": "index-CuYvdqPU.js",
-          "transferSize": 125060,
-          "encodedBodySize": 124760,
-          "duration": 1679.2000000476837
+          "name": "index-DOxQtdr6.js",
+          "transferSize": 125409,
+          "encodedBodySize": 125109,
+          "duration": 1613.1000001430511
         },
         {
-          "name": "index-E1_DUNzl.css",
-          "transferSize": 8575,
-          "encodedBodySize": 8275,
-          "duration": 409.60000014305115
+          "name": "index-DWas5HD6.css",
+          "transferSize": 9367,
+          "encodedBodySize": 9067,
+          "duration": 439.59999990463257
         },
         {
           "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
           "transferSize": 24552,
           "encodedBodySize": 24252,
-          "duration": 680.6000001430511
+          "duration": 646.3000001907349
         },
         {
           "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
           "transferSize": 24484,
           "encodedBodySize": 24184,
-          "duration": 689.2000000476837
+          "duration": 644.5999999046326
         },
         {
           "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
           "transferSize": 15008,
           "encodedBodySize": 14708,
-          "duration": 614.4000000953674
-        },
-        {
-          "name": "favicon.svg",
-          "transferSize": 582,
-          "encodedBodySize": 282,
-          "duration": 182.09999990463257
+          "duration": 561.0999999046326
         }
       ],
       "encodings": {
         "": "gzip",
-        "moon-context-mobile.webp": "identity",
-        "index-E1_DUNzl.css": "gzip",
+        "moon-opening-mobile.webp": "identity",
+        "index-DWas5HD6.css": "gzip",
         "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
         "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
         "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
         "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
         "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
-        "index-CuYvdqPU.js": "gzip",
+        "index-DOxQtdr6.js": "gzip",
+        "release.json": "gzip",
+        "manifest.json": "identity",
+        "favicon.svg": "identity"
+      },
+      "samplePaintMs": null,
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/",
+      "run": 3,
+      "readyMs": 3818.0999999046326,
+      "lcp": 2904,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 697.2000000476837
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 702.6999998092651
+        },
+        {
+          "name": "moon-opening-mobile.webp",
+          "transferSize": 19856,
+          "encodedBodySize": 19556,
+          "duration": 648.1000001430511
+        },
+        {
+          "name": "index-DOxQtdr6.js",
+          "transferSize": 125409,
+          "encodedBodySize": 125109,
+          "duration": 1616.3999998569489
+        },
+        {
+          "name": "index-DWas5HD6.css",
+          "transferSize": 9367,
+          "encodedBodySize": 9067,
+          "duration": 416.2000000476837
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 644.1000001430511
+        },
+        {
+          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "transferSize": 24484,
+          "encodedBodySize": 24184,
+          "duration": 665.8999998569489
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 542
+        }
+      ],
+      "encodings": {
+        "": "gzip",
+        "moon-opening-mobile.webp": "identity",
+        "index-DWas5HD6.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
+        "index-DOxQtdr6.js": "gzip",
+        "release.json": "gzip",
+        "manifest.json": "identity",
+        "favicon.svg": "identity"
+      },
+      "samplePaintMs": null,
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/explore",
+      "run": 1,
+      "readyMs": 5171.200000047684,
+      "lcp": 1684,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 597.6000001430511
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 600.1000001430511
+        },
+        {
+          "name": "index-DOxQtdr6.js",
+          "transferSize": 125409,
+          "encodedBodySize": 125109,
+          "duration": 1379.1000001430511
+        },
+        {
+          "name": "index-DWas5HD6.css",
+          "transferSize": 9367,
+          "encodedBodySize": 9067,
+          "duration": 382.69999980926514
+        },
+        {
+          "name": "Observatory-BMPo222N.css",
+          "transferSize": 2282,
+          "encodedBodySize": 1982,
+          "duration": 234
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 505.7000000476837
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 413.5
+        },
+        {
+          "name": "release.json",
+          "transferSize": 68405,
+          "encodedBodySize": 68105,
+          "duration": 804.3999998569489
+        },
+        {
+          "name": "manifest.json",
+          "transferSize": 613,
+          "encodedBodySize": 313,
+          "duration": 168.80000019073486
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 165.89999985694885
+        },
+        {
+          "name": "Observatory-D_ZkWV1Z.js",
+          "transferSize": 15801,
+          "encodedBodySize": 15501,
+          "duration": 440
+        },
+        {
+          "name": "science-D14gx0_I.js",
+          "transferSize": 28162,
+          "encodedBodySize": 27862,
+          "duration": 583.7999999523163
+        },
+        {
+          "name": "Evidence-BR678quv.js",
+          "transferSize": 2646,
+          "encodedBodySize": 2346,
+          "duration": 216
+        },
+        {
+          "name": "Evidence-YXhEk7LN.css",
+          "transferSize": 982,
+          "encodedBodySize": 682,
+          "duration": 229.69999980926514
+        }
+      ],
+      "encodings": {
+        "explore": "gzip",
+        "index-DWas5HD6.css": "gzip",
+        "Observatory-BMPo222N.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "index-DOxQtdr6.js": "gzip",
+        "manifest.json": "identity",
+        "release.json": "gzip",
+        "favicon.svg": "identity",
+        "Evidence-BR678quv.js": "gzip",
+        "Evidence-YXhEk7LN.css": "gzip",
+        "Observatory-D_ZkWV1Z.js": "gzip",
+        "science-D14gx0_I.js": "gzip"
+      },
+      "samplePaintMs": 120.09999990463257,
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/explore",
+      "run": 2,
+      "readyMs": 5040.800000190735,
+      "lcp": 1552,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 593.8000001907349
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 598.7999999523163
+        },
+        {
+          "name": "index-DOxQtdr6.js",
+          "transferSize": 125409,
+          "encodedBodySize": 125109,
+          "duration": 1384.2999999523163
+        },
+        {
+          "name": "index-DWas5HD6.css",
+          "transferSize": 9367,
+          "encodedBodySize": 9067,
+          "duration": 407.7000000476837
+        },
+        {
+          "name": "Observatory-BMPo222N.css",
+          "transferSize": 2282,
+          "encodedBodySize": 1982,
+          "duration": 216.20000004768372
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 511.7000000476837
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 421
+        },
+        {
+          "name": "release.json",
+          "transferSize": 68405,
+          "encodedBodySize": 68105,
+          "duration": 808.7999999523163
+        },
+        {
+          "name": "manifest.json",
+          "transferSize": 613,
+          "encodedBodySize": 313,
+          "duration": 170.70000004768372
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 160.09999990463257
+        },
+        {
+          "name": "Observatory-D_ZkWV1Z.js",
+          "transferSize": 15801,
+          "encodedBodySize": 15501,
+          "duration": 432.40000009536743
+        },
+        {
+          "name": "science-D14gx0_I.js",
+          "transferSize": 28162,
+          "encodedBodySize": 27862,
+          "duration": 564.9000000953674
+        },
+        {
+          "name": "Evidence-BR678quv.js",
+          "transferSize": 2646,
+          "encodedBodySize": 2346,
+          "duration": 213.59999990463257
+        },
+        {
+          "name": "Evidence-YXhEk7LN.css",
+          "transferSize": 982,
+          "encodedBodySize": 682,
+          "duration": 225.70000004768372
+        }
+      ],
+      "encodings": {
+        "explore": "gzip",
+        "Observatory-BMPo222N.css": "gzip",
+        "index-DWas5HD6.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "index-DOxQtdr6.js": "gzip",
+        "manifest.json": "identity",
+        "release.json": "gzip",
+        "favicon.svg": "identity",
+        "Evidence-BR678quv.js": "gzip",
+        "Evidence-YXhEk7LN.css": "gzip",
+        "Observatory-D_ZkWV1Z.js": "gzip",
+        "science-D14gx0_I.js": "gzip"
+      },
+      "samplePaintMs": 97,
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/explore",
+      "run": 3,
+      "readyMs": 4959.400000095367,
+      "lcp": 1628,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 604.2999999523163
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 599.3999998569489
+        },
+        {
+          "name": "index-DOxQtdr6.js",
+          "transferSize": 125409,
+          "encodedBodySize": 125109,
+          "duration": 1386.7000000476837
+        },
+        {
+          "name": "index-DWas5HD6.css",
+          "transferSize": 9367,
+          "encodedBodySize": 9067,
+          "duration": 389.2000000476837
+        },
+        {
+          "name": "Observatory-BMPo222N.css",
+          "transferSize": 2282,
+          "encodedBodySize": 1982,
+          "duration": 217.10000014305115
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 499.39999985694885
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 420.09999990463257
+        },
+        {
+          "name": "release.json",
+          "transferSize": 68405,
+          "encodedBodySize": 68105,
+          "duration": 807.1000001430511
+        },
+        {
+          "name": "manifest.json",
+          "transferSize": 613,
+          "encodedBodySize": 313,
+          "duration": 159
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 171.69999980926514
+        },
+        {
+          "name": "Observatory-D_ZkWV1Z.js",
+          "transferSize": 15801,
+          "encodedBodySize": 15501,
+          "duration": 425.39999985694885
+        },
+        {
+          "name": "science-D14gx0_I.js",
+          "transferSize": 28162,
+          "encodedBodySize": 27862,
+          "duration": 562.0999999046326
+        },
+        {
+          "name": "Evidence-BR678quv.js",
+          "transferSize": 2646,
+          "encodedBodySize": 2346,
+          "duration": 231
+        },
+        {
+          "name": "Evidence-YXhEk7LN.css",
+          "transferSize": 982,
+          "encodedBodySize": 682,
+          "duration": 198
+        }
+      ],
+      "encodings": {
+        "explore": "gzip",
+        "Observatory-BMPo222N.css": "gzip",
+        "index-DWas5HD6.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "index-DOxQtdr6.js": "gzip",
+        "release.json": "gzip",
+        "manifest.json": "identity",
+        "favicon.svg": "identity",
+        "Evidence-YXhEk7LN.css": "gzip",
+        "Evidence-BR678quv.js": "gzip",
+        "Observatory-D_ZkWV1Z.js": "gzip",
+        "science-D14gx0_I.js": "gzip"
+      },
+      "samplePaintMs": 106.89999985694885,
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/",
+      "run": 1,
+      "readyMs": 3923.300000190735,
+      "lcp": 2952,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 702.7999999523163
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 694.8999998569489
+        },
+        {
+          "name": "moon-opening-mobile.webp",
+          "transferSize": 19856,
+          "encodedBodySize": 19556,
+          "duration": 649.7999999523163
+        },
+        {
+          "name": "index-DOxQtdr6.js",
+          "transferSize": 125409,
+          "encodedBodySize": 125109,
+          "duration": 1614.0999999046326
+        },
+        {
+          "name": "index-DWas5HD6.css",
+          "transferSize": 9367,
+          "encodedBodySize": 9067,
+          "duration": 435.5
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 646.8999998569489
+        },
+        {
+          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "transferSize": 24484,
+          "encodedBodySize": 24184,
+          "duration": 653.5999999046326
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 521.4000000953674
+        }
+      ],
+      "encodings": {
+        "": "gzip",
+        "moon-opening-mobile.webp": "identity",
+        "index-DWas5HD6.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
+        "index-DOxQtdr6.js": "gzip",
+        "release.json": "gzip",
+        "manifest.json": "identity",
+        "favicon.svg": "identity"
+      },
+      "samplePaintMs": null,
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/",
+      "run": 2,
+      "readyMs": 3732.100000143051,
+      "lcp": 2744,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 686.9000000953674
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 707.8000001907349
+        },
+        {
+          "name": "moon-opening-mobile.webp",
+          "transferSize": 19856,
+          "encodedBodySize": 19556,
+          "duration": 654
+        },
+        {
+          "name": "index-DOxQtdr6.js",
+          "transferSize": 125409,
+          "encodedBodySize": 125109,
+          "duration": 1615
+        },
+        {
+          "name": "index-DWas5HD6.css",
+          "transferSize": 9367,
+          "encodedBodySize": 9067,
+          "duration": 446.2999999523163
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 646
+        },
+        {
+          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "transferSize": 24484,
+          "encodedBodySize": 24184,
+          "duration": 643.5999999046326
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 502.30000019073486
+        }
+      ],
+      "encodings": {
+        "": "gzip",
+        "moon-opening-mobile.webp": "identity",
+        "index-DWas5HD6.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
+        "index-DOxQtdr6.js": "gzip",
         "manifest.json": "identity",
         "release.json": "gzip",
         "favicon.svg": "identity"
@@ -877,341 +778,421 @@
     },
     {
       "motion": "reduce",
-      "route": "/explore",
-      "run": 1,
-      "readyMs": 5490.700000047684,
-      "lcp": 1496,
+      "route": "/",
+      "run": 3,
+      "readyMs": 3685.7999999523163,
+      "lcp": 2748,
       "cls": 0,
       "resources": [
         {
           "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
           "transferSize": 22608,
           "encodedBodySize": 22308,
-          "duration": 593
+          "duration": 689.1000001430511
         },
         {
           "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
           "transferSize": 22888,
           "encodedBodySize": 22588,
-          "duration": 602.2999999523163
+          "duration": 694.2999999523163
         },
         {
-          "name": "index-CuYvdqPU.js",
-          "transferSize": 125060,
-          "encodedBodySize": 124760,
-          "duration": 1390
+          "name": "moon-opening-mobile.webp",
+          "transferSize": 19856,
+          "encodedBodySize": 19556,
+          "duration": 649.5
         },
         {
-          "name": "index-E1_DUNzl.css",
-          "transferSize": 8575,
-          "encodedBodySize": 8275,
-          "duration": 356.40000009536743
+          "name": "index-DOxQtdr6.js",
+          "transferSize": 125409,
+          "encodedBodySize": 125109,
+          "duration": 1611.5999999046326
         },
         {
-          "name": "Observatory-DgDwHzm-.css",
-          "transferSize": 1908,
-          "encodedBodySize": 1608,
-          "duration": 238.89999985694885
+          "name": "index-DWas5HD6.css",
+          "transferSize": 9367,
+          "encodedBodySize": 9067,
+          "duration": 418.19999980926514
         },
         {
           "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
           "transferSize": 24552,
           "encodedBodySize": 24252,
-          "duration": 513.9000000953674
+          "duration": 635.5
+        },
+        {
+          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "transferSize": 24484,
+          "encodedBodySize": 24184,
+          "duration": 643.3999998569489
         },
         {
           "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
           "transferSize": 15008,
           "encodedBodySize": 14708,
-          "duration": 429.59999990463257
-        },
-        {
-          "name": "release.json",
-          "transferSize": 68405,
-          "encodedBodySize": 68105,
-          "duration": 791.3999998569489
-        },
-        {
-          "name": "manifest.json",
-          "transferSize": 613,
-          "encodedBodySize": 313,
-          "duration": 181.70000004768372
+          "duration": 556.5
         },
         {
           "name": "favicon.svg",
           "transferSize": 582,
           "encodedBodySize": 282,
-          "duration": 177.89999985694885
+          "duration": 169.79999995231628
+        }
+      ],
+      "encodings": {
+        "": "gzip",
+        "moon-opening-mobile.webp": "identity",
+        "index-DWas5HD6.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
+        "index-DOxQtdr6.js": "gzip",
+        "release.json": "gzip",
+        "manifest.json": "identity",
+        "favicon.svg": "identity"
+      },
+      "samplePaintMs": null,
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/explore",
+      "run": 1,
+      "readyMs": 5420.799999952316,
+      "lcp": 1728,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 599.2000000476837
         },
         {
-          "name": "science-ClQDVr-b.js",
-          "transferSize": 28159,
-          "encodedBodySize": 27859,
-          "duration": 563.7999999523163
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 611.7999999523163
         },
         {
-          "name": "Observatory-B9ysxwC9.js",
-          "transferSize": 13570,
-          "encodedBodySize": 13270,
-          "duration": 409.30000019073486
+          "name": "index-DOxQtdr6.js",
+          "transferSize": 125409,
+          "encodedBodySize": 125109,
+          "duration": 1375.7000000476837
         },
         {
-          "name": "Evidence-C25QyCSj.js",
-          "transferSize": 2647,
-          "encodedBodySize": 2347,
-          "duration": 220.79999995231628
+          "name": "index-DWas5HD6.css",
+          "transferSize": 9367,
+          "encodedBodySize": 9067,
+          "duration": 411.39999985694885
+        },
+        {
+          "name": "Observatory-BMPo222N.css",
+          "transferSize": 2282,
+          "encodedBodySize": 1982,
+          "duration": 229
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 517.4000000953674
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 425.10000014305115
+        },
+        {
+          "name": "release.json",
+          "transferSize": 68405,
+          "encodedBodySize": 68105,
+          "duration": 813
+        },
+        {
+          "name": "manifest.json",
+          "transferSize": 613,
+          "encodedBodySize": 313,
+          "duration": 168.5
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 170.39999985694885
+        },
+        {
+          "name": "Observatory-D_ZkWV1Z.js",
+          "transferSize": 15801,
+          "encodedBodySize": 15501,
+          "duration": 434.90000009536743
+        },
+        {
+          "name": "science-D14gx0_I.js",
+          "transferSize": 28162,
+          "encodedBodySize": 27862,
+          "duration": 567.5999999046326
+        },
+        {
+          "name": "Evidence-BR678quv.js",
+          "transferSize": 2646,
+          "encodedBodySize": 2346,
+          "duration": 214.70000004768372
         },
         {
           "name": "Evidence-YXhEk7LN.css",
           "transferSize": 982,
           "encodedBodySize": 682,
-          "duration": 174
+          "duration": 232.40000009536743
         }
       ],
       "encodings": {
         "explore": "gzip",
-        "index-E1_DUNzl.css": "gzip",
-        "Observatory-DgDwHzm-.css": "gzip",
+        "Observatory-BMPo222N.css": "gzip",
+        "index-DWas5HD6.css": "gzip",
         "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
         "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
         "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
         "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
-        "index-CuYvdqPU.js": "gzip",
-        "release.json": "gzip",
+        "index-DOxQtdr6.js": "gzip",
         "manifest.json": "identity",
+        "release.json": "gzip",
         "favicon.svg": "identity",
+        "Evidence-BR678quv.js": "gzip",
         "Evidence-YXhEk7LN.css": "gzip",
-        "Evidence-C25QyCSj.js": "gzip",
-        "Observatory-B9ysxwC9.js": "gzip",
-        "science-ClQDVr-b.js": "gzip"
+        "Observatory-D_ZkWV1Z.js": "gzip",
+        "science-D14gx0_I.js": "gzip"
       },
-      "samplePaintMs": 214.5,
+      "samplePaintMs": 102,
       "errors": []
     },
     {
       "motion": "reduce",
       "route": "/explore",
       "run": 2,
-      "readyMs": 5293.200000047684,
-      "lcp": 1324,
+      "readyMs": 5654.5,
+      "lcp": 1816,
       "cls": 0,
       "resources": [
         {
           "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
           "transferSize": 22608,
           "encodedBodySize": 22308,
-          "duration": 598.7999999523163
+          "duration": 600.8000001907349
         },
         {
           "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
           "transferSize": 22888,
           "encodedBodySize": 22588,
-          "duration": 611.2000000476837
+          "duration": 606.7000000476837
         },
         {
-          "name": "index-CuYvdqPU.js",
-          "transferSize": 125060,
-          "encodedBodySize": 124760,
-          "duration": 1390.2000000476837
+          "name": "index-DOxQtdr6.js",
+          "transferSize": 125409,
+          "encodedBodySize": 125109,
+          "duration": 1389.7000000476837
         },
         {
-          "name": "index-E1_DUNzl.css",
-          "transferSize": 8575,
-          "encodedBodySize": 8275,
-          "duration": 371
+          "name": "index-DWas5HD6.css",
+          "transferSize": 9367,
+          "encodedBodySize": 9067,
+          "duration": 393
         },
         {
-          "name": "Observatory-DgDwHzm-.css",
-          "transferSize": 1908,
-          "encodedBodySize": 1608,
-          "duration": 229.20000004768372
+          "name": "Observatory-BMPo222N.css",
+          "transferSize": 2282,
+          "encodedBodySize": 1982,
+          "duration": 221.89999985694885
         },
         {
           "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
           "transferSize": 24552,
           "encodedBodySize": 24252,
-          "duration": 511.90000009536743
+          "duration": 507.09999990463257
         },
         {
           "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
           "transferSize": 15008,
           "encodedBodySize": 14708,
-          "duration": 416.7999999523163
+          "duration": 407.89999985694885
         },
         {
           "name": "release.json",
           "transferSize": 68405,
           "encodedBodySize": 68105,
-          "duration": 795.8999998569489
+          "duration": 808
         },
         {
           "name": "manifest.json",
           "transferSize": 613,
           "encodedBodySize": 313,
-          "duration": 174
+          "duration": 174.5
         },
         {
           "name": "favicon.svg",
           "transferSize": 582,
           "encodedBodySize": 282,
-          "duration": 180.70000004768372
+          "duration": 168.10000014305115
         },
         {
-          "name": "Observatory-B9ysxwC9.js",
-          "transferSize": 13570,
-          "encodedBodySize": 13270,
-          "duration": 417.2000000476837
+          "name": "Observatory-D_ZkWV1Z.js",
+          "transferSize": 15801,
+          "encodedBodySize": 15501,
+          "duration": 445.7999999523163
         },
         {
-          "name": "science-ClQDVr-b.js",
-          "transferSize": 28159,
-          "encodedBodySize": 27859,
-          "duration": 563.8000001907349
+          "name": "science-D14gx0_I.js",
+          "transferSize": 28162,
+          "encodedBodySize": 27862,
+          "duration": 566.7000000476837
         },
         {
-          "name": "Evidence-C25QyCSj.js",
-          "transferSize": 2647,
-          "encodedBodySize": 2347,
-          "duration": 237.39999985694885
+          "name": "Evidence-BR678quv.js",
+          "transferSize": 2646,
+          "encodedBodySize": 2346,
+          "duration": 231.59999990463257
         },
         {
           "name": "Evidence-YXhEk7LN.css",
           "transferSize": 982,
           "encodedBodySize": 682,
-          "duration": 199.5
+          "duration": 237.09999990463257
         }
       ],
       "encodings": {
         "explore": "gzip",
-        "Observatory-DgDwHzm-.css": "gzip",
-        "index-E1_DUNzl.css": "gzip",
+        "Observatory-BMPo222N.css": "gzip",
+        "index-DWas5HD6.css": "gzip",
         "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
         "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
         "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
         "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
-        "index-CuYvdqPU.js": "gzip",
+        "index-DOxQtdr6.js": "gzip",
         "release.json": "gzip",
         "manifest.json": "identity",
         "favicon.svg": "identity",
+        "Evidence-BR678quv.js": "gzip",
         "Evidence-YXhEk7LN.css": "gzip",
-        "Evidence-C25QyCSj.js": "gzip",
-        "Observatory-B9ysxwC9.js": "gzip",
-        "science-ClQDVr-b.js": "gzip"
+        "Observatory-D_ZkWV1Z.js": "gzip",
+        "science-D14gx0_I.js": "gzip"
       },
-      "samplePaintMs": 189.09999990463257,
+      "samplePaintMs": 130.79999995231628,
       "errors": []
     },
     {
       "motion": "reduce",
       "route": "/explore",
       "run": 3,
-      "readyMs": 5297.800000190735,
-      "lcp": 1444,
+      "readyMs": 5627.700000047684,
+      "lcp": 1776,
       "cls": 0,
       "resources": [
         {
           "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
           "transferSize": 22608,
           "encodedBodySize": 22308,
-          "duration": 586.7000000476837
+          "duration": 608.7999999523163
         },
         {
           "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
           "transferSize": 22888,
           "encodedBodySize": 22588,
-          "duration": 600.2999999523163
+          "duration": 610.4000000953674
         },
         {
-          "name": "index-CuYvdqPU.js",
-          "transferSize": 125060,
-          "encodedBodySize": 124760,
-          "duration": 1388.3999998569489
+          "name": "index-DOxQtdr6.js",
+          "transferSize": 125409,
+          "encodedBodySize": 125109,
+          "duration": 1384.4000000953674
         },
         {
-          "name": "index-E1_DUNzl.css",
-          "transferSize": 8575,
-          "encodedBodySize": 8275,
-          "duration": 360.10000014305115
+          "name": "index-DWas5HD6.css",
+          "transferSize": 9367,
+          "encodedBodySize": 9067,
+          "duration": 381
         },
         {
-          "name": "Observatory-DgDwHzm-.css",
-          "transferSize": 1908,
-          "encodedBodySize": 1608,
-          "duration": 235.39999985694885
+          "name": "Observatory-BMPo222N.css",
+          "transferSize": 2282,
+          "encodedBodySize": 1982,
+          "duration": 239.40000009536743
         },
         {
           "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
           "transferSize": 24552,
           "encodedBodySize": 24252,
-          "duration": 520
+          "duration": 504.7999999523163
         },
         {
           "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
           "transferSize": 15008,
           "encodedBodySize": 14708,
-          "duration": 429
+          "duration": 407.19999980926514
         },
         {
           "name": "release.json",
           "transferSize": 68405,
           "encodedBodySize": 68105,
-          "duration": 796.2000000476837
+          "duration": 866.6999998092651
         },
         {
           "name": "manifest.json",
           "transferSize": 613,
           "encodedBodySize": 313,
-          "duration": 166.59999990463257
+          "duration": 176.20000004768372
         },
         {
           "name": "favicon.svg",
           "transferSize": 582,
           "encodedBodySize": 282,
-          "duration": 169
+          "duration": 183.60000014305115
         },
         {
-          "name": "Observatory-B9ysxwC9.js",
-          "transferSize": 13570,
-          "encodedBodySize": 13270,
-          "duration": 419.09999990463257
+          "name": "Observatory-D_ZkWV1Z.js",
+          "transferSize": 15801,
+          "encodedBodySize": 15501,
+          "duration": 436.90000009536743
         },
         {
-          "name": "science-ClQDVr-b.js",
-          "transferSize": 28159,
-          "encodedBodySize": 27859,
-          "duration": 556.4000000953674
+          "name": "science-D14gx0_I.js",
+          "transferSize": 28162,
+          "encodedBodySize": 27862,
+          "duration": 572.8999998569489
         },
         {
-          "name": "Evidence-C25QyCSj.js",
-          "transferSize": 2647,
-          "encodedBodySize": 2347,
-          "duration": 212.10000014305115
+          "name": "Evidence-BR678quv.js",
+          "transferSize": 2646,
+          "encodedBodySize": 2346,
+          "duration": 217.70000004768372
         },
         {
           "name": "Evidence-YXhEk7LN.css",
           "transferSize": 982,
           "encodedBodySize": 682,
-          "duration": 246
+          "duration": 227.79999995231628
         }
       ],
       "encodings": {
         "explore": "gzip",
-        "index-E1_DUNzl.css": "gzip",
-        "Observatory-DgDwHzm-.css": "gzip",
+        "index-DWas5HD6.css": "gzip",
+        "Observatory-BMPo222N.css": "gzip",
         "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
         "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
         "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
         "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
-        "index-CuYvdqPU.js": "gzip",
-        "manifest.json": "identity",
+        "index-DOxQtdr6.js": "gzip",
         "release.json": "gzip",
+        "manifest.json": "identity",
         "favicon.svg": "identity",
-        "Evidence-C25QyCSj.js": "gzip",
+        "Evidence-BR678quv.js": "gzip",
         "Evidence-YXhEk7LN.css": "gzip",
-        "Observatory-B9ysxwC9.js": "gzip",
-        "science-ClQDVr-b.js": "gzip"
+        "Observatory-D_ZkWV1Z.js": "gzip",
+        "science-D14gx0_I.js": "gzip"
       },
-      "samplePaintMs": 149.40000009536743,
+      "samplePaintMs": 118.29999995231628,
       "errors": []
     }
   ]

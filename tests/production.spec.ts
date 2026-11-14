@@ -8,7 +8,7 @@ test('static route content appears without JavaScript and production hydration h
     staticPage = await context.newPage();
   for (const [path, text] of [
     ['/', 'WHERE'],
-    ['/explore', 'CHANGE YOUR VIEW'],
+    ['/explore', 'COMPARE THE SKIES'],
     ['/field-guide', 'A LITTLE CONTEXT'],
     ['/sources', 'AN EVIDENCE TRAIL'],
   ]) {

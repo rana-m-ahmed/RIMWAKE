@@ -1,0 +1,63 @@
+{
+  "measured_at_utc": "2026-11-14T12:49:15.187Z",
+  "profile": {
+    "viewport": "390x844",
+    "latency_ms": 150,
+    "download_mbps": 1.5,
+    "cpu_slowdown": 4,
+    "cold_cache": true
+  },
+  "groups": [
+    {
+      "motion": "no-preference",
+      "route": "/",
+      "lcp_median_ms": 2756,
+      "lcp_range_ms": [
+        2420,
+        2904
+      ],
+      "max_cls": 0,
+      "ready_median_ms": 3639.6
+    },
+    {
+      "motion": "no-preference",
+      "route": "/explore",
+      "lcp_median_ms": 1628,
+      "lcp_range_ms": [
+        1552,
+        1684
+      ],
+      "max_cls": 0,
+      "ready_median_ms": 5040.8
+    },
+    {
+      "motion": "reduce",
+      "route": "/",
+      "lcp_median_ms": 2748,
+      "lcp_range_ms": [
+        2744,
+        2952
+      ],
+      "max_cls": 0,
+      "ready_median_ms": 3732.1
+    },
+    {
+      "motion": "reduce",
+      "route": "/explore",
+      "lcp_median_ms": 1776,
+      "lcp_range_ms": [
+        1728,
+        1816
+      ],
+      "max_cls": 0,
+      "ready_median_ms": 5627.7
+    }
+  ],
+  "sample_two_frame_diagnostic_ms": {
+    "median": 112.6,
+    "minimum": 97,
+    "maximum": 130.8
+  },
+  "initial_js_gzip_bytes": 125109,
+  "status": "Explorer LCP, CLS and initial-JS targets met in this local profile. Landing LCP target of 2500 ms missed. Not field INP or deployed host results."
+}

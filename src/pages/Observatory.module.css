@@ -854,3 +854,223 @@
 .sceneHint {
   display: none;
 }
+
+.clockPick {
+  background: none;
+  border: 0;
+  color: inherit;
+  min-height: 44px;
+  text-align: left;
+  padding: 0;
+  cursor: pointer;
+}
+.clockPick strong {
+  display: block;
+}
+.clockPick > small {
+  display: block;
+  font-size: 11px;
+  color: #c2cdda;
+  margin-top: 6px;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.sampleCount {
+  display: block;
+  font-size: 10px;
+  color: #acbacb;
+  margin-top: 6px;
+}
+.windowSelect {
+  min-height: 44px;
+  min-width: 132px;
+  max-width: 210px;
+  flex: 1;
+  border: 1px solid #63788c;
+  border-radius: 0;
+  background: #152231;
+  color: #edf0e9;
+  padding: 9px 12px;
+  font-size: 13px;
+}
+.sampling .crossingButton {
+  min-height: 44px;
+  border: 1px solid #63788c;
+  padding: 9px 14px;
+  font-size: 13px;
+}
+.sampling .crossingButton > span {
+  margin-left: 9px;
+}
+.restorePair {
+  min-height: 44px;
+  border: 0;
+  border-bottom: 1px solid #637488;
+  background: transparent;
+  color: inherit;
+  padding: 10px 0;
+  font-size: 13px;
+  margin: 0 25px 20px 0;
+}
+.mobileSwap {
+  display: none;
+}
+.loadingTransport {
+  height: 130px;
+}
+.mobileSwitch button small {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-top: 7px;
+  font-size: 10px;
+  line-height: 1.5;
+}
+.mobileSwitch button small .sun {
+  color: var(--sun);
+}
+@media (max-width: 1100px) {
+  .loadingTransport {
+    height: 197px;
+  }
+  .clockPick {
+    text-align: right;
+  }
+  .tools button {
+    font-size: 12px;
+  }
+  .tools {
+    gap: 14px;
+  }
+}
+@media (max-width: 700px) {
+  .tools .desktopSwap {
+    display: none;
+  }
+  .sampling {
+    gap: 10px;
+  }
+  .windowSelect {
+    font-size: 12px;
+    min-width: 125px;
+    max-width: none;
+    padding: 8px;
+  }
+  .sampling .crossingButton {
+    font-size: 12px;
+    min-width: 112px;
+    padding: 8px;
+  }
+  .sampling .crossingButton > span {
+    margin-left: 4px;
+  }
+  .mobileSwitch {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr) 44px;
+    gap: 0;
+  }
+  .mobileSwitch button {
+    width: auto;
+    min-height: 72px;
+    font-size: 12px;
+    padding: 10px 4px;
+  }
+  .mobileSwitch .mobileSwap {
+    display: block;
+    min-width: 44px;
+    font-size: 21px;
+  }
+  .clockPick > small {
+    font-size: 10px;
+  }
+  .sampleCount {
+    font-size: 9px;
+  }
+  .clock {
+    min-height: 44px;
+  }
+  .clockPick strong {
+    font-size: 13px;
+  }
+  .loadingTransport {
+    height: 191px;
+  }
+  .heading h1 {
+    font-size: 38px;
+  }
+  .heading .eyebrow {
+    font-size: 9px;
+  }
+  .restorePair {
+    font-size: 12px;
+  }
+  .interpretation h2 {
+    font-size: 18px;
+  }
+}
+@media (max-width: 350px) {
+  .heading h1 {
+    font-size: 34px;
+  }
+  .clockPick strong {
+    font-size: 12px;
+  }
+  .clock > span {
+    font-size: 8px;
+  }
+  .sampling .crossingButton {
+    min-width: 105px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 700px) {
+  .sliderRow button:last-child {
+    grid-column: 3;
+    grid-row: 1;
+    min-height: 44px;
+    font-size: 14px;
+  }
+  .sampling {
+    justify-content: space-between;
+  }
+  .windowSelect {
+    width: 135px;
+  }
+  .mobileSwitch button small span {
+    display: block;
+  }
+}
+
+@media (max-width: 700px) {
+  .mobileTime {
+    display: none;
+  }
+  .viewHead {
+    display: none;
+  }
+  .loadingHead {
+    height: 0;
+  }
+}
+
+.mobileModelStatus {
+  display: none;
+}
+@media (max-width: 700px) {
+  .contextLine {
+    margin-top: 10px;
+    padding-bottom: 12px;
+  }
+  .contextLine .modelStatus {
+    display: none;
+  }
+  .contextLine > span:first-child {
+    max-width: none;
+    text-align: left;
+    line-height: 1.7;
+  }
+  .contextLine .mobileModelStatus {
+    display: inline;
+  }
+}

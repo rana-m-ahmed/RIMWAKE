@@ -14,7 +14,15 @@ import { verifiedCase, CASES } from '../story/cases';
 import { Dialog } from './Shell';
 import s from './Discovery.module.css';
 type Observation = ReturnType<typeof useObservation>;
-export function ObservationFinder({ o, onClose }: { o: Observation; onClose: () => void }) {
+export function ObservationFinder({
+  o,
+  onClose,
+  onPlaces,
+}: {
+  o: Observation;
+  onClose: () => void;
+  onPlaces: () => void;
+}) {
   const [condition, setCondition] = useState<Condition | 'crossing'>('different'),
     [slot, setSlot] = useState<'A' | 'B'>('A'),
     [limit, setLimit] = useState(6);
@@ -43,7 +51,11 @@ export function ObservationFinder({ o, onClose }: { o: Observation; onClose: () 
         <h2>FIND A MOMENT.</h2>
         <button onClick={onClose}>Close finder</button>
       </header>
-      <p>Ask the released observations a question. Every result points to a supported sample.</p>
+      <p>Find a supported time that answers your question, then inspect the two skies.</p>
+      <p className={s.resultCount}>
+        Searching {date(o.clock[0])} {time(o.clock[0])} to {date(o.clock.at(-1)!)}{' '}
+        {time(o.clock.at(-1)!)} UTC.
+      </p>
       <div className={s.filters}>
         <label>
           Condition
@@ -55,28 +67,29 @@ export function ObservationFinder({ o, onClose }: { o: Observation; onClose: () 
               setLimit(6);
             }}
           >
-            <option value="different">Different states at A and B</option>
+            <option value="different">A and B have different views</option>
             <option value="joint">Sun & Earth above</option>
             <option value="sun-only">Sun above, Earth below</option>
             <option value="earth-only">Earth above, Sun below</option>
             <option value="crossing">Crossing brackets</option>
           </select>
         </label>
-        <label>
-          At viewpoint
-          <select
-            aria-label="Finder viewpoint"
-            disabled={condition === 'different' || condition === 'crossing'}
-            value={slot}
-            onChange={(e) => {
-              setSlot(e.target.value as 'A' | 'B');
-              setLimit(6);
-            }}
-          >
-            <option value="A">A / {o.a!.name}</option>
-            <option value="B">B / {o.b!.name}</option>
-          </select>
-        </label>
+        {condition !== 'different' && condition !== 'crossing' && (
+          <label>
+            At viewpoint
+            <select
+              aria-label="Finder viewpoint"
+              value={slot}
+              onChange={(e) => {
+                setSlot(e.target.value as 'A' | 'B');
+                setLimit(6);
+              }}
+            >
+              <option value="A">A / {o.a!.name}</option>
+              <option value="B">B / {o.b!.name}</option>
+            </select>
+          </label>
+        )}{' '}
       </div>
       {condition === 'crossing' ? (
         <>
@@ -86,6 +99,7 @@ export function ObservationFinder({ o, onClose }: { o: Observation; onClose: () 
           <div className={s.results}>
             {o.events.slice(0, limit).map((event, i) => (
               <button
+                aria-current={o.t === event.end_utc ? 'true' : undefined}
                 key={event.site_id + event.body_id + event.end_utc}
                 onClick={() => {
                   o.sample(o.clock.indexOf(event.end_utc));
@@ -111,12 +125,16 @@ export function ObservationFinder({ o, onClose }: { o: Observation; onClose: () 
       ) : (
         <>
           <p className={s.resultCount} role="status">
-            {result.count} matching samples / {result.runs.length} sampled runs. {result.unknown}{' '}
-            samples unassessed.
+            {result.count} matching times in {result.runs.length} groups. {result.unknown} times
+            unavailable.
           </p>
           <div className={s.results}>
             {result.runs.slice(0, limit).map((run) => (
-              <button key={run.start} onClick={() => o.sample(run.start)}>
+              <button
+                aria-current={o.selected >= run.start && o.selected <= run.end ? 'true' : undefined}
+                key={run.start}
+                onClick={() => o.sample(run.start)}
+              >
                 <span>
                   {date(o.clock[run.start])} {time(o.clock[run.start])}
                   <small>
@@ -130,7 +148,7 @@ export function ObservationFinder({ o, onClose }: { o: Observation; onClose: () 
           </div>
           {!result.runs.length ? (
             <p className={s.empty}>
-              No supported matches. Try another condition or sampling window.
+              No supported matches in this window. Try a different condition or time window.
             </p>
           ) : (
             <div className={s.caseButtons}>
@@ -142,10 +160,40 @@ export function ObservationFinder({ o, onClose }: { o: Observation; onClose: () 
           )}
         </>
       )}
+      {!result.runs.length && condition === 'different' && o.a!.id === o.b!.id && (
+        <p>
+          Both views use the same place.{' '}
+          <button onClick={onPlaces}>Choose two different places</button>
+        </p>
+      )}
+      {(condition === 'crossing' ? !o.events.length : !result.runs.length) &&
+        o.selection.mode === 'refined' && (
+          <div className={s.caseButtons}>
+            <button onClick={() => o.changeMode('coarse')}>Search the full hourly window</button>
+          </div>
+        )}
+      <div className={s.selectionReceipt}>
+        <span>
+          Selected: {date(o.t)} {time(o.t)} UTC
+        </span>
+        <button
+          onClick={() => {
+            const workspace = document.getElementById('sky-workspace');
+            workspace?.focus({ preventScroll: true });
+            workspace?.scrollIntoView({
+              behavior: matchMedia('(prefers-reduced-motion:reduce)').matches
+                ? 'instant'
+                : 'smooth',
+            });
+          }}
+        >
+          View selected skies <span aria-hidden="true">&darr;</span>
+        </button>
+      </div>
       <p>
-        Cadence: {o.selection.mode === 'coarse' ? 'one hour' : 'ten minutes'}. Runs join consecutive
-        matching samples. Endpoint spans do not establish uninterrupted availability between
-        samples.
+        Cadence: {o.selection.mode === 'coarse' ? 'one hour' : 'ten minutes'}. A group joins
+        consecutive matching samples. Endpoint spans do not establish uninterrupted availability
+        between samples.
       </p>
     </section>
   );
@@ -203,9 +251,9 @@ export function GuidedDiscovery({
     return (
       <div className={s.bar} aria-label="Observation tools">
         <button onClick={() => o.openCase(CASES[0].id)}>
-          Explore a real observation <span aria-hidden="true">{String.fromCharCode(8599)}</span>
+          Guided discovery <span aria-hidden="true">{String.fromCharCode(8599)}</span>
         </button>
-        <button onClick={() => o.openCase(CASES[1].id)}>
+        <button className={s.secondaryCase} onClick={() => o.openCase(CASES[1].id)}>
           Follow a crossing <span aria-hidden="true">{String.fromCharCode(8599)}</span>
         </button>
         <button onClick={onFind}>Find a moment</button>
@@ -227,7 +275,7 @@ export function GuidedDiscovery({
     .join(' ');
   const text = [
     `Can two places on the same Moon have different views at one moment? Follow a released observation, then inspect the evidence yourself.`,
-    `Odysseus and Athena supply two approximate published southern landing coordinates. Our observers are hypothetical, at zero height above a reference ellipsoid.`,
+    `Odysseus and Athena supply two documented lunar locations. We use their approximate published coordinates as modeled viewpoints, not measurements from the landers.`,
     `Both viewpoints now use ${date(o.t)} ${time(o.t)} UTC. The figures are actual supported records, without interpolation.`,
     interpretations,
     item.id === 'sunrise-im1'
@@ -244,6 +292,20 @@ export function GuidedDiscovery({
         </span>
         <button onClick={close}>Exit discovery</button>
       </header>
+      <label className={s.caseChoice}>
+        <span>Investigation</span>
+        <select
+          aria-label="Investigation"
+          value={id}
+          onChange={(event) => o.openCase(event.target.value)}
+        >
+          {CASES.filter((item) => verifiedCase(o.r!, item.id)).map((item) => (
+            <option key={item.id} value={item.id}>
+              {item.title}
+            </option>
+          ))}
+        </select>
+      </label>
       <h2>{matches ? STEPS[step] : 'Your view has changed.'}</h2>
       <p>
         {matches

@@ -7,6 +7,8 @@ The application remains in the existing repository. No push, deployment or porta
 - Original working release: `release/r0-snapshot`; pre-v6: `rimwake-pre-v6`.
 - Complete pre-cinema worktree: `rimwake-pre-cinema`, commit `3646311`.
 - Complete cinematic checkpoint before discovery expansion: `rimwake-cinema-checkpoint`, commit `1b16680`.
+- Source-backed discovery checkpoint: `rimwake-discovery-local`, commit `235f24e`.
+- Understandability review checkpoint: `rimwake-understandability-local`.
 - Current branch: `design/lunar-cinema`. All commits local.
 
 ## Working feature matrix
@@ -17,11 +19,14 @@ The application remains in the existing repository. No push, deployment or porta
 | NASA lunar visuals | Desktop 4096x2048 texture GLB, 2,007,328 bytes; mobile sphere and matched 19,556-byte opening poster | Source/transform hashes; geometry-buffer integrity checks |
 | Synchronized local skies | Actual released azimuth/elevation; signed 3D direction with readable overlays; calibrated SVG alternative | Four-reading source equality and projection tests |
 | Shared temporal controls | One exact UTC, keyboard/native slider, previous/next, swap, supported refinement and crossing brackets | Browser tests |
+| Direct UTC selection | Exact date/time picker, supported range and cadence, explicit nearest-sample choice for unavailable times | UTC, refinement, no-estimation and focus-restoration tests |
+| Reading the instrument | Inline conceptual horizon diagram, elevation/bearing explanation, observer marker and model limits | Phone comprehension-state screenshots and axe checks |
 | Geographic site selection | Source-coordinate south-polar orthographic graticule; A/B assignment and native selectors | Cardinal/pole unit tests; map interaction/accessibility tests |
 | Guided Discovery | Two real-data investigations, seven steps each; back/next, evidence, resume and free exploration | Complete guided browser investigation |
 | Find a moment | Real sampled runs for joint/contrasting states; crossing brackets; unknown and empty states | Full-window run unit tests; finder browser tests |
 | Horizon Loom | Visible default, exact sampled cells batched into SVG paths, explicit released crossing outlines | Shared selection/expanded accessibility checks |
 | Comparison interpretation | Body-specific B-minus-A differences, honest same/unknown/boundary states | Fault injection and comparison tests |
+| Phone comparison | Both places' Sun/Earth states remain visible while one sky is focused; in-guide investigation selector | Phone pattern and investigation-switching tests |
 | Deterministic links | Release, sites, cadence, exact UTC and view; valid state takes precedence; invalid state rejected | URL round trips, refresh, invalid-UTC tests |
 | Exports | Four-row CSV, source-linked text summary, copy/download and manual clipboard fallback | Source equality unit tests; actual browser download |
 | Evidence and Sources | In-place selected records; hashes, queries, observer assumptions, separate documentary resource qualification | Modal/keyboard tests; archived official guides |
@@ -41,12 +46,15 @@ No new ephemeris values, interpolation, observer heights, terrain horizon, power
 3. Product pass 2 reorganized the Explorer so all four desktop readings fit the first screen, moved UTC above the views, simplified repeated copy, improved map layout and tested real-data discovery on phones.
 4. A third product pass caught a double-Moon loading handoff. Corrected bounding-box diameter normalization and initial demand-frame setup; captured matching desktop/mobile opening stills (68,790 / 19,556 bytes), preserving the observed before image in `product-3/`.
 5. Final production pass retains all routes at 1440, 768, 390, 360 and 320 px, plus map, finder, export, evidence, before/after threshold and calibrated/timeline states. Final artifacts: `docs/qa/cinema/product-final-visual/`.
+6. Understandability passes 1-2 exposed overly technical horizon labels, repeated mobile headings, a buried sky and an incorrectly rendered arrow entity. Replaced the labels, shortened the phone hierarchy, added exact UTC entry and a reading guide, and simplified the discovery toolbar. The final finder highlights the active group, explains same-place empty results, preserves UTC when restoring the default pair and returns keyboard focus to the skies. Retained iterations: `clarity-1/`, `clarity-2/`; final interaction details: `clarity-final/details/`.
 
 The review is an engineering/visual inspection, not an independent human usability study. Owner review and first-time-user comprehension testing remain outstanding.
 
 ## Verification and performance
 
-`docs/qa/cinema/product-final/results.json` contains actual command exit codes; individual logs retain counts and failures if any. `docs/qa/cinema/performance-final/cold-runs.json` contains twelve cold local production-preview runs, actual Content-Encoding, LCP, CLS and script-to-two-frame sample diagnostics. These are laboratory measurements, not field INP or a deployed-host guarantee. Performance results are summarized separately after the final run.
+`docs/qa/cinema/product-final/results.json` contains actual command exit codes; individual logs retain counts and failures if any. `docs/qa/cinema/performance-final/cold-runs.json` contains twelve cold local production-preview runs, actual Content-Encoding, LCP, CLS and script-to-two-frame sample diagnostics. These are laboratory measurements, not field INP or a deployed-host guarantee. [Current performance results](PERFORMANCE_CURRENT.md) report zero measured layout shift, Explorer LCP medians of 1.628/1.776 seconds and a 112.6 ms sample-paint diagnostic median. Landing LCP medians of 2.756/2.748 seconds miss the 2.5-second target and remain a refinement.
+
+The final understandability build passed 44 production browser tests, 31 unit tests and 37 scientific tests, plus typecheck, build, release and asset-integrity checks. Browser coverage includes axe checks for the routes and expanded controls, keyboard focus, direct UTC selection, explicit nearest-sample handling, both phone investigations and supported-source equality. Screenshot checks retain 20 route/width combinations, detailed discovery states at five widths, and time chooser/help/selected-result states at three widths. Automated checks do not establish that a first-time visitor understands the experience; that still requires owner and user review.
 
 ## Reproduce and review
 
@@ -64,7 +72,10 @@ python scripts/run_checks.py product
 $env:QA_ROUND = 'product-final-visual'
 node scripts/cinema_visual.mjs
 node scripts/product_visual.mjs
+node scripts/understanding_visual.mjs
 node scripts/measure_cinema.mjs
+python scripts/make_demo.py
+node scripts/render_demo.mjs
 ```
 
 The build pre-renders route shells; scientific observations still load and verify in the browser. Static hosts must serve the dedicated `explore.html`, `field-guide.html` and `sources.html` at their matching paths. `vercel.json` and local preview middleware provide those mappings. HTTPS is required outside localhost for Web Crypto.

@@ -41,7 +41,7 @@ Browser tests use installed Google Chrome. If necessary, set `$env:PLAYWRIGHT_CH
 
 ## Product review
 
-[Feature matrix, transformation log and current gates](docs/PRODUCT_TRANSFORMATION.md) ? [Demo walkthrough](docs/DEMO_WALKTHROUGH.md) ? [Before/after gallery](docs/before-after.html). The build includes static pre-rendered route shells and browser hydration; it remains a static application. On the running preview, open **Explore a real observation**, **Follow a crossing**, **Find a moment**, **Choose places**, or **Share & export**. Canonical links reproduce the selected release/sites/UTC/view after refresh.
+[Feature matrix, transformation log and current gates](docs/PRODUCT_TRANSFORMATION.md), [demo walkthrough](docs/DEMO_WALKTHROUGH.md), and [before/after gallery](docs/before-after.html). The build includes static pre-rendered route shells and browser hydration; it remains a static application. Start with **Compare two lunar skies** on the landing page or **Guided discovery** in Explorer. Use **Change UTC** for an exact released time, **How to read these skies** for the horizon explanation, **Find a moment** to answer a specific question, **Choose places** for the polar map, and **Share & export** to reproduce the result. Canonical links reopen the selected release/sites/UTC/view after refresh.
 
 ## Scientific release
 
@@ -73,12 +73,12 @@ This fetches JPL/NASA data and replaces the working release. Preserve the existi
 
 ## Artifacts and boundaries
 
-- [Validation record](docs/validation.md) and [visual review](docs/visual-qa.md)
+- [Validation results](docs/qa/cinema/product-final/results.json) and [visual review record](docs/PRODUCT_TRANSFORMATION.md)
 - [Source and asset ledger](docs/source-ledger.md), including actual raw hashes and retrieval times
 - [Submission copy and remaining owner gates](docs/submission.md)
 - [Six-slide local demo](docs/demo-slides.html), with PDF alongside it
 - `public/data/release.json`, manifest, sampled intervals and downloadable raw evidence ZIP
 - `science/raw/`: original full NASA/JPL responses; `science/tests/`: integrity and fault-injection checks
-- [Architecture](docs/architecture.md) and [measured local performance](docs/performance.json)
+- [Architecture](docs/architecture.md) and [measured local performance](docs/qa/cinema/performance-final/cold-runs.json)
 
 Configured private remote: https://github.com/rana-m-ahmed/RIMWAKE. This work has not been pushed. All implementation commits are local. Public availability, anonymous deployed-URL tests, overall team/event eligibility and portal submission remain unverified. No certificate or award eligibility is claimed. P1 terrain work requires explicit owner approval after a stable deployed P0.

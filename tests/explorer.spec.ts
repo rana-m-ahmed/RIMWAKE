@@ -6,7 +6,7 @@ test('shared UTC drives all four exact source readings; slider, arrows, keyboard
   page,
 }) => {
   await page.goto('/explore');
-  await expect(page.getByRole('heading', { name: 'CHANGE YOUR VIEW.' })).toBeVisible();
+  await expect(page.getByRole('heading', { name: 'COMPARE THE SKIES.' })).toBeVisible();
   const slider = page.getByRole('slider', { name: 'UTC sample' });
   await slider.fill('150');
   for (const [slot, id] of [
@@ -61,7 +61,9 @@ test('observer sheet, same-site state, swap, difference and refinement all use s
   await expect(page.getByTestId('comparison-summary')).toContainText('Same site.');
   await page.getByRole('button', { name: 'Next crossing' }).click();
   await expect(page.getByRole('slider')).not.toHaveValue('0');
-  await page.getByRole('button', { name: '10-min detail', exact: true }).click();
+  await page
+    .getByRole('combobox', { name: 'Sampling window', exact: true })
+    .selectOption('refined');
   await expect(page.getByRole('slider')).toHaveAttribute('max', '6');
   await expect(page.getByRole('button', { name: 'Hide Horizon Loom' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Hide Horizon Loom' })).toBeVisible();

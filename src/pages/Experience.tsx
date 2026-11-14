@@ -201,16 +201,23 @@ export default function Experience() {
             YOU <span>STAND.</span>
           </h1>
           <p className={s.heroLead}>
-            One world. A different view of the Sun
-            <br className={s.desktop} /> and Earth from every place.
+            Compare the Sun and Earth from two lunar places,
+            <br className={s.desktop} /> at the same moment.
           </p>
           <div className={s.actions}>
-            <button className="primaryButton" onClick={() => jump(1)}>
-              Begin the journey <span>↓</span>
-            </button>
-            <Link className="quietLink" href="/explore">
-              Go straight to Explorer ↗
+            <Link className="primaryButton" href="/explore?case=two-skies-one-instant&guide=1">
+              Compare two lunar skies <span aria-hidden="true">{String.fromCharCode(8599)}</span>
             </Link>
+            <a
+              className="quietLink"
+              href="#chapter-1"
+              onClick={(event) => {
+                event.preventDefault();
+                jump(1);
+              }}
+            >
+              Take the lunar journey <span aria-hidden="true">&darr;</span>
+            </a>
           </div>
         </div>
         <div className={s.heroBottom}>
