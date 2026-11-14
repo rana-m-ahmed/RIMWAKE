@@ -1,0 +1,6 @@
+* text=auto eol=lf
+science/raw/** -text
+public/data/** -text
+*.png binary
+*.pdf binary
+*.zip binary
