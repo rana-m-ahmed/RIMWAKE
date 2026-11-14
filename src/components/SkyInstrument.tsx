@@ -220,9 +220,9 @@ export default function SkyInstrument({
                 className={row.body_id === 10 ? 'sun' : 'earth'}
                 data-testid={`${slot}-${row.body_id}-elevation`}
               >
-                {signed(row.elevation_deg)}
+                {signed(row.quality_state==='available'?row.elevation_deg:null)}
               </td>
-              <td>{bearing(row.azimuth_deg)}</td>
+              <td>{bearing(row.quality_state==='available'?row.azimuth_deg:null)}</td>
             </tr>
           ))}
         </tbody>
