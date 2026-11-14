@@ -10,3 +10,7 @@ The user renamed HORIZON / CAUSE to RIMWAKE. Briefs in docs are implementation c
 - Vite, React, TypeScript, CSS Modules, native SVG; accessible keyboard controls and mobile single-site focus.
 - Execute science, release, unit, build and browser checks; retain actual screenshots at required sizes. Mark unrun checks honestly.
 - Latest user constraint: local commits only; no pushes or deployments. Empty remote creation is allowed.
+
+## V6 Meridian Cut redesign
+
+User authorizes structural redesign in this codebase. `design-reference/RIMWAKE_v6_Design_Research_Package/docs/10_CODEX_IMPLEMENTATION_HANDOFF.md` and the other v6 documents govern design, routes and hierarchy; real scientific records remain authoritative for observations. Newsreader editorial headings, IBM Plex Sans controls, IBM Plex Mono data, mineral-paper/charcoal split, signed A/B plots and a functional shared-time seam supersede the old visual layout. Lightweight optional 3D is authorized as visual context, with no DEM/terrain claims. Preserve `rimwake-pre-v6` / `release/r0-snapshot`. No push or deployment. Do not spawn agents unless explicitly required by user or applicable instructions.

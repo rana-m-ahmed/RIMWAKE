@@ -1,0 +1,1052 @@
+# RIMWAKE v6.0 — THE DEFINITIVE EXPERIENCE, DESIGN & AWARD-COMPETITIVENESS AUDIT
+
+## Mission: Transform a NASA Space Apps Project into an Extraordinary Scientific Digital Experience
+
+### YOUR ROLE
+
+You are acting as an elite independent panel consisting of:
+
+1. A world-class Creative Director specializing in immersive digital experiences.
+2. A Principal UX and Product Design Architect.
+3. An award-winning Interactive Storytelling Designer.
+4. A Senior 3D, WebGL and Motion Design Engineer.
+5. A Scientific Visualization and Space Data Specialist.
+6. A NASA Space Apps Judging and Competition Research Analyst.
+7. A Senior Frontend Architect and Performance Engineer.
+8. An independent, aggressively critical Design Quality and Product Strategy Reviewer.
+
+Work collaboratively across these disciplines, but do not allow generic consensus to dilute strong creative decisions.
+
+Your assignment is to **critically audit, challenge, deepen and substantially elevate the existing RIMWAKE v5.0 product reconstruction package**.
+
+This is not a request for superficial design improvements.
+
+I expect a substantial increase in creative quality, design originality, product coherence, storytelling effectiveness, scientific credibility and realistic award competitiveness.
+
+The ultimate objective is to develop the strongest technically defensible, visually exceptional and memorable version of RIMWAKE that can reasonably be delivered within our available competition resources.
+
+---
+
+# 1. PROJECT CONTEXT
+
+**Project:** RIMWAKE
+
+**Original concept:** HORIZON / CAUSE — The Shadow Witness
+
+**Competition:** NASA Space Apps Challenge 2026
+
+**Challenge:** Lunar Landing Site Navigator
+
+**Core concept:** An interactive lunar site/date exploration and visibility-forensics platform that helps users understand the Sun and Earth's positions relative to lunar horizons, compare observational conditions, and investigate the supporting scientific evidence.
+
+The previously completed v5.0 package includes:
+
+- Full Product Masterplan.
+- Premium Design System & Screen Blueprint.
+- Codex Implementation Directive.
+- Scientific Research, Audit & QA Report.
+- UX screenshots and design diagnosis.
+- A 28-feature product architecture.
+- A proposed Midnight Lunar Observatory creative direction.
+- Expanded plans for immersive 3D presentation, a terrain-aware Difference Engine and a Robustness Laboratory.
+
+The current implementation is functionally valuable but visually unsuccessful.
+
+The v5.0 package was designed to address these problems. However, **v5.0 is itself subject to rigorous criticism and is not an approved final solution**.
+
+Your responsibility is to discover what remains weak, generic, incomplete, scientifically questionable, creatively limited or strategically misguided.
+
+Do not merely restate its recommendations in more impressive language.
+
+### Existing materials
+
+Inspect the complete v5.0 ZIP package and all available supporting artifacts.
+
+Read the master plan, design blueprint, research report, implementation instructions and original project specifications.
+
+If the actual codebase and running application are available, inspect them independently.
+
+If only screenshots and documents are available, distinguish plan-level assessments from implementation-level observations.
+
+Never manufacture UI testing, source-code findings, screenshots or scientific validation results.
+
+---
+
+# 2. THE PRIMARY CREATIVE MANDATE
+
+## NO AI-SLOP DESIGN. NO GENERIC TEMPLATE. NO MEDIOCRE COMPROMISE.
+
+I do not want:
+
+- An ordinary SaaS website with space-themed graphics.
+- A dashboard full of identical cards.
+- Generic navy backgrounds with random cyan glows.
+- A giant 3D Moon surrounded by meaningless floating widgets.
+- Overused Space Grotesk headings with generic marketing layouts.
+- The same card-and-gradient interface found in thousands of AI-generated applications.
+- Excessive glassmorphism, neon effects, artificial particles or decorative scientific numbers.
+- A visually impressive hero attached to an otherwise mediocre application.
+- Unnecessary complexity marketed as premium design.
+- A project that looks beautiful in one screenshot but is confusing to use.
+
+I want a **distinctive, carefully art-directed digital experience with exceptional visual judgment**.
+
+Think in terms of:
+
+- An elite interactive space-science exhibition.
+- A beautifully engineered scientific instrument.
+- A sophisticated digital publication.
+- A memorable piece of computational storytelling.
+- A premium consumer product with excellent interaction design.
+- A credible exploratory tool built around real NASA data.
+
+The challenge is to combine these qualities without producing an incoherent hybrid.
+
+The result should feel unmistakably designed for RIMWAKE.
+
+**Premium quality means deliberate choices, coherent composition, expressive typography, meaningful interaction, exceptional detail and disciplined restraint.**
+
+It does not mean adding as many effects as possible.
+
+---
+
+# 3. PART A — DEEP, ADVERSARIAL REVIEW OF v5.0
+
+Begin with an independent critique of the previous work.
+
+Do not assume the v5.0 plan is excellent because it is extensive or passed static checks.
+
+The reported 50/50 QA score establishes only the scope of those static checks. It does not prove visual excellence, product usability, scientific correctness or successful implementation.
+
+## 3.1 Conduct a multidimensional audit
+
+Evaluate v5.0 against:
+
+| Dimension | Critical questions |
+|---|---|
+| Design originality | Could this design be mistaken for another AI-generated space website? |
+| Visual identity | Does it have an unmistakable and defensible visual personality? |
+| Typography | Is the type system refined, purposeful and distinctive? |
+| Composition | Are spatial hierarchy, scale and negative space genuinely sophisticated? |
+| Information architecture | Is the navigation structure optimal or unnecessarily expansive? |
+| Usability | Can a new visitor understand and use the system naturally? |
+| Storytelling | Is there a meaningful narrative or merely attractive scrolling? |
+| Scientific visualization | Are the diagrams intelligible, accurate and visually central? |
+| 3D integration | Does the 3D experience add genuine value? |
+| Award differentiation | Is the project distinctive relative to strong past competition entries? |
+| Engineering feasibility | Can the design be implemented reliably within the available resources? |
+| Presentation | Can the core value be communicated convincingly in a very short demonstration? |
+
+Challenge every major assumption.
+
+Specifically investigate:
+
+1. Whether Midnight Lunar Observatory is truly the strongest creative direction.
+2. Whether the proposed colors are distinctive or merely conventional space-themed design.
+3. Whether the sitemap is unnecessarily complicated.
+4. Whether the planned 3D globe is the best possible hero concept.
+5. Whether the scientific workspace retains too much dashboard DNA.
+6. Whether the landing page provides actual narrative progression.
+7. Whether the v5 typography system reaches professional editorial standards.
+8. Whether the interaction system is conceptually original.
+9. Whether the product overemphasizes planned features at the expense of existing working functionality.
+10. Whether the award strategy is supported by genuine competition research.
+
+For every weakness, provide evidence, consequences, a specific correction and expected improvement.
+
+## 3.2 Red-team the plan
+
+Have the independent design reviewer attempt to invalidate the proposed design.
+
+Ask:
+
+- What would make an experienced design director reject this immediately?
+- What would make a NASA judge lose interest?
+- What appears sophisticated in writing but weak in actual use?
+- Which elements seem copied from popular frontend design trends?
+- Which features are unnecessarily expensive or risky?
+- Which visual decisions have no conceptual connection to lunar geometry?
+- Which missing interactions would frustrate users?
+- Which scientific claims could become misleading through presentation?
+- Which elements should be removed entirely?
+
+Create a **Keep / Rework / Replace / Eliminate** decision register.
+
+Do not protect earlier decisions simply because significant effort was spent documenting them.
+
+---
+
+# 4. PART B — RESEARCH ACTUAL AWARD CRITERIA AND COMPETITIVE DIFFERENTIATION
+
+## 4.1 Investigate the official competition framework
+
+Research NASA Space Apps 2026 using official sources wherever available.
+
+Verify the applicable judging criteria, award categories, submission requirements, eligibility conditions and relevant dates.
+
+Published previous-year categories include:
+
+- Best Use of Storytelling.
+- Art & Technology.
+- Best Use of Data.
+- Best Use of Science.
+- Best Use of Technology.
+- Best Mission Concept.
+- Most Inspirational.
+- Galactic Impact.
+- Global Connection.
+- Local Impact.
+
+Do not automatically assume all categories or rules are identical in 2026.
+
+Distinguish confirmed 2026 requirements from historical categories.
+
+Research the official definitions rather than relying on award names alone.
+
+Consider the judging dimensions of impact, creativity, validity, relevance and presentation, verifying their applicability.
+
+## 4.2 Research previous exceptional projects
+
+Study noteworthy NASA Space Apps winners and finalists from 2023–2025, giving special attention to projects recognized for:
+
+- Storytelling.
+- Art and technology.
+- Scientific accessibility.
+- Innovative interaction.
+- Data visualization.
+- Inspirational presentation.
+
+Examine actual project experiences, demos and source artifacts wherever available.
+
+Do not simply copy their themes.
+
+Determine which characteristics made strong entries distinctive and what evidence supports that interpretation.
+
+Identify lessons that can be applied to RIMWAKE without creating an imitation.
+
+## 4.3 Benchmark world-class interactive products
+
+Research a curated set of high-quality digital experiences.
+
+Possible reference categories include:
+
+- NASA interactive visualizations.
+- Scientific storytelling platforms.
+- Immersive editorial websites.
+- Digital museums and exhibitions.
+- Premium visualization and mapping applications.
+- Award-winning interactive web experiences.
+- High-end product interfaces with excellent typographic craft.
+
+Examine real interaction behavior, composition, type hierarchy, navigation and motion when accessible.
+
+For each useful reference, explain:
+
+1. What it does exceptionally well.
+2. Which principle is transferable.
+3. Why that principle fits RIMWAKE.
+4. What should not be copied.
+5. Its engineering and performance implications.
+
+**Research visual principles, not superficial aesthetics.**
+
+Produce a concise benchmark matrix with credible source links.
+
+## 4.4 Define a realistic award strategy
+
+Determine which categories genuinely align with the product.
+
+My preliminary priorities are:
+
+**Primary creative targets**
+
+- Best Use of Storytelling.
+- Art & Technology.
+
+**Complementary scientific targets**
+
+- Best Use of Data.
+- Best Use of Science.
+
+**Additional opportunities**
+
+- Most Inspirational.
+- Best Use of Technology, only where genuine technological innovation exists.
+- Best Mission Concept, only if the underlying mission-related interpretation is plausible and adequately supported.
+
+Do not claim the product can or will win these awards.
+
+Analyze relative alignment, evidence gaps and necessary improvements.
+
+For each relevant award, provide:
+
+- Applicable published criteria.
+- RIMWAKE's existing strengths.
+- Its weaknesses.
+- One or two distinctive improvements.
+- Expected demonstrable evidence.
+- Implementation cost and risks.
+- How the improvement affects the user experience.
+
+Prioritize one coherent product strategy over unrelated award-specific gimmicks.
+
+---
+
+# 5. PART C — INVENT THREE GENUINELY DISTINCT CREATIVE DIRECTIONS
+
+Do not default immediately to the existing Midnight Lunar Observatory concept.
+
+Develop **three substantially different, fully considered creative directions**.
+
+Each must be distinctive in its visual grammar, narrative, spatial composition and interaction philosophy—not merely a different accent color.
+
+Explore possibilities such as:
+
+### Direction 1 — The Lunar Observatory
+
+A cinematic, instrument-driven environment emphasizing astronomical precision, lunar geography and an authentic sense of exploration.
+
+### Direction 2 — The Horizon Narrative
+
+An interactive editorial story where users progressively discover how observation conditions change across lunar sites.
+
+Science becomes the plot, with actual data determining what the user discovers.
+
+### Direction 3 — The Mission Atlas
+
+A striking, map-centered scientific experience combining beautiful cartography, mission-oriented navigation, synchronized observations and evidence-based comparisons.
+
+These are starting hypotheses, not mandatory final directions.
+
+Invent stronger alternatives if research justifies them.
+
+## Required concept treatment
+
+For each direction, specify:
+
+- Creative thesis.
+- Distinctive visual identity.
+- Sample hero composition.
+- Typography strategy.
+- Color logic.
+- Navigation model.
+- First-screen experience.
+- Scientific workspace design.
+- 3D and motion philosophy.
+- Storytelling journey.
+- Accessibility and performance implications.
+- Scientific credibility risks.
+- Feasibility for the competition.
+- Award-category alignment.
+
+Avoid vague adjectives.
+
+Describe actual layouts, spatial proportions, type scales, visual layers and interactions.
+
+### Mandatory comparative evaluation
+
+Evaluate the three directions using a transparent weighted decision model.
+
+Suggested dimensions:
+
+- Visual distinctiveness.
+- Scientific clarity.
+- Storytelling strength.
+- UX quality.
+- Competition relevance.
+- Implementation feasibility.
+- Mobile adaptability.
+- Performance.
+- Accessibility.
+- Brand memorability.
+
+Explain the weights.
+
+Do not award every concept similarly high scores.
+
+Select the strongest direction, or construct a justified hybrid if it produces a more coherent result.
+
+The final selection must have a clear rationale and tangible creative advantages.
+
+---
+
+# 6. PART D — BUILD A TRULY ELITE VISUAL IDENTITY
+
+This is one of the highest-priority deliverables.
+
+The previous palette and visual identity must be considered provisional.
+
+## 6.1 Typography as a primary design feature
+
+Research and recommend an exceptional typography system.
+
+Do not simply select the most common modern frontend fonts.
+
+Evaluate suitable, legally usable typefaces for:
+
+- Editorial display headlines.
+- Scientific interface labels.
+- Paragraphs and explanatory content.
+- Numeric measurements and timestamps.
+- Navigation and buttons.
+
+For each serious candidate, evaluate:
+
+- Character design and visual personality.
+- Readability.
+- Optical characteristics.
+- Available weights and widths.
+- Numeral quality and tabular support.
+- Scientific glyph coverage, including °, ± and mathematical symbols.
+- Rendering on Windows, macOS and mobile.
+- File size and loading behavior.
+- Licensing.
+
+Recommend one coherent combination rather than a collection of unrelated typefaces.
+
+Specify:
+
+- Exact font families and fallback stacks.
+- Display and body weights.
+- Responsive type sizes.
+- Line heights.
+- Tracking.
+- Maximum line lengths.
+- Numeric alignment rules.
+- Scientific label treatments.
+- Heading hierarchy.
+- Button and navigation typography.
+
+Provide examples of how typography establishes hierarchy on each major screen.
+
+**The typography itself should communicate premium design quality.**
+
+## 6.2 Color and surface system
+
+Reconsider the entire palette from first principles.
+
+Develop a restrained, sophisticated system inspired by the Moon's physical and visual character without becoming visually monochromatic or dull.
+
+Explore:
+
+- Lunar mineral tones.
+- Charcoal and near-black surfaces.
+- Controlled neutral gradients.
+- Moonlit whites.
+- Solar amber or gold.
+- Earth-derived cyan or blue.
+- Scientific accent colors with clear semantics.
+- Carefully controlled contrast and depth.
+
+Do not assume dark mode automatically looks premium.
+
+Evaluate a dark, light and potentially hybrid editorial/instrument presentation if appropriate.
+
+Specify actual hex values, application proportions and accessibility checks.
+
+Develop a token hierarchy covering page backgrounds, panel surfaces, text, outlines, focus states, hover states, overlays and scientific statuses.
+
+Avoid using every accent everywhere.
+
+## 6.3 Distinctive visual grammar
+
+Develop a recognizable visual language unique to RIMWAKE.
+
+Investigate:
+
+- Bespoke orbital and angular geometry.
+- Lunar cartographic motifs.
+- Precision technical linework.
+- Elegant scientific annotations.
+- Calibrated tick marks.
+- Editorial numerals.
+- Asymmetric compositions.
+- Expressive transitions between context and measurement.
+- High-quality visual layering.
+- Purpose-built diagrams and controls.
+
+Every signature motif should have a conceptual relationship to the product.
+
+Do not invent decoration simply to fill negative space.
+
+## 6.4 Craft and finishing quality
+
+Define professional standards for:
+
+- Grid and spacing consistency.
+- Alignment.
+- Border and stroke weights.
+- Shadow and surface depth.
+- Iconography.
+- Component proportions.
+- Corner radius usage.
+- Hover and pressed states.
+- Text wrapping.
+- Truncation.
+- Empty and loading states.
+- Responsive typography.
+- Visualization readability.
+
+These small details are essential.
+
+Do not describe a design as premium until its actual rendered appearance has been inspected.
+
+---
+
+# 7. PART E — INVENT A SIGNATURE EXPERIENCE THAT SETS RIMWAKE APART
+
+The product needs one unmistakable interaction that people remember.
+
+Do not rely on generic animations.
+
+Investigate a flagship experience built around a scientifically meaningful proposition:
+
+**Two lunar locations. One moment in time. Two potentially different skies.**
+
+Potential elements include:
+
+- A cinematic transition from global Moon context to a local observer's viewpoint.
+- A precisely synchronized comparison of actual Sun/Earth positions.
+- A timeline revealing verified observational transitions.
+- A data-driven visualization of conditions at two locations.
+- An explanatory interaction that connects observed differences to model assumptions and, if validated, terrain.
+- A beautiful, inspectable scientific evidence layer.
+
+Develop the strongest possible version of this concept.
+
+If the real data does not support a dramatic difference, never invent one.
+
+Instead, design a compelling presentation around what the data genuinely reveals.
+
+## Signature interaction evaluation
+
+Define:
+
+1. User objective.
+2. Entry point.
+3. Exact sequence of interaction.
+4. Visual behavior.
+5. Scientific data dependencies.
+6. What makes it genuinely new or memorable.
+7. What a user learns.
+8. What can be demonstrated in 10 seconds.
+9. What works without animation or WebGL.
+10. What makes the experience meaningfully different from a standard astronomy dashboard.
+
+Evaluate other candidate signature interactions before selecting the winner.
+
+**One perfectly realized signature experience is more valuable than six mediocre visual gimmicks.**
+
+---
+
+# 8. PART F — DESIGN FOR AWARD-LEVEL STORYTELLING
+
+Treat storytelling as a product interaction, not just marketing copy.
+
+## 8.1 Create a narrative arc
+
+Develop a coherent visitor journey with an opening question, discovery, explanation and meaningful conclusion.
+
+A possible structure:
+
+**ACT I — Wonder**
+
+Establish the Moon as a real environment with unfamiliar observational constraints.
+
+**ACT II — The Question**
+
+Why can two nearby lunar locations experience different visibility conditions?
+
+**ACT III — Investigation**
+
+Invite the user to inspect actual sites, select time and compare evidence.
+
+**ACT IV — Discovery**
+
+Show genuine observational differences or scientifically meaningful similarities.
+
+**ACT V — Explanation**
+
+Reveal how geometry, observer assumptions and validated terrain information affect interpretation.
+
+**ACT VI — Understanding**
+
+Leave users with an accurate understanding of why this information matters and what remains uncertain.
+
+Refine this structure based on the actual scientific data.
+
+Do not make every visitor sit through a mandatory cinematic sequence.
+
+## 8.2 Two complementary experience modes
+
+Design:
+
+**Guided Discovery**
+
+A short, beautiful, curated introduction that helps first-time visitors experience a meaningful scientific observation.
+
+**Open Exploration**
+
+A fast, direct workspace for users who want to investigate independently.
+
+These must share one authoritative scientific data foundation.
+
+The narrative experience should not contain fabricated results or a separate mock scientific simulation.
+
+## 8.3 Develop actual storytelling artifacts
+
+Produce:
+
+- Primary headline and alternative headline concepts.
+- Hero subtitle.
+- Introductory narrative.
+- Section transitions.
+- Interactive prompts.
+- Scientific annotation style.
+- Concise explanatory language.
+- Discovery-state text.
+- Final conclusion and call to action.
+
+Avoid inflated language such as "revolutionizing lunar exploration."
+
+Favor precise, memorable scientific communication.
+
+## 8.4 Judge attention and demonstration quality
+
+Evaluate the experience at four points:
+
+- First 5 seconds: Is it immediately distinctive?
+- First 15 seconds: Does the visitor understand the central question?
+- First 60 seconds: Can the visitor complete a meaningful interaction?
+- First 3 minutes: Can the visitor understand the evidence and limits?
+
+These are evaluation goals, not observed usability results unless tested.
+
+Develop a genuinely persuasive demonstration narrative that shows the product working.
+
+Verify the current official demo format and duration requirements before producing final competition materials.
+
+---
+
+# 9. PART G — PURPOSEFUL 3D AND HIGH-END MOTION DIRECTION
+
+I explicitly want you to explore ambitious 3D and animation opportunities.
+
+But I want outstanding execution, not visual overload.
+
+## 9.1 Investigate the best 3D architecture
+
+Assess combinations of:
+
+- NASA LRO-derived Moon models.
+- Correctly projected lunar textures.
+- A lightweight procedural sphere using authentic lunar textures.
+- Accurate lunar location markers.
+- Carefully designed camera transitions.
+- Cinematic lighting.
+- Data-linked orbital or angular guides.
+- Terrain-specific visualizations where genuine scientific data exists.
+
+Research NASA's Moon model resources and relevant asset rights.
+
+Clearly separate illustrative presentation assets from quantitative scientific terrain models.
+
+Determine whether the most effective hero should use a globe, a lunar horizon, an abstract scientific instrument or another concept.
+
+Do not choose WebGL simply because it looks impressive.
+
+## 9.2 Establish a motion-design language
+
+Specify animation principles for:
+
+- Initial hero reveal.
+- Geographic context changes.
+- Entering the scientific Explorer.
+- Moving between observation sites.
+- Time synchronization.
+- Showing and hiding supporting evidence.
+- Navigating data states.
+- Highlighting meaningful comparisons.
+- Returning from immersive presentation to precise scientific analysis.
+
+Specify representative easing curves, duration ranges, animation sequencing and interruption behavior.
+
+Ensure users remain in control.
+
+Make reduced-motion and low-power fallbacks first-class requirements.
+
+## 9.3 Performance and implementation strategy
+
+Analyze:
+
+- Bundle weight.
+- Texture and model sizes.
+- Lazy loading.
+- GPU and memory use.
+- Mobile rendering quality.
+- Fallback views.
+- Cumulative layout shift.
+- Interaction latency.
+- Reduced-motion behavior.
+
+Propose explicit performance budgets with assumptions and measurements to be collected.
+
+Do not report hypothetical budgets as achieved performance.
+
+Prefer controlled sophistication over heavy, fragile effects.
+
+---
+
+# 10. PART H — COMPLETELY REFINE INFORMATION ARCHITECTURE AND UX
+
+Do not treat the existing v5.0 sitemap as final.
+
+Critically evaluate whether the following experiences should remain separate:
+
+- Landing.
+- Explorer.
+- Guided Investigations.
+- Cause Laboratory.
+- Robustness Laboratory.
+- Data and Methods.
+- About.
+
+Could a simpler structure provide better usability?
+
+Would some research functions work better as progressive disclosure within the Explorer?
+
+Does a user need multiple laboratories before understanding the primary product?
+
+Develop the optimal structure rather than preserving every planned page.
+
+## 10.1 Define actual workflows
+
+For each major user type, specify:
+
+**First-time public visitor**
+
+Understand the problem, experience one observation and learn something meaningful.
+
+**NASA Space Apps judge**
+
+Understand the concept, evaluate originality, see the working demonstration and verify source credibility quickly.
+
+**Scientifically knowledgeable user**
+
+Inspect assumptions, coordinate definitions, samples, limitations and validation.
+
+**Returning explorer**
+
+Select locations, move through supported times and compare observations efficiently.
+
+Do not claim these journeys have been usability-tested unless they have.
+
+## 10.2 Screen-by-screen design
+
+Produce detailed design specifications for every retained screen, including:
+
+- Main visual focal point.
+- Primary interaction.
+- Information hierarchy.
+- Layout proportions.
+- Component relationships.
+- Typography.
+- Scientific labeling.
+- Responsive changes.
+- Motion.
+- Keyboard and touch interactions.
+- Error and unknown states.
+- Evidence access.
+
+The flagship Explorer must remain exceptionally clear even after sophisticated visual treatments are added.
+
+No scientific readout should become difficult to inspect merely because the page is cinematic.
+
+---
+
+# 11. PART I — PROTECT SCIENTIFIC CREDIBILITY
+
+Scientific truth remains non-negotiable.
+
+The current project uses a geometric-horizon model where terrain effects may not be included.
+
+Do not visually imply that modeled terrain obstruction has been validated merely because a 3D lunar landscape is visible.
+
+Maintain explicit separation among:
+
+- Center-of-disc geometric visibility.
+- Modeled terrain obstruction.
+- Unknown coverage.
+- Boundary conditions.
+- Scientific model limitations.
+- Hypothetical or illustrative visuals.
+
+Do not claim that geometric Sun visibility proves solar power availability.
+
+Do not claim geometric Earth visibility guarantees a viable radio link.
+
+Do not invent missions, sites, coordinates, observation results, obstruction causes or uncertainty estimates.
+
+### Research-stage feature policy
+
+Classify each feature as:
+
+- Implemented and validated.
+- Implemented but provisional.
+- Proposed and feasible.
+- Research-dependent.
+- Not currently feasible.
+
+Design graceful unavailable states for unverified advanced functions.
+
+For terrain and robustness features, identify the exact evidence required for scientific activation.
+
+An honest, extraordinarily well-designed geometric explorer is better than a visually impressive but misleading full-feature simulation.
+
+---
+
+# 12. PART J — EXECUTION FEASIBILITY AND PRIORITIZATION
+
+The 2026 competition has a real submission deadline.
+
+Avoid producing an aspirational roadmap that threatens the existing working release.
+
+Construct two distinct implementation tracks.
+
+## Track A — Competition-critical refinement
+
+Focus on the highest-impact, lowest-risk improvements to the working application:
+
+- Distinctive visual identity.
+- Exceptional flagship Explorer.
+- Powerful landing experience.
+- Clear storytelling.
+- Strong typography.
+- Effective scientific presentation.
+- Stable responsive behavior.
+- Reliable deployment.
+- Accurate competition demonstration.
+
+Protect the existing release before implementing changes.
+
+## Track B — Full extended product
+
+Include the longer-term architecture for:
+
+- Advanced 3D experiences.
+- Terrain-aware Difference Engine.
+- Robustness Laboratory.
+- Expanded scientific evidence.
+- Additional guided investigations.
+- More sophisticated visualization capabilities.
+
+Do not represent Track B as submitted functionality until it is actually implemented.
+
+## Prioritization framework
+
+For every proposed improvement, assess:
+
+- Expected user value.
+- Visual impact.
+- Award relevance.
+- Scientific importance.
+- Development effort.
+- Technical risk.
+- Dependency risk.
+- Demonstrability.
+- Impact on submission readiness.
+
+Produce an evidence-backed implementation matrix.
+
+Identify the smallest coherent set of improvements that would yield the greatest transformation.
+
+Explicitly distinguish:
+
+**Must ship / Strongly recommended / Optional / Defer / Reject**
+
+Do not attempt every ambitious idea merely because it appears in the master plan.
+
+---
+
+# 13. PART K — REQUIRE REAL VISUAL PROOF, NOT MORE DESIGN ADJECTIVES
+
+This is mandatory.
+
+A long document saying "cinematic," "premium," "sophisticated" and "immersive" is not enough.
+
+Translate creative decisions into visual and technical evidence.
+
+## Required design proof
+
+Where the available tooling supports it, produce high-fidelity design artifacts for:
+
+1. The landing hero at desktop size.
+2. The primary Explorer at desktop size.
+3. The complete mobile Explorer.
+4. The scientific comparison visualization.
+5. One storytelling transition or interaction sequence.
+
+Use Figma, executable frontend prototypes or another suitable design method if available.
+
+Do not substitute a generic AI illustration for a working interface design.
+
+If high-fidelity visuals cannot be generated, provide precise, implementable layout blueprints and disclose that no visual proof was produced.
+
+## Mandatory critique cycles
+
+Conduct:
+
+**Review 1 — Creative Direction**
+
+Does the design feel distinctive or derivative?
+
+**Review 2 — Composition and Typography**
+
+Are alignment, contrast, scale, whitespace, type pairing and component relationships genuinely professional?
+
+**Review 3 — Scientific UX**
+
+Can users correctly interpret the data?
+
+**Review 4 — Mobile and Accessibility**
+
+Does the experience remain coherent on constrained devices and without motion?
+
+**Review 5 — Competition Presentation**
+
+Would a judge understand its value quickly, and is that value supported by demonstrable evidence?
+
+For implemented screens, use actual browser screenshots at 1440 × 900, 768 × 1024 and 360 × 800.
+
+Identify concrete flaws, fix them and recapture screenshots.
+
+Never mark visual QA as passed based solely on the existence of design tokens or valid CSS.
+
+---
+
+# 14. PART L — REQUIRED v6.0 DELIVERABLES
+
+Produce a substantive, organized v6.0 package.
+
+### Document 1 — Critical v5.0 Audit
+
+Identify every consequential weakness, unsupported assertion, redundant feature and lost opportunity.
+
+Provide a prioritized correction register.
+
+### Document 2 — Award Competitiveness Research
+
+Cover verified award descriptions, previous winners, judge priorities, RIMWAKE's strongest category opportunities, evidence gaps and realistic competitive positioning.
+
+### Document 3 — Creative Direction Exploration
+
+Present three differentiated design concepts and a rigorous comparison.
+
+Select one direction and explain why.
+
+### Document 4 — Definitive Visual Identity
+
+Specify complete typography, colors, spacing, visual language, component styling, motion and asset direction.
+
+Do not leave major choices at the level of subjective adjectives.
+
+### Document 5 — Experience Architecture
+
+Provide the revised sitemap, user journeys, flagship interactions, page-by-page UX specifications, desktop/mobile behavior and accessibility requirements.
+
+### Document 6 — Interactive Storytelling Strategy
+
+Provide the opening hook, narrative structure, Guided Discovery design, actual copy, meaningful interaction sequences and competition demo storyboard.
+
+### Document 7 — 3D and Motion Feasibility
+
+Recommend the best immersive experiences, asset sources, technical architecture, performance constraints and fallback design.
+
+### Document 8 — Product Roadmap and Execution Plan
+
+Translate the selected design into a prioritized, technically grounded implementation strategy while protecting the working competition build.
+
+### Document 9 — Final Independent QA and Decision Report
+
+Reevaluate the selected concept critically.
+
+Separate verified observations, subjective design judgments, hypotheses, and unimplemented recommendations.
+
+Give concrete acceptance criteria and unresolved risks.
+
+### Document 10 — Implementation Handoff Prompt
+
+Write a new, high-quality Codex/Antigravity implementation prompt that incorporates the final v6.0 decisions.
+
+It must instruct the coding agent to work against the existing repository, preserve scientific functionality, implement the selected design and verify actual browser output.
+
+Do not produce an implementation directive that contradicts the selected design system or product master plan.
+
+---
+
+# 15. FINAL QUALITY STANDARD
+
+Evaluate the final proposal against a demanding internal rubric.
+
+Suggested categories:
+
+| Criterion | Weight |
+|---|---:|
+| Visual identity, typography and craft | 20% |
+| UX clarity and information architecture | 15% |
+| Interactive storytelling | 15% |
+| Scientific trust and visualization | 15% |
+| Originality and meaningful innovation | 10% |
+| Award relevance and presentation | 10% |
+| Technical feasibility and performance | 10% |
+| Accessibility and responsive behavior | 5% |
+
+The rubric is a diagnostic tool, not an objective measure of award-winning quality.
+
+Justify the weights and scores with specific evidence.
+
+Avoid perfect scores without independently inspected artifacts.
+
+If a major category scores poorly, revise the design rather than disguising the weakness with optimistic wording.
+
+## FINAL NON-NEGOTIABLE INSTRUCTIONS
+
+1. **Be substantially more critical than the v5.0 author.**
+2. Conduct genuine external research rather than relying on internal assumptions.
+3. Verify competition rules and distinguish current requirements from historical award descriptions.
+4. Explore meaningfully different creative approaches before deciding.
+5. Make typography and visual composition first-class engineering concerns.
+6. Prioritize distinctive UX over decorative complexity.
+7. Integrate storytelling into the actual scientific interaction.
+8. Require real visual evidence and concrete design specifications.
+9. Preserve scientific accuracy, provenance and uncertainty.
+10. Protect the existing working release and submission readiness.
+11. Reject any feature that makes the product more impressive in a mockup but less useful in practice.
+12. Distinguish completed work from proposed work.
+13. Do not invent screenshots, tests, benchmarks, source findings or award eligibility.
+14. Do not stop at generic inspiration boards or broad recommendations.
+15. Produce a plan that a capable implementation agent can follow without improvising major design decisions.
+
+### THE ULTIMATE OBJECTIVE
+
+RIMWAKE should not feel like a hackathon dashboard with a Moon attached.
+
+It should feel like a **remarkable interactive scientific experience that could stand beside excellent digital exhibitions, sophisticated data products and thoughtfully designed editorial experiences**.
+
+I want people to remember the experience, not merely the technology used to build it.
+
+I want the scientific interaction itself to be beautiful.
+
+I want the typography, composition, color, motion, navigation and visual details to communicate exceptional design judgment.
+
+I want the storytelling to make authentic NASA data understandable and engaging.
+
+I want the product to be technically credible and convincingly connected to the official lunar challenge.
+
+And I want the final experience to be distinctive enough to compete seriously in appropriate NASA Space Apps award categories, without misleading claims or attempts to game judging criteria.
+
+**Do not give me another v5.0 with more pages and more adjectives.**
+
+**Challenge the entire design. Research the competition. Explore original creative directions. Select the strongest product vision. Specify it precisely. Validate its visual quality. Produce a coherent, executable reconstruction strategy.**
+
+**Begin with a deep adversarial audit of v5.0, then develop RIMWAKE v6.0 as a genuinely superior product design and scientific storytelling system.**

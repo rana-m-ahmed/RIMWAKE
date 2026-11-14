@@ -1,0 +1,188 @@
+:root {
+  --paper: #f0f1ed;
+  --porcelain: #fbfcf8;
+  --ink: #16212b;
+  --graphite: #35424b;
+  --quiet: #5b6a70;
+  --space: #0b121b;
+  --space-2: #111e2b;
+  --space-3: #1a2a37;
+  --night-text: #f3f4f0;
+  --night-subtle: #b6c4cb;
+  --rule-light: #ccd2d0;
+  --rule-dark: #364551;
+  --sun: #eeb66b;
+  --earth: #86c7eb;
+  --warning: #e69a89;
+  --focus: #f1cf88;
+  --font-display: 'Newsreader', Georgia, serif;
+  --font-body: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
+  --font-data: 'IBM Plex Mono', Consolas, monospace;
+  font-family: var(--font-body);
+  color: var(--ink);
+  background: var(--paper);
+  font-synthesis: none;
+  font-optical-sizing: auto;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 24px;
+}
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+button,
+a,
+input,
+select {
+  -webkit-tap-highlight-color: transparent;
+}
+a {
+  color: inherit;
+}
+button {
+  cursor: pointer;
+}
+button:disabled {
+  cursor: default;
+  opacity: 0.42;
+}
+button {
+  transition:
+    background 0.18s,
+    color 0.18s,
+    transform 0.18s;
+}
+button:active:not(:disabled) {
+  transform: translateY(1px);
+}
+button,
+a,
+input,
+select,
+summary {
+  touch-action: manipulation;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible,
+textarea:focus-visible {
+  outline: 3px solid var(--ink);
+  outline-offset: 4px;
+}
+main:focus {
+  outline: none;
+}
+svg {
+  display: block;
+}
+::selection {
+  background: #d6e4e9;
+  color: #14212a;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.eyebrow {
+  font: 400 12px/1.5 var(--font-data);
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin: 0;
+}
+.sun {
+  color: var(--sun);
+}
+.earth {
+  color: var(--earth);
+}
+.mono {
+  font-family: var(--font-data);
+  font-variant-numeric: tabular-nums;
+}
+.sectionLink {
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding: 12px 0;
+  font-size: 15px;
+  min-height: 44px;
+}
+.primaryButton {
+  background: var(--ink);
+  color: var(--porcelain);
+  border: 1px solid var(--ink);
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 17px 22px;
+  min-height: 54px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+}
+.primaryButton:hover {
+  background: #34424e;
+}
+.dark button:focus-visible,
+.dark a:focus-visible,
+.dark input:focus-visible,
+.dark select:focus-visible,
+.dark summary:focus-visible {
+  outline-color: var(--focus);
+}
+.dark {
+  color: var(--night-text);
+  background: var(--space);
+}
+.dark .eyebrow {
+  color: var(--night-subtle);
+}
+.dark select {
+  color-scheme: dark;
+}
+.dark input {
+  accent-color: var(--night-text);
+}
+.dark button {
+  color: inherit;
+}
+.muted {
+  color: var(--quiet);
+}
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition: none !important;
+    scroll-behavior: auto !important;
+  }
+}

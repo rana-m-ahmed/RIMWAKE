@@ -1,0 +1,280 @@
+.page {
+  max-width: 1380px;
+  margin: auto;
+  padding: 70px 56px 0;
+}
+.intro {
+  max-width: 840px;
+  margin-bottom: 70px;
+}
+.intro > .eyebrow {
+  color: var(--quiet);
+  font-size: 12px;
+}
+.intro h1 {
+  font: 400 clamp(65px, 7.3vw, 106px)/0.94 var(--font-display);
+  letter-spacing: -0.05em;
+  margin: 35px 0;
+}
+.intro h1 em {
+  font-weight: 400;
+}
+.intro > p:last-child {
+  font-size: 20px;
+  line-height: 1.65;
+  max-width: 650px;
+  color: var(--graphite);
+}
+.layout {
+  display: grid;
+  grid-template-columns: 250px minmax(0, 1fr);
+  gap: 80px;
+}
+.contents {
+  align-self: start;
+  position: sticky;
+  top: 30px;
+  padding-top: 18px;
+}
+.contents > .eyebrow {
+  font-size: 11px;
+  color: var(--quiet);
+  margin-bottom: 22px;
+}
+.contents a {
+  display: flex;
+  align-items: start;
+  gap: 14px;
+  font-size: 14px;
+  line-height: 1.5;
+  text-decoration: none;
+  min-height: 56px;
+  padding: 12px 0;
+  border-top: 1px solid var(--rule-light);
+}
+.contents a span {
+  font: 11px/1.9 var(--font-data);
+  color: var(--quiet);
+}
+.contents a:hover {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.chapters {
+  min-width: 0;
+}
+.chapters section {
+  border-top: 1px solid var(--rule-light);
+  padding-top: 25px;
+  margin-bottom: 65px;
+  scroll-margin-top: 35px;
+}
+.chapters .eyebrow {
+  font-size: 11px;
+  color: var(--quiet);
+}
+.chapters h2 {
+  font: 400 55px/1.02 var(--font-display);
+  letter-spacing: -0.035em;
+  margin: 25px 0;
+}
+.chapters h2 em {
+  font-weight: 400;
+}
+.chapters p {
+  font-size: 17px;
+  line-height: 1.8;
+  color: var(--graphite);
+  max-width: 65ch;
+}
+.chapters a {
+  font-size: 14px;
+}
+.diagram {
+  width: 100%;
+  margin: 25px 0;
+  background: #e7ece9;
+}
+.diagram text {
+  font: 12px var(--font-data);
+  fill: #35424b;
+}
+.siteTable {
+  margin: 25px 0;
+}
+.siteTable table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.siteTable caption {
+  text-align: left;
+  font-size: 14px;
+  margin-bottom: 18px;
+}
+.siteTable thead th {
+  font: 10px var(--font-data);
+  color: var(--quiet);
+  padding: 12px 0;
+}
+.siteTable tbody td,
+.siteTable tbody th {
+  font: 14px var(--font-data);
+  padding: 18px 0;
+  border-top: 1px solid var(--rule-light);
+}
+.gates {
+  margin: 30px 0;
+}
+.gates > div {
+  padding: 20px 0;
+  border-top: 1px solid var(--rule-light);
+}
+.gates dt {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 11px;
+}
+.gates dd {
+  font-size: 15px;
+  line-height: 1.8;
+  color: var(--quiet);
+  margin: 0;
+}
+.release {
+  border-block: 1px solid var(--rule-light);
+  padding: 20px 0;
+  margin: 28px 0;
+}
+.release > span {
+  font: 11px var(--font-data);
+  display: block;
+  margin-bottom: 13px;
+  color: var(--quiet);
+}
+.release code {
+  font: 14px var(--font-data);
+  overflow-wrap: anywhere;
+}
+.release p {
+  font-size: 14px;
+}
+.sourceLink {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  min-height: 52px;
+  border-bottom: 1px solid var(--rule-light);
+  text-decoration: none;
+  padding: 14px 0;
+}
+.chapters .primaryButton {
+  margin-bottom: 20px;
+}
+.return {
+  padding: 10px 0 75px;
+  border-top: 1px solid var(--rule-light);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+}
+.return h2 {
+  font: 400 45px var(--font-display);
+  letter-spacing: -0.03em;
+}
+@media (max-width: 1023px) {
+  .page {
+    padding: 55px 32px 0;
+  }
+  .layout {
+    grid-template-columns: 190px 1fr;
+    gap: 40px;
+  }
+  .chapters h2 {
+    font-size: 47px;
+  }
+  .chapters p {
+    font-size: 16px;
+  }
+  .contents a {
+    font-size: 13px;
+  }
+  .intro {
+    margin-bottom: 50px;
+  }
+  .intro h1 {
+    font-size: 85px;
+  }
+  .return h2 {
+    font-size: 38px;
+  }
+}
+@media (max-width: 700px) {
+  .page {
+    padding: 42px 22px 0;
+  }
+  .intro h1 {
+    font-size: 62px;
+    margin: 28px 0;
+  }
+  .intro > p:last-child {
+    font-size: 18px;
+  }
+  .intro > .eyebrow {
+    font-size: 11px;
+  }
+  .layout {
+    display: block;
+  }
+  .contents {
+    position: static;
+    margin-bottom: 42px;
+  }
+  .contents a {
+    font-size: 14px;
+    min-height: 48px;
+    padding: 11px 0;
+  }
+  .contents > .eyebrow {
+    font-size: 10px;
+    margin-bottom: 14px;
+  }
+  .chapters h2 {
+    font-size: 45px;
+  }
+  .chapters p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+  .chapters section {
+    margin-bottom: 48px;
+  }
+  .chapters .eyebrow {
+    font-size: 10px;
+  }
+  .siteTable thead th {
+    font-size: 9px;
+  }
+  .siteTable tbody td,
+  .siteTable tbody th {
+    font-size: 12px;
+  }
+  .return {
+    display: block;
+    padding: 20px 0 55px;
+  }
+  .return h2 {
+    font-size: 40px;
+  }
+  .release code {
+    font-size: 12px;
+  }
+  .diagram text {
+    font-size: 13px;
+  }
+  .chapters a {
+    font-size: 13px;
+  }
+}

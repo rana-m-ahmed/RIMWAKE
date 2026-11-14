@@ -1,0 +1,141 @@
+{
+  "release": "RIMWAKE v6 MERIDIAN CUT",
+  "scope": "Plan + design proofs, not a production app",
+  "entries": [
+    {
+      "path": "QA_EXECUTION_RESULTS.json",
+      "bytes": 8410,
+      "sha256": "5c9587a32b03fed4bc33366d8227e372f4314f42438047fb0281d3efe9404f91"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 4314,
+      "sha256": "7c15aa78b6d4f87fc8100d270935f855353dbf87ea0c060cf777997e47253bf6"
+    },
+    {
+      "path": "docs/01_CRITICAL_V5_AUDIT.md",
+      "bytes": 8774,
+      "sha256": "6d6e70c3defa1f06554f6832b65ad9c1d225a2b94501b1d91be88a1f871e85c9"
+    },
+    {
+      "path": "docs/02_AWARDS_COMPETITION_AND_BENCHMARKS.md",
+      "bytes": 10496,
+      "sha256": "a8797809a4b568ca73147b698ff16d1d17cba851cd5e8186f77b110eae5d3035"
+    },
+    {
+      "path": "docs/03_CREATIVE_DIRECTIONS_AND_DECISION.md",
+      "bytes": 7665,
+      "sha256": "c522369af00c426383a8fa18073ac15cf44fb4d057954072485f8b87338078b2"
+    },
+    {
+      "path": "docs/04_VISUAL_IDENTITY_AND_DESIGN_TOKENS.md",
+      "bytes": 11180,
+      "sha256": "982b096073ae02d0dc0986984c11e7655598aa7c6dfe931ca8638e218b0c2388"
+    },
+    {
+      "path": "docs/05_INFORMATION_ARCHITECTURE_AND_SCREEN_UX.md",
+      "bytes": 10495,
+      "sha256": "845cda7d3cf824c61d305d9a8651b62c8bbd462d721d660052b7fc6fd7d71d0a"
+    },
+    {
+      "path": "docs/06_GUIDED_STORY_AND_DEMO.md",
+      "bytes": 8049,
+      "sha256": "22c4b84765dac9030a1067b513c8eea5cc0dff2c0493719176dd75c3c55b861f"
+    },
+    {
+      "path": "docs/07_3D_MOTION_AND_PERFORMANCE.md",
+      "bytes": 6215,
+      "sha256": "b17cfc41e1881b8b2a9d8e36c09067b87663ff097507def1a259f8c7e8787be5"
+    },
+    {
+      "path": "docs/08_EXECUTION_AND_SCIENTIFIC_ROADMAP.md",
+      "bytes": 10353,
+      "sha256": "d4c26ad21694626cc785e8f17f321b02b68f2e624f260a5381c9f5d951cd8a65"
+    },
+    {
+      "path": "docs/09_INDEPENDENT_QA_DECISION_AND_LIMITATIONS.md",
+      "bytes": 8221,
+      "sha256": "416e18c4a19812a38ddd5202cd4bb94d8263282a0ecc0c56be6408a9bc566860"
+    },
+    {
+      "path": "docs/10_CODEX_IMPLEMENTATION_HANDOFF.md",
+      "bytes": 11683,
+      "sha256": "ce9e17188dd220a83a339ac41e2aab33591c3b2a6445f12b6d00a663aaa83015"
+    },
+    {
+      "path": "prototype/app.js",
+      "bytes": 2336,
+      "sha256": "28ae1509577ca5d49b9569176673b8996f5ff708fa0eca8bc2d74a5949d8e156"
+    },
+    {
+      "path": "prototype/assets/ASSET_NOTICES.md",
+      "bytes": 743,
+      "sha256": "87ba93c96f1d433b8a5eac19713d075e3d3447e7bbcd94fc87d0ca821c8d4fea"
+    },
+    {
+      "path": "prototype/assets/illustrative_moon.png",
+      "bytes": 650272,
+      "sha256": "618b8c6c06ccda9926291ae51a1bd04dda9cd7004ce0e1c67a0c1b9aa6894c12"
+    },
+    {
+      "path": "prototype/index.html",
+      "bytes": 12908,
+      "sha256": "b3c3731cd74de82599baad796aaf13ef1a61d4eb528f029b593310be0d0bd696"
+    },
+    {
+      "path": "prototype/previews/design_proof_contact_sheet.jpg",
+      "bytes": 242917,
+      "sha256": "8586508643bb868be5abc11ed00abd2e4bee05590c93481df04d95801a42fbe9"
+    },
+    {
+      "path": "prototype/previews/design_proof_explorer_1440x900.png",
+      "bytes": 58126,
+      "sha256": "926e0dc0b4072aee775facd9b51e1e98e48cf8f833ba1bcbfdd808b8aed7e6e9"
+    },
+    {
+      "path": "prototype/previews/design_proof_hero_1440x900.png",
+      "bytes": 376555,
+      "sha256": "53a2b477c908de8392df9b40fc796d80546aa299c1f6e766daff5321d02a4306"
+    },
+    {
+      "path": "prototype/previews/design_proof_mobile_390x844.png",
+      "bytes": 33295,
+      "sha256": "8c8159f39227b382db44b0ee364e9a6af7e7df15e65538090559e8b9c5e411d2"
+    },
+    {
+      "path": "prototype/style.css",
+      "bytes": 17207,
+      "sha256": "8fb81dae98b32c49766cfb0ca21bff0e8badac43ca3e006e383a8543bd833ef5"
+    },
+    {
+      "path": "source_notes/RIMWAKE_v5_HISTORICAL_REFERENCE.zip",
+      "bytes": 672414,
+      "sha256": "ae944fe6af1a4a6f83b05118c76422299861401578dbc4d6afc66508e476d2e7"
+    },
+    {
+      "path": "source_notes/USER_V6_MASTER_PROMPT.txt",
+      "bytes": 36339,
+      "sha256": "8a83a987510bf90fed14f1fcbcd608eef533c23ec5ad8d3ebb615f400ac1b299"
+    },
+    {
+      "path": "source_notes/image(20261114-070342).png",
+      "bytes": 146873,
+      "sha256": "884134943af86997dcce0d4496edc60d4aa123b1dc455af8c40d0f5ef3a56aa3"
+    },
+    {
+      "path": "source_notes/image(20261114-070359).png",
+      "bytes": 180708,
+      "sha256": "e3c58a269e635cb4e399032553c6c9369163dbf6da6aade15516d9248daf556b"
+    },
+    {
+      "path": "source_notes/image(20261114-070421).png",
+      "bytes": 180708,
+      "sha256": "e3c58a269e635cb4e399032553c6c9369163dbf6da6aade15516d9248daf556b"
+    },
+    {
+      "path": "source_notes/image(20261114-070439).png",
+      "bytes": 103330,
+      "sha256": "0f41936462988e0f02657f6aa258d89f3dab910dc5625c90310cc87ca906380e"
+    }
+  ]
+}

@@ -1,0 +1,149 @@
+.context h2 {
+  font: 400 52px/1 var(--font-display);
+  letter-spacing: -0.035em;
+  margin: 25px 0;
+}
+.context > p:not(.eyebrow) {
+  font-size: 16px;
+  max-width: 65ch;
+  line-height: 1.7;
+}
+.canvas {
+  height: 420px;
+  position: relative;
+  overflow: hidden;
+  background: var(--space);
+  margin: 25px 0 16px;
+  touch-action: pan-y;
+}
+.canvas canvas {
+  display: block;
+  cursor: grab;
+  touch-action: pan-y;
+}
+.canvas canvas:active {
+  cursor: grabbing;
+}
+.pointLabel {
+  position: absolute;
+  pointer-events: none;
+  font: 12px var(--font-data);
+  background: var(--paper);
+  color: var(--ink);
+  width: 22px;
+  height: 22px;
+  display: grid;
+  place-items: center;
+  transform: translate(8px, -25px);
+}
+.pointLabel[hidden] {
+  display: none;
+}
+.pointLabel:nth-of-type(even) {
+  transform: translate(-27px, 8px);
+}
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: space-between;
+}
+.actions button {
+  min-height: 44px;
+  border: 1px solid #81949f;
+  background: transparent;
+  padding: 10px 16px;
+  font-size: 14px;
+}
+.actions button:hover:not(:disabled) {
+  background: #e4ebea;
+}
+.siteList {
+  display: flex;
+  gap: 30px;
+  margin: 22px 0;
+}
+.siteList p {
+  display: grid;
+  grid-template-columns: 24px 1fr;
+  gap: 5px 10px;
+  flex: 1;
+  font-size: 14px;
+}
+.siteList p > span {
+  grid-row: span 2;
+  font: 13px var(--font-data);
+}
+.siteList strong {
+  font-weight: 500;
+}
+.siteList small {
+  font: 11px/1.7 var(--font-data);
+}
+.context .caption {
+  font-size: 12px !important;
+  color: var(--quiet);
+  max-width: none;
+}
+.fallback {
+  position: absolute;
+  inset: 0;
+  background: var(--space);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: var(--night-text);
+  padding: 20px;
+}
+.fallback img {
+  width: 48%;
+  max-width: 330px;
+}
+.fallback p {
+  font-size: 14px;
+  line-height: 1.7;
+}
+.loading {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: var(--night-text);
+  font-size: 13px;
+}
+@media (max-width: 700px) {
+  .context h2 {
+    font-size: 43px;
+  }
+  .canvas {
+    height: 310px;
+    margin-inline: -8px;
+  }
+  .actions {
+    gap: 8px;
+  }
+  .actions button {
+    font-size: 11px;
+    padding: 10px 8px;
+    flex: 1;
+  }
+  .siteList {
+    display: block;
+  }
+  .siteList p {
+    margin: 20px 0;
+  }
+  .fallback {
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+  .fallback img {
+    width: 65%;
+    max-height: 200px;
+    object-fit: contain;
+  }
+  .fallback p {
+    font-size: 12px;
+    margin: 0;
+  }
+}

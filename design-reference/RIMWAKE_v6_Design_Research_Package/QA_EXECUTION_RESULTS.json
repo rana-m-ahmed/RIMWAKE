@@ -1,0 +1,401 @@
+{
+  "checks": 91,
+  "passed": 91,
+  "failed": [],
+  "word_counts": {
+    "01_CRITICAL_V5_AUDIT.md": 1336,
+    "02_AWARDS_COMPETITION_AND_BENCHMARKS.md": 1391,
+    "03_CREATIVE_DIRECTIONS_AND_DECISION.md": 1124,
+    "04_VISUAL_IDENTITY_AND_DESIGN_TOKENS.md": 1628,
+    "05_INFORMATION_ARCHITECTURE_AND_SCREEN_UX.md": 1511,
+    "06_GUIDED_STORY_AND_DEMO.md": 1227,
+    "07_3D_MOTION_AND_PERFORMANCE.md": 898,
+    "08_EXECUTION_AND_SCIENTIFIC_ROADMAP.md": 1415,
+    "09_INDEPENDENT_QA_DECISION_AND_LIMITATIONS.md": 1155,
+    "10_CODEX_IMPLEMENTATION_HANDOFF.md": 1536
+  },
+  "selected_scores": [
+    71.8,
+    90.6,
+    75.4
+  ],
+  "contrast": {
+    "ink/paper": 14.39,
+    "ink/white": 15.84,
+    "graphite/paper": 9.11,
+    "quiet/paper": 4.95,
+    "night/space": 17.02,
+    "night/space2": 15.28,
+    "nightSub/space": 10.52,
+    "sun/space": 10.33,
+    "earth/space": 10.19
+  },
+  "browser_visual_qa": "BLOCKED BY ADMINISTRATOR \u2014 not passed",
+  "scientific_verification": "NOT RUN \u2014 no runtime dataset/repository supplied",
+  "results": {
+    "ten_requested_docs": {
+      "pass": true,
+      "details": "10"
+    },
+    "all_docs_nonempty": {
+      "pass": true,
+      "details": ""
+    },
+    "md_parses_01": {
+      "pass": true,
+      "details": ""
+    },
+    "balanced_fences_01": {
+      "pass": true,
+      "details": "0"
+    },
+    "has_headings_01": {
+      "pass": true,
+      "details": ""
+    },
+    "no_latin_placeholder_01": {
+      "pass": true,
+      "details": ""
+    },
+    "no_broken_local_links_01": {
+      "pass": true,
+      "details": ""
+    },
+    "md_parses_02": {
+      "pass": true,
+      "details": ""
+    },
+    "balanced_fences_02": {
+      "pass": true,
+      "details": "0"
+    },
+    "has_headings_02": {
+      "pass": true,
+      "details": ""
+    },
+    "no_latin_placeholder_02": {
+      "pass": true,
+      "details": ""
+    },
+    "no_broken_local_links_02": {
+      "pass": true,
+      "details": ""
+    },
+    "md_parses_03": {
+      "pass": true,
+      "details": ""
+    },
+    "balanced_fences_03": {
+      "pass": true,
+      "details": "0"
+    },
+    "has_headings_03": {
+      "pass": true,
+      "details": ""
+    },
+    "no_latin_placeholder_03": {
+      "pass": true,
+      "details": ""
+    },
+    "no_broken_local_links_03": {
+      "pass": true,
+      "details": ""
+    },
+    "md_parses_04": {
+      "pass": true,
+      "details": ""
+    },
+    "balanced_fences_04": {
+      "pass": true,
+      "details": "4"
+    },
+    "has_headings_04": {
+      "pass": true,
+      "details": ""
+    },
+    "no_latin_placeholder_04": {
+      "pass": true,
+      "details": ""
+    },
+    "no_broken_local_links_04": {
+      "pass": true,
+      "details": ""
+    },
+    "md_parses_05": {
+      "pass": true,
+      "details": ""
+    },
+    "balanced_fences_05": {
+      "pass": true,
+      "details": "2"
+    },
+    "has_headings_05": {
+      "pass": true,
+      "details": ""
+    },
+    "no_latin_placeholder_05": {
+      "pass": true,
+      "details": ""
+    },
+    "no_broken_local_links_05": {
+      "pass": true,
+      "details": ""
+    },
+    "md_parses_06": {
+      "pass": true,
+      "details": ""
+    },
+    "balanced_fences_06": {
+      "pass": true,
+      "details": "0"
+    },
+    "has_headings_06": {
+      "pass": true,
+      "details": ""
+    },
+    "no_latin_placeholder_06": {
+      "pass": true,
+      "details": ""
+    },
+    "no_broken_local_links_06": {
+      "pass": true,
+      "details": ""
+    },
+    "md_parses_07": {
+      "pass": true,
+      "details": ""
+    },
+    "balanced_fences_07": {
+      "pass": true,
+      "details": "0"
+    },
+    "has_headings_07": {
+      "pass": true,
+      "details": ""
+    },
+    "no_latin_placeholder_07": {
+      "pass": true,
+      "details": ""
+    },
+    "no_broken_local_links_07": {
+      "pass": true,
+      "details": ""
+    },
+    "md_parses_08": {
+      "pass": true,
+      "details": ""
+    },
+    "balanced_fences_08": {
+      "pass": true,
+      "details": "4"
+    },
+    "has_headings_08": {
+      "pass": true,
+      "details": ""
+    },
+    "no_latin_placeholder_08": {
+      "pass": true,
+      "details": ""
+    },
+    "no_broken_local_links_08": {
+      "pass": true,
+      "details": ""
+    },
+    "md_parses_09": {
+      "pass": true,
+      "details": ""
+    },
+    "balanced_fences_09": {
+      "pass": true,
+      "details": "0"
+    },
+    "has_headings_09": {
+      "pass": true,
+      "details": ""
+    },
+    "no_latin_placeholder_09": {
+      "pass": true,
+      "details": ""
+    },
+    "no_broken_local_links_09": {
+      "pass": true,
+      "details": ""
+    },
+    "md_parses_10": {
+      "pass": true,
+      "details": ""
+    },
+    "balanced_fences_10": {
+      "pass": true,
+      "details": "0"
+    },
+    "has_headings_10": {
+      "pass": true,
+      "details": ""
+    },
+    "no_latin_placeholder_10": {
+      "pass": true,
+      "details": ""
+    },
+    "no_broken_local_links_10": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_challenge_present": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_official_deadline": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_team_gate": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_official_dataset_gate": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_ai_disclosure": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_geo_distinction": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_uncertainty": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_source_jpl": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_source_pgda": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_source_nasa3d": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_sitemap_declared": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_three_directions": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_accessibility": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_mobile": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_visual_proof_honest": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_original_data_preserved": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_codex_instructions": {
+      "pass": true,
+      "details": ""
+    },
+    "cross_actual_implementation_not_claimed": {
+      "pass": true,
+      "details": ""
+    },
+    "decision_weights_sum100": {
+      "pass": true,
+      "details": "100"
+    },
+    "weighted_scores_consistent": {
+      "pass": true,
+      "details": "[71.8, 90.6, 75.4]"
+    },
+    "selected_concept_highest": {
+      "pass": true,
+      "details": "[71.8, 90.6, 75.4]"
+    },
+    "prototype_pages": {
+      "pass": true,
+      "details": ""
+    },
+    "prototype_controls": {
+      "pass": true,
+      "details": ""
+    },
+    "prototype_semantic_state": {
+      "pass": true,
+      "details": ""
+    },
+    "prototype_no_fake_reading": {
+      "pass": true,
+      "details": ""
+    },
+    "prototype_image_alt": {
+      "pass": true,
+      "details": ""
+    },
+    "has_mobile_css": {
+      "pass": true,
+      "details": ""
+    },
+    "has_reduced_motion": {
+      "pass": true,
+      "details": ""
+    },
+    "prototype_asset_exists": {
+      "pass": true,
+      "details": ""
+    },
+    "asset_notice_exists": {
+      "pass": true,
+      "details": ""
+    },
+    "javascript_syntax": {
+      "pass": true,
+      "details": ""
+    },
+    "css_parse": {
+      "pass": true,
+      "details": "0"
+    },
+    "three_visual_comps": {
+      "pass": true,
+      "details": "3"
+    },
+    "image_dimensions_design_proof_hero_": {
+      "pass": true,
+      "details": "(1440, 900)"
+    },
+    "image_dimensions_design_proof_explo": {
+      "pass": true,
+      "details": "(1440, 900)"
+    },
+    "image_dimensions_design_proof_mobil": {
+      "pass": true,
+      "details": "(390, 844)"
+    },
+    "nine_text_pairs_ge_4_5": {
+      "pass": true,
+      "details": "{'ink/paper': 14.39, 'ink/white': 15.84, 'graphite/paper': 9.11, 'quiet/paper': 4.95, 'night/space': 17.02, 'night/space2': 15.28, 'nightSub/space': 10.52, 'sun/space': 10.33, 'earth/space': 10.19}"
+    },
+    "total_words_gt_10000": {
+      "pass": true,
+      "details": "13221"
+    },
+    "disallowed_claims_only_in_negation": {
+      "pass": true,
+      "details": "Phrases appear only as forbidden copy examples, not product claims"
+    }
+  }
+}
