@@ -1,0 +1,1557 @@
+:global(*) {
+  box-sizing: border-box;
+}
+:global(html) {
+  scroll-behavior: smooth;
+  scroll-padding-top: 20px;
+}
+:global(body) {
+  margin: 0;
+  background: #e9e9df;
+  color: #202b24;
+  font-family: 'DM Sans', Arial, sans-serif;
+  font-size: 15px;
+  -webkit-font-smoothing: antialiased;
+}
+:global(button),
+:global(input),
+:global(select) {
+  font: inherit;
+}
+:global(button),
+:global(a),
+:global(select),
+:global(input) {
+  -webkit-tap-highlight-color: transparent;
+}
+:global(button) {
+  cursor: pointer;
+}
+:global(button:disabled) {
+  cursor: default;
+  opacity: 0.4;
+}
+:global(a) {
+  color: inherit;
+}
+:global(button:focus-visible),
+:global(a:focus-visible),
+:global(select:focus-visible),
+:global(input:focus-visible),
+:global(summary:focus-visible) {
+  outline: 3px solid #a27330;
+  outline-offset: 5px;
+}
+:global(button:active:not(:disabled)) {
+  transform: translateY(1px);
+}
+:global(button) {
+  transition:
+    background 0.16s,
+    color 0.16s;
+}
+:global(button:hover:not(:disabled)) {
+  background: #d2d8c6;
+}
+:global(select) {
+  cursor: pointer;
+}
+:global(::selection) {
+  background: #bcd1a1;
+  color: #15241a;
+}
+.header {
+  max-width: 1440px;
+  margin: auto;
+  padding: 24px 48px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #253c2726;
+}
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  text-decoration: none;
+  font-size: 22px;
+  font-weight: 650;
+  letter-spacing: 3px;
+}
+.brand small {
+  display: block;
+  font:
+    8px 'IBM Plex Mono',
+    monospace;
+  letter-spacing: 1.1px;
+  margin-top: 5px;
+}
+.headerRight {
+  display: flex;
+  gap: 34px;
+  align-items: center;
+}
+.releaseTag {
+  font:
+    10px 'IBM Plex Mono',
+    monospace;
+  letter-spacing: 1px;
+  color: #4d5c4a;
+}
+.header button {
+  border: 0;
+  background: transparent;
+  font-size: 12px;
+  padding: 12px 0;
+}
+.header button span {
+  margin-left: 16px;
+}
+.intro {
+  max-width: 1344px;
+  margin: auto;
+  padding: 51px 0 38px;
+  display: grid;
+  grid-template-columns: 1fr 390px;
+  position: relative;
+  column-gap: 48px;
+}
+.eyebrow {
+  font:
+    10px 'IBM Plex Mono',
+    monospace;
+  letter-spacing: 1.4px;
+  line-height: 1.6;
+  margin: 0 0 19px;
+  display: block;
+}
+.statusDot {
+  display: inline-block;
+  width: 6px;
+  height: 6px;
+  background: #547044;
+  border-radius: 50%;
+  margin-right: 8px;
+  vertical-align: 1px;
+}
+.intro h1 {
+  font-size: clamp(48px, 5.1vw, 74px);
+  font-weight: 450;
+  line-height: 1.02;
+  letter-spacing: -4px;
+  margin: 0;
+}
+.intro h1 span {
+  color: #71816a;
+}
+.introAside {
+  padding: 29px 0 0 0;
+  max-width: 340px;
+}
+.introAside p {
+  font-size: 15px;
+  line-height: 1.55;
+  margin: 0 0 11px;
+}
+.introAside .muted {
+  font-size: 12px;
+  line-height: 1.6;
+  max-width: 290px;
+  color: #65705f;
+}
+.introAside a {
+  font-size: 11px;
+  display: inline-flex;
+  gap: 40px;
+  margin-top: 6px;
+  text-underline-offset: 5px;
+}
+.edition {
+  position: absolute;
+  right: 0;
+  bottom: 10px;
+  font:
+    8px 'IBM Plex Mono',
+    monospace;
+  letter-spacing: 1px;
+  color: #6a7566;
+}
+.instrument {
+  max-width: 1344px;
+  margin: 0 auto;
+  background: #101a15;
+  color: #e2e6d7;
+  border: 1px solid #344333;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 10px 40px #24351d0c;
+}
+.instrumentBar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 17px 27px;
+  border-bottom: 1px solid #b4c69d28;
+  font:
+    9px 'IBM Plex Mono',
+    monospace;
+  letter-spacing: 1.2px;
+}
+.tinyCross {
+  font-size: 18px;
+  margin-right: 11px;
+  vertical-align: -1px;
+  color: #bdd39e;
+}
+.muted {
+  color: #91a18a;
+}
+.instrumentBar .muted {
+  margin-left: 11px;
+  font-size: 8px;
+}
+.modelNote {
+  font-size: 9px;
+  color: #c0cdb7;
+  letter-spacing: 0;
+}
+.controls {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1.05fr;
+  padding: 23px 28px 5px;
+  gap: 28px;
+}
+.controls label {
+  display: block;
+}
+.controls label > span,
+.clock > span {
+  display: block;
+  font:
+    8px 'IBM Plex Mono',
+    monospace;
+  letter-spacing: 1.4px;
+  color: #a7b69e;
+  margin-bottom: 9px;
+}
+.controls select {
+  border: none;
+  border-bottom: 1px solid #56654c;
+  background: #101a15;
+  color: #e2e6d7;
+  padding: 6px 24px 8px 0;
+  font-size: 14px;
+  width: 100%;
+  border-radius: 0;
+}
+.clock {
+  text-align: right;
+  padding-top: 2px;
+}
+.clock strong {
+  font:
+    15px 'IBM Plex Mono',
+    monospace;
+  font-weight: 400;
+  white-space: nowrap;
+}
+.clock em {
+  font-style: normal;
+  color: #c7dba9;
+  margin-left: 12px;
+}
+.skies {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 26px 28px 0;
+  gap: 48px;
+}
+.skyPanel {
+  min-width: 0;
+}
+.skyPanel + .skyPanel {
+  position: relative;
+}
+.skyPanel + .skyPanel:before {
+  position: absolute;
+  content: '';
+  width: 1px;
+  left: -24px;
+  top: 15px;
+  bottom: 0;
+  background: #8d9b7e26;
+}
+.siteTitle {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.slot {
+  font:
+    10px 'IBM Plex Mono',
+    monospace;
+  border: 1px solid #657657;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  color: #bed29f;
+}
+.siteTitle h2 {
+  font-size: 13px;
+  font-weight: 500;
+  margin: 0 0 4px;
+}
+.siteTitle p {
+  font:
+    8px 'IBM Plex Mono',
+    monospace;
+  color: #b0bba8;
+  margin: 0;
+}
+.siteTitle p span {
+  margin: 0 6px;
+  color: #55674b;
+}
+.hypothesis {
+  font:
+    7px 'IBM Plex Mono',
+    monospace;
+  color: #9aa891;
+  letter-spacing: 0.3px;
+  margin-left: auto;
+}
+.sky {
+  display: block;
+  width: 100%;
+  max-width: 390px;
+  margin: -10px auto -8px;
+  overflow: visible;
+}
+.gridCircle {
+  stroke: #91a18030;
+  fill: none;
+  stroke-dasharray: 2 4;
+}
+.gridLine {
+  stroke: #91a18028;
+  stroke-width: 0.7;
+}
+.axis {
+  font:
+    10px 'IBM Plex Mono',
+    monospace;
+  fill: #bac5b1;
+}
+.elevLabels {
+  font:
+    7px 'IBM Plex Mono',
+    monospace;
+  fill: #a0af95;
+}
+.sun {
+  color: #e6bd76;
+}
+.earth {
+  color: #9ac6dd;
+}
+.readings {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.readings thead th {
+  font:
+    7px 'IBM Plex Mono',
+    monospace;
+  letter-spacing: 1px;
+  color: #9ba98f;
+  padding: 7px 0 10px;
+}
+.readings td {
+  font:
+    14px 'IBM Plex Mono',
+    monospace;
+  text-align: right;
+  white-space: nowrap;
+}
+.readings th:nth-child(n + 2) {
+  text-align: right;
+}
+.readings tbody tr {
+  border-top: 1px solid #a3b38d24;
+}
+.readings tbody th {
+  font-size: 12px;
+  font-weight: 500;
+  padding: 12px 0;
+}
+.readings small {
+  display: block;
+  font:
+    8px 'IBM Plex Mono',
+    monospace;
+  color: #b2bba8;
+  margin-top: 4px;
+}
+.comparison {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  background: #c2d3a80b;
+  border-block: 1px solid #a3b38d24;
+  margin-top: 22px;
+  padding: 18px 28px;
+}
+.comparisonSymbol {
+  font-size: 33px;
+  color: #c3d6a4;
+  font-weight: 400;
+  line-height: 1;
+}
+.comparison strong {
+  font-size: 13px;
+  font-weight: 500;
+}
+.comparison p {
+  font-size: 10px;
+  color: #b3beaa;
+  line-height: 1.5;
+  margin: 4px 0 0;
+}
+.comparisonTime {
+  margin-left: auto;
+  text-align: right;
+  font:
+    11px 'IBM Plex Mono',
+    monospace;
+  white-space: nowrap;
+}
+.comparisonTime small {
+  font-size: 7px;
+  display: block;
+  margin-top: 5px;
+  color: #98a58e;
+  letter-spacing: 1px;
+}
+.loom {
+  padding: 28px;
+}
+.loomHead {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+.loomHead .eyebrow {
+  font-size: 7px;
+  margin: 0 0 6px;
+  color: #b7c79f;
+}
+.loomHead h2 {
+  font-size: 21px;
+  font-weight: 450;
+  margin: 0;
+  letter-spacing: -0.5px;
+}
+.loomHead h2 span {
+  font-size: 12px;
+  color: #98a98a;
+  margin-left: 9px;
+  letter-spacing: 0;
+}
+.modes {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  border: 1px solid #73836259;
+  padding: 3px;
+  border-radius: 2px;
+}
+.modes button {
+  border: 0;
+  background: transparent;
+  color: #bdc8b1;
+  font-size: 9px;
+  padding: 8px 12px;
+}
+.modes button[aria-pressed='true'] {
+  background: #c2d3a8;
+  color: #152114;
+}
+.modes button:hover:not(:disabled) {
+  color: #152114;
+}
+.timelineControl {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 22px;
+}
+.timelineControl button {
+  width: 32px;
+  height: 30px;
+  border: 1px solid #65765778;
+  color: #e2e6d7;
+  background: transparent;
+}
+.timelineControl button:hover:not(:disabled) {
+  background: #2c3d27;
+}
+.rangeLabel {
+  flex: 1;
+  display: flex;
+  align-items: center;
+}
+.rangeLabel input {
+  width: 100%;
+  accent-color: #c8d6b1;
+  cursor: pointer;
+  margin: 0;
+  height: 22px;
+}
+.timelineControl .eventButton {
+  width: auto;
+  padding: 0 12px;
+  white-space: nowrap;
+  font-size: 9px;
+  letter-spacing: 0.2px;
+}
+.timelineTicks {
+  margin: 8px 0 17px 53px;
+  display: flex;
+  justify-content: space-between;
+  font:
+    8px 'IBM Plex Mono',
+    monospace;
+  color: #aebba2;
+  padding-right: 0;
+}
+.loomSite {
+  display: grid;
+  grid-template-columns: 23px 1fr;
+  gap: 14px;
+  align-items: center;
+  padding: 9px 0;
+}
+.loomSite + .loomSite {
+  border-top: 1px solid #a3b38d24;
+  margin-top: 9px;
+  padding-top: 18px;
+}
+.loomSlot {
+  font:
+    10px 'IBM Plex Mono',
+    monospace;
+  color: #b7c79f;
+}
+.trackRow {
+  display: grid;
+  grid-template-columns: 40px 1fr;
+  align-items: center;
+  gap: 8px;
+  font:
+    9px 'IBM Plex Mono',
+    monospace;
+  height: 20px;
+}
+.track {
+  width: 100%;
+  height: 12px;
+  cursor: crosshair;
+}
+.loomLegend {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  margin-top: 14px;
+}
+.loomLegend p {
+  font:
+    7px 'IBM Plex Mono',
+    monospace;
+  color: #b2bda7;
+  line-height: 1.8;
+  margin: 0;
+}
+.legendSolid,
+.legendMuted,
+.legendBoundary {
+  display: inline-block;
+  width: 10px;
+  height: 5px;
+  background: #bdd09f;
+  margin-right: 5px;
+  vertical-align: 1px;
+}
+.legendMuted {
+  background: #334035;
+  margin-left: 12px;
+}
+.legendBoundary {
+  background: #b9b3a0;
+  margin-left: 12px;
+}
+.bracketNote {
+  font-size: 10px;
+  color: #a7b49a;
+  line-height: 1.7;
+  max-width: 750px;
+  margin: 16px 0 0;
+}
+.instrumentFoot {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding: 14px 28px;
+  border-top: 1px solid #a3b38d24;
+  font:
+    7px 'IBM Plex Mono',
+    monospace;
+  letter-spacing: 0.8px;
+  color: #adba9f;
+  line-height: 1.7;
+}
+.notes {
+  max-width: 1344px;
+  margin: 0 auto;
+  padding: 60px 0;
+  display: grid;
+  grid-template-columns: 0.7fr 1fr 1.2fr;
+  column-gap: 36px;
+  align-items: start;
+}
+.notes .eyebrow {
+  font-size: 8px;
+  margin: 7px 0;
+}
+.notes h2 {
+  font-size: 29px;
+  line-height: 1.1;
+  font-weight: 450;
+  letter-spacing: -1px;
+  margin: 0;
+  max-width: 230px;
+}
+.notes p {
+  font-size: 12px;
+  color: #5b6755;
+  line-height: 1.8;
+  margin: 0;
+}
+.notes button {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #71816a;
+  padding: 10px 0;
+  margin-top: 13px;
+  font-size: 10px;
+  grid-column: 3;
+  justify-self: start;
+}
+.notes button span {
+  margin-left: 30px;
+}
+.footer {
+  max-width: 1440px;
+  margin: auto;
+  border-top: 1px solid #253c2726;
+  padding: 24px 48px 34px;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+.footerBrand {
+  font-size: 15px;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.footer p {
+  font-size: 10px;
+  color: #5b6755;
+}
+.footer > span {
+  margin-left: auto;
+  font:
+    7px 'IBM Plex Mono',
+    monospace;
+  color: #67745e;
+  letter-spacing: 0.6px;
+}
+.mobileSwitch {
+  display: none;
+}
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+.drawer {
+  position: fixed;
+  inset: 0 0 0 auto;
+  margin: 0;
+  max-height: 100dvh;
+  height: 100dvh;
+  max-width: 680px;
+  width: 100%;
+  background: #e9e9df;
+  color: #202b24;
+  border: 0;
+  border-left: 1px solid #68765c;
+  padding: 30px 40px;
+  overscroll-behavior: contain;
+}
+.drawer::backdrop {
+  background: #09110dbd;
+  backdrop-filter: blur(3px);
+}
+.drawerHead {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+.drawerHead .eyebrow {
+  margin: 0;
+  font-size: 8px;
+}
+.drawerHead button {
+  background: transparent;
+  border: 1px solid #9ca68f;
+  padding: 9px 14px;
+  font-size: 12px;
+}
+.drawer h2 {
+  font-size: 44px;
+  line-height: 1.05;
+  letter-spacing: -2px;
+  font-weight: 450;
+  margin: 35px 0 24px;
+}
+.drawer h3 {
+  font:
+    11px 'IBM Plex Mono',
+    monospace;
+  border-top: 1px solid #a9b09e;
+  margin: 30px 0 16px;
+  padding-top: 22px;
+}
+.drawer p,
+.drawer li {
+  font-size: 13px;
+  line-height: 1.8;
+  color: #4c5c45;
+}
+.drawer .source {
+  padding: 12px 0;
+}
+.source a {
+  font-size: 14px;
+  text-underline-offset: 4px;
+}
+.source p {
+  font-size: 10px;
+  margin: 8px 0;
+}
+.source code {
+  font:
+    9px/1.7 'IBM Plex Mono',
+    monospace;
+  overflow-wrap: anywhere;
+  white-space: pre-wrap;
+  display: block;
+  color: #5d6b55;
+}
+.download {
+  display: block;
+  width: fit-content;
+  border-bottom: 1px solid #6d7b60;
+  text-decoration: none;
+  padding: 9px 0;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.drawer details {
+  margin-top: 20px;
+}
+.drawer summary {
+  cursor: pointer;
+  font-size: 12px;
+}
+.fallback {
+  min-height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 660px;
+  padding: 35px;
+  margin: auto;
+}
+.fallback h1 {
+  font-size: 50px;
+  font-weight: 450;
+  letter-spacing: -2px;
+}
+.fallback p {
+  line-height: 1.8;
+  max-width: 450px;
+}
+.fallback button {
+  border: 1px solid #71816a;
+  background: transparent;
+  padding: 12px 20px;
+}
+.skeleton {
+  height: 100px;
+  width: 100%;
+  margin-top: 30px;
+  background: #d7dccb;
+  border-top: 1px solid #aab49b;
+}
+@media (min-width: 1441px) {
+  .intro,
+  .instrument,
+  .notes {
+    max-width: 1344px;
+  }
+}
+@media (max-width: 1440px) {
+  .intro,
+  .instrument,
+  .notes {
+    margin-left: 48px;
+    margin-right: 48px;
+  }
+}
+@media (min-width: 1200px) {
+  .intro {
+    padding-top: 41px;
+    padding-bottom: 36px;
+  }
+  .sky {
+    max-width: 330px;
+    margin-top: -8px;
+    margin-bottom: -8px;
+  }
+  .skies {
+    padding-top: 23px;
+  }
+  .intro h1 {
+    font-size: 68px;
+  }
+  .hypothesis {
+    font-size: 7px;
+  }
+}
+@media (max-width: 1000px) {
+  .header {
+    padding: 22px 30px;
+  }
+  .intro,
+  .instrument,
+  .notes {
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+  .intro {
+    grid-template-columns: 1fr 260px;
+    gap: 25px;
+    padding-top: 40px;
+  }
+  .intro h1 {
+    font-size: 59px;
+  }
+  .introAside {
+    padding-top: 24px;
+  }
+  .introAside p {
+    font-size: 13px;
+  }
+  .introAside .muted {
+    font-size: 11px;
+  }
+  .headerRight {
+    gap: 18px;
+  }
+  .releaseTag {
+    font-size: 8px;
+  }
+  .controls {
+    gap: 18px;
+    padding-inline: 22px;
+  }
+  .clock strong {
+    font-size: 12px;
+  }
+  .clock em {
+    margin-left: 5px;
+  }
+  .skies {
+    gap: 28px;
+    padding-inline: 22px;
+  }
+  .skyPanel + .skyPanel:before {
+    left: -14px;
+  }
+  .hypothesis {
+    display: none;
+  }
+  .sky {
+    margin-top: 0;
+    margin-bottom: 2px;
+  }
+  .readings td {
+    font-size: 12px;
+  }
+  .readings small {
+    font-size: 7px;
+  }
+  .readings thead th {
+    font-size: 6px;
+    letter-spacing: 0.5px;
+  }
+  .notes {
+    grid-template-columns: 0.65fr 1fr 1.2fr;
+    gap: 24px;
+  }
+  .notes h2 {
+    font-size: 26px;
+  }
+  .notes p {
+    font-size: 11px;
+  }
+  .footer {
+    padding-inline: 30px;
+  }
+  .footer p {
+    max-width: 200px;
+    font-size: 9px;
+  }
+  .loomLegend {
+    flex-wrap: wrap;
+  }
+  .instrumentBar {
+    padding-inline: 22px;
+  }
+  .instrumentBar .muted {
+    font-size: 7px;
+    margin-left: 5px;
+  }
+  .modelNote {
+    font-size: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .header {
+    padding: 18px 18px;
+    gap: 10px;
+  }
+  .brand {
+    font-size: 18px;
+    letter-spacing: 2px;
+    gap: 7px;
+  }
+  .brand small {
+    font-size: 6px;
+    letter-spacing: 0.65px;
+  }
+  .brand svg {
+    width: 28px;
+    height: 28px;
+  }
+  .headerRight {
+    gap: 0;
+  }
+  .releaseTag {
+    display: none;
+  }
+  .header button {
+    font-size: 10px;
+    white-space: nowrap;
+  }
+  .header button span {
+    margin-left: 5px;
+  }
+  .intro,
+  .instrument,
+  .notes {
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+  .intro {
+    display: block;
+    padding: 33px 2px 29px;
+  }
+  .intro .eyebrow {
+    font-size: 7px;
+    letter-spacing: 1px;
+    margin-bottom: 17px;
+  }
+  .intro h1 {
+    font-size: 55px;
+    letter-spacing: -3px;
+  }
+  .introAside {
+    max-width: 100%;
+    padding-top: 22px;
+  }
+  .introAside p {
+    font-size: 13px;
+    max-width: 300px;
+    line-height: 1.6;
+  }
+  .introAside .muted {
+    font-size: 11px;
+    max-width: 300px;
+  }
+  .introAside a {
+    font-size: 10px;
+    gap: 18px;
+    margin-top: 3px;
+  }
+  .desktopBreak {
+    display: none;
+  }
+  .edition {
+    display: none;
+  }
+  .instrumentBar {
+    padding: 14px 14px;
+    font-size: 7px;
+    letter-spacing: 0.6px;
+    display: block;
+  }
+  .instrumentBar .muted {
+    font-size: 6px;
+  }
+  .tinyCross {
+    font-size: 14px;
+    margin-right: 6px;
+  }
+  .modelNote {
+    display: block;
+    font-size: 9px;
+    letter-spacing: 0;
+    margin: 7px 0 0 18px;
+    color: #b8c9a7;
+  }
+  .controls {
+    grid-template-columns: 1fr 1fr;
+    gap: 17px 13px;
+    padding: 20px 15px 0;
+  }
+  .controls label > span,
+  .clock > span {
+    font-size: 7px;
+    letter-spacing: 0.7px;
+    margin-bottom: 6px;
+  }
+  .controls select {
+    font-size: 11px;
+    padding: 7px 0 8px;
+  }
+  .clock {
+    grid-column: 1/-1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 0 12px;
+    border-bottom: 1px solid #a3b38d24;
+    text-align: left;
+  }
+  .clock > span {
+    margin: 0;
+    font-size: 6px;
+  }
+  .clock strong {
+    font-size: 11px;
+  }
+  .mobileSwitch {
+    display: flex;
+    margin: 15px 15px 3px;
+    border: 1px solid #64735866;
+    padding: 3px;
+  }
+  .mobileSwitch button {
+    width: 50%;
+    border: 0;
+    background: transparent;
+    color: #b0bfa4;
+    padding: 10px 5px;
+    font-size: 10px;
+  }
+  .mobileSwitch button[aria-pressed='true'] {
+    background: #bdcda5;
+    color: #182315;
+  }
+  .skies {
+    display: block;
+    padding: 18px 15px 0;
+  }
+  .skyPanel {
+    display: none;
+  }
+  .skyPanel.mobileActive {
+    display: block;
+  }
+  .skyPanel + .skyPanel:before {
+    display: none;
+  }
+  .sky {
+    max-width: 380px;
+    margin-top: 0;
+  }
+  .siteTitle h2 {
+    font-size: 12px;
+  }
+  .siteTitle p {
+    font-size: 7px;
+  }
+  .slot {
+    font-size: 9px;
+    width: 22px;
+    height: 22px;
+  }
+  .readings thead th {
+    font-size: 7px;
+  }
+  .readings td {
+    font-size: 13px;
+  }
+  .readings small {
+    font-size: 7px;
+  }
+  .readings tbody th {
+    font-size: 11px;
+    padding: 12px 0;
+  }
+  .comparison {
+    padding: 16px 15px;
+    gap: 12px;
+    margin-top: 17px;
+    align-items: flex-start;
+  }
+  .comparisonSymbol {
+    font-size: 29px;
+  }
+  .comparison strong {
+    font-size: 12px;
+    line-height: 1.5;
+    display: block;
+  }
+  .comparison p {
+    font-size: 9px;
+    line-height: 1.7;
+  }
+  .comparisonTime {
+    display: none;
+  }
+  .loom {
+    padding: 23px 15px;
+  }
+  .loomHead {
+    display: block;
+  }
+  .loomHead h2 {
+    font-size: 20px;
+  }
+  .loomHead h2 span {
+    font-size: 11px;
+  }
+  .modes {
+    width: fit-content;
+    margin-top: 15px;
+  }
+  .modes button {
+    padding: 8px 12px;
+    font-size: 9px;
+  }
+  .timelineControl {
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  .timelineControl button {
+    width: 30px;
+    height: 30px;
+  }
+  .timelineControl .eventButton {
+    font-size: 9px;
+    order: 4;
+    width: 100%;
+    margin-top: 3px;
+    height: 32px;
+  }
+  .timelineTicks {
+    font-size: 6px;
+    margin: 13px 0 14px;
+    gap: 8px;
+  }
+  .loomSite {
+    grid-template-columns: 14px 1fr;
+    gap: 8px;
+  }
+  .trackRow {
+    grid-template-columns: 34px 1fr;
+    gap: 4px;
+    font-size: 8px;
+    height: 22px;
+  }
+  .loomLegend {
+    margin-top: 17px;
+    gap: 7px;
+  }
+  .loomLegend p {
+    font-size: 6px;
+    line-height: 2;
+  }
+  .legendMuted,
+  .legendBoundary {
+    margin-left: 8px;
+  }
+  .bracketNote {
+    font-size: 9px;
+    line-height: 1.8;
+    margin-top: 12px;
+  }
+  .instrumentFoot {
+    padding: 13px 15px;
+    display: block;
+    font-size: 6px;
+    line-height: 2;
+    letter-spacing: 0.5px;
+  }
+  .instrumentFoot span {
+    display: block;
+  }
+  .notes {
+    display: block;
+    padding: 36px 2px;
+  }
+  .notes .eyebrow {
+    margin-bottom: 15px;
+    font-size: 7px;
+  }
+  .notes h2 {
+    font-size: 29px;
+    max-width: none;
+    margin-bottom: 16px;
+  }
+  .notes p {
+    font-size: 12px;
+    line-height: 1.8;
+  }
+  .notes button {
+    margin-top: 12px;
+    font-size: 11px;
+  }
+  .footer {
+    padding: 22px 18px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px 16px;
+  }
+  .footer p {
+    max-width: 190px;
+    line-height: 1.6;
+    margin: 0;
+    font-size: 9px;
+  }
+  .footer > span {
+    margin-left: 0;
+    font-size: 6px;
+    flex-basis: 100%;
+    margin-top: 7px;
+  }
+  .footerBrand {
+    font-size: 13px;
+  }
+  .drawer {
+    padding: 24px 22px;
+  }
+  .drawer h2 {
+    font-size: 39px;
+  }
+  .drawer p,
+  .drawer li {
+    font-size: 12px;
+  }
+  .drawerHead button {
+    font-size: 11px;
+  }
+  .drawerHead .eyebrow {
+    font-size: 7px;
+  }
+}
+.topTransport {
+  padding: 0 28px 5px;
+}
+.topTransport .timelineControl {
+  margin-top: 17px;
+}
+.transportCaption {
+  display: flex;
+  justify-content: space-between;
+  margin: 7px 0 0 44px;
+  font:
+    9px 'IBM Plex Mono',
+    monospace;
+  color: #afbea2;
+}
+.transportCaption span:nth-child(2) {
+  color: #8fa180;
+}
+.controls label > span,
+.clock > span {
+  font-size: 9px;
+}
+.instrumentBar {
+  font-size: 10px;
+}
+.instrumentBar .muted {
+  font-size: 9px;
+}
+.modelNote {
+  font-size: 10px;
+}
+.siteTitle p {
+  font-size: 10px;
+}
+.hypothesis {
+  font-size: 9px;
+}
+.readings thead th {
+  font-size: 9px;
+  letter-spacing: 0.5px;
+}
+.readings small {
+  font-size: 10px;
+}
+.axis {
+  font-size: 12px;
+}
+.elevLabels {
+  font-size: 10px;
+}
+.loomHead .eyebrow {
+  font-size: 9px;
+}
+.modes button {
+  font-size: 11px;
+}
+.timelineTicks {
+  margin: 18px 0 14px 85px;
+  font-size: 10px;
+}
+.trackRow {
+  font-size: 11px;
+  height: 24px;
+}
+.loomLegend p {
+  font-size: 9px;
+}
+.instrumentFoot {
+  font-size: 9px;
+  letter-spacing: 0.4px;
+}
+.bracketNote {
+  font-size: 11px;
+}
+.clock strong {
+  font-size: 15px;
+}
+.comparison p {
+  font-size: 12px;
+}
+.comparison strong {
+  font-size: 15px;
+}
+.readings tbody th {
+  font-size: 13px;
+}
+.readings td {
+  font-size: 15px;
+}
+.timelineControl .eventButton {
+  font-size: 11px;
+}
+.topTransport input {
+  min-height: 30px;
+}
+.instrumentFoot {
+  flex-wrap: wrap;
+}
+.modes button {
+  min-height: 34px;
+}
+.timelineControl button {
+  min-width: 36px;
+  min-height: 36px;
+}
+.intro .eyebrow {
+  font-size: 10px;
+}
+.footer > span {
+  font-size: 9px;
+}
+.footer p {
+  font-size: 11px;
+}
+.readings tbody th {
+  padding-block: 13px;
+}
+@media (min-width: 1200px) {
+  .sky {
+    max-width: 350px;
+  }
+}
+@media (max-width: 1000px) {
+  .hypothesis {
+    display: none;
+  }
+  .clock strong {
+    font-size: 12px;
+  }
+  .siteTitle p {
+    font-size: 9px;
+  }
+  .instrumentBar .muted {
+    font-size: 8px;
+  }
+  .modelNote {
+    font-size: 9px;
+  }
+  .topTransport {
+    padding-inline: 22px;
+  }
+  .readings td {
+    font-size: 13px;
+  }
+  .readings small {
+    font-size: 9px;
+  }
+  .readings thead th {
+    font-size: 8px;
+  }
+}
+@media (max-width: 767px) {
+  .topTransport {
+    padding: 0 15px 5px;
+  }
+  .topTransport .timelineControl {
+    margin-top: 14px;
+  }
+  .transportCaption {
+    margin: 9px 0 0;
+    font-size: 8px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .transportCaption span:nth-child(2) {
+    order: 3;
+    width: 100%;
+    text-align: center;
+  }
+  .instrumentBar {
+    font-size: 8px;
+  }
+  .instrumentBar .muted {
+    font-size: 7px;
+  }
+  .modelNote {
+    font-size: 10px;
+  }
+  .controls label > span,
+  .clock > span {
+    font-size: 8px;
+  }
+  .clock strong {
+    font-size: 11px;
+  }
+  .readings thead th {
+    font-size: 8px;
+  }
+  .readings small {
+    font-size: 9px;
+  }
+  .siteTitle p {
+    font-size: 9px;
+  }
+  .readings td {
+    font-size: 13px;
+  }
+  .comparison p {
+    font-size: 11px;
+  }
+  .comparison strong {
+    font-size: 13px;
+  }
+  .loomHead .eyebrow {
+    font-size: 8px;
+  }
+  .loomLegend p {
+    font-size: 9px;
+  }
+  .loomLegend p:first-child {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3px;
+  }
+  .instrumentFoot {
+    font-size: 8px;
+  }
+  .bracketNote {
+    font-size: 11px;
+  }
+  .timelineTicks {
+    margin: 20px 0 13px 22px;
+    font-size: 8px;
+  }
+  .trackRow {
+    font-size: 10px;
+  }
+  .timelineControl .eventButton {
+    min-height: 36px;
+  }
+  .intro .eyebrow {
+    font-size: 8px;
+  }
+  .footer > span {
+    font-size: 8px;
+  }
+  .footer p {
+    font-size: 10px;
+  }
+  .modes button {
+    font-size: 11px;
+  }
+  .mobileSwitch button {
+    min-height: 38px;
+    font-size: 11px;
+  }
+}
+.introAside .muted,
+.edition,
+.footer > span {
+  color: #53624c;
+}
+@media (prefers-reduced-motion: reduce) {
+  :global(html) {
+    scroll-behavior: auto;
+  }
+  :global(*),
+  :global(*::before),
+  :global(*::after) {
+    animation: none !important;
+    transition: none !important;
+  }
+}

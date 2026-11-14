@@ -1,0 +1,7 @@
+node_modules/
+dist/
+science/raw/
+public/data/
+package-lock.json
+playwright-report/
+test-results/

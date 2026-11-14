@@ -1,0 +1,124 @@
+{
+  "measured_at_utc": "2026-11-14T06:53:35.464Z",
+  "environment": "Local Vite production preview, installed Chrome, cold cache, 1440x900",
+  "throttle": {
+    "latency_ms": 150,
+    "download_mbps": 1.5,
+    "upload_mbps": 0.75,
+    "cpu_slowdown": 4
+  },
+  "dataReadyMs": 3478.7000000476837,
+  "lcp": 3456,
+  "cls": 0.011646388058341907,
+  "resources": [
+    {
+      "name": "index-DZMzFtcg.js",
+      "transferSize": 105315,
+      "encodedBodySize": 105015,
+      "duration": 765.8999998569489
+    },
+    {
+      "name": "index-CHjz_KEF.css",
+      "transferSize": 5509,
+      "encodedBodySize": 5209,
+      "duration": 233.30000019073486
+    },
+    {
+      "name": "dm-sans-latin-500-normal-B9HHJjqV.woff2",
+      "transferSize": 14604,
+      "encodedBodySize": 14304,
+      "duration": 324.60000014305115
+    },
+    {
+      "name": "dm-sans-latin-400-normal-CW0RaeGs.woff2",
+      "transferSize": 14500,
+      "encodedBodySize": 14200,
+      "duration": 354.7000000476837
+    },
+    {
+      "name": "release.json",
+      "transferSize": 68405,
+      "encodedBodySize": 68105,
+      "duration": 591.4000000953674
+    },
+    {
+      "name": "manifest.json",
+      "transferSize": 613,
+      "encodedBodySize": 313,
+      "duration": 179.10000014305115
+    },
+    {
+      "name": "favicon.svg",
+      "transferSize": 582,
+      "encodedBodySize": 282,
+      "duration": 190.39999985694885
+    },
+    {
+      "name": "dm-sans-latin-600-normal-Aqo67rzb.woff2",
+      "transferSize": 14444,
+      "encodedBodySize": 14144,
+      "duration": 327.59999990463257
+    },
+    {
+      "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+      "transferSize": 15008,
+      "encodedBodySize": 14708,
+      "duration": 342.2999999523163
+    }
+  ],
+  "navigation": {
+    "name": "http://127.0.0.1:4173/",
+    "entryType": "navigation",
+    "startTime": 0,
+    "duration": 1266.4000000953674,
+    "navigationId": 4828,
+    "initiatorType": "navigation",
+    "deliveryType": "",
+    "nextHopProtocol": "http/1.1",
+    "renderBlockingStatus": "non-blocking",
+    "contentType": "text/html",
+    "contentEncoding": "",
+    "workerStart": 0,
+    "workerRouterEvaluationStart": 0,
+    "workerCacheLookupStart": 0,
+    "workerMatchedSourceType": "",
+    "workerFinalSourceType": "",
+    "redirectStart": 0,
+    "redirectEnd": 0,
+    "fetchStart": 1.2999999523162842,
+    "domainLookupStart": 1.2999999523162842,
+    "domainLookupEnd": 1.2999999523162842,
+    "connectStart": 1.2999999523162842,
+    "secureConnectionStart": 0,
+    "connectEnd": 1.2999999523162842,
+    "requestStart": 3.200000047683716,
+    "responseStart": 22.5,
+    "firstInterimResponseStart": 0,
+    "finalResponseHeadersStart": 22.5,
+    "responseEnd": 171.09999990463257,
+    "transferSize": 930,
+    "encodedBodySize": 630,
+    "decodedBodySize": 630,
+    "responseStatus": 200,
+    "serverTiming": [],
+    "unloadEventStart": 0,
+    "unloadEventEnd": 0,
+    "domInteractive": 242.09999990463257,
+    "domContentLoadedEventStart": 1264.7999999523163,
+    "domContentLoadedEventEnd": 1265.2000000476837,
+    "domComplete": 1266.2000000476837,
+    "loadEventStart": 1266.2999999523163,
+    "loadEventEnd": 1266.4000000953674,
+    "type": "navigate",
+    "redirectCount": 0,
+    "activationStart": 0,
+    "criticalCHRestart": 0,
+    "notRestoredReasons": null,
+    "confidence": {
+      "randomizedTriggerRate": 0.4994798,
+      "value": "low"
+    }
+  },
+  "pageErrors": [],
+  "limits": "Single local lab run, not Lighthouse, not public-host or field Core Web Vitals. Preview serves uncompressed assets; production host compression remains unverified."
+}

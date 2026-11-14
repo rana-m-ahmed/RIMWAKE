@@ -1,0 +1,13 @@
+import {chromium} from '@playwright/test';
+import {pathToFileURL} from 'node:url';
+import {resolve} from 'node:path';
+const browser=await chromium.launch({channel:'chrome'});
+const page=await browser.newPage({viewport:{width:1280,height:720}});
+await page.goto(pathToFileURL(resolve('docs/demo-slides.html')).href);
+await page.evaluate(()=>document.fonts.ready);
+const overflow=await page.locator('.slide').evaluateAll(slides=>slides.map((slide,index)=>({slide:index+1,overflow:slide.scrollHeight>slide.clientHeight})));
+if(overflow.some(s=>s.overflow))throw new Error(JSON.stringify(overflow));
+await page.pdf({path:'docs/RIMWAKE-demo.pdf',preferCSSPageSize:true,printBackground:true});
+for(const i of [0,3,5])await page.locator('.slide').nth(i).screenshot({path:`docs/screenshots/demo-slide-${i+1}.png`});
+console.log('Rendered six-slide PDF; slide overflow checks passed.');
+await browser.close();

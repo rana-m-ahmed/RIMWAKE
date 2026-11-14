@@ -1,0 +1,28 @@
+import { chromium } from '@playwright/test';
+import { writeFile } from 'node:fs/promises';
+const browser=await chromium.launch({channel:'chrome'});
+const context=await browser.newContext({viewport:{width:1440,height:900}});
+const page=await context.newPage();
+const session=await context.newCDPSession(page);
+await session.send('Network.enable');
+await session.send('Network.setCacheDisabled',{cacheDisabled:true});
+await session.send('Network.emulateNetworkConditions',{offline:false,latency:150,downloadThroughput:187500,uploadThroughput:93750});
+await session.send('Emulation.setCPUThrottlingRate',{rate:4});
+await page.addInitScript(()=>{
+ window.__measure={lcp:0,cls:0};
+ new PerformanceObserver(list=>{for(const entry of list.getEntries())window.__measure.lcp=entry.startTime}).observe({type:'largest-contentful-paint',buffered:true});
+ new PerformanceObserver(list=>{for(const entry of list.getEntries())if(!entry.hadRecentInput)window.__measure.cls+=entry.value}).observe({type:'layout-shift',buffered:true});
+});
+await page.goto('http://127.0.0.1:4173/');
+await page.getByRole('slider',{name:'UTC sample'}).waitFor();
+const dataReadyMs=await page.evaluate(()=>performance.now());
+await page.waitForLoadState('networkidle');
+const result=await page.evaluate(()=>({...window.__measure,resources:performance.getEntriesByType('resource').map(r=>({name:r.name.split('/').at(-1),transferSize:r.transferSize,encodedBodySize:r.encodedBodySize,duration:r.duration})),navigation:performance.getEntriesByType('navigation')[0].toJSON()}));
+const errors=[];page.on('pageerror',error=>errors.push(error.message));
+await page.getByRole('slider').fill('200');
+await page.getByRole('button',{name:'Next crossing'}).click();
+await page.screenshot({path:'docs/screenshots/rimwake-production.png',fullPage:false});
+const report={measured_at_utc:new Date().toISOString(),environment:'Local Vite production preview, installed Chrome, cold cache, 1440x900',throttle:{latency_ms:150,download_mbps:1.5,upload_mbps:0.75,cpu_slowdown:4},dataReadyMs,...result,pageErrors:errors,limits:'Single local lab run, not Lighthouse, not public-host or field Core Web Vitals. Encoded transfer sizes are recorded as observed; public-host compression remains unverified.'};
+await writeFile('docs/performance.json',JSON.stringify(report,null,2));
+console.log(JSON.stringify({dataReadyMs,lcp_ms:result.lcp,cls:result.cls,pageErrors:errors}));
+await browser.close();

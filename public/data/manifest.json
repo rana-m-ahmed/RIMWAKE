@@ -1,0 +1,7 @@
+{
+  "release_id": "rimwake-p0-20261114-v1",
+  "schema_version": "1.0.0",
+  "release_sha256": "c29ea61969ba53cfcc6531288c92430330249f25caa1dc71638cb3c57ab17d32",
+  "intervals_sha256": "a513896683b19240abd037c6e8c2c1e62084a2c9258b665be974b6dfe3bd8b95",
+  "validation": "integrity_passed_science_provisional"
+}
