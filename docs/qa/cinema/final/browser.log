@@ -1,0 +1,37 @@
+
+Running 28 tests using 2 workers
+
+(node:19836) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:15196) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+  ok  1 tests\explorer.spec.ts:5:1 › shared UTC drives all four exact source readings; slider, arrows, keyboard and calibrated markers agree (2.7s)
+  ok  2 tests\accessibility.spec.ts:4:3 › WCAG route / (4.5s)
+  ok  3 tests\explorer.spec.ts:44:1 › observer sheet, same-site state, swap, difference and refinement all use shared selection (3.3s)
+  ok  5 tests\explorer.spec.ts:69:1 › corrupt release and unavailable network fail closed, retry restores real data (1.8s)
+  ok  4 tests\accessibility.spec.ts:4:3 › WCAG route /explore (3.9s)
+  ok  6 tests\explorer.spec.ts:85:1 › scrubbing loaded observations makes no external requests and reproduction downloads exist (2.4s)
+  ok  8 tests\explorer.spec.ts:100:3 › responsive Explorer 1440 (1.1s)
+  ok  7 tests\accessibility.spec.ts:4:3 › WCAG route /field-guide (2.8s)
+  ok  9 tests\explorer.spec.ts:100:3 › responsive Explorer 768 (1.2s)
+  ok 11 tests\explorer.spec.ts:100:3 › responsive Explorer 390 (1.2s)
+  ok 10 tests\accessibility.spec.ts:4:3 › WCAG route /sources (2.8s)
+  ok 12 tests\explorer.spec.ts:100:3 › responsive Explorer 360 (1.4s)
+  ok 14 tests\explorer.spec.ts:100:3 › responsive Explorer 320 (1.3s)
+  ok 13 tests\accessibility.spec.ts:17:1 › evidence dialog has accessible contrast, trapped focus and restores its trigger (3.6s)
+  ok 15 tests\meridian.spec.ts:2:1 › six native-scroll chapters carry an exact refined sample into Explorer (3.1s)
+  ok 16 tests\accessibility.spec.ts:41:1 › mobile menu and observer sheet remain accessible at 320px; primary controls are touch sized (3.7s)
+  ok 18 tests\accessibility.spec.ts:63:1 › sites without refined events show an explicit neutral state (2.3s)
+  ok 17 tests\meridian.spec.ts:16:1 › all destinations, browser history, selection retention, refresh and legacy routes work (4.1s)
+  ok 20 tests\meridian.spec.ts:39:1 › curated cases set the actual sample and crossing remains a bracket (2.2s)
+  ok 21 tests\meridian.spec.ts:54:1 › Field Guide concept interaction is explicitly separate from observations (1.2s)
+  ok 22 tests\unknown-boundary.spec.ts:8:3 › honest unknown scientific UI state (1.2s)
+  ok 23 tests\unknown-boundary.spec.ts:8:3 › honest boundary scientific UI state (1.4s)
+  ok 19 tests\accessibility.spec.ts:75:1 › calibrated view and expanded Horizon Loom retain accessible contrast and names (6.4s)
+  ok 24 tests\visual-context.spec.ts:3:3 › reduced: complete story and real Explorer remain usable without 3D (1.5s)
+  ok 25 tests\visual-context.spec.ts:3:3 › no-webgl: complete story and real Explorer remain usable without 3D (2.2s)
+  ok 26 tests\visual-context.spec.ts:26:1 › WebGL context loss switches Explorer to calibrated SVG without changing measurements (2.3s)
+  ok 27 tests\visual-context.spec.ts:41:1 › failed lunar model retains the illustrated poster and working story links (1.6s)
+  ok 28 tests\visual-context.spec.ts:51:1 › repeated navigation releases story scenes and restores exactly two Explorer views (7.6s)
+
+  28 passed (48.3s)

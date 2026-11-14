@@ -1,129 +1,61 @@
 import { test, expect } from '@playwright/test';
-import AxeBuilder from '@axe-core/playwright';
-
-test('Discover, Explore and Method form one working journey; direct refresh, state preservation and legacy links', async ({
-  page,
-}) => {
+test('six native-scroll chapters carry an exact refined sample into Explorer', async ({ page }) => {
   await page.goto('/');
-  await expect(page.getByRole('heading', { name: 'Different sky.' })).toBeVisible();
-  await page.getByRole('link', { name: 'Enter the Explorer', exact: false }).first().click();
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('WHERE');
+  await page.getByRole('button', { name: 'Chapter 05: Move time' }).click();
+  await page.getByRole('button', { name: '03:40 UTC', exact: true }).click();
+  await expect(page.getByRole('button', { name: '03:40 UTC', exact: true })).toHaveAttribute(
+    'aria-pressed',
+    'true',
+  );
+  await page.getByRole('link', { name: 'Enter the Explorer', exact: false }).click();
   await expect(page).toHaveURL(/\/explore$/);
-  const slider = page.getByRole('slider', { name: 'UTC sample', exact: true });
-  await slider.fill('25');
-  const reading = await page.getByTestId('A-10-elevation').innerText();
-  await page
-    .getByRole('navigation', { name: 'Primary', exact: true })
-    .getByRole('link', { name: 'Method', exact: true })
-    .click();
-  await expect(page.getByRole('heading', { name: 'Know what the sky can say.' })).toBeVisible();
-  await page
-    .getByRole('navigation', { name: 'Primary', exact: true })
-    .getByRole('link', { name: 'Explore', exact: true })
-    .click();
-  await expect(slider).toHaveValue('25');
-  await expect(page.getByTestId('A-10-elevation')).toHaveText(reading);
-  await page.reload();
-  await expect(slider).toBeVisible();
-  await page.goto('/#instrument');
-  await expect(page).toHaveURL(/\/explore$/);
-  await expect(slider).toBeVisible();
-  await page.goto('/method');
-  await page.reload();
-  await expect(page.getByRole('heading', { name: 'Know what the sky can say.' })).toBeVisible();
-  await page.goto('/unknown');
-  await expect(page.getByRole('heading', { name: 'A different path.' })).toBeVisible();
+  await expect(page.getByRole('slider')).toHaveValue('4');
+  await expect(page.getByTestId('selected-utc')).toContainText('03:40');
 });
-
-test('swap updates all selected records; seam explains actual deltas; research modules stay gated', async ({
+test('all destinations, browser history, selection retention, refresh and legacy routes work', async ({
   page,
 }) => {
   await page.goto('/explore');
-  await expect(page.getByRole('slider')).toBeVisible();
-  const a = await page.getByTestId('A-10-elevation').innerText(),
-    b = await page.getByTestId('B-10-elevation').innerText();
-  await page.getByRole('button', { name: 'Swap A and B' }).click();
-  await expect(page.getByTestId('A-10-elevation')).toHaveText(b);
-  await expect(page.getByTestId('B-10-elevation')).toHaveText(a);
-  await expect(page.getByRole('combobox', { name: 'Observation site A' })).toHaveValue('im2');
-  await page.getByRole('button', { name: 'Inspect the meridian difference' }).click();
-  await expect(page.getByRole('dialog', { name: 'Meridian difference' })).toContainText(
-    'B minus elevation at A',
-  );
-  await page.keyboard.press('Escape');
-  await expect(page.getByRole('button', { name: 'Inspect the meridian difference' })).toBeFocused();
-  await page.getByRole('button', { name: /Cause study/ }).click();
-  await expect(page.getByRole('dialog')).toContainText('not yet available');
-  await page.keyboard.press('Escape');
-  await page.getByRole('button', { name: /Robustness Research/ }).click();
-  await expect(page.getByRole('dialog')).toContainText('No probability');
+  await page.getByRole('slider').fill('25');
+  const value = await page.getByTestId('A-10-elevation').innerText();
+  const nav = page.getByRole('navigation', { name: 'Primary', exact: true });
+  await nav.getByRole('link', { name: 'Field Guide' }).click();
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('A LITTLE CONTEXT');
+  await nav.getByRole('link', { name: 'Explorer', exact: true }).click();
+  await expect(page.getByRole('slider')).toHaveValue('25');
+  await expect(page.getByTestId('A-10-elevation')).toHaveText(value);
+  await page.goBack();
+  await expect(page).toHaveURL(/field-guide$/);
+  await page.goto('/method');
+  await expect(page).toHaveURL(/sources$/);
+  await page.reload();
+  await expect(page.getByRole('heading', { level: 1 })).toContainText('AN EVIDENCE TRAIL');
+  await page.goto('/#instrument');
+  await expect(page).toHaveURL(/explore$/);
+  await page.goto('/unknown');
+  await expect(page.getByRole('heading', { name: 'A different path.' })).toBeVisible();
 });
-
-test('six-act story uses released cases, changes the shared sample and remains skippable', async ({
-  page,
-}) => {
-  await page.goto('/explore?case=two-skies-one-instant&guide=1');
-  const guide = page.getByRole('region', { name: 'Guided discovery' });
-  await expect(guide).toBeVisible();
+test('curated cases set the actual sample and crossing remains a bracket', async ({ page }) => {
+  await page.goto('/explore?case=two-skies-one-instant');
   await expect(page.getByRole('slider')).toHaveValue('0');
-  await guide.getByRole('button', { name: 'Next act' }).click();
-  await expect(guide).toContainText('ACT 02');
-  await guide.getByRole('button', { name: 'Next act' }).click();
-  await expect(page.getByRole('slider')).toHaveValue('4');
-  await guide.getByRole('button', { name: 'Back', exact: true }).click();
-  await expect(page.getByRole('slider')).toHaveValue('0');
-  await guide.getByRole('button', { name: 'Skip guide' }).click();
-  await expect(guide).not.toBeVisible();
-  await expect(page.getByRole('slider')).toHaveValue('0');
+  await expect(page.getByTestId('A-10-elevation')).toHaveText('\u22124.126\u00b0');
   await page.goto('/explore?case=sunrise-im1');
   await expect(page.getByRole('slider')).toHaveValue('3');
-  await expect(page.getByTestId('selected-utc')).toContainText('03:30');
   await page.getByRole('button', { name: 'Next crossing' }).click();
   await expect(page.getByTestId('selected-utc')).toContainText('03:40');
   await expect(
     page.getByText('Exact crossing time is unresolved.', { exact: false }),
   ).toBeVisible();
   await page.goto('/explore?case=missing');
-  await expect(page.getByText('That case is unavailable', { exact: false })).toBeVisible();
+  await expect(page.getByText('This case is unavailable', { exact: false })).toBeVisible();
   await expect(page.getByRole('slider')).toBeVisible();
 });
-
-for (const path of ['/', '/explore', '/method'])
-  test(`accessible route ${path}`, async ({ page }) => {
-    await page.goto(path);
-    await page.waitForLoadState('networkidle');
-    const result = await new AxeBuilder({ page })
-      .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'])
-      .analyze();
-    expect(
-      result.violations.map((v) => ({
-        id: v.id,
-        nodes: v.nodes.map((n) => ({ target: n.target, summary: n.failureSummary })),
-      })),
-    ).toEqual([]);
-  });
-
-test('mobile navigation, touch targets, unknown route, and Explorer without WebGL', async ({
+test('Field Guide concept interaction is explicitly separate from observations', async ({
   page,
 }) => {
-  await page.setViewportSize({ width: 360, height: 800 });
-  await page.addInitScript(() => {
-    const original = HTMLCanvasElement.prototype.getContext;
-    HTMLCanvasElement.prototype.getContext = function (type, ...args) {
-      if (String(type).includes('webgl')) return null;
-      return original.apply(this, [type, ...args] as any);
-    } as typeof original;
-  });
-  await page.goto('/');
-  await page.getByRole('button', { name: 'Open navigation' }).click();
-  await page
-    .getByRole('navigation', { name: 'Mobile primary' })
-    .getByRole('link', { name: 'Explore' })
-    .click();
-  await expect(page.getByRole('slider')).toBeVisible();
-  await page.getByRole('button', { name: 'B / Athena' }).click();
-  await expect(page.getByTestId('B-10-elevation')).toBeVisible();
-  await page.getByRole('button', { name: 'Locate the observers in 3D' }).click();
-  await expect(page.getByRole('dialog')).toContainText('3D is unavailable');
-  await page.keyboard.press('Escape');
-  await expect(page.getByRole('slider')).toBeVisible();
+  await page.goto('/field-guide');
+  await page.getByRole('button', { name: 'Below the plane', exact: true }).click();
+  await expect(page.getByRole('img', { name: /Conceptual below/ })).toBeVisible();
+  await expect(page.getByText('This diagram explains a concept.', { exact: false })).toBeVisible();
 });

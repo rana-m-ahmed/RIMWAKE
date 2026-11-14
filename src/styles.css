@@ -1,21 +1,21 @@
 :root {
-  --paper: #f0f1ed;
-  --porcelain: #fbfcf8;
-  --ink: #16212b;
-  --graphite: #35424b;
-  --quiet: #5b6a70;
+  --paper: #090d13;
+  --porcelain: #121923;
+  --ink: #f0f1ed;
+  --graphite: #c1cad6;
+  --quiet: #aab7c8;
   --space: #0b121b;
   --space-2: #111e2b;
   --space-3: #1a2a37;
   --night-text: #f3f4f0;
   --night-subtle: #b6c4cb;
-  --rule-light: #ccd2d0;
+  --rule-light: #2e3948;
   --rule-dark: #364551;
   --sun: #eeb66b;
   --earth: #86c7eb;
   --warning: #e69a89;
   --focus: #f1cf88;
-  --font-display: 'Newsreader', Georgia, serif;
+  --font-display: 'Barlow Condensed', 'Arial Narrow', Arial, sans-serif;
   --font-body: 'IBM Plex Sans', 'Helvetica Neue', Arial, sans-serif;
   --font-data: 'IBM Plex Mono', Consolas, monospace;
   font-family: var(--font-body);
@@ -146,7 +146,33 @@ svg {
   font-size: 15px;
 }
 .primaryButton:hover {
-  background: #34424e;
+  background: #cbd5de;
+  color: #10151d;
+}
+.quietLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 18px;
+  min-height: 44px;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid #6f7b8e;
+  padding: 10px 0;
+  color: inherit;
+}
+:root {
+  color-scheme: dark;
+}
+button:focus-visible,
+a:focus-visible,
+input:focus-visible,
+select:focus-visible,
+summary:focus-visible,
+textarea:focus-visible {
+  outline-color: #f1cf88;
+}
+.dark .primaryButton {
+  color: #111821;
 }
 .dark button:focus-visible,
 .dark a:focus-visible,

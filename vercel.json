@@ -3,7 +3,9 @@
   "outputDirectory": "dist",
   "rewrites": [
     { "source": "/explore", "destination": "/index.html" },
-    { "source": "/method", "destination": "/index.html" }
+    { "source": "/method", "destination": "/index.html" },
+    { "source": "/field-guide", "destination": "/index.html" },
+    { "source": "/sources", "destination": "/index.html" }
   ],
   "headers": [
     {

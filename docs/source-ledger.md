@@ -57,11 +57,13 @@ These are hypothetical Horizons observers using approximate reported horizontal 
 
 Exact query URLs, parameters, header settings and raw file paths are recorded in `public/data/release.json`. All raw data are in `science/raw/` and the downloadable evidence archive.
 
-## Assets and tools
+## Current cinema assets and tools
 
-- Original wordmark, calibrated sky plots and interface vectors were created in code. No NASA logo, third-party photos or generated images are used.
-- DM Sans and IBM Plex Mono are locally bundled through Fontsource. Their SIL Open Font License files are distributed in `public/licenses/`.
-- React and React DOM (MIT), Vite (MIT), TypeScript (Apache-2.0), Zod (MIT); development tools Vitest (MIT), Playwright (Apache-2.0), axe-core (MPL-2.0), Prettier (MIT). Exact versions are locked in package-lock.json.
-- Python Requests (Apache-2.0), pytest (MIT); requirements are pinned in science/requirements.txt.
-- OpenAI Codex assisted with planning, code, scientific ingestion, tests, visual review and submission copy. The owner must review final claims and submit.
-- NASA/JPL data use does not imply endorsement. This is an independent educational project.
+- Original wordmark, signed reference planes, calibrated SVG plots, compass and concept graphics are created in code. No NASA logo or generated image is used.
+- NASA Goddard Moon model: https://svs.gsfc.nasa.gov/14959/ ; production Dan Gallagher, data Ernie Wright / LRO. Original source GLB: 13,799,876 bytes, SHA-256 `12d3b0bb7fe214903f51447d1bc61710f442e92a11c703fcaca6d4e7ff8e67d4`. Shipped GLB: 1,724,856 bytes, SHA-256 `9991e49fe30dbc4b81c8e73e554c604e4881a6b68b434fc5dd0518f1db4fe94e`. All geometry buffers preserved; embedded color map resized to 2048x1024 WebP quality 88. Reproduction: `scripts/optimize_moon.py`. Download and transform metadata: `public/assets/cinema-provenance.json`.
+- NASA SVS / Ernie Wright, LRO / LROC / LOLA, CGI Moon Kit: https://svs.gsfc.nasa.gov/4720/ . Mobile color sphere and fallback poster use the existing verified map; original transformation hashes remain in `public/assets/visual-provenance.json`. Polar regions include lower-resolution albedo fill.
+- The globe is color-only visual context. Camera and lighting are illustrative, not an ephemeris or DEM. Terrain gating is unchanged. A color map never enters the scientific model.
+- Self-hosted Barlow Condensed 600, IBM Plex Sans 400/500/600, IBM Plex Mono 400 via Fontsource; SIL Open Font License notices in `public/licenses/`. Earlier font notices are retained for historical releases.
+- React / React DOM, Three.js, React Three Fiber and Drei (MIT); Vite (MIT), TypeScript (Apache-2.0), Zod (MIT), GSAP / @gsap/react (GreenSock standard license). Exact versions and transitive notices remain in `package-lock.json` and installed package license files.
+- Playwright, axe-core, Vitest, pytest and Prettier provide local checks. This is an independent educational project. No soundtrack is used.
+- OpenAI Codex assisted design, code, asset preparation, ingestion, tests and copy. Human creative direction and final submission remain with the owner. NASA/JPL source use does not imply endorsement.

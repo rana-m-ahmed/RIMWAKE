@@ -1,0 +1,122 @@
+[
+  {
+    "route": "/",
+    "width": 1440,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/explore",
+    "width": 1440,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/field-guide",
+    "width": 1440,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/sources",
+    "width": 1440,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 768,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/explore",
+    "width": 768,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/field-guide",
+    "width": 768,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/sources",
+    "width": 768,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 390,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/explore",
+    "width": 390,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/field-guide",
+    "width": 390,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/sources",
+    "width": 390,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 360,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/explore",
+    "width": 360,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/field-guide",
+    "width": 360,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/sources",
+    "width": 360,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/",
+    "width": 320,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/explore",
+    "width": 320,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/field-guide",
+    "width": 320,
+    "overflow": false,
+    "errors": []
+  },
+  {
+    "route": "/sources",
+    "width": 320,
+    "overflow": false,
+    "errors": []
+  }
+]

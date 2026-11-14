@@ -1,0 +1,12 @@
+{
+  "source_url": "https://svs.gsfc.nasa.gov/vis/a010000/a014900/a014959/moon_small.glb",
+  "source_page": "https://svs.gsfc.nasa.gov/14959/",
+  "credit": "NASA's Goddard Space Flight Center; production Dan Gallagher; data Ernie Wright / LRO",
+  "retrieved_at_utc": "2026-11-14T08:51:33.573203+00:00",
+  "source_sha256": "12d3b0bb7fe214903f51447d1bc61710f442e92a11c703fcaca6d4e7ff8e67d4",
+  "source_bytes": 13799876,
+  "output_sha256": "9991e49fe30dbc4b81c8e73e554c604e4881a6b68b434fc5dd0518f1db4fe94e",
+  "output_bytes": 1724856,
+  "transformation": "Mesh buffers preserved; color image resized to 2048x1024 and encoded WebP quality 88. No terrain inference. Original source retained outside shipped public assets.",
+  "scientific_role": "visual context only; no topography or time-dependent illumination"
+}

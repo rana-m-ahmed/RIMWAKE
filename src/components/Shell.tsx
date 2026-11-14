@@ -14,9 +14,7 @@ export function Brand() {
         />
         <circle cx="20" cy="21" r="2.5" fill="currentColor" />
       </svg>
-      <span>
-        RIMWAKE<small>LUNAR VISIBILITY FIELD NOTES</small>
-      </span>
+      <span>RIMWAKE</span>
     </Link>
   );
 }
@@ -32,9 +30,9 @@ export function Header() {
         <Brand />
         <nav className={s.navigation} aria-label="Primary">
           {[
-            ['/', 'Discover'],
-            ['/explore', 'Explore'],
-            ['/method', 'Method'],
+            ['/', 'Experience'],
+            ['/explore', 'Explorer'],
+            ['/field-guide', 'Field Guide'],
           ].map(([url, label]) => (
             <Link key={url} href={url} aria-current={path === url ? 'page' : undefined}>
               {label}
@@ -42,7 +40,7 @@ export function Header() {
           ))}
         </nav>
         <Link className={s.headerAction} href="/explore">
-          Open the instrument <span aria-hidden="true">↗</span>
+          Explore the skies <span aria-hidden="true">↗</span>
         </Link>
         <button
           className={s.menuButton}
@@ -56,13 +54,14 @@ export function Header() {
         <Dialog title="Navigate RIMWAKE" onClose={() => setMenu(false)}>
           <nav className={s.menuNav} aria-label="Mobile primary">
             {[
-              ['/', 'Discover'],
-              ['/explore', 'Explore'],
-              ['/method', 'Method'],
+              ['/', 'Experience'],
+              ['/explore', 'Explorer'],
+              ['/field-guide', 'Field Guide'],
+              ['/sources', 'Sources'],
             ].map(([url, label]) => (
               <Link key={url} href={url} onClick={() => setMenu(false)}>
                 {label}
-                <span>↗</span>
+                <span aria-hidden="true">↗</span>
               </Link>
             ))}
           </nav>
@@ -76,12 +75,12 @@ export function Footer() {
     <footer className={s.footer}>
       <Brand />
       <p>
-        The Moon is one world.
+        Where you stand
         <br />
-        The horizon is local.
+        changes the sky.
       </p>
       <div>
-        <Link href="/method#credits">Sources, credits & AI disclosure ↗</Link>
+        <Link href="/sources#credits">Sources, credits & AI disclosure ↗</Link>
         <span>Independent educational project · 2026</span>
       </div>
     </footer>

@@ -1,8 +1,10 @@
 # RIMWAKE
 
-Independent educational lunar visibility explorer with NASA/JPL evidence. Two approximate historical lunar landing locations share a UTC cursor, calibrated sky plots, exact angle tables and a sampled availability timeline.
+A silent, native-scroll lunar story and a source-backed scientific Explorer. A photoreal NASA Moon opens a six-chapter journey from place, to local horizon, to a real sampled crossing. The Explorer synchronizes two signed spatial skies, exact angle tables and an optional Horizon Loom around one shared UTC.
 
-The original v4 briefs in `docs/` use former HORIZON / CAUSE branding, superseded by RIMWAKE. Work is local; source must not be pushed under the current user instruction.
+Current interface: **Lunar Cinema**, superseding Meridian Cut's art direction. Four destinations: Experience `/`, Explorer `/explore`, Field Guide `/field-guide`, Sources `/sources`. `/method` remains a compatibility alias. [Implementation and review record](docs/CINEMA_EXECUTION.md).
+
+The original v4 briefs use former HORIZON / CAUSE branding. All work remains local under the owner's no-push instruction. Rollback baseline: `rimwake-pre-cinema` at `3646311`; active branch: `design/lunar-cinema`.
 
 ## Start locally
 
@@ -32,6 +34,7 @@ python -m pytest science/tests
 python scripts/check_release.py
 npm.cmd run build
 npx.cmd playwright test
+python scripts/check_cinema_integrity.py
 ```
 
 Browser tests use installed Google Chrome. If necessary, set `$env:PLAYWRIGHT_CHANNEL = 'msedge'` for installed Edge. Browser automation is local and does not open personal browser profiles. Scientific tests operate on archived responses and require no network.
@@ -44,7 +47,7 @@ Source coordinates: NASA NSSDCA’s lunar artifact catalog. Ephemerides: JPL Hor
 
 **Scientific status: provisional.** Raw source/hash/observer/target/time/cadence and derived-state tests pass. Separately requested initial Sun rows at both sites match (0° reported difference); this is query/parse consistency, not an independent ephemeris validation. Exact source-frame reconciliation remains open. Neither observer reproduces a real lander’s antenna or terrain height. Terrain, finite-disc visibility, eclipses, power and RF performance are excluded.
 
-The frontend checks the release SHA-256 against its manifest and validates the scientific schema before showing any readings. A missing or invalid release fails closed. Null angles classify as unknown, never as zero. No sampled position is interpolated. Above-horizon markers use north 0°, east 90° clockwise; below-horizon bodies are shown numerically rather than clamped onto the sky ring.
+The frontend checks the release SHA-256 against its manifest and validates the scientific schema before showing any readings. A missing or invalid release fails closed. Null angles classify as unknown, never as zero. No sampled position is interpolated. Spatial directions use north 0 degrees, east 90 degrees clockwise, with signed elevation preserved. Negative directions remain below the reference plane. A calibrated SVG view remains available; reduced motion, missing WebGL or context loss selects it automatically.
 
 The epsilon of 0.000001° is only a numerical state-classification tolerance, not physical uncertainty. Interval exports use inclusive sampled endpoints; crossing times remain bracketed. The Loom displays sampled states, not continuous availability guarantees.
 
@@ -57,6 +60,12 @@ python scripts/inventory.py
 ```
 
 This fetches JPL/NASA data and replaces the working release. Preserve the existing immutable release before refreshing; assign a new release ID in `science/pipeline.py` for a new scientific release. Normal installation/build/test never refreshes scientific values. Re-fetching later may change raw response text and metadata even when angle values agree.
+
+## Current design verification
+
+`python scripts/run_checks.py cinema` retains native exit codes and logs in `docs/qa/cinema/final/`. `node scripts/cinema_visual.mjs` captures all four routes at five widths; set `QA_ROUND` to retain another iteration. `node scripts/measure_cinema.mjs` runs eight cold local production-preview measurements on port 4173. The preview must be serving an already completed build; do not rebuild during measurement.
+
+3D is a progressively enhanced, on-demand renderer. It uses real released azimuth/elevation for reference-plane views. The Moon globe, lighting and camera journey provide visual context and never calculate terrain obstruction. Mobile uses the smaller NASA color map on a sphere. The desktop GLB is 1.725 MB; mesh buffers are unchanged. Source/transform hashes and credits are in `public/assets/cinema-provenance.json`.
 
 ## Artifacts and boundaries
 

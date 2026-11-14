@@ -1,0 +1,585 @@
+.experience {
+  position: relative;
+  background: #080b10;
+  color: #f2f1ec;
+  isolation: isolate;
+}
+.stage {
+  position: sticky;
+  top: 0;
+  height: 100svh;
+  margin-bottom: -100svh;
+  z-index: -1;
+  overflow: hidden;
+  pointer-events: none;
+}
+.stage > div:has(canvas) {
+  position: absolute !important;
+  inset: 0;
+}
+.poster {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.8s;
+}
+.poster img {
+  position: absolute;
+  width: 78vw;
+  height: 78vw;
+  max-width: none;
+  object-fit: contain;
+  right: -18vw;
+  top: 50%;
+  transform: translateY(-50%) rotate(-14deg);
+  filter: brightness(0.7);
+}
+.posterHidden {
+  opacity: 0;
+}
+.vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, #080b108c, transparent 50%),
+    linear-gradient(0deg, #080b10 0%, transparent 24%, transparent 80%, #080b1070);
+  pointer-events: none;
+}
+.artCredit {
+  position: absolute;
+  right: 36px;
+  bottom: 24px;
+  font-size: 11px;
+  color: #a5acb5;
+}
+.chapter {
+  min-height: 110svh;
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 90px max(7vw, 28px);
+  scroll-margin-top: 60px;
+}
+.arrival {
+  min-height: calc(100svh - 76px);
+  align-items: center;
+}
+.heroCopy {
+  padding: 45px 0 65px;
+  max-width: 780px;
+}
+.kicker {
+  font: 500 12px/1.6 var(--font-body);
+  letter-spacing: 0.16em;
+  margin: 0 0 26px;
+  color: #b8bec8;
+}
+.heroCopy h1,
+.chapter h2 {
+  font: 600 clamp(85px, 10.7vw, 172px)/0.83 var(--font-display);
+  letter-spacing: -0.025em;
+  margin: 0 0 32px;
+  text-transform: uppercase;
+}
+.heroCopy h1 span,
+.chapter h2 span {
+  color: #aeb5bf;
+}
+.heroLead {
+  font-size: 19px;
+  line-height: 1.65;
+  color: #c6cbd2;
+  margin: 0 0 30px;
+}
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+.heroBottom {
+  position: absolute;
+  bottom: 26px;
+  left: 7vw;
+  right: 7vw;
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  color: #a1aab7;
+}
+.chapters {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  z-index: 3;
+}
+.chapters button {
+  min-width: 44px;
+  min-height: 44px;
+  border: 0;
+  background: transparent;
+  color: #8994a3;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  padding: 8px;
+}
+.chapters button > span {
+  font: 10px var(--font-data);
+}
+.chapters button i {
+  height: 1px;
+  width: 14px;
+  background: currentColor;
+}
+.chapters button[aria-current] {
+  color: #f2f1ec;
+}
+.chapters b {
+  position: absolute;
+  right: 60px;
+  font: 12px var(--font-body);
+  white-space: nowrap;
+}
+.chapterCopy {
+  max-width: 600px;
+  position: relative;
+  z-index: 1;
+}
+.chapter h2 {
+  font-size: clamp(65px, 6.7vw, 110px);
+  line-height: 0.9;
+}
+.chapterCopy > p:not(.kicker) {
+  font-size: 19px;
+  line-height: 1.7;
+  max-width: 460px;
+  color: #c6cbd2;
+}
+.approach .chapterCopy {
+  padding: 32px;
+  background: linear-gradient(90deg, #080b10e0, #080b1070);
+  margin-left: -32px;
+}
+.locationLabels {
+  position: absolute;
+  right: 14%;
+  bottom: 20%;
+  display: flex;
+  gap: 90px;
+}
+.locationLabels > span {
+  font-size: 16px;
+  display: grid;
+  grid-template-columns: 30px 1fr;
+  gap: 8px 12px;
+}
+.locationLabels b {
+  grid-row: span 2;
+  width: 28px;
+  height: 28px;
+  border: 1px solid #919da8;
+  display: grid;
+  place-items: center;
+  font: 12px var(--font-data);
+}
+.locationLabels small {
+  font-size: 12px;
+  color: #a1abb9;
+}
+.stand {
+  align-items: flex-start;
+  padding-top: 12vh;
+}
+.stand .chapterCopy {
+  max-width: 760px;
+}
+.planeKey {
+  position: absolute;
+  bottom: 23%;
+  left: 12%;
+  font-size: 14px;
+  color: #c6cbd2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.planeKey i {
+  height: 1px;
+  width: 180px;
+  background: #8794a6;
+}
+.compare {
+  display: block;
+  padding-top: 12vh;
+}
+.compare .chapterCopy {
+  max-width: 800px;
+}
+.observations {
+  display: flex;
+  gap: 70px;
+  margin-top: 40px;
+  max-width: 600px;
+  padding: 22px 0;
+  border-top: 1px solid #5a6370;
+  background: #080b1080;
+}
+.observations > div > span {
+  font-size: 12px;
+  letter-spacing: 0.06em;
+}
+.observations strong {
+  font: 400 45px var(--font-data);
+  display: block;
+  margin: 20px 0 10px;
+  letter-spacing: -0.06em;
+}
+.observations p {
+  font-size: 14px;
+  color: #b8c1cf;
+  margin: 0;
+}
+.exactCase {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  margin-top: 28px;
+  font-size: 14px;
+  text-underline-offset: 6px;
+}
+.moveTime .chapterCopy {
+  background: #080b10b3;
+  padding: 35px;
+  margin-left: -35px;
+}
+.timeChoice {
+  display: flex;
+  gap: 12px;
+  margin: 28px 0;
+}
+.timeChoice button {
+  min-height: 48px;
+  padding: 12px 18px;
+  border: 1px solid #77818e;
+  background: #080b10;
+  color: #d4dae2;
+  font: 13px var(--font-data);
+}
+.timeChoice button[aria-pressed='true'] {
+  background: #eae9e4;
+  color: #10141c;
+}
+.crossingReading strong {
+  font: 42px var(--font-data);
+  letter-spacing: -0.05em;
+  display: block;
+}
+.crossingReading span {
+  display: block;
+  font-size: 12px;
+  color: #a5adba;
+  margin-top: 10px;
+}
+.finalCopy h2 {
+  font-size: clamp(90px, 10.8vw, 168px);
+}
+.finalCopy > p:not(.kicker) {
+  font-size: 20px;
+  line-height: 1.6;
+  color: #c6cbd2;
+}
+.finalCopy .primaryButton {
+  margin-top: 20px;
+}
+.finalCopy .finalCaveat {
+  font-size: 12px !important;
+  line-height: 1.8;
+  max-width: 440px;
+  margin-top: 25px;
+}
+.takeControl {
+  background: linear-gradient(0deg, #080b10 0%, #080b1040 80%);
+}
+.archiveNote {
+  font-size: 14px;
+  color: #b8c1cf;
+}
+.staticPlanes {
+  position: absolute;
+  right: 6%;
+  top: 40%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+  width: 60%;
+  z-index: 1;
+}
+.staticPlanes svg {
+  width: 100%;
+  height: auto;
+}
+.stage[data-local='true'] > .poster:not(.posterHidden) {
+  opacity: 0.12;
+}
+@media (max-width: 1000px) {
+  .chapter {
+    padding-inline: 7vw;
+  }
+  .heroCopy h1 {
+    font-size: 128px;
+  }
+  .chapters {
+    right: 8px;
+  }
+  .chapters b {
+    display: none;
+  }
+  .observations {
+    gap: 40px;
+  }
+  .artCredit {
+    right: 20px;
+    font-size: 10px;
+  }
+}
+@media (max-width: 700px) {
+  .arrival {
+    min-height: calc(100svh - 68px);
+    align-items: flex-end;
+  }
+  .chapter {
+    min-height: 105svh;
+    padding: 85px 24px;
+    scroll-margin-top: 60px;
+  }
+  .heroCopy {
+    padding: 190px 0 45px;
+  }
+  .heroCopy h1 {
+    font-size: clamp(78px, 22vw, 115px);
+    line-height: 0.86;
+    margin-bottom: 24px;
+  }
+  .heroLead {
+    font-size: 16px;
+    max-width: 290px;
+    margin-bottom: 24px;
+  }
+  .kicker {
+    font-size: 10px;
+    letter-spacing: 0.12em;
+    margin-bottom: 20px;
+  }
+  .actions {
+    gap: 12px;
+  }
+  .actions .primaryButton {
+    font-size: 13px;
+  }
+  .actions .quietLink {
+    font-size: 12px;
+  }
+  .heroBottom {
+    left: 24px;
+    right: 24px;
+    bottom: 18px;
+    font-size: 9px;
+  }
+  .heroBottom > span:last-child {
+    display: none;
+  }
+  .chapters {
+    right: 0;
+    gap: 0;
+  }
+  .chapters button {
+    min-width: 24px;
+    min-height: 35px;
+    padding: 6px;
+  }
+  .chapters button > span {
+    display: none;
+  }
+  .chapters button i {
+    width: 9px;
+  }
+  .poster img {
+    width: 145vw;
+    height: 145vw;
+    right: -55vw;
+    top: 31%;
+    opacity: 0.85;
+  }
+  .vignette {
+    background: linear-gradient(0deg, #080b10 0%, #080b1040 62%, transparent);
+  }
+  .artCredit {
+    bottom: 8px;
+    left: 24px;
+    right: auto;
+    font-size: 9px;
+  }
+  .chapter h2 {
+    font-size: clamp(58px, 16vw, 84px);
+  }
+  .chapterCopy {
+    max-width: 90%;
+  }
+  .chapterCopy > p:not(.kicker) {
+    font-size: 16px;
+    line-height: 1.7;
+  }
+  .approach .chapterCopy {
+    padding: 20px;
+    margin-left: -20px;
+  }
+  .locationLabels {
+    right: auto;
+    left: 24px;
+    bottom: 18%;
+    gap: 28px;
+  }
+  .locationLabels > span {
+    font-size: 13px;
+    gap: 6px 8px;
+  }
+  .stand {
+    padding-top: 10vh;
+  }
+  .planeKey {
+    bottom: 22%;
+    left: 26px;
+    font-size: 12px;
+  }
+  .compare {
+    padding-top: 12vh;
+  }
+  .observations {
+    gap: 26px;
+    margin-top: 25px;
+    padding-top: 20px;
+  }
+  .observations strong {
+    font-size: 29px;
+    margin-top: 16px;
+  }
+  .observations > div > span {
+    font-size: 10px;
+  }
+  .observations p {
+    font-size: 12px;
+    max-width: 120px;
+    line-height: 1.5;
+  }
+  .exactCase {
+    font-size: 13px;
+  }
+  .moveTime .chapterCopy {
+    padding: 20px;
+    margin-left: -20px;
+  }
+  .crossingReading strong {
+    font-size: 34px;
+  }
+  .finalCopy h2 {
+    font-size: 82px;
+  }
+  .finalCopy > p:not(.kicker) {
+    font-size: 17px;
+  }
+  .finalCopy .finalCaveat {
+    font-size: 11px !important;
+    max-width: 270px;
+  }
+  .takeControl {
+    align-items: center;
+  }
+  .timeChoice {
+    gap: 8px;
+  }
+  .timeChoice button {
+    font-size: 12px;
+    padding: 10px 12px;
+  }
+}
+
+.staticPlanes {
+  right: 7%;
+  top: 43%;
+  width: 39%;
+  gap: 20px;
+}
+@media (max-width: 700px) {
+  .staticPlanes {
+    left: 24px;
+    right: 24px;
+    top: 12%;
+    width: auto;
+    gap: 18px;
+  }
+  .chapters {
+    right: 0;
+  }
+  .chapters button {
+    min-width: 30px;
+    min-height: 44px;
+  }
+  .stand,
+  .compare {
+    padding-top: 28vh;
+  }
+  .moveTime .chapterCopy {
+    padding-top: 130px;
+  }
+  .chapterCopy {
+    max-width: 100%;
+  }
+  .planeKey {
+    bottom: 16%;
+  }
+  .heroBottom {
+    display: none;
+  }
+}
+
+@media (min-width: 701px) {
+  .chapters {
+    top: auto;
+    bottom: 58px;
+    transform: none;
+    flex-direction: row;
+    gap: 4px;
+  }
+  .chapters b {
+    display: none;
+  }
+}
+
+.sceneNames {
+  position: absolute;
+  right: 7%;
+  top: 43%;
+  width: 39%;
+  display: flex;
+  justify-content: space-around;
+  font: 10px var(--font-data);
+  color: #bac3ce;
+  z-index: 1;
+}
+@media (max-width: 700px) {
+  .sceneNames {
+    left: 24px;
+    right: 24px;
+    top: 10%;
+    width: auto;
+    font-size: 9px;
+  }
+  .stage[data-local='true'] .artCredit {
+    display: none;
+  }
+}

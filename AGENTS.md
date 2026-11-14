@@ -1,5 +1,9 @@
 # RIMWAKE
 
+## Approved cinematic redesign (current authority)
+
+The user approved the cinematic implementation plan after rejecting Meridian Cut. Photoreal mission cinema, silent, complete delivery in one pass. Use Barlow Condensed headlines, Plex controls, charcoal/lunar white, native-scroll six-chapter spatial story, R3F/Three + GSAP, an observation-first Explorer, Field Guide and Sources. This supersedes v6 typography/layout decisions below. Preserve all scientific records; keep no-push/no-deploy restriction and baseline tag `rimwake-pre-cinema`. UI-only projections may use released az/el, never invent ephemerides or terrain results. Raw metadata belongs in inspection, not the landing narrative. All scientific status stays provisional.
+
 The user renamed HORIZON / CAUSE to RIMWAKE. Briefs in docs are implementation contracts, not evidence of completed validation.
 
 - P0 only: real JPL apparent airless centre-of-disc positions, tangent plane, terrain excluded. P1 requires explicit owner approval after deployed P0.
