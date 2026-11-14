@@ -5,8 +5,31 @@
   "retrieved_at_utc": "2026-11-14T08:51:33.573203+00:00",
   "source_sha256": "12d3b0bb7fe214903f51447d1bc61710f442e92a11c703fcaca6d4e7ff8e67d4",
   "source_bytes": 13799876,
-  "output_sha256": "9991e49fe30dbc4b81c8e73e554c604e4881a6b68b434fc5dd0518f1db4fe94e",
-  "output_bytes": 1724856,
-  "transformation": "Mesh buffers preserved; color image resized to 2048x1024 and encoded WebP quality 88. No terrain inference. Original source retained outside shipped public assets.",
-  "scientific_role": "visual context only; no topography or time-dependent illumination"
+  "output_sha256": "a710b32e92ced4942501cd3f591c880cb7726a0a0b9b27d35b94bbcd82f83d50",
+  "output_bytes": 2007328,
+  "transformation": "Mesh buffers preserved; color image resized to 4096x2048 and encoded WebP quality 88. No terrain inference. Original source retained outside shipped public assets.",
+  "scientific_role": "visual context only; no topography or time-dependent illumination",
+  "optimized_at_utc": "2026-11-14T11:24:23.530695+00:00",
+  "opening_posters": {
+    "desktop": {
+      "file": "moon-opening-desktop.webp",
+      "bytes": 68790,
+      "sha256": "a3af64b149fbe6bace47212e1a74df051c017eab6c9402a8991b54604f59a876",
+      "width": 1440,
+      "height": 900,
+      "transformation": "Captured from initialized NASA visual scene at its opening camera pose; background and lighting illustrative; no observations or terrain calculation.",
+      "source_asset": "moon-cinema.glb",
+      "source_sha256": "a710b32e92ced4942501cd3f591c880cb7726a0a0b9b27d35b94bbcd82f83d50"
+    },
+    "mobile": {
+      "file": "moon-opening-mobile.webp",
+      "bytes": 19556,
+      "sha256": "4240ee2a4d5d44311c38816a6bc51d727dbc0c71b652a6879303b44f40c0cb50",
+      "width": 390,
+      "height": 844,
+      "transformation": "Captured from initialized NASA visual scene at its opening camera pose; background and lighting illustrative; no observations or terrain calculation.",
+      "source_asset": "lroc-color-2k.jpg",
+      "source_sha256": "f7130a1822681fa7512d7dcfd40db8c10b9ba4f06777910348698260ed7a2170"
+    }
+  }
 }

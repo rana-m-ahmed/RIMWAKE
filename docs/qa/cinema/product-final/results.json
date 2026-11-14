@@ -1,0 +1,47 @@
+{
+  "executed_at_utc": "2026-11-14T12:15:51.478088+00:00",
+  "results": [
+    {
+      "name": "typecheck",
+      "command": "npm.cmd run typecheck",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "unit",
+      "command": "npm.cmd run test",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "science",
+      "command": "C:\\Users\\ranam\\AppData\\Local\\Programs\\Python\\Python312\\python.exe -m pytest science/tests -q",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "release",
+      "command": "C:\\Users\\ranam\\AppData\\Local\\Programs\\Python\\Python312\\python.exe scripts/check_release.py",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "integrity",
+      "command": "C:\\Users\\ranam\\AppData\\Local\\Programs\\Python\\Python312\\python.exe scripts/check_cinema_integrity.py",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "build",
+      "command": "npm.cmd run build",
+      "exit_code": 0,
+      "status": "PASS"
+    },
+    {
+      "name": "browser",
+      "command": "npx.cmd playwright test",
+      "exit_code": 0,
+      "status": "PASS"
+    }
+  ]
+}

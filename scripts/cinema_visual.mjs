@@ -5,8 +5,8 @@ const browser=await chromium.launch({channel:'chrome'});const results=[];
 for(const [width,height] of [[1440,900],[768,1024],[390,844],[360,800],[320,800]]){
  const context=await browser.newContext({viewport:{width,height}});const page=await context.newPage();const errors=[];page.on('pageerror',e=>errors.push(e.message));
  for(const [route,label] of [['/','experience'],['/explore','explorer'],['/field-guide','guide'],['/sources','sources']]){
-  await page.goto('http://127.0.0.1:5173'+route);await page.waitForLoadState('networkidle');await page.evaluate(()=>document.fonts.ready);if(route==='/explore')await page.getByRole('slider',{name:'UTC sample'}).waitFor();
-  await page.screenshot({path:`${dir}/${label}-${width}.png`,fullPage:false});
+  await page.goto((process.env.RIMWAKE_BASE_URL||'http://127.0.0.1:5173')+route);await page.waitForLoadState('networkidle');await page.evaluate(()=>document.fonts.ready);if(route==='/explore')await page.getByRole('slider',{name:'UTC sample'}).waitFor();
+  await page.waitForTimeout(1800);await page.waitForLoadState('networkidle');await page.screenshot({path:`${dir}/${label}-${width}.png`,fullPage:false});
   results.push({route,width,overflow:await page.evaluate(()=>document.documentElement.scrollWidth>innerWidth),errors:[...errors]});
   if(route==='/'&&(width===1440||width===360)){
    for(const chapter of [1,2,3,4,5]){await page.locator(`#chapter-${chapter}`).evaluate(el=>el.scrollIntoView({behavior:'instant'}));await page.waitForTimeout(180);await page.screenshot({path:`${dir}/chapter-${chapter+1}-${width}.png`,fullPage:false})}

@@ -3,7 +3,7 @@ import { useObservation } from '../lib/useObservation';
 import { bearing, date, time, signed, shortName } from '../lib/format';
 import { stateFor, plotLimit } from '../lib/selectors';
 import { stateLabel } from '../science';
-import { supportsWebGL, useMedia } from '../cinema/preferences';
+import { useWebGLCapability, useMedia } from '../cinema/preferences';
 import { Link } from '../lib/router';
 import { Dialog } from '../components/Shell';
 import Evidence from '../components/Evidence';
@@ -11,19 +11,30 @@ import SkyInstrument from '../components/SkyInstrument';
 import HorizonLoom from '../components/HorizonLoom';
 import s from './Observatory.module.css';
 import SceneGuard from '../cinema/SceneGuard';
+import PolarMap from '../components/PolarMap';
+import {
+  GuidedDiscovery,
+  ObservationFinder,
+  ObservationExport,
+} from '../components/DiscoveryTools';
+import { elevationDifference } from '../lib/observations';
+import ObservatoryLoading from '../components/ObservationLoading';
 const Scene = lazy(() => import('../cinema/ObservationScene'));
 export default function Observatory() {
   const o = useObservation();
   const [evidence, setEvidence] = useState(false),
     [sites, setSites] = useState(false),
-    [numeric, setNumeric] = useState(false),
-    [timeline, setTimeline] = useState(false),
+    [finder, setFinder] = useState(false),
+    [sharing, setSharing] = useState(false),
+    [timeline, setTimeline] = useState(true),
     [difference, setDifference] = useState(false);
-  const [capable] = useState(supportsWebGL);
   const reduced = useMedia('(prefers-reduced-motion:reduce)');
+  const capable = useWebGLCapability(!reduced);
   const [sceneFailed, setSceneFailed] = useState(false);
-  const spatial = capable && !reduced && !numeric && !sceneFailed;
+  const spatial =
+    capable !== false && !reduced && o.selection.view !== 'calibrated' && !sceneFailed;
   const { r, a, b, t, records, selection, setSelection } = o;
+  if ((!r || !a || !b) && o.status !== 'error') return <ObservatoryLoading />;
   if (!r || !a || !b)
     return (
       <main id="main" tabIndex={-1} className={s.unavailable}>
@@ -84,6 +95,65 @@ export default function Observatory() {
           </button>
         </div>
       )}
+      <GuidedDiscovery
+        o={o}
+        onEvidence={() => setEvidence(true)}
+        onPlaces={() => setSites(true)}
+        onFind={() => setFinder(!finder)}
+        onShare={() => setSharing(true)}
+      />
+      {finder && <ObservationFinder o={o} onClose={() => setFinder(false)} />}
+      <section className={s.transport} aria-label="Shared observation time">
+        <div className={s.clock}>
+          <span>SHARED UTC</span>
+          <strong data-testid="selected-utc" data-utc={t}>
+            {date(t)} <em>{time(t)}</em>
+          </strong>
+        </div>
+        <div className={s.sliderRow}>
+          <button
+            aria-label="Previous sample"
+            disabled={o.selected === 0}
+            onClick={() => o.sample(o.selected - 1)}
+          >
+            ←
+          </button>
+          <input
+            onPointerUp={o.flushURL}
+            onKeyUp={o.flushURL}
+            onBlur={o.flushURL}
+            aria-label="UTC sample"
+            type="range"
+            min="0"
+            max={o.clock.length - 1}
+            value={o.selected}
+            aria-valuetext={`${date(t)} ${time(t)} UTC`}
+            onChange={(event) => o.sample(Number(event.target.value))}
+          />
+          <button
+            aria-label="Next sample"
+            disabled={o.selected === o.clock.length - 1}
+            onClick={() => o.sample(o.selected + 1)}
+          >
+            →
+          </button>
+          <button disabled={!o.events.length} onClick={o.nextCrossing}>
+            {o.events.length ? 'Next crossing ↗' : 'No crossings'}
+          </button>
+        </div>
+        <div className={s.sampling}>
+          <span>
+            {selection.mode === 'coarse' ? 'Hourly scan' : 'Ten-minute detail'} · {o.selected + 1} /{' '}
+            {o.clock.length}
+          </span>
+          <button
+            aria-label="Swap A and B"
+            onClick={() => setSelection((p) => ({ ...p, a: p.b, b: p.a }))}
+          >
+            Swap A and B ⇄
+          </button>
+        </div>
+      </section>
       <div className={s.mobileSwitch}>
         <button
           aria-pressed={selection.mobile === 'A'}
@@ -104,7 +174,7 @@ export default function Observatory() {
           {date(t)} {time(t)}
         </strong>
       </div>
-      <section className={s.workspace} aria-label="Two synchronized local skies">
+      <section id="sky-workspace" className={s.workspace} aria-label="Two synchronized local skies">
         {[a, b].map((site, i) => (
           <section
             key={i}
@@ -124,7 +194,11 @@ export default function Observatory() {
               {spatial ? (
                 <Suspense fallback={<div className={s.sceneLoading}>Opening direction view…</div>}>
                   <SceneGuard onFailure={() => setSceneFailed(true)}>
-                    <Scene records={records[i]} onFailure={() => setSceneFailed(true)} />
+                    {capable === true ? (
+                      <Scene records={records[i]} onFailure={() => setSceneFailed(true)} />
+                    ) : (
+                      <div className={s.sceneLoading}>Opening direction view...</div>
+                    )}
                   </SceneGuard>
                 </Suspense>
               ) : (
@@ -175,54 +249,6 @@ export default function Observatory() {
           </section>
         ))}
       </section>
-      <section className={s.transport} aria-label="Shared observation time">
-        <div className={s.clock}>
-          <span>SHARED UTC</span>
-          <strong data-testid="selected-utc">
-            {date(t)} <em>{time(t)}</em>
-          </strong>
-        </div>
-        <div className={s.sliderRow}>
-          <button
-            aria-label="Previous sample"
-            disabled={o.selected === 0}
-            onClick={() => o.sample(o.selected - 1)}
-          >
-            ←
-          </button>
-          <input
-            aria-label="UTC sample"
-            type="range"
-            min="0"
-            max={o.clock.length - 1}
-            value={o.selected}
-            aria-valuetext={`${date(t)} ${time(t)} UTC`}
-            onChange={(event) => o.sample(Number(event.target.value))}
-          />
-          <button
-            aria-label="Next sample"
-            disabled={o.selected === o.clock.length - 1}
-            onClick={() => o.sample(o.selected + 1)}
-          >
-            →
-          </button>
-          <button disabled={!o.events.length} onClick={o.nextCrossing}>
-            {o.events.length ? 'Next crossing ↗' : 'No crossings'}
-          </button>
-        </div>
-        <div className={s.sampling}>
-          <span>
-            {selection.mode === 'coarse' ? 'Hourly scan' : 'Ten-minute detail'} · {o.selected + 1} /{' '}
-            {o.clock.length}
-          </span>
-          <button
-            aria-label="Swap A and B"
-            onClick={() => setSelection((p) => ({ ...p, a: p.b, b: p.a }))}
-          >
-            Swap A and B ⇄
-          </button>
-        </div>
-      </section>
       <section className={s.interpretation} role="status" data-testid="comparison-summary">
         <div>
           <h2>{summary}</h2>
@@ -233,8 +259,23 @@ export default function Observatory() {
                 ? 'Unavailable records are not estimated.'
                 : o.same
                   ? 'Both sites share the same geometric classifications. Their exact angles may differ.'
-                  : 'The Sun or Earth has a different above/below-plane classification between these two places.'}
+                  : [10, 399]
+                      .map(
+                        (body, i) =>
+                          `${body === 10 ? 'Sun' : 'Earth'}: ${stateLabel(o.states[0][i]).toLowerCase()} at A; ${stateLabel(o.states[1][i]).toLowerCase()} at B.`,
+                      )
+                      .join(' ')}
           </p>
+        </div>
+        <div className={s.inlineDeltas}>
+          {[10, 399].map((body, i) => (
+            <div key={body}>
+              <span>{body === 10 ? 'SUN' : 'EARTH'} / B MINUS A</span>
+              <strong className={body === 10 ? 'sun' : 'earth'}>
+                {signed(elevationDifference(records[0][i], records[1][i]))}
+              </strong>
+            </div>
+          ))}
         </div>
         <button onClick={() => setDifference(true)}>Understand the difference ↗</button>
       </section>
@@ -255,8 +296,16 @@ export default function Observatory() {
           {timeline ? 'Hide' : 'Show'} Horizon Loom <span>{timeline ? '−' : '+'}</span>
         </button>
         {capable && !reduced && !sceneFailed ? (
-          <button aria-pressed={numeric} onClick={() => setNumeric(!numeric)}>
-            {numeric ? 'Spatial' : 'Calibrated 2D'} view <span>↗</span>
+          <button
+            aria-pressed={selection.view === 'calibrated'}
+            onClick={() =>
+              setSelection((p) => ({
+                ...p,
+                view: p.view === 'calibrated' ? 'spatial' : 'calibrated',
+              }))
+            }
+          >
+            {selection.view === 'calibrated' ? 'Spatial' : 'Calibrated 2D'} view <span>↗</span>
           </button>
         ) : (
           <span className={s.fallbackNote}>Calibrated 2D view active</span>
@@ -276,6 +325,17 @@ export default function Observatory() {
       </div>
       {timeline && (
         <HorizonLoom
+          showModes={false}
+          crossingBands={(['A', 'B'] as const).flatMap((slot) =>
+            o.events
+              .filter((event) => event.site_id === (slot === 'A' ? a.id : b.id))
+              .map((event) => ({
+                slot,
+                kind: event.body_id === 10 ? 'sun' : 'earth',
+                start: o.clock.indexOf(event.start_utc),
+                end: o.clock.indexOf(event.end_utc),
+              })),
+          )}
           tracks={o.tracks}
           selected={o.selected}
           onSelect={o.sample}
@@ -300,39 +360,45 @@ export default function Observatory() {
         <Evidence release={r} records={records.flat()} onClose={() => setEvidence(false)} />
       )}
       {sites && (
-        <Dialog title="Choose observers" onClose={() => setSites(false)}>
-          <h2 className={s.dialogHeading}>
-            TWO PLACES.
-            <br />
-            YOUR PERSPECTIVE.
-          </h2>
-          <p>
-            Approximate reported landing coordinates, used as hypothetical observers at zero
-            reference-ellipsoid height.
-          </p>
-          {(['A', 'B'] as const).map((slot) => (
-            <label className={s.siteLabel} key={slot}>
-              <span>Observation site {slot}</span>
-              <select
-                aria-label={`Observation site ${slot}`}
-                value={slot === 'A' ? a.id : b.id}
-                onChange={(event) =>
-                  setSelection((p) => ({ ...p, [slot === 'A' ? 'a' : 'b']: event.target.value }))
-                }
-              >
-                {r.sites.map((site) => (
-                  <option key={site.id} value={site.id}>
-                    {site.name}
-                  </option>
-                ))}
-              </select>
-            </label>
-          ))}
+        <Dialog wide title="Choose observers" onClose={() => setSites(false)}>
+          <h2 className={s.dialogHeading}>CHOOSE YOUR OBSERVERS.</h2>
+          <p>Published landing coordinates, used as hypothetical reference-ellipsoid observers.</p>
+          <div className={s.mapDialog}>
+            <PolarMap
+              sites={r.sites}
+              a={a.id}
+              b={b.id}
+              onAssign={(slot, id) =>
+                setSelection((p) => ({ ...p, [slot === 'A' ? 'a' : 'b']: id }))
+              }
+            />
+          </div>
+          <div className={s.siteSelectors}>
+            {(['A', 'B'] as const).map((slot) => (
+              <label className={s.siteLabel} key={slot}>
+                <span>Observation site {slot}</span>
+                <select
+                  aria-label={`Observation site ${slot}`}
+                  value={slot === 'A' ? a.id : b.id}
+                  onChange={(event) =>
+                    setSelection((p) => ({ ...p, [slot === 'A' ? 'a' : 'b']: event.target.value }))
+                  }
+                >
+                  {r.sites.map((site) => (
+                    <option key={site.id} value={site.id}>
+                      {site.name}
+                    </option>
+                  ))}
+                </select>
+              </label>
+            ))}
+          </div>
           <button className="primaryButton" onClick={() => setSites(false)}>
             Compare these observers ↗
           </button>
         </Dialog>
       )}
+      {sharing && <ObservationExport o={o} onClose={() => setSharing(false)} />}
       {difference && (
         <Dialog title="Meridian difference" onClose={() => setDifference(false)}>
           <h2 className={s.dialogHeading}>{summary}</h2>
@@ -343,13 +409,7 @@ export default function Observatory() {
             {[10, 399].map((body, i) => (
               <div key={body}>
                 <dt>{body === 10 ? 'Sun' : 'Earth'} · Δ elevation B − A</dt>
-                <dd>
-                  {signed(
-                    o.states.flat().includes('unknown')
-                      ? null
-                      : records[1][i].elevation_deg! - records[0][i].elevation_deg!,
-                  )}
-                </dd>
+                <dd>{signed(elevationDifference(records[0][i], records[1][i]))}</dd>
               </div>
             ))}
           </dl>

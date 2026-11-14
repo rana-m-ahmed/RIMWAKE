@@ -13,7 +13,7 @@ packed=bytearray()
 for index,view in enumerate(document['bufferViews']):
     data=binary[view.get('byteOffset',0):view.get('byteOffset',0)+view['byteLength']]
     if index==image_view:
-        image=Image.open(io.BytesIO(data)).convert('RGB');image.thumbnail((2048,1024))
+        image=Image.open(io.BytesIO(data)).convert('RGB');image.thumbnail((4096,2048))
         output=io.BytesIO();image.save(output,'WEBP',quality=88,method=6);data=output.getvalue()
     while len(packed)%4:packed.append(0)
     view['byteOffset']=len(packed);view['byteLength']=len(data);packed.extend(data)
@@ -28,6 +28,10 @@ encoded=json.dumps(document,separators=(',',':')).encode()
 while len(encoded)%4:encoded+=b' '
 output=struct.pack('<III',0x46546c67,2,12+8+len(encoded)+8+len(packed))+struct.pack('<II',len(encoded),0x4e4f534a)+encoded+struct.pack('<II',len(packed),0x004e4942)+packed
 target=root/'public/assets/moon-cinema.glb';target.write_bytes(output)
-record={'source_url':'https://svs.gsfc.nasa.gov/vis/a010000/a014900/a014959/moon_small.glb','source_page':'https://svs.gsfc.nasa.gov/14959/','credit':"NASA's Goddard Space Flight Center; production Dan Gallagher; data Ernie Wright / LRO",'retrieved_at_utc':datetime.now(timezone.utc).isoformat(),'source_sha256':hashlib.sha256(source).hexdigest(),'source_bytes':len(source),'output_sha256':hashlib.sha256(output).hexdigest(),'output_bytes':len(output),'transformation':'Mesh buffers preserved; color image resized to 2048x1024 and encoded WebP quality 88. No terrain inference. Original source retained outside shipped public assets.','scientific_role':'visual context only; no topography or time-dependent illumination'}
+record={'source_url':'https://svs.gsfc.nasa.gov/vis/a010000/a014900/a014959/moon_small.glb','source_page':'https://svs.gsfc.nasa.gov/14959/','credit':"NASA's Goddard Space Flight Center; production Dan Gallagher; data Ernie Wright / LRO",'retrieved_at_utc':'2026-11-14T08:51:33.573203+00:00','optimized_at_utc':datetime.now(timezone.utc).isoformat(),'source_sha256':hashlib.sha256(source).hexdigest(),'source_bytes':len(source),'output_sha256':hashlib.sha256(output).hexdigest(),'output_bytes':len(output),'transformation':'Mesh buffers preserved; color image resized to 4096x2048 and encoded WebP quality 88. No terrain inference. Original source retained outside shipped public assets.','scientific_role':'visual context only; no topography or time-dependent illumination'}
+previous=root/'public/assets/cinema-provenance.json'
+if previous.exists():
+    existing=json.loads(previous.read_text())
+    if 'opening_posters' in existing:record['opening_posters']=existing['opening_posters']
 (root/'public/assets/cinema-provenance.json').write_text(json.dumps(record,indent=2),encoding='utf8')
 print(json.dumps(record,indent=2))

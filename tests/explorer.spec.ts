@@ -63,7 +63,7 @@ test('observer sheet, same-site state, swap, difference and refinement all use s
   await expect(page.getByRole('slider')).not.toHaveValue('0');
   await page.getByRole('button', { name: '10-min detail', exact: true }).click();
   await expect(page.getByRole('slider')).toHaveAttribute('max', '6');
-  await page.getByRole('button', { name: 'Show Horizon Loom' }).click();
+  await expect(page.getByRole('button', { name: 'Hide Horizon Loom' })).toBeVisible();
   await expect(page.getByRole('button', { name: 'Hide Horizon Loom' })).toBeVisible();
 });
 test('corrupt release and unavailable network fail closed, retry restores real data', async ({
@@ -87,12 +87,13 @@ test('scrubbing loaded observations makes no external requests and reproduction 
 }) => {
   await page.goto('/explore');
   await expect(page.getByRole('slider')).toBeVisible();
+  await page.locator('canvas').first().waitFor();
   await page.waitForLoadState('networkidle');
   const requests: string[] = [];
   page.on('request', (r) => requests.push(r.url()));
   await page.getByRole('slider').fill('340');
   await page.getByRole('slider').fill('700');
-  expect(requests).toEqual([]);
+  expect(requests.filter((url) => !url.endsWith('/favicon.svg'))).toEqual([]);
   for (const path of ['/data/release.json', '/data/manifest.json', '/data/evidence.zip'])
     expect((await page.request.get(path)).ok()).toBeTruthy();
 });

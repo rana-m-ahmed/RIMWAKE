@@ -680,3 +680,177 @@
   color: #aeb9c6;
   padding: 12px 0;
 }
+
+.inlineDeltas {
+  display: flex;
+  gap: 24px;
+  margin-left: auto;
+}
+.inlineDeltas > div > span {
+  font: 9px var(--font-data);
+  color: #b4c1d0;
+  white-space: nowrap;
+}
+.inlineDeltas strong {
+  display: block;
+  font: 24px var(--font-data);
+  margin-top: 8px;
+  white-space: nowrap;
+}
+.interpretation {
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.interpretation > div:first-child {
+  flex: 1;
+  min-width: 280px;
+}
+.stateComparison {
+  display: flex;
+  gap: 40px;
+  border-top: 1px solid #303e4c;
+  padding: 16px 0;
+}
+.stateComparison p {
+  margin: 0;
+  font-size: 12px;
+}
+.stateComparison span {
+  display: block;
+  color: #dfe5e9;
+  margin-bottom: 8px;
+}
+.stateComparison small {
+  display: block;
+  font-size: 12px;
+  line-height: 1.8;
+  color: #aebdcd;
+}
+.mapDialog {
+  color: #eaf0ed;
+  background: #101923;
+  padding: 1px 22px;
+  margin: 24px -10px;
+}
+.mapDialog section {
+  grid-template-columns: 1fr;
+  border: 0;
+  margin: 10px 0;
+}
+.mapDialog h3 {
+  font-size: 34px;
+}
+.mapDialog .map {
+  max-width: 400px;
+}
+.loadingTransport {
+  height: 116px;
+  display: flex;
+  align-items: center;
+}
+.loadingTransport p {
+  font-size: 13px;
+  color: #b4c2d2;
+}
+.loadingHead {
+  height: 61px;
+}
+.loadingRing {
+  width: 50%;
+  height: 48%;
+  border: 1px solid #455466;
+  border-radius: 50%;
+  position: absolute;
+  left: 25%;
+  top: 28%;
+  transform: rotate(-8deg);
+}
+.loadingTable {
+  height: 164px;
+  border-top: 1px solid #3b4a5b;
+  color: #a6b6c7;
+  display: flex;
+  align-items: center;
+  font-size: 12px;
+}
+@media (max-width: 1100px) {
+  .loadingTransport {
+    height: 168px;
+  }
+  .interpretation > div:first-child {
+    min-width: 230px;
+  }
+}
+@media (max-width: 700px) {
+  .transport {
+    margin-bottom: 8px;
+  }
+  .loadingTransport {
+    height: 221px;
+  }
+  .loadingHead {
+    height: 72px;
+  }
+  .loadingTable {
+    height: 180px;
+  }
+  .inlineDeltas {
+    gap: 36px;
+    margin: 20px 0 0;
+  }
+  .inlineDeltas strong {
+    font-size: 21px;
+  }
+  .interpretation > div:first-child {
+    min-width: 0;
+  }
+  .stateComparison {
+    gap: 20px;
+  }
+  .stateComparison p {
+    width: 50%;
+  }
+  .stateComparison small {
+    font-size: 11px;
+  }
+  .mapDialog {
+    padding-inline: 12px;
+  }
+  .mapDialog section {
+    padding-block: 16px;
+  }
+  .mapDialog h3 {
+    font-size: 32px;
+  }
+}
+
+@media (min-width: 701px) {
+  .observatory {
+    padding-top: 30px;
+  }
+  .heading h1 {
+    font-size: 50px;
+  }
+  .contextLine {
+    margin-top: 16px;
+  }
+  .transport {
+    margin-top: 14px;
+    padding-block: 16px;
+  }
+  .scene {
+    height: 220px;
+  }
+  .mapDialog section {
+    grid-template-columns: 0.85fr 1.15fr;
+    gap: 20px;
+  }
+  .siteSelectors {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+}
+.sceneHint {
+  display: none;
+}

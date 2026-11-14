@@ -1,0 +1,57 @@
+
+> rimwake@0.6.0 build
+> tsc -b && vite build && node scripts/prerender.mjs
+
+vite v7.3.8 building client environment for production...
+transforming...
+node_modules/zod/v4/core/util.js (400:0): A comment
+
+"// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on `Number`, so the bare object literal survived into every bundle."
+
+in "node_modules/zod/v4/core/util.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+node_modules/zod/v4/core/regexes.js (74:0): A comment
+
+"/** Anchors a pattern source. The interpolation lives here rather than at the call site because
+ * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it
+ * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */"
+
+in "node_modules/zod/v4/core/regexes.js" contains an annotation that Rollup cannot interpret due to the position of the comment. The comment will be removed to avoid issues.
+✓ 730 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                 1.35 kB │ gzip:   0.60 kB
+dist/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff       13.14 kB
+dist/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2      14.71 kB
+dist/assets/barlow-condensed-latin-600-normal-BFJEwTuo.woff    18.89 kB
+dist/assets/ibm-plex-sans-latin-400-normal-CYLoc0-x.woff       22.10 kB
+dist/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2   22.31 kB
+dist/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2      22.59 kB
+dist/assets/ibm-plex-sans-latin-600-normal-Cu4Hd6ag.woff       23.88 kB
+dist/assets/ibm-plex-sans-latin-500-normal-BgVn5rGT.woff       23.92 kB
+dist/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2      24.18 kB
+dist/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2      24.25 kB
+dist/assets/Evidence-YXhEk7LN.css                               1.80 kB │ gzip:   0.68 kB
+dist/assets/Observatory-DgDwHzm-.css                            5.93 kB │ gzip:   1.61 kB
+dist/assets/Guide-x6OfTSYr.css                                  6.00 kB │ gzip:   1.69 kB
+dist/assets/index-VHuLbBkM.css                                 36.50 kB │ gzip:   8.34 kB
+dist/assets/Guide.module-BSYXa3mM.js                            0.44 kB │ gzip:   0.25 kB
+dist/assets/ObservationScene-BAOzhMNf.js                        2.20 kB │ gzip:   1.24 kB
+dist/assets/FieldGuide-Bfb2ysRG.js                              5.21 kB │ gzip:   2.14 kB
+dist/assets/Evidence-B0hj55Cv.js                                5.37 kB │ gzip:   2.35 kB
+dist/assets/Sources-BV86cnIt.js                                 6.77 kB │ gzip:   2.86 kB
+dist/assets/Observatory-Clt9Bbge.js                            38.84 kB │ gzip:  13.40 kB
+dist/assets/StoryScene-BsARG2ZX.js                             75.12 kB │ gzip:  22.62 kB
+dist/assets/science-ClQDVr-b.js                                96.34 kB │ gzip:  27.86 kB
+dist/assets/index-DItMdYl1.js                                 363.75 kB │ gzip: 124.77 kB
+dist/assets/LocalSky-C46QH4Lh.js                              955.55 kB │ gzip: 257.13 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 15.32s
+Pre-rendered /
+Pre-rendered /explore
+Pre-rendered /field-guide
+Pre-rendered /sources
+Pre-rendered /404

@@ -8,5 +8,10 @@
   "bytes": 457942,
   "rights_review": "Educational visual context under NASA media usage guidelines; source page credits retained, no logos or identifiable people. Source is optimized for aesthetics, not science.",
   "transform": "Color texture projected onto an ideal sphere, synthetic lighting and WebP compression; no DEM, no date-dependent illumination or ephemeris data.",
-  "poster_sha256": "959e00287049ec7f3e42a68142ecc5674f9e5f45664284551004d8c0e4826993"
+  "poster_sha256": "959e00287049ec7f3e42a68142ecc5674f9e5f45664284551004d8c0e4826993",
+  "mobile_poster": {
+    "file": "moon-context-mobile.webp",
+    "sha256": "d7399b8cf2606d46aa5fff5cb00f8214a2bd0ed900936982f9ff37a81dbe0462",
+    "transformation": "Existing credited lunar context poster resized to 640 px WebP quality 82; visual context only."
+  }
 }

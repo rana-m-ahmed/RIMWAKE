@@ -1,0 +1,1218 @@
+{
+  "measured_at_utc": "2026-11-14T11:51:33.830Z",
+  "profile": {
+    "viewport": "390x844",
+    "latency_ms": 150,
+    "download_mbps": 1.5,
+    "cpu_slowdown": 4,
+    "cold_cache": true
+  },
+  "scope": "Twelve local production-preview lab runs. Actual transfer sizes and response Content-Encoding reported; build gzip sizes are separate. Not deployed CDN results or field INP. Script-to-two-frame sample paint is a diagnostic, not field interaction latency.",
+  "assets": [
+    {
+      "name": "Evidence-C25QyCSj.js",
+      "bytes": 5367,
+      "gzipBytes": 2347
+    },
+    {
+      "name": "FieldGuide-CjaNo5Dc.js",
+      "bytes": 5208,
+      "gzipBytes": 2145
+    },
+    {
+      "name": "Guide.module-BSYXa3mM.js",
+      "bytes": 435,
+      "gzipBytes": 249
+    },
+    {
+      "name": "index-CuYvdqPU.js",
+      "bytes": 363725,
+      "gzipBytes": 124760
+    },
+    {
+      "name": "LocalSky-DyrmJNuE.js",
+      "bytes": 955548,
+      "gzipBytes": 257131
+    },
+    {
+      "name": "ObservationScene-c9OqWgQK.js",
+      "bytes": 2198,
+      "gzipBytes": 1240
+    },
+    {
+      "name": "Observatory-B9ysxwC9.js",
+      "bytes": 38323,
+      "gzipBytes": 13270
+    },
+    {
+      "name": "science-ClQDVr-b.js",
+      "bytes": 96343,
+      "gzipBytes": 27859
+    },
+    {
+      "name": "Sources-DlZhK3yJ.js",
+      "bytes": 6636,
+      "gzipBytes": 2812
+    },
+    {
+      "name": "StoryScene-CS6EyMe3.js",
+      "bytes": 74878,
+      "gzipBytes": 22543
+    }
+  ],
+  "reports": [
+    {
+      "motion": "no-preference",
+      "route": "/",
+      "run": 1,
+      "readyMs": 3061.2999999523163,
+      "lcp": 2140,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 699.2999999523163
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 693.5999999046326
+        },
+        {
+          "name": "moon-context-mobile.webp",
+          "transferSize": 31536,
+          "encodedBodySize": 31236,
+          "duration": 886.0999999046326
+        },
+        {
+          "name": "index-CuYvdqPU.js",
+          "transferSize": 125060,
+          "encodedBodySize": 124760,
+          "duration": 1695.3999998569489
+        },
+        {
+          "name": "index-E1_DUNzl.css",
+          "transferSize": 8575,
+          "encodedBodySize": 8275,
+          "duration": 404.10000014305115
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 682
+        },
+        {
+          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "transferSize": 24484,
+          "encodedBodySize": 24184,
+          "duration": 679.2999999523163
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 632
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 175.19999980926514
+        }
+      ],
+      "encodings": {
+        "": "gzip",
+        "moon-context-mobile.webp": "identity",
+        "index-E1_DUNzl.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
+        "index-CuYvdqPU.js": "gzip",
+        "release.json": "gzip",
+        "manifest.json": "identity",
+        "favicon.svg": "identity"
+      },
+      "samplePaintMs": null,
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/",
+      "run": 2,
+      "readyMs": 3139.5,
+      "lcp": 2316,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 699.2999999523163
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 700.3999998569489
+        },
+        {
+          "name": "moon-context-mobile.webp",
+          "transferSize": 31536,
+          "encodedBodySize": 31236,
+          "duration": 916.0999999046326
+        },
+        {
+          "name": "index-CuYvdqPU.js",
+          "transferSize": 125060,
+          "encodedBodySize": 124760,
+          "duration": 1678.5999999046326
+        },
+        {
+          "name": "index-E1_DUNzl.css",
+          "transferSize": 8575,
+          "encodedBodySize": 8275,
+          "duration": 390.09999990463257
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 699.5
+        },
+        {
+          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "transferSize": 24484,
+          "encodedBodySize": 24184,
+          "duration": 698.4000000953674
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 654.5
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 161.90000009536743
+        }
+      ],
+      "encodings": {
+        "": "gzip",
+        "moon-context-mobile.webp": "identity",
+        "index-E1_DUNzl.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
+        "index-CuYvdqPU.js": "gzip",
+        "release.json": "gzip",
+        "manifest.json": "identity",
+        "favicon.svg": "identity"
+      },
+      "samplePaintMs": null,
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/",
+      "run": 3,
+      "readyMs": 3639.9000000953674,
+      "lcp": 2676,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 696.7000000476837
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 707.2999999523163
+        },
+        {
+          "name": "moon-context-mobile.webp",
+          "transferSize": 31536,
+          "encodedBodySize": 31236,
+          "duration": 922.2999999523163
+        },
+        {
+          "name": "index-CuYvdqPU.js",
+          "transferSize": 125060,
+          "encodedBodySize": 124760,
+          "duration": 1672.2000000476837
+        },
+        {
+          "name": "index-E1_DUNzl.css",
+          "transferSize": 8575,
+          "encodedBodySize": 8275,
+          "duration": 384.7000000476837
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 691.9000000953674
+        },
+        {
+          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "transferSize": 24484,
+          "encodedBodySize": 24184,
+          "duration": 711.8999998569489
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 650.4000000953674
+        }
+      ],
+      "encodings": {
+        "": "gzip",
+        "moon-context-mobile.webp": "identity",
+        "index-E1_DUNzl.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
+        "index-CuYvdqPU.js": "gzip",
+        "release.json": "gzip",
+        "manifest.json": "identity",
+        "favicon.svg": "identity"
+      },
+      "samplePaintMs": null,
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/explore",
+      "run": 1,
+      "readyMs": 4885.799999952316,
+      "lcp": 1436,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 575.4000000953674
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 593.5999999046326
+        },
+        {
+          "name": "index-CuYvdqPU.js",
+          "transferSize": 125060,
+          "encodedBodySize": 124760,
+          "duration": 1386
+        },
+        {
+          "name": "index-E1_DUNzl.css",
+          "transferSize": 8575,
+          "encodedBodySize": 8275,
+          "duration": 351.69999980926514
+        },
+        {
+          "name": "Observatory-DgDwHzm-.css",
+          "transferSize": 1908,
+          "encodedBodySize": 1608,
+          "duration": 235.90000009536743
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 521.2000000476837
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 429
+        },
+        {
+          "name": "release.json",
+          "transferSize": 68405,
+          "encodedBodySize": 68105,
+          "duration": 803.7000000476837
+        },
+        {
+          "name": "manifest.json",
+          "transferSize": 613,
+          "encodedBodySize": 313,
+          "duration": 168.80000019073486
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 174.90000009536743
+        },
+        {
+          "name": "Observatory-B9ysxwC9.js",
+          "transferSize": 13570,
+          "encodedBodySize": 13270,
+          "duration": 412
+        },
+        {
+          "name": "science-ClQDVr-b.js",
+          "transferSize": 28159,
+          "encodedBodySize": 27859,
+          "duration": 566.7000000476837
+        },
+        {
+          "name": "Evidence-C25QyCSj.js",
+          "transferSize": 2647,
+          "encodedBodySize": 2347,
+          "duration": 229.40000009536743
+        },
+        {
+          "name": "Evidence-YXhEk7LN.css",
+          "transferSize": 982,
+          "encodedBodySize": 682,
+          "duration": 250.29999995231628
+        }
+      ],
+      "encodings": {
+        "explore": "gzip",
+        "index-E1_DUNzl.css": "gzip",
+        "Observatory-DgDwHzm-.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "index-CuYvdqPU.js": "gzip",
+        "manifest.json": "identity",
+        "release.json": "gzip",
+        "favicon.svg": "identity",
+        "Evidence-C25QyCSj.js": "gzip",
+        "Evidence-YXhEk7LN.css": "gzip",
+        "Observatory-B9ysxwC9.js": "gzip",
+        "science-ClQDVr-b.js": "gzip"
+      },
+      "samplePaintMs": 117.79999995231628,
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/explore",
+      "run": 2,
+      "readyMs": 4998.100000143051,
+      "lcp": 1508,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 600.7999999523163
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 596.3000001907349
+        },
+        {
+          "name": "index-CuYvdqPU.js",
+          "transferSize": 125060,
+          "encodedBodySize": 124760,
+          "duration": 1368.6999998092651
+        },
+        {
+          "name": "index-E1_DUNzl.css",
+          "transferSize": 8575,
+          "encodedBodySize": 8275,
+          "duration": 364.40000009536743
+        },
+        {
+          "name": "Observatory-DgDwHzm-.css",
+          "transferSize": 1908,
+          "encodedBodySize": 1608,
+          "duration": 255.39999985694885
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 505.7999999523163
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 415.2999999523163
+        },
+        {
+          "name": "release.json",
+          "transferSize": 68405,
+          "encodedBodySize": 68105,
+          "duration": 812.2000000476837
+        },
+        {
+          "name": "manifest.json",
+          "transferSize": 613,
+          "encodedBodySize": 313,
+          "duration": 174.39999985694885
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 170.59999990463257
+        },
+        {
+          "name": "Observatory-B9ysxwC9.js",
+          "transferSize": 13570,
+          "encodedBodySize": 13270,
+          "duration": 406.7999999523163
+        },
+        {
+          "name": "science-ClQDVr-b.js",
+          "transferSize": 28159,
+          "encodedBodySize": 27859,
+          "duration": 560.3000001907349
+        },
+        {
+          "name": "Evidence-C25QyCSj.js",
+          "transferSize": 2647,
+          "encodedBodySize": 2347,
+          "duration": 200.60000014305115
+        },
+        {
+          "name": "Evidence-YXhEk7LN.css",
+          "transferSize": 982,
+          "encodedBodySize": 682,
+          "duration": 220.60000014305115
+        }
+      ],
+      "encodings": {
+        "explore": "gzip",
+        "index-E1_DUNzl.css": "gzip",
+        "Observatory-DgDwHzm-.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "index-CuYvdqPU.js": "gzip",
+        "release.json": "gzip",
+        "manifest.json": "identity",
+        "favicon.svg": "identity",
+        "Evidence-C25QyCSj.js": "gzip",
+        "Evidence-YXhEk7LN.css": "gzip",
+        "Observatory-B9ysxwC9.js": "gzip",
+        "science-ClQDVr-b.js": "gzip"
+      },
+      "samplePaintMs": 38.59999990463257,
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/explore",
+      "run": 3,
+      "readyMs": 5561.300000190735,
+      "lcp": 1412,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 596.3000001907349
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 594.2000000476837
+        },
+        {
+          "name": "index-CuYvdqPU.js",
+          "transferSize": 125060,
+          "encodedBodySize": 124760,
+          "duration": 1383.1999998092651
+        },
+        {
+          "name": "index-E1_DUNzl.css",
+          "transferSize": 8575,
+          "encodedBodySize": 8275,
+          "duration": 358.90000009536743
+        },
+        {
+          "name": "Observatory-DgDwHzm-.css",
+          "transferSize": 1908,
+          "encodedBodySize": 1608,
+          "duration": 220.09999990463257
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 502.7000000476837
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 401.10000014305115
+        },
+        {
+          "name": "release.json",
+          "transferSize": 68405,
+          "encodedBodySize": 68105,
+          "duration": 795.6000001430511
+        },
+        {
+          "name": "manifest.json",
+          "transferSize": 613,
+          "encodedBodySize": 313,
+          "duration": 170.79999995231628
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 170.09999990463257
+        },
+        {
+          "name": "Observatory-B9ysxwC9.js",
+          "transferSize": 13570,
+          "encodedBodySize": 13270,
+          "duration": 403.2000000476837
+        },
+        {
+          "name": "science-ClQDVr-b.js",
+          "transferSize": 28159,
+          "encodedBodySize": 27859,
+          "duration": 559.5999999046326
+        },
+        {
+          "name": "Evidence-C25QyCSj.js",
+          "transferSize": 2647,
+          "encodedBodySize": 2347,
+          "duration": 253.39999985694885
+        },
+        {
+          "name": "Evidence-YXhEk7LN.css",
+          "transferSize": 982,
+          "encodedBodySize": 682,
+          "duration": 186.70000004768372
+        }
+      ],
+      "encodings": {
+        "explore": "gzip",
+        "Observatory-DgDwHzm-.css": "gzip",
+        "index-E1_DUNzl.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "index-CuYvdqPU.js": "gzip",
+        "release.json": "gzip",
+        "manifest.json": "identity",
+        "favicon.svg": "identity",
+        "Evidence-YXhEk7LN.css": "gzip",
+        "Evidence-C25QyCSj.js": "gzip",
+        "Observatory-B9ysxwC9.js": "gzip",
+        "science-ClQDVr-b.js": "gzip",
+        "ObservationScene-c9OqWgQK.js": "gzip"
+      },
+      "samplePaintMs": 195.39999985694885,
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/",
+      "run": 1,
+      "readyMs": 3288.7000000476837,
+      "lcp": 2320,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 705.5999999046326
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 697.0999999046326
+        },
+        {
+          "name": "moon-context-mobile.webp",
+          "transferSize": 31536,
+          "encodedBodySize": 31236,
+          "duration": 858.2000000476837
+        },
+        {
+          "name": "index-CuYvdqPU.js",
+          "transferSize": 125060,
+          "encodedBodySize": 124760,
+          "duration": 1661.5
+        },
+        {
+          "name": "index-E1_DUNzl.css",
+          "transferSize": 8575,
+          "encodedBodySize": 8275,
+          "duration": 396
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 674.8999998569489
+        },
+        {
+          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "transferSize": 24484,
+          "encodedBodySize": 24184,
+          "duration": 682.2000000476837
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 604.6000001430511
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 165.70000004768372
+        }
+      ],
+      "encodings": {
+        "": "gzip",
+        "moon-context-mobile.webp": "identity",
+        "index-E1_DUNzl.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
+        "index-CuYvdqPU.js": "gzip",
+        "release.json": "gzip",
+        "manifest.json": "identity",
+        "favicon.svg": "identity"
+      },
+      "samplePaintMs": null,
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/",
+      "run": 2,
+      "readyMs": 3549.5,
+      "lcp": 2384,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 695.5
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 703.6000001430511
+        },
+        {
+          "name": "moon-context-mobile.webp",
+          "transferSize": 31536,
+          "encodedBodySize": 31236,
+          "duration": 888.7999999523163
+        },
+        {
+          "name": "index-CuYvdqPU.js",
+          "transferSize": 125060,
+          "encodedBodySize": 124760,
+          "duration": 1669.7000000476837
+        },
+        {
+          "name": "index-E1_DUNzl.css",
+          "transferSize": 8575,
+          "encodedBodySize": 8275,
+          "duration": 401.7999999523163
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 686.3999998569489
+        },
+        {
+          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "transferSize": 24484,
+          "encodedBodySize": 24184,
+          "duration": 684.6000001430511
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 633.9000000953674
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 168.20000004768372
+        }
+      ],
+      "encodings": {
+        "": "gzip",
+        "moon-context-mobile.webp": "identity",
+        "index-E1_DUNzl.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
+        "index-CuYvdqPU.js": "gzip",
+        "favicon.svg": "identity",
+        "release.json": "gzip",
+        "manifest.json": "identity"
+      },
+      "samplePaintMs": null,
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/",
+      "run": 3,
+      "readyMs": 3534,
+      "lcp": 2552,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 702.7999999523163
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 705.2999999523163
+        },
+        {
+          "name": "moon-context-mobile.webp",
+          "transferSize": 31536,
+          "encodedBodySize": 31236,
+          "duration": 862.5
+        },
+        {
+          "name": "index-CuYvdqPU.js",
+          "transferSize": 125060,
+          "encodedBodySize": 124760,
+          "duration": 1679.2000000476837
+        },
+        {
+          "name": "index-E1_DUNzl.css",
+          "transferSize": 8575,
+          "encodedBodySize": 8275,
+          "duration": 409.60000014305115
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 680.6000001430511
+        },
+        {
+          "name": "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "transferSize": 24484,
+          "encodedBodySize": 24184,
+          "duration": 689.2000000476837
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 614.4000000953674
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 182.09999990463257
+        }
+      ],
+      "encodings": {
+        "": "gzip",
+        "moon-context-mobile.webp": "identity",
+        "index-E1_DUNzl.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "ibm-plex-sans-latin-500-normal-6ng42L7E.woff2": "identity",
+        "index-CuYvdqPU.js": "gzip",
+        "manifest.json": "identity",
+        "release.json": "gzip",
+        "favicon.svg": "identity"
+      },
+      "samplePaintMs": null,
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/explore",
+      "run": 1,
+      "readyMs": 5490.700000047684,
+      "lcp": 1496,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 593
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 602.2999999523163
+        },
+        {
+          "name": "index-CuYvdqPU.js",
+          "transferSize": 125060,
+          "encodedBodySize": 124760,
+          "duration": 1390
+        },
+        {
+          "name": "index-E1_DUNzl.css",
+          "transferSize": 8575,
+          "encodedBodySize": 8275,
+          "duration": 356.40000009536743
+        },
+        {
+          "name": "Observatory-DgDwHzm-.css",
+          "transferSize": 1908,
+          "encodedBodySize": 1608,
+          "duration": 238.89999985694885
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 513.9000000953674
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 429.59999990463257
+        },
+        {
+          "name": "release.json",
+          "transferSize": 68405,
+          "encodedBodySize": 68105,
+          "duration": 791.3999998569489
+        },
+        {
+          "name": "manifest.json",
+          "transferSize": 613,
+          "encodedBodySize": 313,
+          "duration": 181.70000004768372
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 177.89999985694885
+        },
+        {
+          "name": "science-ClQDVr-b.js",
+          "transferSize": 28159,
+          "encodedBodySize": 27859,
+          "duration": 563.7999999523163
+        },
+        {
+          "name": "Observatory-B9ysxwC9.js",
+          "transferSize": 13570,
+          "encodedBodySize": 13270,
+          "duration": 409.30000019073486
+        },
+        {
+          "name": "Evidence-C25QyCSj.js",
+          "transferSize": 2647,
+          "encodedBodySize": 2347,
+          "duration": 220.79999995231628
+        },
+        {
+          "name": "Evidence-YXhEk7LN.css",
+          "transferSize": 982,
+          "encodedBodySize": 682,
+          "duration": 174
+        }
+      ],
+      "encodings": {
+        "explore": "gzip",
+        "index-E1_DUNzl.css": "gzip",
+        "Observatory-DgDwHzm-.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "index-CuYvdqPU.js": "gzip",
+        "release.json": "gzip",
+        "manifest.json": "identity",
+        "favicon.svg": "identity",
+        "Evidence-YXhEk7LN.css": "gzip",
+        "Evidence-C25QyCSj.js": "gzip",
+        "Observatory-B9ysxwC9.js": "gzip",
+        "science-ClQDVr-b.js": "gzip"
+      },
+      "samplePaintMs": 214.5,
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/explore",
+      "run": 2,
+      "readyMs": 5293.200000047684,
+      "lcp": 1324,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 598.7999999523163
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 611.2000000476837
+        },
+        {
+          "name": "index-CuYvdqPU.js",
+          "transferSize": 125060,
+          "encodedBodySize": 124760,
+          "duration": 1390.2000000476837
+        },
+        {
+          "name": "index-E1_DUNzl.css",
+          "transferSize": 8575,
+          "encodedBodySize": 8275,
+          "duration": 371
+        },
+        {
+          "name": "Observatory-DgDwHzm-.css",
+          "transferSize": 1908,
+          "encodedBodySize": 1608,
+          "duration": 229.20000004768372
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 511.90000009536743
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 416.7999999523163
+        },
+        {
+          "name": "release.json",
+          "transferSize": 68405,
+          "encodedBodySize": 68105,
+          "duration": 795.8999998569489
+        },
+        {
+          "name": "manifest.json",
+          "transferSize": 613,
+          "encodedBodySize": 313,
+          "duration": 174
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 180.70000004768372
+        },
+        {
+          "name": "Observatory-B9ysxwC9.js",
+          "transferSize": 13570,
+          "encodedBodySize": 13270,
+          "duration": 417.2000000476837
+        },
+        {
+          "name": "science-ClQDVr-b.js",
+          "transferSize": 28159,
+          "encodedBodySize": 27859,
+          "duration": 563.8000001907349
+        },
+        {
+          "name": "Evidence-C25QyCSj.js",
+          "transferSize": 2647,
+          "encodedBodySize": 2347,
+          "duration": 237.39999985694885
+        },
+        {
+          "name": "Evidence-YXhEk7LN.css",
+          "transferSize": 982,
+          "encodedBodySize": 682,
+          "duration": 199.5
+        }
+      ],
+      "encodings": {
+        "explore": "gzip",
+        "Observatory-DgDwHzm-.css": "gzip",
+        "index-E1_DUNzl.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "index-CuYvdqPU.js": "gzip",
+        "release.json": "gzip",
+        "manifest.json": "identity",
+        "favicon.svg": "identity",
+        "Evidence-YXhEk7LN.css": "gzip",
+        "Evidence-C25QyCSj.js": "gzip",
+        "Observatory-B9ysxwC9.js": "gzip",
+        "science-ClQDVr-b.js": "gzip"
+      },
+      "samplePaintMs": 189.09999990463257,
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/explore",
+      "run": 3,
+      "readyMs": 5297.800000190735,
+      "lcp": 1444,
+      "cls": 0,
+      "resources": [
+        {
+          "name": "barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "transferSize": 22608,
+          "encodedBodySize": 22308,
+          "duration": 586.7000000476837
+        },
+        {
+          "name": "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "transferSize": 22888,
+          "encodedBodySize": 22588,
+          "duration": 600.2999999523163
+        },
+        {
+          "name": "index-CuYvdqPU.js",
+          "transferSize": 125060,
+          "encodedBodySize": 124760,
+          "duration": 1388.3999998569489
+        },
+        {
+          "name": "index-E1_DUNzl.css",
+          "transferSize": 8575,
+          "encodedBodySize": 8275,
+          "duration": 360.10000014305115
+        },
+        {
+          "name": "Observatory-DgDwHzm-.css",
+          "transferSize": 1908,
+          "encodedBodySize": 1608,
+          "duration": 235.39999985694885
+        },
+        {
+          "name": "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "transferSize": 24552,
+          "encodedBodySize": 24252,
+          "duration": 520
+        },
+        {
+          "name": "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "transferSize": 15008,
+          "encodedBodySize": 14708,
+          "duration": 429
+        },
+        {
+          "name": "release.json",
+          "transferSize": 68405,
+          "encodedBodySize": 68105,
+          "duration": 796.2000000476837
+        },
+        {
+          "name": "manifest.json",
+          "transferSize": 613,
+          "encodedBodySize": 313,
+          "duration": 166.59999990463257
+        },
+        {
+          "name": "favicon.svg",
+          "transferSize": 582,
+          "encodedBodySize": 282,
+          "duration": 169
+        },
+        {
+          "name": "Observatory-B9ysxwC9.js",
+          "transferSize": 13570,
+          "encodedBodySize": 13270,
+          "duration": 419.09999990463257
+        },
+        {
+          "name": "science-ClQDVr-b.js",
+          "transferSize": 28159,
+          "encodedBodySize": 27859,
+          "duration": 556.4000000953674
+        },
+        {
+          "name": "Evidence-C25QyCSj.js",
+          "transferSize": 2647,
+          "encodedBodySize": 2347,
+          "duration": 212.10000014305115
+        },
+        {
+          "name": "Evidence-YXhEk7LN.css",
+          "transferSize": 982,
+          "encodedBodySize": 682,
+          "duration": 246
+        }
+      ],
+      "encodings": {
+        "explore": "gzip",
+        "index-E1_DUNzl.css": "gzip",
+        "Observatory-DgDwHzm-.css": "gzip",
+        "barlow-condensed-latin-600-normal-DepVgxBB.woff2": "identity",
+        "ibm-plex-sans-latin-400-normal-CDDApCn2.woff2": "identity",
+        "ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2": "identity",
+        "ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2": "identity",
+        "index-CuYvdqPU.js": "gzip",
+        "manifest.json": "identity",
+        "release.json": "gzip",
+        "favicon.svg": "identity",
+        "Evidence-C25QyCSj.js": "gzip",
+        "Evidence-YXhEk7LN.css": "gzip",
+        "Observatory-B9ysxwC9.js": "gzip",
+        "science-ClQDVr-b.js": "gzip"
+      },
+      "samplePaintMs": 149.40000009536743,
+      "errors": []
+    }
+  ]
+}

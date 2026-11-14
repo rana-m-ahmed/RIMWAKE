@@ -1,0 +1,5 @@
+PASS: original scientific release and all raw source bytes preserved; new visual asset hashes match their separate provenance. No texture enters the astronomy model.
+PASS: source model hash and every geometry buffer preserved; only color texture transformed.
+PASS: cinema asset hash, GLB container, size budget and scientific-role separation.
+PASS: original evidence ZIP bytes and mobile poster hash preserved/verified.
+PASS: matched opening scene posters verified.

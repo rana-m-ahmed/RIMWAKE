@@ -43,7 +43,7 @@ test('failed lunar model retains the illustrated poster and working story links'
 }) => {
   await page.route('**/assets/moon-cinema.glb', (r) => r.abort());
   await page.goto('/');
-  await expect(page.locator('img[src="/assets/moon-context.webp"]')).toBeVisible();
+  await expect(page.locator('img[src="/assets/moon-opening-desktop.webp"]')).toBeVisible();
   await expect(page.getByRole('link', { name: 'Go straight to Explorer' })).toBeVisible();
   await page.getByRole('link', { name: 'Go straight to Explorer' }).click();
   await expect(page.getByRole('slider')).toBeVisible();

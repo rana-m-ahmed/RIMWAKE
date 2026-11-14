@@ -1,61 +1,64 @@
 # RIMWAKE submission preparation
 
-Status on 14 November 2026, Asia/Karachi: **local P0 application; not submitted; not deployed**. The owner explicitly requested local commits only and no push. The private GitHub repository exists but is intentionally empty remotely. Do not put that empty/private URL in a public submission as if it contains accessible source.
+Status: functioning local product, not deployed, not pushed, not submitted. The owner requested local commits and a demo review first. Do not use a private or empty repository URL as evidence of publicly accessible source.
 
-## External gates
+## Verified official requirements
 
-| Gate | Actual status | Next owner action |
-|---|---|---|
-| Registered team/event/timezone | UNKNOWN | Supply team/event URL and confirm applicable event timezone |
-| Exact selected challenge | Proposed: Lunar Landing Site Navigator | Confirm challenge on team page |
-| Challenge Resources-tab NASA source actually used | UNKNOWN | Open specific Resources tab and identify a qualifying used source; no Global Awards claim until verified |
-| Current official guide/portal fields and deadline | UNKNOWN | Read current guide and actual Project tab |
-| Public source/site/demo | NOT PUBLISHED, per user restriction | Owner authorizes publication when ready; then test anonymously |
-| Portal submitted state | NOT SUBMITTED | Complete submission and retain returned confirmation/status screenshot |
-| Certificate / Global Awards eligibility | NOT ESTABLISHED | Depends on external registration, rules and completed submission |
+The [current submission guide](https://www.spaceappschallenge.org/resources/project-submission-guide/) and [judging guide](https://www.spaceappschallenge.org/resources/judging-awards-guide/) were retrieved on 14 November 2026. Captured documents and hashes are recorded in `docs/research/official-2026/` and `public/data/resource-qualification.json`.
 
-Live verification attempted: official [event](https://www.spaceappschallenge.org/2026/) and [challenge](https://www.spaceappschallenge.org/2026/challenges/lunar-landing-site-navigator/) pages returned gateway/time-out errors to the research tool. Do not treat those failed fetches as proof that the public service is globally unavailable.
+- Demo: up to seven slides including title/intro, or a video no longer than 30 seconds. A six-slide local HTML/PDF is prepared.
+- Demo and final-project links must be publicly accessible without permission, registration or passwords.
+- Required form fields cover project name, summary, demo link, final-project link, detailed description, SI use, NASA data and other references. Use English; non-English demo speech requires English subtitles.
+- At least one NASA data source/resource is required for a Global Award. The official challenge Resources tab lists JPL Horizons System, which supplies this release's positions. This requirement is documented; overall team eligibility is not certified.
+- Submission closes 15 November 2026 at 23:59 in the registered Local Event timezone. The Universal Event uses the Team Owner's local timezone. The actual registered event/timezone is still unknown.
+- Registration, membership, complete fields, attestations and the actual returned **Submit for Judging** confirmation are separate requirements. None has been performed or assumed here.
 
-[NASA GO Team discussion 1827](https://github.com/nasa/spaceapps/discussions/1827) is available and discusses event start and NASA Resources requirements. [Discussion 1973](https://github.com/nasa/spaceapps/discussions/1973) contains a community answer describing a public video of at most 30 seconds or at most seven slides, English submission and AI disclosure. This is **not a verified replacement for the actual guide/portal**. The six-slide local deck fits that reported slide cap, pending portal confirmation. Dates/deadlines in the original brief are not independently re-certified here.
+## Owner gates
 
-## Paste-ready title
-
-RIMWAKE — Two places. One lunar sky.
-
-## Short summary
-
-RIMWAKE is an independent educational lunar visibility explorer. It compares sampled Sun and Earth positions from two documented southern lunar locations on one UTC clock, using NASA NSSDCA coordinates and archived JPL Horizons output. Calibrated sky plots, numerical readings and a Horizon Loom make geometric differences visible, while an evidence register exposes the source trail and model limits.
-
-## Description
-
-Choosing a lunar location also means choosing a view of the Sun and Earth. RIMWAKE makes that geometry inspectable. Users select two approximate published landing locations, move through a shared hourly UTC scan and compare apparent airless centre-of-disc azimuth and elevation relative to a local geometric tangent plane. The same selected sample drives both sky plots, the tables and the availability timeline.
-
-The current release covers 14 November through 19 December 2026, inclusive, with 3,364 hourly body/site readings. Eight coarse crossing brackets occur across the two sites. The first crossing in processing order was refined to ten-minute steps, producing a Sun-rise bracket at the IM-1 coordinate observer between 03:30 and 03:40 UTC on 16 November. These are modelled hypothetical observers, not actual lander instrumentation. A no-crossing case is displayed honestly when the selected sites/window contain none.
-
-NASA NSSDCA supplies the approximate historical horizontal coordinates. JPL Horizons supplies the Sun and Earth positions. Full source responses, exact queries, hashes, retrieval timestamps and parsing lineage are retained and downloadable. The frontend validates the release schema and SHA-256 manifest before presenting measurements.
-
-Science remains provisional. Independent ephemeris validation and exact frame reconciliation have not been completed. The release excludes local lunar terrain, finite-disc effects, eclipses, power generation and radio-link performance. Geometric visibility is not a guarantee of usable light or communications. The project is independent and does not imply NASA endorsement.
-
-## NASA-data explanation
-
-The [NSSDCA lunar artifact catalog](https://nssdc.gsfc.nasa.gov/planetary/lunar/lunar_artifact_impacts.html) grounds two approximate horizontal positions: IM-1 at −80.13°, 1.44° east and IM-2 at −84.7906°, 29.1957° east. [JPL Horizons](https://ssd-api.jpl.nasa.gov/doc/horizons.html) generates Moon-observer apparent airless azimuth/elevation, with exact observer assumptions shown in the evidence register. Challenge Resources-tab qualification of these sources remains unverified.
-
-## Tools / AI disclosure
-
-OpenAI Codex assisted with implementation, data-ingestion scripts, tests, visual review and preparation of this description. The project uses React, Vite, TypeScript, Zod, Python Requests, pytest, Vitest, Playwright, axe-core, Prettier, DM Sans and IBM Plex Mono. No generated imagery is used. Source/asset rights and versions are documented in the source ledger and lockfiles. The owner reviews and submits the final project.
-
-## 30-second demonstration outline
-
-| Time | Demonstrate only implemented behavior |
+| Item | Status |
 |---|---|
-| 0–5 s | RIMWAKE wordmark and “Two places. One lunar sky.” |
-| 5–13 s | Shared UTC slider changes both source-backed sky plots and exact numeric readings |
-| 13–21 s | Select ten-minute detail; step through the real 16 November crossing bracket, explaining that exact crossing time is unresolved |
-| 21–27 s | Open evidence: NASA/JPL sources, hypothetical observer and geometric-only model |
-| 27–30 s | State educational purpose and show the real public URL only after publication |
+| NASA Horizons source use and official Resources listing | CONFIRMED |
+| Registered team, members, selected event and timezone | UNKNOWN |
+| Actual team/member names in the demo | OWNER INPUT REQUIRED |
+| Independent ephemeris/frame validation | NOT RUN / OPEN |
+| Public site, source and demonstration links | NOT PUBLISHED, per owner instruction |
+| Anonymous access to public links | NOT RUN |
+| Portal submission and receipt | NOT SUBMITTED |
+| Certificate / overall award eligibility | NOT ESTABLISHED |
 
-The local six-slide HTML/PDF is an alternative to a video, not evidence that media has been uploaded or accepted. Final portal text must not claim deployment, independent science validation, terrain modelling or completed submission until those facts exist.
+## Project name
 
-## Scope decision
+RIMWAKE
 
-**LIMITED GO**: local integrity and interaction checks support finishing this educational P0. Public deployment is withheld by owner instruction; independent science/frame checks and challenge-source qualification remain open. P1 terrain is not authorized and has not started.
+## High-level summary
+
+On the Moon, where you stand changes your view. RIMWAKE turns NASA/JPL Sun and Earth observations into a synchronized comparison of two documented southern lunar locations. A cinematic introduction, geographic site picker, paired scientific skies, guided investigations and a shared timeline help people ask a question, find a supported moment and inspect the evidence behind it.
+
+## Detailed description
+
+RIMWAKE compares apparent airless centre-of-disc azimuth and signed elevation from hypothetical observers at approximate published Odysseus and Athena landing coordinates. A shared UTC drives every scientific reading. The source release contains 3,364 hourly body/site readings spanning 14 November to 19 December 2026, plus 28 ten-minute refined readings around a disclosed Sun crossing example.
+
+The flagship interaction shows two places at the same moment. Visitors can inspect the actual 14 November contrast or follow the 16 November Sun-centre crossing bracket, find matching sampled runs, choose geographic observers, switch between spatial and calibrated SVG views, inspect source records, copy an exact observation link and export a four-row scientific summary. Unknown and boundary values remain distinct; no positions are interpolated.
+
+NASA NSSDCA supplies approximate historical coordinates. JPL Horizons supplies Sun/Earth positions and archived request/response lineage. The frontend verifies the release manifest and schema before displaying observations. NASA Goddard's Moon model and CGI Moon Kit imagery provide credited visual context only. Static pre-rendering improves first paint while essential results retain readable HTML and SVG alternatives.
+
+Science is provisional. Independent astronomical-model validation and exact source-frame reconciliation remain open. Terrain obstruction, finite-disc effects, eclipses, power generation and RF-link performance are excluded. Above-plane geometry alone does not establish usable sunlight or communications.
+
+## NASA data
+
+JPL Horizons System, explicitly listed in the [official challenge Resources](https://www.spaceappschallenge.org/2026/challenges/lunar-landing-site-navigator/?tab=resources), is the numerical foundation. NASA NSSDCA's lunar artifact catalog supplies source coordinates. NASA SVS Moon 3D models and CGI Moon Kit supply the visual assets. Full requests, raw hashes, source assumptions and limitations are available through the instrument and downloadable evidence.
+
+## SI / AI disclosure
+
+The human owner supplied the project concept, goals, name and creative direction. OpenAI Codex assisted implementation, scientific-ingestion code, asset optimization, scientific and UI tests, visual review and preparation of text. NASA/JPL source observations are not generated values. No generated image, video or audio is used. The owner must review final claims and provide the actual team/member details before publication.
+
+The implementation uses React, TypeScript, Vite, GSAP, Three.js, React Three Fiber, Drei, SVG, Zod, Python, Playwright, axe-core, Vitest and pytest. Self-hosted Barlow Condensed and IBM Plex fonts and their license notices are included. Asset/source/tool references are recorded in the source ledger.
+
+## Local review artifacts
+
+- `docs/demo-slides.html` and `docs/demo-slides.pdf`: six-slide review deck.
+- `docs/DEMO_WALKTHROUGH.md`: short real-data demonstration sequence.
+- `docs/PRODUCT_TRANSFORMATION.md`: working feature matrix, QA evidence and remaining gates.
+- `docs/before-after.html`: actual rendered comparison images.
+
+No submission, public access, independent scientific certification or award outcome is claimed.

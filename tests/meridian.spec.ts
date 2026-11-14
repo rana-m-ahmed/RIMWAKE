@@ -9,7 +9,7 @@ test('six native-scroll chapters carry an exact refined sample into Explorer', a
     'true',
   );
   await page.getByRole('link', { name: 'Enter the Explorer', exact: false }).click();
-  await expect(page).toHaveURL(/\/explore$/);
+  await expect(page).toHaveURL(/\/explore(?:\?|$)/);
   await expect(page.getByRole('slider')).toHaveValue('4');
   await expect(page.getByTestId('selected-utc')).toContainText('03:40');
 });

@@ -19,7 +19,7 @@ Open http://127.0.0.1:5173. For a production preview:
 
 ```powershell
 npm.cmd run build
-npm.cmd run preview -- --port 4173
+npm.cmd run preview -- --port 4175
 ```
 
 The app is static and needs no API keys, database, account or runtime JPL requests. Deployable output is `dist/`; no deployment has been authorized under the latest local-only instruction. Use HTTPS for deployment because release integrity checks use Web Crypto (localhost also qualifies).
@@ -38,6 +38,10 @@ python scripts/check_cinema_integrity.py
 ```
 
 Browser tests use installed Google Chrome. If necessary, set `$env:PLAYWRIGHT_CHANNEL = 'msedge'` for installed Edge. Browser automation is local and does not open personal browser profiles. Scientific tests operate on archived responses and require no network.
+
+## Product review
+
+[Feature matrix, transformation log and current gates](docs/PRODUCT_TRANSFORMATION.md) ? [Demo walkthrough](docs/DEMO_WALKTHROUGH.md) ? [Before/after gallery](docs/before-after.html). The build includes static pre-rendered route shells and browser hydration; it remains a static application. On the running preview, open **Explore a real observation**, **Follow a crossing**, **Find a moment**, **Choose places**, or **Share & export**. Canonical links reproduce the selected release/sites/UTC/view after refresh.
 
 ## Scientific release
 
@@ -63,9 +67,9 @@ This fetches JPL/NASA data and replaces the working release. Preserve the existi
 
 ## Current design verification
 
-`python scripts/run_checks.py cinema` retains native exit codes and logs in `docs/qa/cinema/final/`. `node scripts/cinema_visual.mjs` captures all four routes at five widths; set `QA_ROUND` to retain another iteration. `node scripts/measure_cinema.mjs` runs eight cold local production-preview measurements on port 4173. The preview must be serving an already completed build; do not rebuild during measurement.
+`python scripts/run_checks.py product` retains native exit codes and logs in `docs/qa/cinema/product-final/`. `node scripts/cinema_visual.mjs` captures all four routes at five widths; set `QA_ROUND` to retain another iteration. `node scripts/measure_cinema.mjs` runs twelve cold local production-preview measurements on port 4175. The preview must be serving an already completed build; do not rebuild during measurement.
 
-3D is a progressively enhanced, on-demand renderer. It uses real released azimuth/elevation for reference-plane views. The Moon globe, lighting and camera journey provide visual context and never calculate terrain obstruction. Mobile uses the smaller NASA color map on a sphere. The desktop GLB is 1.725 MB; mesh buffers are unchanged. Source/transform hashes and credits are in `public/assets/cinema-provenance.json`.
+3D is a progressively enhanced, on-demand renderer. It uses real released azimuth/elevation for reference-plane views. The Moon globe, lighting and camera journey provide visual context and never calculate terrain obstruction. Mobile uses the smaller NASA color map on a sphere. The desktop GLB is 2.007 MB; mesh buffers are unchanged. Source/transform hashes and credits are in `public/assets/cinema-provenance.json`.
 
 ## Artifacts and boundaries
 
@@ -77,4 +81,4 @@ This fetches JPL/NASA data and replaces the working release. Preserve the existi
 - `science/raw/`: original full NASA/JPL responses; `science/tests/`: integrity and fault-injection checks
 - [Architecture](docs/architecture.md) and [measured local performance](docs/performance.json)
 
-Private remote: https://github.com/rana-m-ahmed/RIMWAKE. It is intentionally empty. All implementation commits are local. Public availability, anonymous deployed-URL tests, official challenge Resources eligibility and portal submission remain unverified. No certificate or award eligibility is claimed. P1 terrain work requires explicit owner approval after a stable deployed P0.
+Configured private remote: https://github.com/rana-m-ahmed/RIMWAKE. This work has not been pushed. All implementation commits are local. Public availability, anonymous deployed-URL tests, overall team/event eligibility and portal submission remain unverified. No certificate or award eligibility is claimed. P1 terrain work requires explicit owner approval after a stable deployed P0.

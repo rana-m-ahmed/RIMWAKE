@@ -1,5 +1,5 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
-import { releaseSchema, type Release } from '../science';
+import type { Release } from '../science';
 
 type DataState = {
   release: Release | null;
@@ -19,6 +19,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
       fetch('/data/manifest.json', { signal: controller.signal }),
     ])
       .then(async ([response, manifestResponse]) => {
+        const { releaseSchema } = await import('../science');
         if (!response.ok || !manifestResponse.ok) throw Error('Archive unavailable');
         const [bytes, manifest] = await Promise.all([
           response.arrayBuffer(),

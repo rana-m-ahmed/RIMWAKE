@@ -6,10 +6,10 @@ from datetime import datetime, timezone
 from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 group=sys.argv[1] if len(sys.argv)>1 else 'final'
-folder=root/(f'docs/qa/cinema/final' if group=='cinema' else f'docs/qa/v6/{group}')
+folder=root/(f'docs/qa/cinema/product-final' if group=='product' else f'docs/qa/cinema/final' if group=='cinema' else f'docs/qa/v6/{group}')
 folder.mkdir(parents=True,exist_ok=True)
 commands=[('typecheck',['npm.cmd','run','typecheck']),('unit',['npm.cmd','run','test']),('science',[sys.executable,'-m','pytest','science/tests','-q']),('build',['npm.cmd','run','build']),('browser',['npx.cmd','playwright','test'])]
-if group=='cinema': commands[3:3]=[('release',[sys.executable,'scripts/check_release.py']),('integrity',[sys.executable,'scripts/check_cinema_integrity.py'])]
+if group in ('cinema','product'): commands[3:3]=[('release',[sys.executable,'scripts/check_release.py']),('integrity',[sys.executable,'scripts/check_cinema_integrity.py'])]
 results=[]
 for name,command in commands:
     process=subprocess.run(command,cwd=root,stdout=subprocess.PIPE,stderr=subprocess.STDOUT)

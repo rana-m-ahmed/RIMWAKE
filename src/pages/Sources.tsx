@@ -21,6 +21,27 @@ export default function Sources() {
         </p>
       </header>
       <section className={s.sourceSection}>
+        <h2>NASA RESOURCE USE / CONFIRMED</h2>
+        <p>
+          Verified on 14 November 2026: the official challenge Resources tab lists JPL Horizons
+          System, which supplies this release's Sun and Earth positions. The current submission
+          guide requires at least one NASA data source or resource. This confirms the source-use
+          requirement; team registration and overall award eligibility remain separate checks.
+        </p>
+        <a
+          className="quietLink"
+          href="https://www.spaceappschallenge.org/2026/challenges/lunar-landing-site-navigator/?tab=resources"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Official challenge Resources &nearr;
+        </a>
+        <br />
+        <a className="quietLink" href="/data/resource-qualification.json" download>
+          Download the qualification record &darr;
+        </a>
+      </section>
+      <section className={s.sourceSection}>
         <h2>THE SCIENTIFIC RELEASE</h2>
         {r ? (
           <>
@@ -49,7 +70,8 @@ export default function Sources() {
                   <summary>Hash & qualification status</summary>
                   <code>{source.sha256}</code>
                   <p>
-                    Challenge Resources eligibility: {String(source.challenge_resource_eligible)}
+                    Qualification flag recorded when the scientific release was frozen:{' '}
+                    {String(source.challenge_resource_eligible)}
                   </p>
                 </details>
               </article>
@@ -127,9 +149,11 @@ export default function Sources() {
           NASA CGI Moon Kit ↗
         </a>
         <p>
-          Original reference-plane geometry, interface graphics and story choreography. Barlow
-          Condensed and IBM Plex fonts are self-hosted with their open-font license notices. The
-          experience is silent; no third-party soundtrack or generated image is used.
+          Opening stills are captured from the same NASA visual scenes before interactive
+          enhancement, with separate hashes and source identities. Original reference-plane
+          geometry, interface graphics and story choreography. Barlow Condensed and IBM Plex fonts
+          are self-hosted with their open-font license notices. The experience is silent; no
+          third-party soundtrack or generated image is used.
         </p>
         <p>
           RIMWAKE is an independent educational project directed by its human owner. OpenAI Codex
@@ -149,9 +173,9 @@ export default function Sources() {
           immutable scientific release. Local source and rollback references remain preserved.
         </p>
         <p>
-          Qualifying challenge Resources use, team/event eligibility and official submission require
-          separate confirmation. No deployment, certificate, award eligibility or completed
-          submission is claimed.
+          Horizons resource use has been confirmed separately. Team/event eligibility and official
+          submission still require confirmation. No deployment, certificate, award eligibility or
+          completed submission is claimed.
         </p>
         <Link href="/field-guide#limits" className="quietLink">
           Read the model limits ↗

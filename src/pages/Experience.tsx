@@ -1,4 +1,4 @@
-import { lazy, Suspense, useMemo, useRef, useState } from 'react';
+import { useEffect, lazy, Suspense, useMemo, useRef, useState } from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { useGSAP } from '@gsap/react';
@@ -6,7 +6,7 @@ import { Link } from '../lib/router';
 import { useData } from '../lib/data';
 import { useSelection } from '../lib/selection';
 import { signed } from '../lib/format';
-import { supportsWebGL, useMedia } from '../cinema/preferences';
+import { useWebGLCapability, useMedia } from '../cinema/preferences';
 import type { StoryMotion } from '../cinema/StoryScene';
 import SceneGuard from '../cinema/SceneGuard';
 import s from './Experience.module.css';
@@ -20,11 +20,26 @@ export default function Experience() {
     { setSelection } = useSelection();
   const compact = useMedia('(max-width:700px)'),
     reduced = useMedia('(prefers-reduced-motion:reduce)');
-  const [capable] = useState(supportsWebGL),
-    [failed, setFailed] = useState(false),
+  const capable = useWebGLCapability(!reduced);
+  const [failed, setFailed] = useState(false),
     [ready, setReady] = useState(false),
     [chapter, setChapter] = useState(0),
     [refined, setRefined] = useState(3);
+  const [enhance, setEnhance] = useState(false);
+  useEffect(() => {
+    let cancelled = false;
+    const poster = root.current?.querySelector('img');
+    Promise.allSettled([document.fonts.ready, poster?.decode()]).then(() =>
+      requestAnimationFrame(() =>
+        requestAnimationFrame(() => {
+          if (!cancelled) setEnhance(true);
+        }),
+      ),
+    );
+    return () => {
+      cancelled = true;
+    };
+  }, []);
   const records = useMemo(() => {
     if (!release) return [[], []];
     const rows = chapter >= 4 ? release.refined_samples : release.samples;
@@ -88,18 +103,21 @@ export default function Experience() {
     }));
   return (
     <main id="main" tabIndex={-1} ref={root} className={s.experience}>
-      <div className={s.stage} aria-hidden="true" data-local={chapter >= 2}>
+      <div className={s.stage} aria-hidden="true" data-local={chapter >= 2} data-chapter={chapter}>
         <div className={`${s.poster} ${ready && !failed && !reduced ? ' ' + s.posterHidden : ''}`}>
-          <img
-            src="/assets/moon-context.webp"
-            width="1100"
-            height="1100"
-            alt=""
-            fetchPriority="high"
-            decoding="async"
-          />
+          <picture>
+            <source media="(max-width:700px)" srcSet="/assets/moon-opening-mobile.webp" />
+            <img
+              src="/assets/moon-opening-desktop.webp"
+              width="1440"
+              height="900"
+              alt=""
+              fetchPriority="high"
+              decoding="async"
+            />
+          </picture>
         </div>
-        {capable && !failed && !reduced && (
+        {enhance && capable && !failed && !reduced && (
           <SceneGuard onFailure={() => setFailed(true)}>
             <Suspense fallback={null}>
               <Scene

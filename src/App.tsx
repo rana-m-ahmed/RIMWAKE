@@ -1,12 +1,13 @@
-import { useEffect } from 'react';
+import { useEffect, lazy, Suspense } from 'react';
 import { DataProvider } from './lib/data';
 import { SelectionProvider } from './lib/selection';
 import { Link, Router, useRoute } from './lib/router';
 import { Footer, Header } from './components/Shell';
 import Experience from './pages/Experience';
-import Observatory from './pages/Observatory';
-import FieldGuide from './pages/FieldGuide';
-import Sources from './pages/Sources';
+import ObservationLoading from './components/ObservationLoading';
+const Observatory = lazy(() => import('./pages/Observatory'));
+const FieldGuide = lazy(() => import('./pages/FieldGuide'));
+const Sources = lazy(() => import('./pages/Sources'));
 
 function Routes() {
   const route = useRoute();
@@ -20,31 +21,41 @@ function Routes() {
   return (
     <>
       <Header />
-      {route.path === '/' ? (
-        <Experience />
-      ) : route.path === '/explore' ? (
-        <Observatory />
-      ) : route.path === '/field-guide' ? (
-        <FieldGuide />
-      ) : route.path === '/sources' ? (
-        <Sources />
-      ) : (
-        <main
-          id="main"
-          tabIndex={-1}
-          style={{ padding: '90px 30px', maxWidth: 1000, margin: 'auto' }}
-        >
-          <p className="eyebrow">ROUTE / NOT FOUND</p>
-          <h1 style={{ font: '56px var(--font-display)' }}>A different path.</h1>
-          <p>
-            This route does not contain an observation. The instrument and its supported samples are
-            available below.
-          </p>
-          <Link href="/explore" className="primaryButton">
-            Open the Explorer ↗
-          </Link>
-        </main>
-      )}
+      <Suspense
+        fallback={
+          route.path === '/explore' ? (
+            <ObservationLoading />
+          ) : (
+            <main id="main" style={{ minHeight: '100vh' }} aria-busy="true" />
+          )
+        }
+      >
+        {route.path === '/' ? (
+          <Experience />
+        ) : route.path === '/explore' ? (
+          <Observatory />
+        ) : route.path === '/field-guide' ? (
+          <FieldGuide />
+        ) : route.path === '/sources' || route.path === '/method' ? (
+          <Sources />
+        ) : (
+          <main
+            id="main"
+            tabIndex={-1}
+            style={{ padding: '90px 30px', maxWidth: 1000, margin: 'auto' }}
+          >
+            <p className="eyebrow">ROUTE / NOT FOUND</p>
+            <h1 style={{ font: '56px var(--font-display)' }}>A different path.</h1>
+            <p>
+              This route does not contain an observation. The instrument and its supported samples
+              are available below.
+            </p>
+            <Link href="/explore" className="primaryButton">
+              Open the Explorer ↗
+            </Link>
+          </main>
+        )}
+      </Suspense>
       <Footer />
     </>
   );

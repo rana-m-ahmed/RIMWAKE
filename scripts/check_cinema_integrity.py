@@ -21,3 +21,14 @@ if original.exists():
  print('PASS: source model hash and every geometry buffer preserved; only color texture transformed.')
 else:print('NOTE: original downloaded model not present; shipped asset verified against provenance hash.')
 print('PASS: cinema asset hash, GLB container, size budget and scientific-role separation.')
+
+visual=json.loads((root/'public/assets/visual-provenance.json').read_text())
+assert hashlib.sha256((root/'public/assets/moon-context-mobile.webp').read_bytes()).hexdigest()==visual['mobile_poster']['sha256']
+archive=subprocess.check_output(['git','-c','safe.directory=D:/Horizon','show','rimwake-pre-cinema:public/data/evidence.zip'],cwd=root)
+assert archive==(root/'public/data/evidence.zip').read_bytes(),'Frozen evidence archive bytes changed'
+print('PASS: original evidence ZIP bytes and mobile poster hash preserved/verified.')
+
+for poster in p.get('opening_posters',{}).values():
+ assert hashlib.sha256((root/'public/assets'/poster['file']).read_bytes()).hexdigest()==poster['sha256']
+ assert hashlib.sha256((root/'public/assets'/poster['source_asset']).read_bytes()).hexdigest()==poster['source_sha256']
+print('PASS: matched opening scene posters verified.')

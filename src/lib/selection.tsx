@@ -12,8 +12,16 @@ export type Selection = {
   index: number;
   mode: 'coarse' | 'refined';
   mobile: 'A' | 'B';
+  view: 'spatial' | 'calibrated';
 };
-const initial: Selection = { a: 'im1', b: 'im2', index: 0, mode: 'coarse', mobile: 'A' };
+const initial: Selection = {
+  a: 'im1',
+  b: 'im2',
+  index: 0,
+  mode: 'coarse',
+  mobile: 'A',
+  view: 'spatial',
+};
 const SelectionContext = createContext<{
   selection: Selection;
   setSelection: Dispatch<SetStateAction<Selection>>;

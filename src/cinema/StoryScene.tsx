@@ -9,7 +9,14 @@ export type StoryMotion = { progress: number; invalidate: () => void };
 function TextureMoon({ onReady }: { onReady: () => void }) {
   const texture = useTexture('/assets/lroc-color-2k.jpg');
   texture.colorSpace = THREE.SRGBColorSpace;
-  useEffect(onReady, []);
+  const invalidate = useThree((state) => state.invalidate);
+  useEffect(() => {
+    invalidate();
+    requestAnimationFrame(() => {
+      invalidate();
+      onReady();
+    });
+  }, []);
   return (
     <mesh rotation={[0.12, -Math.PI / 2, 0]}>
       <sphereGeometry args={[1, 64, 48]} />
@@ -22,14 +29,25 @@ function ModelMoon({ onReady }: { onReady: () => void }) {
   const model = useMemo(() => {
     const copy = scene.clone(true);
     const box = new THREE.Box3().setFromObject(copy);
-    const sphere = box.getBoundingSphere(new THREE.Sphere());
+    const size = box.getSize(new THREE.Vector3());
+    const sphere = {
+      center: box.getCenter(new THREE.Vector3()),
+      radius: Math.max(size.x, size.y, size.z) / 2,
+    };
     copy.position.sub(sphere.center);
     const group = new THREE.Group();
     group.add(copy);
     group.scale.setScalar(1 / sphere.radius);
     return group;
   }, [scene]);
-  useEffect(onReady, []);
+  const invalidate = useThree((state) => state.invalidate);
+  useEffect(() => {
+    invalidate();
+    requestAnimationFrame(() => {
+      invalidate();
+      onReady();
+    });
+  }, []);
   return <primitive object={model} rotation={[0, -0.1, -0.12]} />;
 }
 function Contents({
@@ -80,7 +98,11 @@ function Contents({
     <>
       <ambientLight intensity={0.09} />
       <directionalLight position={[-3, 2.5, 4]} intensity={3.4} />
-      <group ref={moon}>
+      <group
+        ref={moon}
+        position={[compact ? 0.45 : 1.65, compact ? 0.9 : -0.1, -0.75]}
+        scale={compact ? 1.7 : 2.25}
+      >
         <Suspense fallback={null}>
           {compact ? <TextureMoon onReady={onReady} /> : <ModelMoon onReady={onReady} />}
         </Suspense>

@@ -1,0 +1,33 @@
+{
+  "verified_at_utc": "2026-11-14T11:34:58.917247+00:00",
+  "release_id": "rimwake-p0-20261114-v1",
+  "nasa_resource_used": "JPL Horizons System; scientific positions from its API",
+  "challenge_resources_listing": "CONFIRMED",
+  "listing_url": "https://www.spaceappschallenge.org/2026/challenges/lunar-landing-site-navigator/?tab=resources",
+  "required_nasa_resource_use": "CONFIRMED",
+  "overall_global_judging_eligibility": "NOT_ESTABLISHED",
+  "demo_limits": {
+    "slides_including_title": 7,
+    "video_seconds": 30
+  },
+  "deadline": "2026-11-15 23:59 in registered local-event timezone; Universal Event uses team owner local time",
+  "registered_team_event_timezone": "UNKNOWN",
+  "snapshots": {
+    "challenge-resources": {
+      "url": "https://www.spaceappschallenge.org/2026/challenges/lunar-landing-site-navigator/?tab=resources",
+      "captured_at_utc": "2026-11-14T11:34:07.576Z",
+      "snapshot_sha256": "457aa37c2fb19506f99f5e4e9286fd348a3b68dac2a327a5b902803867204327"
+    },
+    "judging-guide": {
+      "url": "https://www.spaceappschallenge.org/resources/judging-awards-guide/",
+      "captured_at_utc": "2026-11-14T11:34:08.356Z",
+      "snapshot_sha256": "263a93f979bfec8976d9d9edf4b764589fbead0583b4b4aeed45916aa6506f16"
+    },
+    "submission-guide": {
+      "url": "https://www.spaceappschallenge.org/resources/project-submission-guide/",
+      "captured_at_utc": "2026-11-14T11:34:07.882Z",
+      "snapshot_sha256": "521937fee1d50d7b98ffe36cca7da5c512dea0c2ffed43b4ce7d4a58e68bf34a"
+    }
+  },
+  "scope": "Documentary qualification recorded separately. Frozen scientific release and its original release-time eligibility flags are unchanged."
+}

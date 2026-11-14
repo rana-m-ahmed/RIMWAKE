@@ -77,7 +77,7 @@ test('calibrated view and expanded Horizon Loom retain accessible contrast and n
 }) => {
   await page.goto('/explore');
   await page.getByRole('button', { name: 'Calibrated 2D view' }).click();
-  await page.getByRole('button', { name: 'Show Horizon Loom' }).click();
+  await expect(page.getByRole('button', { name: 'Hide Horizon Loom' })).toBeVisible();
   const result = await new AxeBuilder({ page })
     .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'])
     .analyze();

@@ -82,16 +82,16 @@ def main():
     release=json.loads(path.read_text(encoding='utf8'))
     validate(release)
     interval_path=ROOT/'public/data/intervals.json'
-    interval_path.write_text(json.dumps(dict(release_id=release['release_id'],coarse=sampled_intervals(release['samples']),refined=sampled_intervals(release['refined_samples'])),indent=2),encoding='utf8')
-    manifest=dict(release_id=release['release_id'],schema_version=release['schema_version'],release_sha256=hashlib.sha256(path.read_bytes()).hexdigest(),intervals_sha256=hashlib.sha256(interval_path.read_bytes()).hexdigest(),validation='integrity_passed_science_provisional')
-    (ROOT/'public/data/manifest.json').write_text(json.dumps(manifest,indent=2),encoding='utf8')
-    with zipfile.ZipFile(ROOT/'public/data/evidence.zip','w',zipfile.ZIP_DEFLATED) as archive:
-        for raw in sorted((ROOT/'science/raw').iterdir()): archive.write(raw,raw.relative_to(ROOT))
-        archive.write(path,'release.json')
-        archive.write(interval_path,'intervals.json')
-        archive.write(ROOT/'public/data/manifest.json','manifest.json')
-        archive.write(ROOT/'science/pipeline.py','science/pipeline.py')
-        archive.write(ROOT/'scripts/check_release.py','scripts/check_release.py')
-    print('PASS: source hashes, query identities, raw sample equality, UTC cadence, shared sample matrix and crossing brackets. Science status: provisional; independent ephemeris NOT_RUN.')
+    expected=dict(release_id=release['release_id'],coarse=sampled_intervals(release['samples']),refined=sampled_intervals(release['refined_samples']))
+    assert json.loads(interval_path.read_text(encoding='utf8'))==expected,'Derived intervals mismatch'
+    manifest=json.loads((ROOT/'public/data/manifest.json').read_text(encoding='utf8'))
+    assert manifest['release_id']==release['release_id'] and manifest['schema_version']==release['schema_version']
+    assert manifest['release_sha256']==hashlib.sha256(path.read_bytes()).hexdigest()
+    assert manifest['intervals_sha256']==hashlib.sha256(interval_path.read_bytes()).hexdigest()
+    with zipfile.ZipFile(ROOT/'public/data/evidence.zip') as archive:
+        assert archive.testzip() is None
+        assert archive.read('release.json')==path.read_bytes()
+        for raw in sorted((ROOT/'science/raw').iterdir()):assert archive.read(str(raw.relative_to(ROOT)).replace('\\','/'))==raw.read_bytes()
+    print('PASS: source hashes, raw sample equality, cadence, shared sample matrix, brackets, manifest, intervals and archived evidence. Read-only; science provisional.')
 
 if __name__=='__main__':main()

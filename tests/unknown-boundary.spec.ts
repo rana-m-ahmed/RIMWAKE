@@ -32,7 +32,7 @@ for (const fault of ['unknown', 'boundary'] as const)
       await expect(page.getByTestId('comparison-summary')).toContainText('unknown');
     } else {
       await expect(page.getByTestId('A-10-elevation')).toHaveText('+0.000°');
-      await expect(page.getByText('At numerical boundary')).toBeVisible();
+      await expect(page.getByText('At numerical boundary', { exact: true })).toBeVisible();
       await page.getByRole('button', { name: 'Calibrated 2D view' }).click();
       const marker = page.getByTestId('A-sun-marker');
       expect(await marker.getAttribute('data-y')).toBe(await marker.getAttribute('data-horizon-y'));

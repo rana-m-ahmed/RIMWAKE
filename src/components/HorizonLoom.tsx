@@ -8,51 +8,50 @@ const Track = memo(function Track({
   onSelect,
   kind,
   id,
+  brackets = [],
 }: {
   states: State[];
   selected: number;
   onSelect: (i: number) => void;
   kind: 'sun' | 'earth' | 'both';
   id: string;
+  brackets?: { start: number; end: number }[];
 }) {
-  const cells = useMemo(
-    () =>
-      states.map((state, index) => {
-        const visible = state === 'visible',
-          unknown = state === 'unknown',
-          boundary = state === 'boundary';
-        if (visible && kind === 'both')
-          return (
-            <g key={index}>
-              <rect x={index + 0.09} y="1" width=".82" height="5" fill="var(--sun)" />
-              <rect x={index + 0.09} y="8" width=".82" height="5" fill="var(--earth)" />
-            </g>
-          );
-        return (
-          <rect
-            key={index}
-            x={index + 0.09}
-            y="1"
-            width=".82"
-            height="12"
-            fill={
-              unknown
-                ? `url(#hatch-${id})`
-                : visible
-                  ? kind === 'sun'
-                    ? 'var(--sun)'
-                    : 'var(--earth)'
-                  : boundary
-                    ? '#e9e9e2'
-                    : '#33434e'
-            }
-            stroke={boundary ? '#fff' : undefined}
-            strokeDasharray={boundary ? '1 2' : undefined}
-          />
+  const cells = useMemo(() => {
+    const paths = new Map<string, string>();
+    const rect = (fill: string, x: number, y: number, height: number) =>
+      paths.set(fill, (paths.get(fill) ?? '') + `M${x.toFixed(2)} ${y}h.82v${height}h-.82Z`);
+    states.forEach((state, index) => {
+      const x = index + 0.09;
+      if (state === 'visible' && kind === 'both') {
+        rect('var(--sun)', x, 1, 5);
+        rect('var(--earth)', x, 8, 5);
+      } else
+        rect(
+          state === 'unknown'
+            ? `url(#hatch-${id})`
+            : state === 'visible'
+              ? kind === 'sun'
+                ? 'var(--sun)'
+                : 'var(--earth)'
+              : state === 'boundary'
+                ? '#e9e9e2'
+                : '#33434e',
+          x,
+          1,
+          12,
         );
-      }),
-    [states, kind, id],
-  );
+    });
+    return [...paths].map(([fill, d]) => (
+      <path
+        key={fill}
+        d={d}
+        fill={fill}
+        stroke={fill === '#e9e9e2' ? '#fff' : undefined}
+        strokeDasharray={fill === '#e9e9e2' ? '1 2' : undefined}
+      />
+    ));
+  }, [states, kind, id]);
   return (
     <svg
       className={s.track}
@@ -79,6 +78,20 @@ const Track = memo(function Track({
         </pattern>
       </defs>
       {cells}
+      {brackets.map((band, i) => (
+        <rect
+          key={i}
+          x={band.start + 0.09}
+          y="0"
+          width={band.end - band.start + 0.82}
+          height="14"
+          fill="none"
+          stroke="#edf0e7"
+          strokeWidth="1"
+          vectorEffect="non-scaling-stroke"
+          data-testid="crossing-band"
+        />
+      ))}
       <line
         x1={selected + 0.5}
         x2={selected + 0.5}
@@ -99,6 +112,8 @@ export default function HorizonLoom({
   onMode,
   refinedAvailable,
   onEvidence,
+  showModes = true,
+  crossingBands = [],
 }: {
   tracks: { slot: string; kind: 'sun' | 'earth' | 'both'; states: State[] }[];
   selected: number;
@@ -108,6 +123,8 @@ export default function HorizonLoom({
   onMode: (mode: 'coarse' | 'refined') => void;
   refinedAvailable: boolean;
   onEvidence: () => void;
+  showModes?: boolean;
+  crossingBands?: { slot: string; kind: string; start: number; end: number }[];
 }) {
   return (
     <section className={s.loom} aria-label="Horizon Loom">
@@ -116,18 +133,20 @@ export default function HorizonLoom({
           <span className="eyebrow">TIME / SAMPLED AVAILABILITY</span>
           <h2>Horizon Loom</h2>
         </div>
-        <div className={s.modes}>
-          <button aria-pressed={mode === 'coarse'} onClick={() => onMode('coarse')}>
-            Hourly scan
-          </button>
-          <button
-            disabled={!refinedAvailable}
-            aria-pressed={mode === 'refined'}
-            onClick={() => onMode('refined')}
-          >
-            10-min detail
-          </button>
-        </div>
+        {showModes && (
+          <div className={s.modes}>
+            <button aria-pressed={mode === 'coarse'} onClick={() => onMode('coarse')}>
+              Hourly scan
+            </button>
+            <button
+              disabled={!refinedAvailable}
+              aria-pressed={mode === 'refined'}
+              onClick={() => onMode('refined')}
+            >
+              10-min detail
+            </button>
+          </div>
+        )}
         <button className={s.evidence} onClick={onEvidence}>
           Inspect evidence <span>↗</span>
         </button>
@@ -139,6 +158,7 @@ export default function HorizonLoom({
               {track.slot} / {track.kind.toUpperCase()}
             </span>
             <Track
+              brackets={crossingBands.filter((b) => b.slot === track.slot && b.kind === track.kind)}
               states={track.states}
               selected={selected}
               onSelect={onSelect}
@@ -159,8 +179,9 @@ export default function HorizonLoom({
         </p>
       </div>
       <p className={s.limit}>
-        Each block is a sampled state. The paired Sun/Earth bars mark BOTH above the geometric
-        plane; they do not guarantee continuous visibility, usable power or a radio link.
+        Each block is a sampled state. Outlines mark released crossing brackets, not exact crossing
+        instants. The paired Sun/Earth bars mark BOTH above the geometric plane; they do not
+        guarantee continuous visibility, usable power or a radio link.
       </p>
     </section>
   );
