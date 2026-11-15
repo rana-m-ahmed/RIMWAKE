@@ -50,7 +50,7 @@ JPL Horizons System, explicitly listed in the [official challenge Resources](htt
 
 ## SI / AI disclosure
 
-The human owner supplied the project concept, goals, name and creative direction. OpenAI Codex assisted implementation, scientific-ingestion code, asset optimization, scientific and UI tests, visual review and preparation of text. NASA/JPL source observations are not generated values. No generated image, video or audio is used. The owner must review final claims and provide the actual team/member details before publication.
+The human owner supplied the project concept, goals, name and creative direction. OpenAI Codex assisted implementation, scientific-ingestion code, asset optimization, scientific and UI tests, visual review and preparation of text. NASA/JPL source observations are not generated values. The brand mark was developed using AI image generation and reconstructed as a lightweight vector. Scientific records and lunar imagery are sourced from the credited NASA/JPL archives; no generated scientific imagery, video or audio is used. The owner must review final claims and provide the actual team/member details before publication.
 
 The implementation uses React, TypeScript, Vite, GSAP, Three.js, React Three Fiber, Drei, SVG, Zod, Python, Playwright, axe-core, Vitest and pytest. Self-hosted Barlow Condensed and IBM Plex fonts and their license notices are included. Asset/source/tool references are recorded in the source ledger.
 

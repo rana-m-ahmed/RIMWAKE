@@ -82,3 +82,7 @@ The separate release `rimwake-p0-atlas-20261115-v1` contains 25,932 hourly posit
 Six historical LROC site images/previews are sourced from NASA/GSFC/Arizona State University. Originals are retained under `science/raw/atlas-visual/`; display derivatives and credits are recorded in `public/assets/atlas-sites/provenance.json`. They never determine selected-date lighting or computed horizon states. The two Apollo images are official 200px previews with links to full-resolution source pages.
 
 The earlier source/archive entries are retained historical records. The original P0 release, its raw source files and evidence ZIP remain unchanged.
+
+## Accepted RIMWAKE brand / 15 November 2026
+
+The owner accepted an AI-generated open-rim R symbol. The original transparent PNG is retained unchanged at `public/assets/brand/rimwake-mark-ai.png`. Its production SVG, dark variant and favicon reconstruct that concept as small native vectors. Exact prompts, generation disclosure and file hashes are in `public/assets/brand/generation.json`. Only the branding is AI-generated; NASA/JPL scientific records and credited lunar imagery are unchanged. Earlier no-generated-image statements describe the preceding release.

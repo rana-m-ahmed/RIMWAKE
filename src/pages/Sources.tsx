@@ -201,7 +201,9 @@ export default function Sources() {
           enhancement, with separate hashes and source identities. Original reference-plane
           geometry, interface graphics and story choreography. Barlow Condensed and IBM Plex fonts
           are self-hosted with their open-font license notices. The experience is silent; no
-          third-party soundtrack or generated image is used.
+          third-party soundtrack is used. The RIMWAKE brand mark was developed with AI image
+          generation and reconstructed as a lightweight vector. Lunar imagery and scientific
+          records remain sourced from the credited NASA/JPL archives.
         </p>
         <p>
           RIMWAKE is an independent educational project directed by its human owner. OpenAI Codex

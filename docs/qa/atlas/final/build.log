@@ -5,9 +5,9 @@
 vite v7.3.8 building client environment for production...
 transforming...
 npm.cmd : node_modules/zod/v4/core/util.js (400:0): A comment
-At line:11 char:1
-+ npm.cmd run build > deliverables/atlas-build.log 2>&1
-+ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+At line:2 char:1
++ npm.cmd run build > deliverables/logo-globe-build.log 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
     + CategoryInfo          : NotSpecified: (node_modules/zo...0:0): A comment:String) [], RemoteException
     + FullyQualifiedErrorId : NativeCommandError
  
@@ -28,7 +28,7 @@ the comment. The comment will be removed to avoid issues.
 ✓ 742 modules transformed.
 rendering chunks...
 computing gzip size...
-dist/index.html                                                 1.43 kB │ gzip:   0.62 kB
+dist/index.html                                                 1.45 kB │ gzip:   0.62 kB
 dist/assets/analysis.worker-BEOa0_GF.js                         8.55 kB
 dist/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff       13.14 kB
 dist/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2      14.71 kB
@@ -44,31 +44,31 @@ dist/assets/Evidence-YXhEk7LN.css                               1.80 kB │ gzip
 dist/assets/Guide-x6OfTSYr.css                                  6.00 kB │ gzip:   1.69 kB
 dist/assets/Observatory-BMPo222N.css                            7.42 kB │ gzip:   1.98 kB
 dist/assets/MissionStory-cBFdp8pP.css                           8.91 kB │ gzip:   2.53 kB
-dist/assets/index-B1WIBKVT.css                                 58.75 kB │ gzip:  12.31 kB
+dist/assets/index-foaGeWaJ.css                                 58.77 kB │ gzip:  12.31 kB
 dist/assets/Guide.module-BSYXa3mM.js                            0.44 kB │ gzip:   0.25 kB
-dist/assets/Texture-EAUQ1MRt.js                                 0.62 kB │ gzip:   0.40 kB
-dist/assets/SceneGuard-R9jkeBxU.js                              0.89 kB │ gzip:   0.51 kB
-dist/assets/LocalSky-ue8nR_Qn.js                                2.24 kB │ gzip:   1.05 kB
-dist/assets/ObservationScene-BbE79s5X.js                        2.27 kB │ gzip:   1.27 kB
-dist/assets/useAtlas-Mx4F_fer.js                                4.39 kB │ gzip:   2.08 kB
-dist/assets/Evidence-_catvPM5.js                                5.67 kB │ gzip:   2.53 kB
-dist/assets/FieldGuide-BxDAtIR-.js                              6.17 kB │ gzip:   2.54 kB
-dist/assets/Sources-DHmT0_1b.js                                 8.83 kB │ gzip:   3.58 kB
-dist/assets/AtlasScene-mytp8C9W.js                             19.94 kB │ gzip:   6.64 kB
-dist/assets/MissionPage-Bx1Pcn4l.js                            36.26 kB │ gzip:  11.94 kB
-dist/assets/Observatory-6onpGnVB.js                            46.41 kB │ gzip:  15.53 kB
-dist/assets/StoryScene-CKIxP8vz.js                             74.68 kB │ gzip:  22.44 kB
+dist/assets/Texture-DO18zZT2.js                                 0.62 kB │ gzip:   0.40 kB
+dist/assets/SceneGuard--WBUuGyS.js                              0.89 kB │ gzip:   0.51 kB
+dist/assets/LocalSky-RYc_dSgr.js                                2.24 kB │ gzip:   1.05 kB
+dist/assets/ObservationScene-CdkjbZml.js                        2.27 kB │ gzip:   1.27 kB
+dist/assets/useAtlas-Co1Pd4JT.js                                4.39 kB │ gzip:   2.08 kB
+dist/assets/Evidence-XrTj5WTY.js                                5.67 kB │ gzip:   2.53 kB
+dist/assets/FieldGuide-CPaHJ2gY.js                              6.17 kB │ gzip:   2.55 kB
+dist/assets/Sources-IlykBOlo.js                                 9.00 kB │ gzip:   3.65 kB
+dist/assets/AtlasScene-BZreZBod.js                             20.14 kB │ gzip:   6.68 kB
+dist/assets/MissionPage-VafpDk5T.js                            36.26 kB │ gzip:  11.94 kB
+dist/assets/Observatory-DYJDo_Eh.js                            46.41 kB │ gzip:  15.53 kB
+dist/assets/StoryScene-zPdjJZFa.js                             74.68 kB │ gzip:  22.44 kB
 dist/assets/science-D14gx0_I.js                                96.35 kB │ gzip:  27.86 kB
-dist/assets/MissionStory-DnOyvudo.js                          127.64 kB │ gzip:  50.23 kB
-dist/assets/index-D3gQRU-e.js                                 242.32 kB │ gzip:  76.68 kB
-dist/assets/Line-CSjl28_q.js                                  953.45 kB │ gzip: 256.36 kB
+dist/assets/MissionStory-2la_4WRu.js                          127.64 kB │ gzip:  50.23 kB
+dist/assets/index-CxBHaQ_9.js                                 242.07 kB │ gzip:  76.57 kB
+dist/assets/Line-DE8tV_tK.js                                  953.45 kB │ gzip: 256.36 kB
 
 (!) Some chunks are larger than 500 kB after minification. Consider:
 - Using dynamic import() to code-split the application
 - Use build.rollupOptions.output.manualChunks to improve chunking: 
 https://rollupjs.org/configuration-options/#output-manualchunks
 - Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
-✓ built in 12.39s
+✓ built in 10.81s
 Pre-rendered /
 Pre-rendered /explore
 Pre-rendered /field-guide

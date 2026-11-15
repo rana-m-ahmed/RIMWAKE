@@ -2,6 +2,7 @@
 science/raw/** -text
 public/data/** -text
 public/assets/atlas-sites/** -text
+public/assets/brand/** -text
 *.png binary
 *.pdf binary
 *.zip binary

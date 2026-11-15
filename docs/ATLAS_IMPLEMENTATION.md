@@ -61,11 +61,15 @@ The first browser passes caught duplicate development-worker startup, focus loss
 
 The first screenshot pass exposed overly small SVG text, a buried comparison result, a wrapped mobile headline and one blank capture during concurrent hot reload. The horizon now sizes its coordinate system to its actual display width, the outcome precedes the atlas, phone settings/catalogs expand on demand, and final captures use the completed production build. Retained before captures are evidence of those issues, not final acceptance screenshots.
 
-Final verification: 43 TypeScript unit tests, 39 Python scientific tests and 60 production browser tests passed. Automated axe checks cover all four routes plus flagship phone/desktop and dialog states. The four screenshot iterations end with 73 PNGs across six widths; all 24 final route reports show no horizontal overflow or page errors. The generated demonstration PDF contains six pages and passes all six slide-content fit checks. Photo preparation reproduces identical derivatives and provenance; every new observation is rechecked against its raw source, and the original scientific bytes remain unchanged.
+Final verification: 43 TypeScript unit tests, 39 Python scientific tests and 62 production browser tests passed after the owner-reported view-switch regression was fixed. Automated axe checks cover all four routes plus flagship phone/desktop and dialog states. The four screenshot iterations end with 73 PNGs across six widths; all 24 final route reports show no horizontal overflow or page errors. The generated demonstration PDF contains six pages and passes all six slide-content fit checks. Photo preparation reproduces identical derivatives and provenance; every new observation is rechecked against its raw source, and the original scientific bytes remain unchanged.
 
 The final mobile lab profile meets LCP and layout-shift targets. Four-second first-verified Explorer readiness and the 200 KB normal-motion JavaScript budget remain open; exact measurements, enhancement costs and probe limits are recorded in [the performance report](ATLAS_PERFORMANCE.md). The local product is ready for owner review, with those acceptance gaps disclosed.
 
 Five unfamiliar-user sessions have not been conducted. Automated task journeys and engineering review do not prove the first-minute comprehension target. Owner review remains open. Independent scientific/frame validation, terrain extensions, actual team/member information, public publication and portal submission remain later gates. No award outcome is claimed.
+
+## Follow-up: Explorer switching and approved identity
+
+The Globe ? Sky ? Globe disappearance reproduced on desktop and phone and is fixed through canvas-scoped context-loss cleanup. Five repeated round trips per width now pass, genuine context loss still falls back correctly, and the approved AI logo is installed as a lightweight SVG. Nine follow-up route/viewport cases and separate returned-globe captures passed visual checks. See [the follow-up review and logo files](EXPLORER_LOGO_REVIEW.md).
 
 ## Recoverability
 

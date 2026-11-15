@@ -1,0 +1,22 @@
+{
+  "reviewed_at_utc": "2026-11-15T07:11:39.361863+00:00",
+  "build": "PASS",
+  "browser_passed": 62,
+  "unit_passed": 43,
+  "scientific_passed": 39,
+  "globe_regression": {
+    "failed_before": 2,
+    "passed_after": 2,
+    "round_trips_per_width": 5,
+    "widths": [
+      1440,
+      390
+    ],
+    "genuine_context_loss_fallback": "PASS"
+  },
+  "visual_routes": 9,
+  "page_errors": 0,
+  "horizontal_overflow_reports": 0,
+  "original_scientific_release_sha256": "c29ea61969ba53cfcc6531288c92430330249f25caa1dc71638cb3c57ab17d32",
+  "scope": "Local production preview. Independent ephemeris validation and cold performance remeasurement were not performed in this follow-up."
+}

@@ -4,16 +4,7 @@ import s from './Shell.module.css';
 export function Brand() {
   return (
     <Link className={s.brand} href="/">
-      <svg width="36" height="36" viewBox="0 0 40 40" aria-hidden="true">
-        <circle cx="20" cy="20" r="17" fill="none" stroke="currentColor" strokeWidth="1.2" />
-        <path
-          d="M3 21h34M20 3v34M6 21q14-21 28 0"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.2"
-        />
-        <circle cx="20" cy="21" r="2.5" fill="currentColor" />
-      </svg>
+      <img src="/assets/brand/rimwake-mark.svg" width="36" height="36" alt="" aria-hidden="true" />
       <span>RIMWAKE</span>
     </Link>
   );

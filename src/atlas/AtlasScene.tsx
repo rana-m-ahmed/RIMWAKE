@@ -4,6 +4,24 @@ import { OrbitControls, useTexture, Line } from '@react-three/drei';
 import { SRGBColorSpace, Vector3, type Group } from 'three';
 import type { Site } from './model';
 import { moonPoint } from './geography';
+function ContextLossGuard({ onFailure }: { onFailure: () => void }) {
+  const { gl } = useThree();
+  useEffect(() => {
+    const canvas = gl.domElement;
+    const lost = (event: Event) => {
+      event.preventDefault();
+      onFailure();
+    };
+    canvas.addEventListener('webglcontextlost', lost);
+    // R3F intentionally loses the old context after unmounting. That renderer
+    // no longer represents an active view and must not disable its replacement.
+    return () => {
+      canvas.removeEventListener('webglcontextlost', lost);
+      document.body.style.cursor = '';
+    };
+  }, [gl, onFailure]);
+  return null;
+}
 function Globe({
   sites,
   a,
@@ -187,16 +205,9 @@ function AtlasScene(props: {
         gl={{ alpha: true, antialias: true, powerPreference: 'low-power' }}
         onCreated={({ gl }) => {
           gl.domElement.setAttribute('aria-hidden', 'true');
-          gl.domElement.addEventListener(
-            'webglcontextlost',
-            (event) => {
-              event.preventDefault();
-              props.onFailure();
-            },
-            { once: true },
-          );
         }}
       >
+        <ContextLossGuard onFailure={props.onFailure} />
         <Suspense fallback={null}>
           <Globe {...props} overlay={overlay} />
         </Suspense>

@@ -1,5 +1,5 @@
 {
-  "executed_at_utc": "2026-11-15T06:09:10.010426+00:00",
+  "executed_at_utc": "2026-11-15T07:02:14.891329+00:00",
   "results": [
     {
       "name": "typecheck",
@@ -23,73 +23,52 @@
       "name": "release",
       "command": "C:\\Users\\ranam\\AppData\\Local\\Programs\\Python\\Python312\\python.exe scripts/check_release.py",
       "exit_code": 0,
-      "status": "PASS",
-      "rechecked_at_utc": "2026-11-15T06:40:26.081082+00:00"
+      "status": "PASS"
     },
     {
       "name": "integrity",
       "command": "C:\\Users\\ranam\\AppData\\Local\\Programs\\Python\\Python312\\python.exe scripts/check_cinema_integrity.py",
       "exit_code": 0,
-      "status": "PASS",
-      "rechecked_at_utc": "2026-11-15T06:40:27.664654+00:00"
+      "status": "PASS"
     },
     {
       "name": "atlas-integrity",
       "command": "C:\\Users\\ranam\\AppData\\Local\\Programs\\Python\\Python312\\python.exe scripts/check_atlas_archive.py",
       "exit_code": 0,
-      "status": "PASS",
-      "rechecked_at_utc": "2026-11-15T06:40:29.497389+00:00"
+      "status": "PASS"
     },
     {
       "name": "build",
       "command": "npm.cmd run build",
       "exit_code": 0,
       "status": "PASS",
-      "rechecked_at_utc": "2026-11-15T06:44:41.064595+00:00"
+      "rechecked_at_utc": "2026-11-15T07:11:39.361863+00:00"
     },
     {
       "name": "browser",
       "command": "npx.cmd playwright test",
       "exit_code": 0,
       "status": "PASS",
-      "rechecked_at_utc": "2026-11-15T06:44:41.086274+00:00",
       "base_url": "http://127.0.0.1:4175",
-      "passed": 60,
+      "rechecked_at_utc": "2026-11-15T07:11:39.361863+00:00",
+      "passed": 62,
       "skipped": 0
     }
   ],
-  "scope": "Local production build and preview. Independent ephemeris/frame validation, unfamiliar-user study, owner review, publication and submission remain open.",
-  "review_recorded_at_utc": "2026-11-15T06:50:27.212840+00:00",
+  "reviewed_at_utc": "2026-11-15T07:11:39.361863+00:00",
   "test_counts": {
     "typescript_unit": 43,
     "python_scientific": 39,
-    "production_browser": 60
+    "production_browser": 62
   },
-  "visual": {
-    "iterations": 4,
-    "final_route_reports": 24,
-    "final_pngs": 73,
-    "page_errors": 0,
-    "horizontal_overflow_reports": 0
-  },
-  "demo": {
-    "pdf_pages": 6,
-    "content_fit_passes": 6
-  },
-  "performance": {
-    "cold_runs": 12,
-    "report": "docs/ATLAS_PERFORMANCE.md",
-    "open_targets": [
-      "Explorer first verified result <=4000ms",
-      "Normal-motion observed JavaScript <=200000bytes"
-    ]
-  },
-  "code_whitespace": {
-    "exit_code": 0,
-    "scope": "Implementation code; verbatim source HTML, image provenance and native QA evidence directories excluded"
-  },
-  "staged_source_byte_equality": {
-    "files": 59,
-    "status": "PASS"
+  "globe_regression": {
+    "failed_before": 2,
+    "passed_after": 2,
+    "round_trips_per_width": 5,
+    "widths": [
+      1440,
+      390
+    ],
+    "genuine_context_loss_fallback": "PASS"
   }
 }

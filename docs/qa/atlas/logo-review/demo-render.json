@@ -1,0 +1,30 @@
+{
+  "pages": 6,
+  "content": [
+    {
+      "slide": 1,
+      "contentFits": true
+    },
+    {
+      "slide": 2,
+      "contentFits": true
+    },
+    {
+      "slide": 3,
+      "contentFits": true
+    },
+    {
+      "slide": 4,
+      "contentFits": true
+    },
+    {
+      "slide": 5,
+      "contentFits": true
+    },
+    {
+      "slide": 6,
+      "contentFits": true
+    }
+  ],
+  "scope": "Local review demo. No publication or submission."
+}

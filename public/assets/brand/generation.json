@@ -1,0 +1,41 @@
+{
+  "method": "Built-in image generation; accepted raster concept, followed by native SVG production reconstruction.",
+  "prompt": "Use case: logo-brand. Create one finished, original brand symbol for RIMWAKE, a sophisticated lunar observation-window explorer. Asset: standalone icon on a genuinely transparent background, centered with generous even safety margin, no wordmark or other text. Design a bold minimal geometric emblem: a nearly circular lunar crater-rim silhouette, deliberately cut open at its upper-right edge; one ascending angular horizon ridge/wake sweeps through the lower middle, forming a distinctive subtle R in negative space. The opening and rising cut should communicate a window emerging over a lunar rim. Strong coherent silhouette readable at 24px; 2 or 3 substantial shapes, very clean crisp vector-like edges, restrained proportions, precise optical balance. Main shape lunar white #eeeade with one tiny warm solar-amber #d8b57a segment near the open rim. Flat solid colors only. Scientific expedition identity with editorial restraint and high-end brand craftsmanship. No gradients, textures, glow, 3D, stars, sparkles, spacecraft, planets with generic orbital rings, NASA insignia, generic compass/crosshair, mockups, presentation sheet, multiple alternatives, shadows, watermarks, or background. Output a single isolated professional symbol with true alpha transparency.",
+  "refinement_prompt": "Refine this exact RIMWAKE emblem into clean final logo artwork. Preserve its circular rim, rising diagonal horizon, negative-space R and separate amber upper-right segment, proportions and orientation. Remove ALL grunge, speckles, flecks, roughness and stray pixels in the transparent areas and along edges. Replace all shading, cream-to-grey gradients and gold gradients with perfectly uniform flat solid fills: lunar white #eeeade, single amber segment #d8b57a. Make curves exceptionally smooth, vector-sharp and precisely cut, with clean empty transparent negative space. No texture, highlights, shadows, bevel, outlines or extra elements. One isolated mark only, no text, centered with even safety margins, true transparent background. It must look like a professionally constructed scientific mission brand, and remain clear at 24px.",
+  "accepted_raster": "/assets/brand/rimwake-mark-ai.png",
+  "production_vector": "/assets/brand/rimwake-mark.svg",
+  "note": "Brand identity only. Scientific observations and lunar imagery remain from the credited NASA/JPL archives.",
+  "files": [
+    {
+      "file": "favicon.svg",
+      "bytes": 535,
+      "sha256": "175cb68c619b5ce492fea26a947b900e5fa413e92e18f9e5e23732c704266b1a"
+    },
+    {
+      "file": "rimwake-mark-ai.png",
+      "bytes": 512534,
+      "sha256": "3d40785d9d314483f502e14ca665f9ebb33c8e25ccaacbdca0d8ab5e8c33e7f2"
+    },
+    {
+      "file": "rimwake-mark-dark.svg",
+      "bytes": 480,
+      "sha256": "c9bfb82eeb4ce5bb8bf7d9b21c459a2ff9561bf8b7c0560f8ab6e10f07be8622"
+    },
+    {
+      "file": "rimwake-mark.svg",
+      "bytes": 474,
+      "sha256": "4580245d7ff322597c482a43e05c9047333f564a81a15f6cf0463ac28652156b"
+    }
+  ],
+  "accepted_raster_properties": {
+    "size": [
+      1254,
+      1254
+    ],
+    "mode": "RGBA",
+    "alpha_range": [
+      0,
+      255
+    ]
+  }
+}
