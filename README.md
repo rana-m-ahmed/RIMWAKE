@@ -4,7 +4,9 @@ An immersive lunar atlas for comparing what a changed mission date does to the g
 
 Current interface: **Mission Atlas**. Four destinations: Experience `/`, Explorer `/explore`, Field Guide `/field-guide`, Sources `/sources`. `/method` remains a compatibility alias. [Implementation, evidence and remaining gates](docs/ATLAS_IMPLEMENTATION.md).
 
-All work remains local under the owner's no-push instruction. The original scientific release is immutable. Complete pre-atlas recovery: `rimwake-pre-atlas` at `38998a4`; active branch: `design/mission-atlas`.
+The owner authorized GitHub publication on 15 November 2026. Website deployment remains separate and has not been performed. The original scientific release is immutable. Complete pre-atlas recovery: `rimwake-pre-atlas` at `38998a4`; active branch: `design/mission-atlas`.
+
+[Complete standalone NASA Space Apps project report](RIMWAKE_COMPLETE_PROJECT_REPORT.md).
 
 ## Start locally
 
@@ -85,4 +87,4 @@ For the current product use `python scripts/run_checks.py atlas`. The older `pyt
 - `science/raw/`: original full NASA/JPL responses; `science/tests/`: integrity and fault-injection checks
 - [Architecture](docs/architecture.md) and [measured local performance](docs/qa/atlas/performance/summary.json)
 
-Configured private remote: https://github.com/rana-m-ahmed/RIMWAKE. This work has not been pushed. All implementation commits are local. Public availability, anonymous deployed-URL tests, overall team/event eligibility and portal submission remain unverified. No certificate or award eligibility is claimed. P1 terrain work requires explicit owner approval after a stable deployed P0.
+Configured private remote: https://github.com/rana-m-ahmed/RIMWAKE. GitHub publication was authorized by the owner on 15 November 2026. Repository publication does not deploy the website. Public availability, anonymous deployed-URL tests, overall team/event eligibility and portal submission remain unverified. No certificate or award eligibility is claimed. P1 terrain work requires explicit owner approval after a stable deployed P0.
