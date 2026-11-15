@@ -1,10 +1,10 @@
 # RIMWAKE
 
-A silent, native-scroll lunar story and a source-backed scientific Explorer. A photoreal NASA Moon opens a six-chapter journey from place, to local horizon, to a real sampled crossing. The Explorer synchronizes two signed spatial skies, exact angle tables and an optional Horizon Loom around one shared UTC.
+An immersive lunar atlas for comparing what a changed mission date does to the geometric Sun/Earth conditions at two places. Six documented landing coordinates, a ninety-day archived JPL dataset, original/delayed window summaries, signed horizon charts, linked timelines and source-traceable exports.
 
-Current interface: **Lunar Cinema**, superseding Meridian Cut's art direction. Four destinations: Experience `/`, Explorer `/explore`, Field Guide `/field-guide`, Sources `/sources`. `/method` remains a compatibility alias. [Implementation and review record](docs/CINEMA_EXECUTION.md).
+Current interface: **Mission Atlas**. Four destinations: Experience `/`, Explorer `/explore`, Field Guide `/field-guide`, Sources `/sources`. `/method` remains a compatibility alias. [Implementation, evidence and remaining gates](docs/ATLAS_IMPLEMENTATION.md).
 
-The original v4 briefs use former HORIZON / CAUSE branding. All work remains local under the owner's no-push instruction. Rollback baseline: `rimwake-pre-cinema` at `3646311`; active branch: `design/lunar-cinema`.
+All work remains local under the owner's no-push instruction. The original scientific release is immutable. Complete pre-atlas recovery: `rimwake-pre-atlas` at `38998a4`; active branch: `design/mission-atlas`.
 
 ## Start locally
 
@@ -32,7 +32,9 @@ npm.cmd run typecheck
 npm.cmd run test
 python -m pytest science/tests
 python scripts/check_release.py
+python scripts/check_atlas_archive.py
 npm.cmd run build
+$env:RIMWAKE_BASE_URL = 'http://127.0.0.1:4175'
 npx.cmd playwright test
 python scripts/check_cinema_integrity.py
 ```
@@ -41,9 +43,11 @@ Browser tests use installed Google Chrome. If necessary, set `$env:PLAYWRIGHT_CH
 
 ## Product review
 
-[Feature matrix, transformation log and current gates](docs/PRODUCT_TRANSFORMATION.md), [demo walkthrough](docs/DEMO_WALKTHROUGH.md), and [before/after gallery](docs/before-after.html). The build includes static pre-rendered route shells and browser hydration; it remains a static application. Start with **Compare two lunar skies** on the landing page or **Guided discovery** in Explorer. Use **Change UTC** for an exact released time, **How to read these skies** for the horizon explanation, **Find a moment** to answer a specific question, **Choose places** for the polar map, and **Share & export** to reproduce the result. Canonical links reopen the selected release/sites/UTC/view after refresh.
+Open the production preview and choose **Open the mission atlas**. The initial scenario compares seven days at Odysseus and Athena, then applies a 72-hour delay. Pick another site, edit the window, inspect a shared UTC, or export the comparison and its source samples. **Evidence & limits** explains exactly what is modeled.
 
-## Scientific release
+[Current implementation and QA record](docs/ATLAS_IMPLEMENTATION.md), [measured performance and open targets](docs/ATLAS_PERFORMANCE.md), [actual before/after captures](docs/before-after.html), and [six-slide review deck](docs/demo-slides.pdf). Historical cinema and Meridian Cut reports remain in `docs/` and are not current atlas acceptance records.
+
+## Preserved original scientific release
 
 `rimwake-p0-20261114-v1`: 841 hourly UTC timestamps from 14 November to 19 December 2026, inclusive. Two locations × two bodies = 3,364 coarse readings. The first discovered crossing in processing order was refined at 10-minute steps, adding 28 readings. This choice is disclosed and is not a claim that the selected crossing is the earliest chronological event or representative of every lunar location.
 
@@ -65,20 +69,20 @@ python scripts/inventory.py
 
 This fetches JPL/NASA data and replaces the working release. Preserve the existing immutable release before refreshing; assign a new release ID in `science/pipeline.py` for a new scientific release. Normal installation/build/test never refreshes scientific values. Re-fetching later may change raw response text and metadata even when angle values agree.
 
-## Current design verification
+## Historical cinema verification
 
-`python scripts/run_checks.py product` retains native exit codes and logs in `docs/qa/cinema/product-final/`. `node scripts/cinema_visual.mjs` captures all four routes at five widths; set `QA_ROUND` to retain another iteration. `node scripts/measure_cinema.mjs` runs twelve cold local production-preview measurements on port 4175. The preview must be serving an already completed build; do not rebuild during measurement.
+For the current product use `python scripts/run_checks.py atlas`. The older `python scripts/run_checks.py product` retains native exit codes and logs in `docs/qa/cinema/product-final/`. `node scripts/cinema_visual.mjs` captures all four routes at five widths; set `QA_ROUND` to retain another iteration. `node scripts/measure_cinema.mjs` runs twelve cold local production-preview measurements on port 4175. The preview must be serving an already completed build; do not rebuild during measurement.
 
 3D is a progressively enhanced, on-demand renderer. It uses real released azimuth/elevation for reference-plane views. The Moon globe, lighting and camera journey provide visual context and never calculate terrain obstruction. Mobile uses the smaller NASA color map on a sphere. The desktop GLB is 2.007 MB; mesh buffers are unchanged. Source/transform hashes and credits are in `public/assets/cinema-provenance.json`.
 
 ## Artifacts and boundaries
 
-- [Validation results](docs/qa/cinema/product-final/results.json) and [visual review record](docs/PRODUCT_TRANSFORMATION.md)
+- [Current validation results](docs/qa/atlas/final/results.json) and [visual review record](docs/qa/atlas/README.md)
 - [Source and asset ledger](docs/source-ledger.md), including actual raw hashes and retrieval times
 - [Submission copy and remaining owner gates](docs/submission.md)
 - [Six-slide local demo](docs/demo-slides.html), with PDF alongside it
 - `public/data/release.json`, manifest, sampled intervals and downloadable raw evidence ZIP
 - `science/raw/`: original full NASA/JPL responses; `science/tests/`: integrity and fault-injection checks
-- [Architecture](docs/architecture.md) and [measured local performance](docs/qa/cinema/performance-final/cold-runs.json)
+- [Architecture](docs/architecture.md) and [measured local performance](docs/qa/atlas/performance/summary.json)
 
 Configured private remote: https://github.com/rana-m-ahmed/RIMWAKE. This work has not been pushed. All implementation commits are local. Public availability, anonymous deployed-URL tests, overall team/event eligibility and portal submission remain unverified. No certificate or award eligibility is claimed. P1 terrain work requires explicit owner approval after a stable deployed P0.

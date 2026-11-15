@@ -184,11 +184,9 @@
 @keyframes sheet {
   from {
     transform: translateX(32px);
-    opacity: 0.6;
   }
   to {
     transform: translateX(0);
-    opacity: 1;
   }
 }
 @media (max-width: 1100px) {

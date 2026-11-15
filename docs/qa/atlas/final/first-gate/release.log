@@ -1,0 +1,16 @@
+Traceback (most recent call last):
+  File "D:\Horizon\scripts\check_release.py", line 97, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "D:\Horizon\scripts\check_release.py", line 94, in main
+    for raw in sorted((ROOT/'science/raw').iterdir()):assert archive.read(str(raw.relative_to(ROOT)).replace('\\','/'))==raw.read_bytes()
+                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ranam\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1571, in read
+    with self.open(name, "r", pwd) as fp:
+         ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ranam\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1608, in open
+    zinfo = self.getinfo(name)
+            ^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ranam\AppData\Local\Programs\Python\Python312\Lib\zipfile\__init__.py", line 1536, in getinfo
+    raise KeyError(
+KeyError: "There is no item named 'science/raw/atlas-v1' in the archive"

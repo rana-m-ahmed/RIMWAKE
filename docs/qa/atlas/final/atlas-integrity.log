@@ -1,0 +1,8 @@
+PASS: im1 source bytes, observer, targets, UTC, cadence and all 4322 angles
+PASS: im2 source bytes, observer, targets, UTC, cadence and all 4322 angles
+PASS: ch3 source bytes, observer, targets, UTC, cadence and all 4322 angles
+PASS: ap11 source bytes, observer, targets, UTC, cadence and all 4322 angles
+PASS: ap17 source bytes, observer, targets, UTC, cadence and all 4322 angles
+PASS: ce4 source bytes, observer, targets, UTC, cadence and all 4322 angles
+PASS: six historical image originals and derivatives equal their provenance hashes.
+PASS: all 25932 new readings equal archived source; original release remains unchanged.

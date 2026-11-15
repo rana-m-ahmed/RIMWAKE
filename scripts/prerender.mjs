@@ -24,11 +24,13 @@ try {
       .filter(
         (name) =>
           name.endsWith('.css') &&
-          (pathname === '/field-guide' || pathname === '/sources'
-            ? name.startsWith('Guide-')
-            : pathname === '/explore'
-              ? name.startsWith('Observatory-')
-              : false),
+          (pathname === '/'
+            ? name.startsWith('MissionStory-') || name.startsWith('Story-')
+            : pathname === '/field-guide' || pathname === '/sources'
+              ? name.startsWith('Guide-')
+              : pathname === '/explore'
+                ? name.startsWith('Mission-')
+                : false),
       )
       .map((name) => `<link rel="stylesheet" href="/assets/${name}">`)
       .join('');

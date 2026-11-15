@@ -14,6 +14,27 @@ export default function FieldGuide() {
         </h1>
         <p>Three ideas to take with you before you read a lunar sky.</p>
       </header>
+      <section className={s.sourceSection}>
+        <h2>START WITH A MISSION WINDOW.</h2>
+        <p>
+          Choose two viewpoints, a UTC start and a duration. Compare the original window with the
+          same duration after a schedule slip. Both places share one active inspection time;
+          switching Original / Delayed moves that clock together.
+        </p>
+        <p>
+          A seven-day hourly window includes 169 samples because both endpoints are included. A
+          value of 100% means the condition held at every sampled time. It does not prove
+          uninterrupted visibility between samples, solar-array output or a working radio link.
+        </p>
+        <p>
+          The atlas helps you locate the places. The signed horizon chart explains the selected
+          sample. The timeline connects the moment to the window. Sources and exports expose the
+          evidence and limitations.
+        </p>
+        <Link className="quietLink" href="/explore">
+          Try the 72-hour delay comparison {String.fromCharCode(8599)}
+        </Link>
+      </section>
       <section className={s.explainer}>
         <div>
           <p className="eyebrow">01 / YOUR HORIZON</p>

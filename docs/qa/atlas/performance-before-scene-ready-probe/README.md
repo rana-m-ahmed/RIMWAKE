@@ -1,0 +1,1 @@
+Superseded probe: a historical networkidle load state could resolve before late renderer dependencies finished. Final normal-motion runs wait for the actual rendered scene and a fresh request-quiet period before recording transfer totals.

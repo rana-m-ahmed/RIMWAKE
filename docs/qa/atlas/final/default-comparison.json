@@ -1,0 +1,366 @@
+{
+  "schema_version": "2.0.0",
+  "release": "rimwake-p0-atlas-20261115-v1",
+  "request": {
+    "a": "im1",
+    "b": "im2",
+    "start": "2026-11-14T00:00:00Z",
+    "hours": 168,
+    "delay": 72,
+    "scenario": "baseline",
+    "elapsed": 0,
+    "focus": "A",
+    "layer": "joint",
+    "view": "atlas"
+  },
+  "utc": "2026-11-14T00:00:00Z",
+  "summaries": [
+    {
+      "site": "im1",
+      "scenario": "baseline",
+      "start": "2026-11-14T00:00:00Z",
+      "end": "2026-11-21T00:00:00Z",
+      "sun": {
+        "above": 117,
+        "unknown": 0,
+        "boundary": 0,
+        "expected": 169,
+        "longest": {
+          "start": "2026-11-16T04:00:00Z",
+          "end": "2026-11-21T00:00:00Z",
+          "count": 117,
+          "hours": 116
+        }
+      },
+      "earth": {
+        "above": 169,
+        "unknown": 0,
+        "boundary": 0,
+        "expected": 169,
+        "longest": {
+          "start": "2026-11-14T00:00:00Z",
+          "end": "2026-11-21T00:00:00Z",
+          "count": 169,
+          "hours": 168
+        }
+      },
+      "joint": {
+        "above": 117,
+        "unknown": 0,
+        "boundary": 0,
+        "expected": 169,
+        "longest": {
+          "start": "2026-11-16T04:00:00Z",
+          "end": "2026-11-21T00:00:00Z",
+          "count": 117,
+          "hours": 116
+        }
+      },
+      "complete": true,
+      "minimumSun": -4.126238884,
+      "minimumEarth": 5.211282985,
+      "crossings": [
+        {
+          "body": "Sun",
+          "start": "2026-11-16T03:00:00Z",
+          "end": "2026-11-16T04:00:00Z",
+          "before": "blocked",
+          "after": "visible"
+        }
+      ]
+    },
+    {
+      "site": "im2",
+      "scenario": "baseline",
+      "start": "2026-11-14T00:00:00Z",
+      "end": "2026-11-21T00:00:00Z",
+      "sun": {
+        "above": 169,
+        "unknown": 0,
+        "boundary": 0,
+        "expected": 169,
+        "longest": {
+          "start": "2026-11-14T00:00:00Z",
+          "end": "2026-11-21T00:00:00Z",
+          "count": 169,
+          "hours": 168
+        }
+      },
+      "earth": {
+        "above": 165,
+        "unknown": 0,
+        "boundary": 0,
+        "expected": 169,
+        "longest": {
+          "start": "2026-11-14T04:00:00Z",
+          "end": "2026-11-21T00:00:00Z",
+          "count": 165,
+          "hours": 164
+        }
+      },
+      "joint": {
+        "above": 165,
+        "unknown": 0,
+        "boundary": 0,
+        "expected": 169,
+        "longest": {
+          "start": "2026-11-14T04:00:00Z",
+          "end": "2026-11-21T00:00:00Z",
+          "count": 165,
+          "hours": 164
+        }
+      },
+      "complete": true,
+      "minimumSun": 0.87828082,
+      "minimumEarth": -0.153879343,
+      "crossings": [
+        {
+          "body": "Earth",
+          "start": "2026-11-14T03:00:00Z",
+          "end": "2026-11-14T04:00:00Z",
+          "before": "blocked",
+          "after": "visible"
+        }
+      ]
+    },
+    {
+      "site": "im1",
+      "scenario": "delayed",
+      "start": "2026-11-17T00:00:00Z",
+      "end": "2026-11-24T00:00:00Z",
+      "sun": {
+        "above": 169,
+        "unknown": 0,
+        "boundary": 0,
+        "expected": 169,
+        "longest": {
+          "start": "2026-11-17T00:00:00Z",
+          "end": "2026-11-24T00:00:00Z",
+          "count": 169,
+          "hours": 168
+        }
+      },
+      "earth": {
+        "above": 169,
+        "unknown": 0,
+        "boundary": 0,
+        "expected": 169,
+        "longest": {
+          "start": "2026-11-17T00:00:00Z",
+          "end": "2026-11-24T00:00:00Z",
+          "count": 169,
+          "hours": 168
+        }
+      },
+      "joint": {
+        "above": 169,
+        "unknown": 0,
+        "boundary": 0,
+        "expected": 169,
+        "longest": {
+          "start": "2026-11-17T00:00:00Z",
+          "end": "2026-11-24T00:00:00Z",
+          "count": 169,
+          "hours": 168
+        }
+      },
+      "complete": true,
+      "minimumSun": 1.76388234,
+      "minimumEarth": 8.839469465,
+      "crossings": []
+    },
+    {
+      "site": "im2",
+      "scenario": "delayed",
+      "start": "2026-11-17T00:00:00Z",
+      "end": "2026-11-24T00:00:00Z",
+      "sun": {
+        "above": 169,
+        "unknown": 0,
+        "boundary": 0,
+        "expected": 169,
+        "longest": {
+          "start": "2026-11-17T00:00:00Z",
+          "end": "2026-11-24T00:00:00Z",
+          "count": 169,
+          "hours": 168
+        }
+      },
+      "earth": {
+        "above": 169,
+        "unknown": 0,
+        "boundary": 0,
+        "expected": 169,
+        "longest": {
+          "start": "2026-11-17T00:00:00Z",
+          "end": "2026-11-24T00:00:00Z",
+          "count": 169,
+          "hours": 168
+        }
+      },
+      "joint": {
+        "above": 169,
+        "unknown": 0,
+        "boundary": 0,
+        "expected": 169,
+        "longest": {
+          "start": "2026-11-17T00:00:00Z",
+          "end": "2026-11-24T00:00:00Z",
+          "count": 169,
+          "hours": 168
+        }
+      },
+      "complete": true,
+      "minimumSun": 4.080705924,
+      "minimumEarth": 3.330796732,
+      "crossings": []
+    }
+  ],
+  "explanation": "Athena has 28.4 percentage points more samples with both Sun and Earth above the geometric horizon.",
+  "changes": [
+    "52 more jointly above-horizon samples (30.8 percentage points).",
+    "4 more jointly above-horizon samples (2.4 percentage points)."
+  ],
+  "runs": [
+    {
+      "run_id": "atlas-im1-10",
+      "body_id": 10,
+      "site_id": "im1",
+      "raw_path": "science/raw/atlas-v1/im1-10.json",
+      "raw_url": "/data/atlas/raw/im1-10.json",
+      "raw_sha256": "64f42df654749a34c8879be40fe49c160bf6aedb64ba1000648b78ef048b12a8",
+      "request_url": "https://ssd.jpl.nasa.gov/api/horizons.api?COMMAND=%2710%27&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%271.44%2C-80.13%2C0%27&START_TIME=%272026-11-14%27&STOP_TIME=%272027-02-12%27&STEP_SIZE=%2760+m%27&QUANTITIES=%274%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CSV_FORMAT=%27YES%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&ELEV_CUT=%27-90%27&format=json",
+      "query": {
+        "COMMAND": "'10'",
+        "OBJ_DATA": "'YES'",
+        "MAKE_EPHEM": "'YES'",
+        "EPHEM_TYPE": "'OBSERVER'",
+        "CENTER": "'coord@301'",
+        "COORD_TYPE": "'GEODETIC'",
+        "SITE_COORD": "'1.44,-80.13,0'",
+        "START_TIME": "'2026-11-14'",
+        "STOP_TIME": "'2027-02-12'",
+        "STEP_SIZE": "'60 m'",
+        "QUANTITIES": "'4'",
+        "APPARENT": "'AIRLESS'",
+        "TIME_TYPE": "'UT'",
+        "CSV_FORMAT": "'YES'",
+        "ANG_FORMAT": "'DEG'",
+        "EXTRA_PREC": "'YES'",
+        "ELEV_CUT": "'-90'",
+        "format": "json"
+      },
+      "api_version": "1.2",
+      "retrieved_at_utc": "2026-11-15T05:30:53.107624+00:00"
+    },
+    {
+      "run_id": "atlas-im1-399",
+      "body_id": 399,
+      "site_id": "im1",
+      "raw_path": "science/raw/atlas-v1/im1-399.json",
+      "raw_url": "/data/atlas/raw/im1-399.json",
+      "raw_sha256": "b13dec632d63d5132d5a823165c97cb9464bf51d4e00d48d922dd50043b8270a",
+      "request_url": "https://ssd.jpl.nasa.gov/api/horizons.api?COMMAND=%27399%27&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%271.44%2C-80.13%2C0%27&START_TIME=%272026-11-14%27&STOP_TIME=%272027-02-12%27&STEP_SIZE=%2760+m%27&QUANTITIES=%274%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CSV_FORMAT=%27YES%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&ELEV_CUT=%27-90%27&format=json",
+      "query": {
+        "COMMAND": "'399'",
+        "OBJ_DATA": "'YES'",
+        "MAKE_EPHEM": "'YES'",
+        "EPHEM_TYPE": "'OBSERVER'",
+        "CENTER": "'coord@301'",
+        "COORD_TYPE": "'GEODETIC'",
+        "SITE_COORD": "'1.44,-80.13,0'",
+        "START_TIME": "'2026-11-14'",
+        "STOP_TIME": "'2027-02-12'",
+        "STEP_SIZE": "'60 m'",
+        "QUANTITIES": "'4'",
+        "APPARENT": "'AIRLESS'",
+        "TIME_TYPE": "'UT'",
+        "CSV_FORMAT": "'YES'",
+        "ANG_FORMAT": "'DEG'",
+        "EXTRA_PREC": "'YES'",
+        "ELEV_CUT": "'-90'",
+        "format": "json"
+      },
+      "api_version": "1.2",
+      "retrieved_at_utc": "2026-11-15T05:30:57.479199+00:00"
+    },
+    {
+      "run_id": "atlas-im2-10",
+      "body_id": 10,
+      "site_id": "im2",
+      "raw_path": "science/raw/atlas-v1/im2-10.json",
+      "raw_url": "/data/atlas/raw/im2-10.json",
+      "raw_sha256": "d4cc00196ffb3b592742ffd71eff686ab2893ff50f8aca565d5d440d944e4550",
+      "request_url": "https://ssd.jpl.nasa.gov/api/horizons.api?COMMAND=%2710%27&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2729.1957%2C-84.7906%2C0%27&START_TIME=%272026-11-14%27&STOP_TIME=%272027-02-12%27&STEP_SIZE=%2760+m%27&QUANTITIES=%274%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CSV_FORMAT=%27YES%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&ELEV_CUT=%27-90%27&format=json",
+      "query": {
+        "COMMAND": "'10'",
+        "OBJ_DATA": "'YES'",
+        "MAKE_EPHEM": "'YES'",
+        "EPHEM_TYPE": "'OBSERVER'",
+        "CENTER": "'coord@301'",
+        "COORD_TYPE": "'GEODETIC'",
+        "SITE_COORD": "'29.1957,-84.7906,0'",
+        "START_TIME": "'2026-11-14'",
+        "STOP_TIME": "'2027-02-12'",
+        "STEP_SIZE": "'60 m'",
+        "QUANTITIES": "'4'",
+        "APPARENT": "'AIRLESS'",
+        "TIME_TYPE": "'UT'",
+        "CSV_FORMAT": "'YES'",
+        "ANG_FORMAT": "'DEG'",
+        "EXTRA_PREC": "'YES'",
+        "ELEV_CUT": "'-90'",
+        "format": "json"
+      },
+      "api_version": "1.2",
+      "retrieved_at_utc": "2026-11-15T05:31:01.173873+00:00"
+    },
+    {
+      "run_id": "atlas-im2-399",
+      "body_id": 399,
+      "site_id": "im2",
+      "raw_path": "science/raw/atlas-v1/im2-399.json",
+      "raw_url": "/data/atlas/raw/im2-399.json",
+      "raw_sha256": "b530aa34ef5e7ba87de7bce6b2bd824c7cc24178027ff456aa129adc49b8f6ab",
+      "request_url": "https://ssd.jpl.nasa.gov/api/horizons.api?COMMAND=%27399%27&OBJ_DATA=%27YES%27&MAKE_EPHEM=%27YES%27&EPHEM_TYPE=%27OBSERVER%27&CENTER=%27coord%40301%27&COORD_TYPE=%27GEODETIC%27&SITE_COORD=%2729.1957%2C-84.7906%2C0%27&START_TIME=%272026-11-14%27&STOP_TIME=%272027-02-12%27&STEP_SIZE=%2760+m%27&QUANTITIES=%274%27&APPARENT=%27AIRLESS%27&TIME_TYPE=%27UT%27&CSV_FORMAT=%27YES%27&ANG_FORMAT=%27DEG%27&EXTRA_PREC=%27YES%27&ELEV_CUT=%27-90%27&format=json",
+      "query": {
+        "COMMAND": "'399'",
+        "OBJ_DATA": "'YES'",
+        "MAKE_EPHEM": "'YES'",
+        "EPHEM_TYPE": "'OBSERVER'",
+        "CENTER": "'coord@301'",
+        "COORD_TYPE": "'GEODETIC'",
+        "SITE_COORD": "'29.1957,-84.7906,0'",
+        "START_TIME": "'2026-11-14'",
+        "STOP_TIME": "'2027-02-12'",
+        "STEP_SIZE": "'60 m'",
+        "QUANTITIES": "'4'",
+        "APPARENT": "'AIRLESS'",
+        "TIME_TYPE": "'UT'",
+        "CSV_FORMAT": "'YES'",
+        "ANG_FORMAT": "'DEG'",
+        "EXTRA_PREC": "'YES'",
+        "ELEV_CUT": "'-90'",
+        "format": "json"
+      },
+      "api_version": "1.2",
+      "retrieved_at_utc": "2026-11-15T05:31:04.975129+00:00"
+    }
+  ],
+  "validation": {
+    "status": "provisional",
+    "independent_ephemeris_check": "NOT_RUN",
+    "frame_reconciliation": "OPEN",
+    "api_documentation_version": "1.3",
+    "accepted_response_version": "1.2",
+    "api_review": "Live response signature 1.2 accepted after explicit observer, target, frame, airless, column and complete UTC-grid checks. Documentation currently labels version 1.3."
+  },
+  "observer_frame": "Published DE421 mean Earth/polar coordinates supplied as Horizons geodetic inputs; exact frame equivalence not independently validated.",
+  "limitations": [
+    "Geometric reference horizon only; terrain excluded.",
+    "Hypothetical reference-ellipsoid observers, not lander instruments.",
+    "Airless apparent body centres; finite discs, eclipses, usable power and RF performance excluded.",
+    "Hourly samples; endpoint spans do not prove continuous availability.",
+    "Source/query consistency is not independent astronomical validation."
+  ]
+}

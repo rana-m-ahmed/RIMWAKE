@@ -1,0 +1,1 @@
+Superseded performance probe. Hydrated readiness was measured, but the byte count could finish before the delayed 1.5s GPU capability check started landing 3D. Final runs observe a further 2.2s enhancement-settle period and subsequent network idle.

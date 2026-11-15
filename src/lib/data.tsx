@@ -1,5 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState, type ReactNode } from 'react';
 import type { Release } from '../science';
+import { useRoute } from './router';
 
 type DataState = {
   release: Release | null;
@@ -8,10 +9,19 @@ type DataState = {
 };
 const DataContext = createContext<DataState>({ release: null, status: 'loading', retry: () => {} });
 export function DataProvider({ children }: { children: ReactNode }) {
+  const route = useRoute();
+  const query = new URLSearchParams(route.search);
+  const enabled =
+    ['/sources', '/method'].includes(route.path) ||
+    (route.path === '/explore' &&
+      (query.get('r') === 'rimwake-p0-20261114-v1' ||
+        query.get('legacy') === '1' ||
+        ['two-skies-one-instant', 'sunrise-im1'].includes(query.get('case') ?? '')));
   const [release, setRelease] = useState<Release | null>(null),
     [status, setStatus] = useState<DataState['status']>('loading'),
     [attempt, setAttempt] = useState(0);
   useEffect(() => {
+    if (!enabled) return;
     const controller = new AbortController();
     setStatus('loading');
     Promise.all([
@@ -47,7 +57,7 @@ export function DataProvider({ children }: { children: ReactNode }) {
         }
       });
     return () => controller.abort();
-  }, [attempt]);
+  }, [attempt, enabled]);
   const value = useMemo(
     () => ({ release, status, retry: () => setAttempt((n) => n + 1) }),
     [release, status],

@@ -1,0 +1,1 @@
+Exploratory measurement, superseded by the final performance directory. The landing readiness probe observed static heading visibility and could finish before lazy route hydration. Explorer results were verified; final measurements wait for an explicit hydrated landing marker.

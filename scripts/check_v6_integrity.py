@@ -6,9 +6,11 @@ from pathlib import Path
 root=Path(__file__).resolve().parents[1]
 frozen='c29ea61969ba53cfcc6531288c92430330249f25caa1dc71638cb3c57ab17d32'
 assert hashlib.sha256((root/'public/data/release.json').read_bytes()).hexdigest()==frozen,'Scientific release changed during design work'
-for path in (root/'science/raw').iterdir():
-    previous=subprocess.check_output(['git','-c','safe.directory=D:/Horizon','show',f'rimwake-pre-v6:science/raw/{path.name}'],cwd=root)
-    assert previous==path.read_bytes(),f'Raw evidence changed: {path.name}'
+original_paths=subprocess.check_output(['git','-c','safe.directory=D:/Horizon','ls-tree','-r','--name-only','rimwake-pre-v6','--','science/raw'],cwd=root).decode().splitlines()
+assert original_paths,'Original raw evidence register is empty'
+for name in original_paths:
+    previous=subprocess.check_output(['git','-c','safe.directory=D:/Horizon','show',f'rimwake-pre-v6:{name}'],cwd=root)
+    assert previous==(root/name).read_bytes(),f'Raw evidence changed or missing: {name}'
 manifest=json.loads((root/'public/data/manifest.json').read_text())
 assert manifest['release_sha256']==frozen
 visual=json.loads((root/'public/assets/visual-provenance.json').read_text())

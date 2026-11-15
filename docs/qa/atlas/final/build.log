@@ -1,0 +1,76 @@
+
+> rimwake@0.6.0 build
+> tsc -b && vite build && node scripts/prerender.mjs
+
+vite v7.3.8 building client environment for production...
+transforming...
+npm.cmd : node_modules/zod/v4/core/util.js (400:0): A comment
+At line:11 char:1
++ npm.cmd run build > deliverables/atlas-build.log 2>&1
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (node_modules/zo...0:0): A comment:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+
+"// Wrapped in a `@__PURE__` IIFE: esbuild never tree-shakes a top-level initializer that contains a member access on 
+`Number`, so the bare object literal survived into every bundle."
+
+in "node_modules/zod/v4/core/util.js" contains an annotation that Rollup cannot interpret due to the position of the 
+comment. The comment will be removed to avoid issues.
+node_modules/zod/v4/core/regexes.js (74:0): A comment
+
+"/** Anchors a pattern source. The interpolation lives here rather than at the call site because
+ * esbuild will not drop a `@__PURE__` call whose own argument interpolates a variable, but it
+ * will drop `anchor(dateSource)`. Keeping it inline pinned `date` into every bundle. */"
+
+in "node_modules/zod/v4/core/regexes.js" contains an annotation that Rollup cannot interpret due to the position of 
+the comment. The comment will be removed to avoid issues.
+✓ 742 modules transformed.
+rendering chunks...
+computing gzip size...
+dist/index.html                                                 1.43 kB │ gzip:   0.62 kB
+dist/assets/analysis.worker-BEOa0_GF.js                         8.55 kB
+dist/assets/ibm-plex-mono-latin-400-normal-CvHOgSBP.woff       13.14 kB
+dist/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2      14.71 kB
+dist/assets/barlow-condensed-latin-600-normal-BFJEwTuo.woff    18.89 kB
+dist/assets/ibm-plex-sans-latin-400-normal-CYLoc0-x.woff       22.10 kB
+dist/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2   22.31 kB
+dist/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2      22.59 kB
+dist/assets/ibm-plex-sans-latin-600-normal-Cu4Hd6ag.woff       23.88 kB
+dist/assets/ibm-plex-sans-latin-500-normal-BgVn5rGT.woff       23.92 kB
+dist/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2      24.18 kB
+dist/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2      24.25 kB
+dist/assets/Evidence-YXhEk7LN.css                               1.80 kB │ gzip:   0.68 kB
+dist/assets/Guide-x6OfTSYr.css                                  6.00 kB │ gzip:   1.69 kB
+dist/assets/Observatory-BMPo222N.css                            7.42 kB │ gzip:   1.98 kB
+dist/assets/MissionStory-cBFdp8pP.css                           8.91 kB │ gzip:   2.53 kB
+dist/assets/index-B1WIBKVT.css                                 58.75 kB │ gzip:  12.31 kB
+dist/assets/Guide.module-BSYXa3mM.js                            0.44 kB │ gzip:   0.25 kB
+dist/assets/Texture-EAUQ1MRt.js                                 0.62 kB │ gzip:   0.40 kB
+dist/assets/SceneGuard-R9jkeBxU.js                              0.89 kB │ gzip:   0.51 kB
+dist/assets/LocalSky-ue8nR_Qn.js                                2.24 kB │ gzip:   1.05 kB
+dist/assets/ObservationScene-BbE79s5X.js                        2.27 kB │ gzip:   1.27 kB
+dist/assets/useAtlas-Mx4F_fer.js                                4.39 kB │ gzip:   2.08 kB
+dist/assets/Evidence-_catvPM5.js                                5.67 kB │ gzip:   2.53 kB
+dist/assets/FieldGuide-BxDAtIR-.js                              6.17 kB │ gzip:   2.54 kB
+dist/assets/Sources-DHmT0_1b.js                                 8.83 kB │ gzip:   3.58 kB
+dist/assets/AtlasScene-mytp8C9W.js                             19.94 kB │ gzip:   6.64 kB
+dist/assets/MissionPage-Bx1Pcn4l.js                            36.26 kB │ gzip:  11.94 kB
+dist/assets/Observatory-6onpGnVB.js                            46.41 kB │ gzip:  15.53 kB
+dist/assets/StoryScene-CKIxP8vz.js                             74.68 kB │ gzip:  22.44 kB
+dist/assets/science-D14gx0_I.js                                96.35 kB │ gzip:  27.86 kB
+dist/assets/MissionStory-DnOyvudo.js                          127.64 kB │ gzip:  50.23 kB
+dist/assets/index-D3gQRU-e.js                                 242.32 kB │ gzip:  76.68 kB
+dist/assets/Line-CSjl28_q.js                                  953.45 kB │ gzip: 256.36 kB
+
+(!) Some chunks are larger than 500 kB after minification. Consider:
+- Using dynamic import() to code-split the application
+- Use build.rollupOptions.output.manualChunks to improve chunking: 
+https://rollupjs.org/configuration-options/#output-manualchunks
+- Adjust chunk size limit for this warning via build.chunkSizeWarningLimit.
+✓ built in 12.39s
+Pre-rendered /
+Pre-rendered /explore
+Pre-rendered /field-guide
+Pre-rendered /sources
+Pre-rendered /404

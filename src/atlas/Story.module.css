@@ -1,0 +1,559 @@
+.story {
+  background: #090f15;
+  color: #eae9e0;
+  position: relative;
+}
+.act {
+  position: relative;
+  min-height: 95svh;
+  padding: 90px 7vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 7vw;
+  scroll-margin-top: 35px;
+  border-bottom: 1px solid #24333d;
+}
+.arrival {
+  min-height: calc(100svh - 76px);
+  padding-top: 60px;
+  padding-bottom: 85px;
+  display: flex;
+  isolation: isolate;
+  overflow: hidden;
+  border-bottom: 0;
+}
+.moonStage {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: #080d13;
+}
+.moonStage > div:has(canvas) {
+  position: absolute !important;
+  inset: 0;
+}
+.poster {
+  position: absolute;
+  inset: 0;
+  transition: opacity 0.8s;
+}
+.poster img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.posterGone {
+  opacity: 0;
+}
+.vignette {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, #080d13 0, #080d13db 43%, transparent 76%),
+    linear-gradient(0deg, #080d13 0, transparent 35%);
+}
+.heroCopy {
+  max-width: 850px;
+  padding: 20px 0;
+}
+.kicker {
+  font: 500 11px/1.8 var(--font-body);
+  letter-spacing: 0.15em;
+  color: #b8c7d1;
+  margin: 0 0 25px;
+}
+.heroCopy h1 {
+  font: 600 clamp(80px, 8.3vw, 140px)/0.86 var(--font-display);
+  letter-spacing: -0.025em;
+  margin: 0 0 32px;
+}
+.heroCopy h1 > span,
+.act h2 > span {
+  color: #aeb9c2;
+}
+.heroLead {
+  font-size: 18px;
+  line-height: 1.8;
+  color: #c5d1d9;
+  margin-bottom: 30px;
+}
+.heroActions {
+  display: flex;
+  gap: 28px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.primary {
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  padding: 17px 22px;
+  min-height: 54px;
+  background: #eee7d8;
+  color: #12212c;
+  text-decoration: none;
+  border: 1px solid #eee7d8;
+  font-size: 14px;
+  font-weight: 600;
+}
+.primary:hover {
+  background: #fff9e9;
+}
+.heroActions > button {
+  background: none;
+  border: 0;
+  border-bottom: 1px solid #8796a1;
+  color: #d2dce2;
+  padding: 14px 0;
+  min-height: 48px;
+  font-size: 13px;
+}
+.heroActions > button span {
+  margin-left: 15px;
+}
+.heroFoot {
+  position: absolute;
+  left: 7vw;
+  right: 7vw;
+  bottom: 25px;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  color: #b8c4cb;
+  font: 9px/1.8 var(--font-data);
+}
+.copy {
+  max-width: 570px;
+}
+.act h2 {
+  font: 600 clamp(60px, 6.8vw, 110px)/0.91 var(--font-display);
+  letter-spacing: -0.02em;
+  margin: 0 0 30px;
+}
+.copy > p:not(.kicker) {
+  font-size: 17px;
+  line-height: 1.85;
+  color: #becbd4;
+  max-width: 490px;
+}
+.textLink {
+  display: inline-block;
+  font-size: 14px;
+  min-height: 44px;
+  color: #e2e4dc;
+  border-bottom: 1px solid #a1abae;
+  text-decoration: none;
+  padding: 12px 0;
+  margin-top: 15px;
+}
+.placeGraphic {
+  position: relative;
+}
+.polarArt svg {
+  width: 100%;
+  height: auto;
+  max-height: 520px;
+}
+.placeCoordinates {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font: 10px/1.8 var(--font-data);
+  color: #c5d3db;
+}
+.placeGraphic > small {
+  display: block;
+  text-align: center;
+  font-size: 10px;
+  color: #9fb1be;
+  margin-top: 24px;
+}
+.horizonAct {
+  background: #101a23;
+}
+.horizonArt svg {
+  width: 100%;
+}
+.horizonArt p {
+  font-size: 13px;
+  line-height: 1.9;
+  color: #bac9d3;
+  max-width: 440px;
+  margin: 20px auto;
+}
+.windowAct {
+  background: linear-gradient(120deg, #0b131b, #152530);
+}
+.resultTop {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  font: 10px/1.8 var(--font-data);
+  color: #b3c3ce;
+  border-bottom: 1px solid #798b95;
+  padding: 12px 0 20px;
+}
+.bigResult {
+  padding: 28px 0;
+  border-bottom: 1px solid #526572;
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 18px;
+}
+.bigResult > span {
+  font-size: 20px;
+  align-self: center;
+}
+.bigResult > strong {
+  font: 600 clamp(48px, 6vw, 90px)/1 var(--font-display);
+  color: #e1c99d;
+}
+.resultBar {
+  grid-column: 1/-1;
+  height: 12px;
+  background: #334753;
+}
+.resultBar > i {
+  display: block;
+  background: #d5bd91;
+  height: 100%;
+}
+.bigResult small {
+  font: 11px var(--font-data);
+  color: #b4c7d4;
+  grid-column: 1/-1;
+}
+.scienceNote {
+  font-size: 12px;
+  line-height: 1.9;
+  color: #b9c8d2;
+  margin-top: 22px;
+}
+.delayAct {
+  background: #dedbd0;
+  color: #192833;
+}
+.delayAct .kicker {
+  color: #4c606b;
+}
+.delayAct h2 > span {
+  color: #60717b;
+}
+.delayAct .copy > p:not(.kicker) {
+  color: #3b515f;
+}
+.delayAct .primary {
+  background: #152734;
+  border-color: #152734;
+  color: #eee8d8;
+  margin-top: 20px;
+}
+.delayGraphic {
+  background: #14232e;
+  padding: 30px;
+  color: #eae6da;
+}
+.delayStamp {
+  font: 11px var(--font-data);
+  color: #c6d2da;
+  border-bottom: 1px solid #6c808d;
+  padding-bottom: 24px;
+}
+.delayResult {
+  padding-top: 25px;
+  border-bottom: 1px solid #49616e;
+}
+.delayResult > span {
+  font-size: 17px;
+}
+.delayResult > strong {
+  font: 600 76px/1 var(--font-display);
+  display: block;
+  margin: 15px 0 10px;
+  color: #e4c99a;
+}
+.delayResult > small {
+  display: block;
+  font-size: 11px;
+  color: #b9cbd6;
+}
+.delayTrack {
+  height: 8px;
+  background: #334b59;
+  margin: 18px 0;
+}
+.delayTrack i {
+  display: block;
+  height: 100%;
+  background: #d5bd91;
+  transition: width 0.55s cubic-bezier(0.2, 0.7, 0.2, 1);
+}
+.delayResult p {
+  font-size: 12px;
+  line-height: 1.7;
+  color: #c0cdd5;
+  min-height: 35px;
+}
+.delayGraphic > .textLink {
+  font-size: 13px;
+  color: #e4e3d9;
+}
+.finalAct {
+  display: block;
+  text-align: center;
+  padding-block: 100px 85px;
+  min-height: 90svh;
+}
+.finalAct h2 {
+  font-size: clamp(60px, 7.3vw, 115px);
+}
+.finalAct > p:not(.kicker) {
+  font-size: 17px;
+  line-height: 1.8;
+  color: #b8c8d2;
+  margin: 25px auto;
+  max-width: 700px;
+}
+.finalAct > .primary {
+  margin-top: 15px;
+}
+.finalLinks {
+  display: flex;
+  gap: 35px;
+  justify-content: center;
+  margin-top: 35px;
+}
+.finalLinks a {
+  font-size: 13px;
+  color: #bccbd4;
+  text-decoration: none;
+  min-height: 44px;
+  padding: 10px 0;
+}
+.finalAct > .finalLimit {
+  font-size: 11px !important;
+  margin-top: 45px !important;
+}
+.actNav {
+  position: fixed;
+  right: 20px;
+  bottom: 22px;
+  z-index: 7;
+  display: flex;
+  gap: 3px;
+  background: #0c161dcc;
+  padding: 3px 8px;
+  border: 1px solid #51636d55;
+  backdrop-filter: blur(8px);
+}
+.actNav button {
+  min-width: 40px;
+  min-height: 38px;
+  border: 0;
+  background: none;
+  color: #93a9b8;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px;
+  position: relative;
+}
+.actNav button > span {
+  font: 9px var(--font-data);
+}
+.actNav i {
+  width: 10px;
+  height: 1px;
+  background: currentColor;
+}
+.actNav button[aria-current] {
+  color: #f6ead0;
+}
+.actNav b {
+  display: none;
+}
+@media (max-width: 1000px) {
+  .heroCopy h1 {
+    font-size: 10vw;
+  }
+  .act {
+    gap: 35px;
+    padding-inline: 5vw;
+  }
+  .act h2 {
+    font-size: 7.3vw;
+  }
+  .copy > p:not(.kicker) {
+    font-size: 15px;
+  }
+  .placeCoordinates {
+    font-size: 9px;
+  }
+  .bigResult > span {
+    font-size: 16px;
+  }
+}
+@media (max-width: 700px) {
+  .arrival {
+    min-height: calc(100svh - 68px);
+    padding: 170px 22px 55px;
+    align-items: flex-end;
+  }
+  .heroCopy {
+    padding: 0;
+  }
+  .heroCopy h1 {
+    font-size: clamp(65px, 14.8vw, 100px);
+    line-height: 0.91;
+    margin-bottom: 25px;
+  }
+  .kicker {
+    font-size: 9px;
+    letter-spacing: 0.1em;
+    margin-bottom: 20px;
+  }
+  .heroLead {
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 300px;
+    margin-bottom: 24px;
+  }
+  .desktopBreak {
+    display: none;
+  }
+  .heroActions {
+    gap: 12px;
+  }
+  .heroActions > .primary {
+    width: 100%;
+    padding: 15px 17px;
+    font-size: 13px;
+    min-height: 50px;
+  }
+  .heroActions > button {
+    font-size: 12px;
+    min-height: 44px;
+  }
+  .heroFoot {
+    display: none;
+  }
+  .vignette {
+    background: linear-gradient(0deg, #080d13 0, #080d13ef 58%, transparent 95%);
+  }
+  .act {
+    display: block;
+    min-height: 0;
+    padding: 65px 22px;
+  }
+  .act h2 {
+    font-size: clamp(49px, 12vw, 75px);
+    line-height: 0.95;
+  }
+  .copy > p:not(.kicker) {
+    font-size: 15px;
+    line-height: 1.9;
+  }
+  .copy {
+    max-width: 100%;
+  }
+  .placeGraphic,
+  .horizonArt,
+  .windowGraphic,
+  .delayGraphic {
+    margin-top: 35px;
+  }
+  .polarArt svg {
+    max-height: 370px;
+  }
+  .placeCoordinates {
+    font-size: 9px;
+    gap: 10px;
+  }
+  .horizonArt p {
+    font-size: 12px;
+  }
+  .horizonArt svg {
+    margin-inline: -10px;
+    width: calc(100% + 20px);
+  }
+  .textLink {
+    font-size: 13px;
+  }
+  .bigResult {
+    gap: 13px;
+    padding-block: 23px;
+  }
+  .bigResult > strong {
+    font-size: 60px;
+  }
+  .bigResult > span {
+    font-size: 17px;
+  }
+  .resultTop {
+    font-size: 9px;
+  }
+  .bigResult small {
+    font-size: 10px;
+  }
+  .delayGraphic {
+    padding: 22px;
+  }
+  .delayResult > strong {
+    font-size: 70px;
+  }
+  .delayAct .primary {
+    font-size: 13px;
+    width: 100%;
+    gap: 15px;
+    padding: 15px;
+  }
+  .finalAct {
+    text-align: left;
+    padding-block: 65px 80px;
+  }
+  .finalAct h2 {
+    font-size: clamp(43px, 10.8vw, 65px);
+  }
+  .finalAct > p:not(.kicker) {
+    font-size: 15px;
+    margin-left: 0;
+  }
+  .finalAct > .primary {
+    width: 100%;
+    font-size: 13px;
+    padding: 15px;
+  }
+  .finalLinks {
+    display: block;
+    margin-top: 25px;
+  }
+  .finalLinks a {
+    display: block;
+    font-size: 13px;
+  }
+  .actNav {
+    display: none;
+  }
+  .scienceNote {
+    font-size: 12px;
+  }
+  .arrival.act {
+    display: flex;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .delayTrack i,
+  .poster {
+    transition: none;
+  }
+}
+
+@media (max-width: 700px) {
+  .heroCopy h1 > span {
+    font-size: 0.78em;
+    display: inline-block;
+    line-height: 1.02;
+  }
+}

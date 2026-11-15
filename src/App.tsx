@@ -1,18 +1,35 @@
-import { useEffect, lazy, Suspense } from 'react';
+import { useEffect, useState, lazy, Suspense } from 'react';
 import { DataProvider } from './lib/data';
 import { SelectionProvider } from './lib/selection';
 import { Link, Router, useRoute } from './lib/router';
 import { Footer, Header } from './components/Shell';
-import Experience from './pages/Experience';
+const Experience = lazy(() => import('./atlas/MissionStory'));
+import MissionLoading from './atlas/Loading';
 import ObservationLoading from './components/ObservationLoading';
 const Observatory = lazy(() => import('./pages/Observatory'));
+const MissionPage = lazy(() => import('./atlas/MissionPage'));
 const FieldGuide = lazy(() => import('./pages/FieldGuide'));
 const Sources = lazy(() => import('./pages/Sources'));
+function ExplorerRoute({ legacy }: { legacy: boolean }) {
+  const [mounted, setMounted] = useState(false);
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return <MissionLoading />;
+  return (
+    <Suspense fallback={legacy ? <ObservationLoading /> : <MissionLoading />}>
+      {legacy ? <Observatory /> : <MissionPage />}
+    </Suspense>
+  );
+}
 
 function Routes() {
   const route = useRoute();
+  const query = new URLSearchParams(route.search);
+  const legacy =
+    query.get('r') === 'rimwake-p0-20261114-v1' ||
+    query.get('legacy') === '1' ||
+    ['two-skies-one-instant', 'sunrise-im1'].includes(query.get('case') ?? '');
   useEffect(() => {
-    document.title = `RIMWAKE · ${route.path === '/explore' ? 'Your local sky' : route.path === '/field-guide' ? 'Field Guide' : route.path === '/sources' ? 'Sources & evidence' : 'Where you stand changes the sky'}`;
+    document.title = `RIMWAKE · ${route.path === '/explore' ? 'Mission Atlas' : route.path === '/field-guide' ? 'Field Guide' : route.path === '/sources' ? 'Sources & evidence' : 'The place. The date. The difference.'}`;
     if (route.path === '/' && (route.hash === '#instrument' || route.hash === '#explore'))
       route.navigate('/explore', true);
     if (route.path === '/' && route.hash === '#method') route.navigate('/method', true);
@@ -24,7 +41,11 @@ function Routes() {
       <Suspense
         fallback={
           route.path === '/explore' ? (
-            <ObservationLoading />
+            legacy ? (
+              <ObservationLoading />
+            ) : (
+              <MissionLoading />
+            )
           ) : (
             <main id="main" style={{ minHeight: '100vh' }} aria-busy="true" />
           )
@@ -33,7 +54,7 @@ function Routes() {
         {route.path === '/' ? (
           <Experience />
         ) : route.path === '/explore' ? (
-          <Observatory />
+          <ExplorerRoute legacy={legacy} />
         ) : route.path === '/field-guide' ? (
           <FieldGuide />
         ) : route.path === '/sources' || route.path === '/method' ? (

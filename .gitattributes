@@ -1,6 +1,7 @@
 * text=auto eol=lf
 science/raw/** -text
 public/data/** -text
+public/assets/atlas-sites/** -text
 *.png binary
 *.pdf binary
 *.zip binary

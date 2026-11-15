@@ -1,0 +1,140 @@
+[
+  {
+    "route": "/",
+    "motion": "no-preference",
+    "runs": 3,
+    "lcp_ms": {
+      "median": 2008,
+      "minimum": 1996,
+      "maximum": 2060
+    },
+    "cls": {
+      "median": 0,
+      "minimum": 0,
+      "maximum": 0
+    },
+    "ready_ms": {
+      "median": 3148.2,
+      "minimum": 3146.5,
+      "maximum": 3205.1
+    },
+    "observed_javascript_encoded_bytes": {
+      "median": 410359,
+      "minimum": 410359,
+      "maximum": 410359
+    },
+    "browser_errors": 0,
+    "targets": {
+      "lcp_median_under_2500ms": true,
+      "cls_max_under_0_1": true,
+      "ready_median_under_4000ms": true,
+      "observed_js_max_under_200000bytes": false
+    }
+  },
+  {
+    "route": "/explore",
+    "motion": "no-preference",
+    "runs": 3,
+    "lcp_ms": {
+      "median": 1536,
+      "minimum": 1336,
+      "maximum": 1564
+    },
+    "cls": {
+      "median": 0,
+      "minimum": 0,
+      "maximum": 0
+    },
+    "ready_ms": {
+      "median": 5264.4,
+      "minimum": 5212.3,
+      "maximum": 5323.8
+    },
+    "observed_javascript_encoded_bytes": {
+      "median": 358975,
+      "minimum": 358975,
+      "maximum": 358975
+    },
+    "browser_errors": 0,
+    "sample_diagnostic_ms": {
+      "median": 305.5,
+      "minimum": 265,
+      "maximum": 305.8
+    },
+    "targets": {
+      "lcp_median_under_2500ms": true,
+      "cls_max_under_0_1": true,
+      "ready_median_under_4000ms": false,
+      "observed_js_max_under_200000bytes": false
+    }
+  },
+  {
+    "route": "/",
+    "motion": "reduce",
+    "runs": 3,
+    "lcp_ms": {
+      "median": 2052,
+      "minimum": 2048,
+      "maximum": 2076
+    },
+    "cls": {
+      "median": 0,
+      "minimum": 0,
+      "maximum": 0
+    },
+    "ready_ms": {
+      "median": 3250.5,
+      "minimum": 3220.2,
+      "maximum": 3281.5
+    },
+    "observed_javascript_encoded_bytes": {
+      "median": 129881,
+      "minimum": 129881,
+      "maximum": 129881
+    },
+    "browser_errors": 0,
+    "targets": {
+      "lcp_median_under_2500ms": true,
+      "cls_max_under_0_1": true,
+      "ready_median_under_4000ms": true,
+      "observed_js_max_under_200000bytes": true
+    }
+  },
+  {
+    "route": "/explore",
+    "motion": "reduce",
+    "runs": 3,
+    "lcp_ms": {
+      "median": 1352,
+      "minimum": 1336,
+      "maximum": 1512
+    },
+    "cls": {
+      "median": 0,
+      "minimum": 0,
+      "maximum": 0
+    },
+    "ready_ms": {
+      "median": 5317.7,
+      "minimum": 5242.6,
+      "maximum": 5323.6
+    },
+    "observed_javascript_encoded_bytes": {
+      "median": 95357,
+      "minimum": 95357,
+      "maximum": 95357
+    },
+    "browser_errors": 0,
+    "sample_diagnostic_ms": {
+      "median": 325.9,
+      "minimum": 323.4,
+      "maximum": 327.8
+    },
+    "targets": {
+      "lcp_median_under_2500ms": true,
+      "cls_max_under_0_1": true,
+      "ready_median_under_4000ms": false,
+      "observed_js_max_under_200000bytes": true
+    }
+  }
+]

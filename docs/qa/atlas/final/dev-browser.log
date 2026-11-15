@@ -1,0 +1,198 @@
+npx.cmd : [WebServer] (node:5820) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+At line:12 char:28
++ ... DE -eq 0) { npx.cmd playwright test > deliverables/atlas-final-browse ...
++                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: ([WebServer] (no... env being set.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+ 
+[WebServer] (Use `node --trace-warnings ...` to show where the warning was created)
+
+Running 60 tests using 2 workers
+
+(node:20588) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+(node:27852) Warning: The 'NO_COLOR' env is ignored due to the 'FORCE_COLOR' env being set.
+(Use `node --trace-warnings ...` to show where the warning was created)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok  1 tests\accessibility.spec.ts:4:3 › WCAG route / (3.4s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok  2 tests\atlas.spec.ts:6:1 › complete delayed-mission comparison, exact shared clock, link refresh and source export (4.4s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok  4 tests\atlas.spec.ts:41:1 › all six sites work including far-side Earth-below and source identities (2.0s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok  3 tests\accessibility.spec.ts:4:3 › WCAG route /explore (3.8s)
+  ok  5 tests\atlas.spec.ts:60:1 › unsupported windows are explained without changing the last verified comparison (1.5s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok  6 tests\accessibility.spec.ts:4:3 › WCAG route /field-guide (2.3s)
+  ok  7 tests\atlas.spec.ts:70:1 › exact UTC chooser rejects unavailable times and restores keyboard focus (2.1s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok  8 tests\accessibility.spec.ts:4:3 › WCAG route /sources (2.2s)
+  ok  9 tests\atlas.spec.ts:84:1 › release corruption fails closed; retry restores the authentic comparison (1.9s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 11 tests\atlas.spec.ts:101:1 › rapid site changes discard stale worker results and scrub without network (2.3s)
+  ok 10 tests\accessibility.spec.ts:17:1 › evidence dialog has accessible contrast, trapped focus and restores its trigger (3.2s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 13 tests\accessibility.spec.ts:41:1 › mobile menu and observer sheet remain accessible at 320px; primary controls are touch sized (3.1s)
+  ok 12 tests\atlas.spec.ts:120:3 › atlas responsive workflow 1440 (5.1s)
+  ok 14 tests\accessibility.spec.ts:64:1 › sites without refined events show an explicit neutral state (1.4s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 15 tests\atlas.spec.ts:120:3 › atlas responsive workflow 1024 (1.8s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 17 tests\atlas.spec.ts:120:3 › atlas responsive workflow 768 (1.6s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 16 tests\accessibility.spec.ts:78:1 › calibrated view and expanded Horizon Loom retain accessible contrast and names (4.5s)
+  ok 19 tests\discovery.spec.ts:3:1 › polar site picker changes shared observations and remains keyboard accessible (2.2s)
+  ok 18 tests\atlas.spec.ts:120:3 › atlas responsive workflow 390 (4.4s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 20 tests\discovery.spec.ts:15:1 › complete guided investigation drives the same UTC and evidence and can resume after free exploration (2.2s)
+  ok 21 tests\atlas.spec.ts:120:3 › atlas responsive workflow 360 (1.7s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 23 tests\atlas.spec.ts:120:3 › atlas responsive workflow 320 (1.7s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 22 tests\discovery.spec.ts:40:1 › finder returns real sampled runs, crossing brackets and honest no-match results (3.1s)
+  ok 24 tests\atlas.spec.ts:144:1 › reduced motion retains the full atlas analysis without downloading 3D (2.0s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 26 tests\atlas.spec.ts:157:1 › invalid release links show no substitute scientific result (1.3s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 27 tests\atlas.spec.ts:165:1 › phone window editing, custom zero delay and same-site analysis preserve supported boundaries (2.2s)
+  ok 25 tests\discovery.spec.ts:56:1 › canonical URL survives refresh; invalid times are rejected and CSV matches the selected state (5.1s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 28 tests\atlas.spec.ts:189:1 › site photography remains historical context and timeline filtering keeps an exact source clock (2.4s)
+  ok 29 tests\discovery.spec.ts:91:1 › discovery, export and map dialogs remain accessible at phone width (3.6s)
+  ok 31 tests\discovery.spec.ts:104:1 › changing observers clears stale crossing context (1.6s)
+  ok 30 tests\explorer.spec.ts:5:1 › shared UTC drives all four exact source readings; slider, arrows, keyboard and calibrated markers agree (3.6s)
+  ok 33 tests\explorer.spec.ts:44:1 › observer sheet, same-site state, swap, difference and refinement all use shared selection (2.0s)
+  ok 34 tests\explorer.spec.ts:71:1 › corrupt release and unavailable network fail closed, retry restores real data (2.1s)
+  ok 32 tests\discovery.spec.ts:119:1 › continuous scrubbing coalesces URL writes and shares the latest exact sample (7.0s)
+  ok 35 tests\explorer.spec.ts:87:1 › scrubbing loaded observations makes no external requests and reproduction downloads exist (3.9s)
+  ok 36 tests\discovery.spec.ts:147:1 › denied clipboard access exposes exact link and summary text for manual copying (1.8s)
+  ok 37 tests\explorer.spec.ts:103:3 › responsive Explorer 1440 (1.1s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 39 tests\explorer.spec.ts:103:3 › responsive Explorer 768 (1.0s)
+  ok 38 tests\meridian.spec.ts:2:1 › six native-scroll chapters carry the real delayed window into the atlas (2.4s)
+  ok 40 tests\explorer.spec.ts:103:3 › responsive Explorer 390 (1.1s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 42 tests\explorer.spec.ts:103:3 › responsive Explorer 360 (1.0s)
+  ok 43 tests\explorer.spec.ts:103:3 › responsive Explorer 320 (1.2s)
+  -  44 tests\production.spec.ts:2:1 › static route content appears without JavaScript and production hydration has no errors
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 41 tests\meridian.spec.ts:14:1 › routes, history, comparison retention and compatibility aliases work (3.9s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 46 tests\meridian.spec.ts:38:1 › curated cases set the actual sample and crossing remains a bracket (2.4s)
+  ok 47 tests\meridian.spec.ts:53:1 › Field Guide concept interaction is explicitly separate from observations (974ms)
+  ok 48 tests\understanding.spec.ts:3:1 › choose a UTC directly, keep both places synchronized and restore focus (1.6s)
+  ok 45 tests\production.spec.ts:32:1 › atlas globe renders on camera changes and stops drawing when idle (5.8s)
+  ok 50 tests\unknown-boundary.spec.ts:8:3 › honest unknown scientific UI state (1.4s)
+  ok 49 tests\understanding.spec.ts:17:1 › unsupported UTC is explained and only an explicitly chosen nearest sample is used (2.0s)
+  ok 52 tests\understanding.spec.ts:30:1 › UTC chooser exposes supported refinement and remains accessible (2.2s)
+  ok 51 tests\unknown-boundary.spec.ts:8:3 › honest boundary scientific UI state (3.5s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 53 tests\understanding.spec.ts:46:1 › phone tabs show both horizon patterns and contextual help explains the model (2.5s)
+  ok 54 tests\visual-context.spec.ts:3:3 › reduced: the complete mission story and comparison remain usable without 3D (2.6s)
+  ok 55 tests\understanding.spec.ts:63:1 › finder explains same-place empty results and the comparison can be restored without changing UTC (2.3s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 56 tests\visual-context.spec.ts:3:3 › no-webgl: the complete mission story and comparison remain usable without 3D (2.5s)
+  ok 57 tests\understanding.spec.ts:83:1 › both investigations are reachable on phones and switching starts the supported case (1.6s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 58 tests\visual-context.spec.ts:27:1 › WebGL context loss retains map, exact sky and window calculations (3.3s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 59 tests\visual-context.spec.ts:39:1 › failed lunar model retains poster and working mission comparison (1.9s)
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+[WebServer] Assets in public directory cannot be imported from JavaScript.
+[WebServer] If you intend to import that asset, put the file in the src directory, and use 
+/src/assets/atlas-sites/provenance.json instead of /public/assets/atlas-sites/provenance.json.
+[WebServer] If you intend to use the URL of that asset, use /assets/atlas-sites/provenance.json?url.
+  ok 60 tests\visual-context.spec.ts:46:1 › repeated navigation releases scenes and restores one atlas canvas (11.9s)
+
+  1 skipped
+  59 passed (1.6m)

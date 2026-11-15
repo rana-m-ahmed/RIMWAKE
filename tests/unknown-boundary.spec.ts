@@ -24,7 +24,7 @@ for (const fault of ['unknown', 'boundary'] as const)
     await page.route('**/data/manifest.json', (route) =>
       route.fulfill({ json: { ...manifest, release_sha256: hash } }),
     );
-    await page.goto('/explore');
+    await page.goto('/explore?legacy=1');
     await expect(page.getByRole('slider')).toBeVisible();
     if (fault === 'unknown') {
       await expect(page.getByTestId('A-10-elevation')).toHaveText('Unavailable');

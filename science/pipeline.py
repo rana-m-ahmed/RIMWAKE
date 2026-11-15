@@ -49,7 +49,7 @@ def parse(text, site, body):
         raise ValueError('Observer center mismatch')
     if 'Center pole/equ : MEAN_ME (high precision)' not in header or 'Atmos refraction: NO (AIRLESS)' not in header or '{E-lon(deg),Lat(deg),Alt(km)}' not in header:
         raise ValueError('Unexpected observer frame, units or refraction')
-    coord = re.search(r'Center geodetic\s*:\s*([-\d.]+),\s*([-\d.]+),\s*([-\d.]+)', header)
+    coord = re.search(r'Center geodetic\s*:\s*([-+\deE.]+),\s*([-+\deE.]+),\s*([-+\deE.]+)', header)
     if not coord or any(abs(float(v)-expected) > 0.00001 for v, expected in zip(coord.groups(), [site['longitude_deg_east'], site['latitude_deg'], 0])):
         raise ValueError('Observer coordinate mismatch')
     if 'Date__(UT)__HR:MN' not in header or 'Azi' not in header or 'Elev' not in header:

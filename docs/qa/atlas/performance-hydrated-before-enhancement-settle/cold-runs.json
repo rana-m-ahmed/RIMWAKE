@@ -1,0 +1,1352 @@
+{
+  "measured_at_utc": "2026-11-15T06:42:20.528Z",
+  "profile": {
+    "viewport": "390x844",
+    "cold_context": true,
+    "latency_ms": 150,
+    "shared_download_mbps": 1.5,
+    "main_thread_cpu_slowdown": 4,
+    "worker_cpu_slowdown": "not emulated"
+  },
+  "scope": "Twelve local lab runs through a shared-bandwidth HTTP wire proxy. Every resource, including worker bundles and worker scientific-data fetches, shares 1.5Mbps. Actual upstream encoded bytes and Content-Encoding are retained. CPU emulation applies to the page main thread, not dedicated-worker execution. Not deployed measurements, field INP, or a physical low-end-device guarantee.",
+  "assets": [
+    {
+      "name": "analysis.worker-BEOa0_GF.js",
+      "bytes": 8550,
+      "gzipBytes": 3766
+    },
+    {
+      "name": "AtlasScene-mytp8C9W.js",
+      "bytes": 19943,
+      "gzipBytes": 6636
+    },
+    {
+      "name": "Evidence-_catvPM5.js",
+      "bytes": 5670,
+      "gzipBytes": 2531
+    },
+    {
+      "name": "FieldGuide-BxDAtIR-.js",
+      "bytes": 6172,
+      "gzipBytes": 2542
+    },
+    {
+      "name": "Guide.module-BSYXa3mM.js",
+      "bytes": 435,
+      "gzipBytes": 249
+    },
+    {
+      "name": "index-D3gQRU-e.js",
+      "bytes": 242322,
+      "gzipBytes": 76680
+    },
+    {
+      "name": "Line-CSjl28_q.js",
+      "bytes": 953451,
+      "gzipBytes": 256358
+    },
+    {
+      "name": "LocalSky-ue8nR_Qn.js",
+      "bytes": 2236,
+      "gzipBytes": 1053
+    },
+    {
+      "name": "MissionPage-Bx1Pcn4l.js",
+      "bytes": 36260,
+      "gzipBytes": 11941
+    },
+    {
+      "name": "MissionStory-DnOyvudo.js",
+      "bytes": 127642,
+      "gzipBytes": 50231
+    },
+    {
+      "name": "ObservationScene-BbE79s5X.js",
+      "bytes": 2271,
+      "gzipBytes": 1271
+    },
+    {
+      "name": "Observatory-6onpGnVB.js",
+      "bytes": 46409,
+      "gzipBytes": 15532
+    },
+    {
+      "name": "SceneGuard-R9jkeBxU.js",
+      "bytes": 887,
+      "gzipBytes": 511
+    },
+    {
+      "name": "science-D14gx0_I.js",
+      "bytes": 96351,
+      "gzipBytes": 27862
+    },
+    {
+      "name": "Sources-DHmT0_1b.js",
+      "bytes": 8825,
+      "gzipBytes": 3575
+    },
+    {
+      "name": "StoryScene-CKIxP8vz.js",
+      "bytes": 74684,
+      "gzipBytes": 22443
+    },
+    {
+      "name": "Texture-EAUQ1MRt.js",
+      "bytes": 624,
+      "gzipBytes": 399
+    },
+    {
+      "name": "useAtlas-Mx4F_fer.js",
+      "bytes": 4389,
+      "gzipBytes": 2083
+    }
+  ],
+  "reports": [
+    {
+      "motion": "no-preference",
+      "route": "/",
+      "run": 1,
+      "readyMs": 3333.9000000953674,
+      "lcp": 2132,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "http://127.0.0.1:55187/assets/moon-opening-mobile.webp",
+        "text": ""
+      },
+      "shifts": [],
+      "sampleDiagnosticMs": null,
+      "transfers": [
+        {
+          "url": "/",
+          "encodedBytes": 4060,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/MissionStory-cBFdp8pP.css",
+          "encodedBytes": 2528,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-B1WIBKVT.css",
+          "encodedBytes": 12312,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "encodedBytes": 22308,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "encodedBytes": 22588,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/moon-opening-mobile.webp",
+          "encodedBytes": 19556,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "encodedBytes": 14708,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "encodedBytes": 24252,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "encodedBytes": 24184,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/index-D3gQRU-e.js",
+          "encodedBytes": 76680,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/useAtlas-Mx4F_fer.js",
+          "encodedBytes": 2083,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/SceneGuard-R9jkeBxU.js",
+          "encodedBytes": 887,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/MissionStory-DnOyvudo.js",
+          "encodedBytes": 50231,
+          "encoding": "gzip"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/",
+      "run": 2,
+      "readyMs": 3252.7000000476837,
+      "lcp": 2056,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "http://127.0.0.1:55187/assets/moon-opening-mobile.webp",
+        "text": ""
+      },
+      "shifts": [],
+      "sampleDiagnosticMs": null,
+      "transfers": [
+        {
+          "url": "/",
+          "encodedBytes": 4060,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/MissionStory-cBFdp8pP.css",
+          "encodedBytes": 2528,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-B1WIBKVT.css",
+          "encodedBytes": 12312,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "encodedBytes": 22308,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "encodedBytes": 22588,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/moon-opening-mobile.webp",
+          "encodedBytes": 19556,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "encodedBytes": 14708,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "encodedBytes": 24252,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "encodedBytes": 24184,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/index-D3gQRU-e.js",
+          "encodedBytes": 76680,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/useAtlas-Mx4F_fer.js",
+          "encodedBytes": 2083,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/SceneGuard-R9jkeBxU.js",
+          "encodedBytes": 887,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/MissionStory-DnOyvudo.js",
+          "encodedBytes": 50231,
+          "encoding": "gzip"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/",
+      "run": 3,
+      "readyMs": 3045.2000000476837,
+      "lcp": 1860,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "http://127.0.0.1:55187/assets/moon-opening-mobile.webp",
+        "text": ""
+      },
+      "shifts": [],
+      "sampleDiagnosticMs": null,
+      "transfers": [
+        {
+          "url": "/",
+          "encodedBytes": 4060,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/MissionStory-cBFdp8pP.css",
+          "encodedBytes": 2528,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-B1WIBKVT.css",
+          "encodedBytes": 12312,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "encodedBytes": 22308,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "encodedBytes": 22588,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/moon-opening-mobile.webp",
+          "encodedBytes": 19556,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "encodedBytes": 14708,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "encodedBytes": 24252,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "encodedBytes": 24184,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/index-D3gQRU-e.js",
+          "encodedBytes": 76680,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/useAtlas-Mx4F_fer.js",
+          "encodedBytes": 2083,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/SceneGuard-R9jkeBxU.js",
+          "encodedBytes": 887,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/MissionStory-DnOyvudo.js",
+          "encodedBytes": 50231,
+          "encoding": "gzip"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/explore",
+      "run": 1,
+      "readyMs": 5456.799999952316,
+      "lcp": 1504,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "http://127.0.0.1:55187/assets/moon-context-mobile.webp",
+        "text": ""
+      },
+      "shifts": [],
+      "sampleDiagnosticMs": 352.40000009536743,
+      "transfers": [
+        {
+          "url": "/explore",
+          "encodedBytes": 1448,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-B1WIBKVT.css",
+          "encodedBytes": 12312,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "encodedBytes": 22308,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "encodedBytes": 22588,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/moon-context-mobile.webp",
+          "encodedBytes": 31236,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "encodedBytes": 14708,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "encodedBytes": 24252,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/index-D3gQRU-e.js",
+          "encodedBytes": 76680,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/SceneGuard-R9jkeBxU.js",
+          "encodedBytes": 887,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/useAtlas-Mx4F_fer.js",
+          "encodedBytes": 2083,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/MissionPage-Bx1Pcn4l.js",
+          "encodedBytes": 11941,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/analysis.worker-BEOa0_GF.js",
+          "encodedBytes": 3766,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/manifest.json",
+          "encodedBytes": 152,
+          "encoding": "identity"
+        },
+        {
+          "url": "/data/atlas/index.json",
+          "encodedBytes": 7410,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/im2.json",
+          "encodedBytes": 79027,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/im1.json",
+          "encodedBytes": 79492,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/AtlasScene-mytp8C9W.js",
+          "encodedBytes": 6636,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/Texture-EAUQ1MRt.js",
+          "encodedBytes": 624,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "encodedBytes": 24184,
+          "encoding": "identity"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/Line-CSjl28_q.js",
+          "encodedBytes": 256358,
+          "encoding": "gzip"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/explore",
+      "run": 2,
+      "readyMs": 5372.400000095367,
+      "lcp": 1604,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "http://127.0.0.1:55187/assets/moon-context-mobile.webp",
+        "text": ""
+      },
+      "shifts": [],
+      "sampleDiagnosticMs": 292.60000014305115,
+      "transfers": [
+        {
+          "url": "/explore",
+          "encodedBytes": 1448,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-B1WIBKVT.css",
+          "encodedBytes": 12312,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "encodedBytes": 22308,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "encodedBytes": 22588,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/moon-context-mobile.webp",
+          "encodedBytes": 31236,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "encodedBytes": 14708,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "encodedBytes": 24252,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/index-D3gQRU-e.js",
+          "encodedBytes": 76680,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/SceneGuard-R9jkeBxU.js",
+          "encodedBytes": 887,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/useAtlas-Mx4F_fer.js",
+          "encodedBytes": 2083,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/MissionPage-Bx1Pcn4l.js",
+          "encodedBytes": 11941,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/analysis.worker-BEOa0_GF.js",
+          "encodedBytes": 3766,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/manifest.json",
+          "encodedBytes": 152,
+          "encoding": "identity"
+        },
+        {
+          "url": "/data/atlas/index.json",
+          "encodedBytes": 7410,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/im1.json",
+          "encodedBytes": 79492,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/im2.json",
+          "encodedBytes": 79027,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "encodedBytes": 24184,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/AtlasScene-mytp8C9W.js",
+          "encodedBytes": 6636,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/Texture-EAUQ1MRt.js",
+          "encodedBytes": 624,
+          "encoding": "identity"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "motion": "no-preference",
+      "route": "/explore",
+      "run": 3,
+      "readyMs": 5399.799999952316,
+      "lcp": 1496,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "http://127.0.0.1:55187/assets/moon-context-mobile.webp",
+        "text": ""
+      },
+      "shifts": [],
+      "sampleDiagnosticMs": 347.10000014305115,
+      "transfers": [
+        {
+          "url": "/explore",
+          "encodedBytes": 1448,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-B1WIBKVT.css",
+          "encodedBytes": 12312,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "encodedBytes": 22308,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "encodedBytes": 22588,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/moon-context-mobile.webp",
+          "encodedBytes": 31236,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "encodedBytes": 14708,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "encodedBytes": 24252,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/index-D3gQRU-e.js",
+          "encodedBytes": 76680,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/SceneGuard-R9jkeBxU.js",
+          "encodedBytes": 887,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/useAtlas-Mx4F_fer.js",
+          "encodedBytes": 2083,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/MissionPage-Bx1Pcn4l.js",
+          "encodedBytes": 11941,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/analysis.worker-BEOa0_GF.js",
+          "encodedBytes": 3766,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/manifest.json",
+          "encodedBytes": 152,
+          "encoding": "identity"
+        },
+        {
+          "url": "/data/atlas/index.json",
+          "encodedBytes": 7410,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/im1.json",
+          "encodedBytes": 79492,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/im2.json",
+          "encodedBytes": 79027,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/AtlasScene-mytp8C9W.js",
+          "encodedBytes": 6636,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/Texture-EAUQ1MRt.js",
+          "encodedBytes": 624,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "encodedBytes": 24184,
+          "encoding": "identity"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/Line-CSjl28_q.js",
+          "encodedBytes": 256358,
+          "encoding": "gzip"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/",
+      "run": 1,
+      "readyMs": 3219.0999999046326,
+      "lcp": 2044,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "http://127.0.0.1:55187/assets/moon-opening-mobile.webp",
+        "text": ""
+      },
+      "shifts": [],
+      "sampleDiagnosticMs": null,
+      "transfers": [
+        {
+          "url": "/",
+          "encodedBytes": 4060,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/MissionStory-cBFdp8pP.css",
+          "encodedBytes": 2528,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-B1WIBKVT.css",
+          "encodedBytes": 12312,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "encodedBytes": 22308,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "encodedBytes": 22588,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/moon-opening-mobile.webp",
+          "encodedBytes": 19556,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "encodedBytes": 14708,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "encodedBytes": 24252,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "encodedBytes": 24184,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/index-D3gQRU-e.js",
+          "encodedBytes": 76680,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/useAtlas-Mx4F_fer.js",
+          "encodedBytes": 2083,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/SceneGuard-R9jkeBxU.js",
+          "encodedBytes": 887,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/MissionStory-DnOyvudo.js",
+          "encodedBytes": 50231,
+          "encoding": "gzip"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/",
+      "run": 2,
+      "readyMs": 3257.7999999523163,
+      "lcp": 2052,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "http://127.0.0.1:55187/assets/moon-opening-mobile.webp",
+        "text": ""
+      },
+      "shifts": [],
+      "sampleDiagnosticMs": null,
+      "transfers": [
+        {
+          "url": "/",
+          "encodedBytes": 4060,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/MissionStory-cBFdp8pP.css",
+          "encodedBytes": 2528,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-B1WIBKVT.css",
+          "encodedBytes": 12312,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "encodedBytes": 22308,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "encodedBytes": 22588,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/moon-opening-mobile.webp",
+          "encodedBytes": 19556,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "encodedBytes": 14708,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "encodedBytes": 24252,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "encodedBytes": 24184,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/index-D3gQRU-e.js",
+          "encodedBytes": 76680,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/useAtlas-Mx4F_fer.js",
+          "encodedBytes": 2083,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/SceneGuard-R9jkeBxU.js",
+          "encodedBytes": 887,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/MissionStory-DnOyvudo.js",
+          "encodedBytes": 50231,
+          "encoding": "gzip"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/",
+      "run": 3,
+      "readyMs": 3202.699999809265,
+      "lcp": 2032,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "http://127.0.0.1:55187/assets/moon-opening-mobile.webp",
+        "text": ""
+      },
+      "shifts": [],
+      "sampleDiagnosticMs": null,
+      "transfers": [
+        {
+          "url": "/",
+          "encodedBytes": 4060,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/MissionStory-cBFdp8pP.css",
+          "encodedBytes": 2528,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-B1WIBKVT.css",
+          "encodedBytes": 12312,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "encodedBytes": 22308,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "encodedBytes": 22588,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/moon-opening-mobile.webp",
+          "encodedBytes": 19556,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "encodedBytes": 14708,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "encodedBytes": 24252,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "encodedBytes": 24184,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/index-D3gQRU-e.js",
+          "encodedBytes": 76680,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/useAtlas-Mx4F_fer.js",
+          "encodedBytes": 2083,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/SceneGuard-R9jkeBxU.js",
+          "encodedBytes": 887,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/MissionStory-DnOyvudo.js",
+          "encodedBytes": 50231,
+          "encoding": "gzip"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/explore",
+      "run": 1,
+      "readyMs": 5202.700000047684,
+      "lcp": 1456,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "http://127.0.0.1:55187/assets/moon-context-mobile.webp",
+        "text": ""
+      },
+      "shifts": [],
+      "sampleDiagnosticMs": 348.39999985694885,
+      "transfers": [
+        {
+          "url": "/explore",
+          "encodedBytes": 1448,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-B1WIBKVT.css",
+          "encodedBytes": 12312,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "encodedBytes": 22308,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "encodedBytes": 22588,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/moon-context-mobile.webp",
+          "encodedBytes": 31236,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "encodedBytes": 14708,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "encodedBytes": 24252,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/index-D3gQRU-e.js",
+          "encodedBytes": 76680,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/SceneGuard-R9jkeBxU.js",
+          "encodedBytes": 887,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/useAtlas-Mx4F_fer.js",
+          "encodedBytes": 2083,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/MissionPage-Bx1Pcn4l.js",
+          "encodedBytes": 11941,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/analysis.worker-BEOa0_GF.js",
+          "encodedBytes": 3766,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/manifest.json",
+          "encodedBytes": 152,
+          "encoding": "identity"
+        },
+        {
+          "url": "/data/atlas/index.json",
+          "encodedBytes": 7410,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/im1.json",
+          "encodedBytes": 79492,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/im2.json",
+          "encodedBytes": 79027,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "encodedBytes": 24184,
+          "encoding": "identity"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/explore",
+      "run": 2,
+      "readyMs": 5227.799999952316,
+      "lcp": 1472,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "http://127.0.0.1:55187/assets/moon-context-mobile.webp",
+        "text": ""
+      },
+      "shifts": [],
+      "sampleDiagnosticMs": 352.09999990463257,
+      "transfers": [
+        {
+          "url": "/explore",
+          "encodedBytes": 1448,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-B1WIBKVT.css",
+          "encodedBytes": 12312,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "encodedBytes": 22308,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "encodedBytes": 22588,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/moon-context-mobile.webp",
+          "encodedBytes": 31236,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "encodedBytes": 14708,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "encodedBytes": 24252,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/index-D3gQRU-e.js",
+          "encodedBytes": 76680,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/SceneGuard-R9jkeBxU.js",
+          "encodedBytes": 887,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/useAtlas-Mx4F_fer.js",
+          "encodedBytes": 2083,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/MissionPage-Bx1Pcn4l.js",
+          "encodedBytes": 11941,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/analysis.worker-BEOa0_GF.js",
+          "encodedBytes": 3766,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/manifest.json",
+          "encodedBytes": 152,
+          "encoding": "identity"
+        },
+        {
+          "url": "/data/atlas/index.json",
+          "encodedBytes": 7410,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/im1.json",
+          "encodedBytes": 79492,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/im2.json",
+          "encodedBytes": 79027,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "encodedBytes": 24184,
+          "encoding": "identity"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        }
+      ],
+      "errors": []
+    },
+    {
+      "motion": "reduce",
+      "route": "/explore",
+      "run": 3,
+      "readyMs": 5261.199999809265,
+      "lcp": 1484,
+      "cls": 0,
+      "lcpElement": {
+        "tag": "IMG",
+        "url": "http://127.0.0.1:55187/assets/moon-context-mobile.webp",
+        "text": ""
+      },
+      "shifts": [],
+      "sampleDiagnosticMs": 356.09999990463257,
+      "transfers": [
+        {
+          "url": "/explore",
+          "encodedBytes": 1448,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/index-B1WIBKVT.css",
+          "encodedBytes": 12312,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/barlow-condensed-latin-600-normal-DepVgxBB.woff2",
+          "encodedBytes": 22308,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-400-normal-CDDApCn2.woff2",
+          "encodedBytes": 22588,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/moon-context-mobile.webp",
+          "encodedBytes": 31236,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-mono-latin-400-normal-DMJ8VG8y.woff2",
+          "encodedBytes": 14708,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-600-normal-CuJfVYMP.woff2",
+          "encodedBytes": 24252,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/index-D3gQRU-e.js",
+          "encodedBytes": 76680,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/SceneGuard-R9jkeBxU.js",
+          "encodedBytes": 887,
+          "encoding": "identity"
+        },
+        {
+          "url": "/assets/useAtlas-Mx4F_fer.js",
+          "encodedBytes": 2083,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/MissionPage-Bx1Pcn4l.js",
+          "encodedBytes": 11941,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/analysis.worker-BEOa0_GF.js",
+          "encodedBytes": 3766,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/manifest.json",
+          "encodedBytes": 152,
+          "encoding": "identity"
+        },
+        {
+          "url": "/data/atlas/index.json",
+          "encodedBytes": 7410,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/im2.json",
+          "encodedBytes": 79027,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/data/atlas/im1.json",
+          "encodedBytes": 79492,
+          "encoding": "gzip"
+        },
+        {
+          "url": "/assets/ibm-plex-sans-latin-500-normal-6ng42L7E.woff2",
+          "encodedBytes": 24184,
+          "encoding": "identity"
+        },
+        {
+          "url": "/favicon.svg",
+          "encodedBytes": 282,
+          "encoding": "identity"
+        }
+      ],
+      "errors": []
+    }
+  ]
+}

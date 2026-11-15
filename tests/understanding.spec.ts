@@ -1,7 +1,7 @@
 import { test, expect } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
 test('choose a UTC directly, keep both places synchronized and restore focus', async ({ page }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   const trigger = page.getByRole('button', { name: /Change UTC/ });
   await trigger.click();
   const dialog = page.getByRole('dialog', { name: 'Choose UTC time' });
@@ -17,7 +17,7 @@ test('choose a UTC directly, keep both places synchronized and restore focus', a
 test('unsupported UTC is explained and only an explicitly chosen nearest sample is used', async ({
   page,
 }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await page.getByRole('button', { name: /Change UTC/ }).click();
   const dialog = page.getByRole('dialog', { name: 'Choose UTC time' });
   await dialog.getByLabel('UTC date and time', { exact: true }).fill('2026-11-20T06:01');
@@ -28,7 +28,7 @@ test('unsupported UTC is explained and only an explicitly chosen nearest sample 
   await expect(page.getByRole('slider')).toHaveValue('150');
 });
 test('UTC chooser exposes supported refinement and remains accessible', async ({ page }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await page.getByRole('button', { name: /Change UTC/ }).click();
   const dialog = page.getByRole('dialog', { name: 'Choose UTC time' });
   await dialog
@@ -47,7 +47,7 @@ test('phone tabs show both horizon patterns and contextual help explains the mod
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   const a = page.getByRole('button', { name: /A \/ Odysseus/ }),
     b = page.getByRole('button', { name: /B \/ Athena/ });
   await expect(a).toContainText('Sun below');
@@ -63,7 +63,7 @@ test('phone tabs show both horizon patterns and contextual help explains the mod
 test('finder explains same-place empty results and the comparison can be restored without changing UTC', async ({
   page,
 }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await page.getByRole('slider').fill('150');
   await page.getByRole('button', { name: 'Choose places' }).click();
   await page.getByRole('combobox', { name: 'Observation site B' }).selectOption('im1');
@@ -84,7 +84,7 @@ test('both investigations are reachable on phones and switching starts the suppo
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await page.getByRole('button', { name: 'Guided discovery', exact: true }).click();
   const guide = page.getByRole('region', { name: 'Guided Discovery' });
   await guide

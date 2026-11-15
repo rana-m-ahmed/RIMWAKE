@@ -5,7 +5,7 @@ const signed = (n: number) => `${n < 0 ? '\u2212' : '+'}${Math.abs(n).toFixed(3)
 test('shared UTC drives all four exact source readings; slider, arrows, keyboard and calibrated markers agree', async ({
   page,
 }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await expect(page.getByRole('heading', { name: 'COMPARE THE SKIES.' })).toBeVisible();
   const slider = page.getByRole('slider', { name: 'UTC sample' });
   await slider.fill('150');
@@ -44,7 +44,7 @@ test('shared UTC drives all four exact source readings; slider, arrows, keyboard
 test('observer sheet, same-site state, swap, difference and refinement all use shared selection', async ({
   page,
 }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await expect(page.getByRole('slider')).toBeVisible();
   const a = await page.getByTestId('A-10-elevation').innerText(),
     b = await page.getByTestId('B-10-elevation').innerText();
@@ -74,7 +74,7 @@ test('corrupt release and unavailable network fail closed, retry restores real d
   await page.route('**/data/release.json', (r) =>
     r.fulfill({ json: { ...release, release_id: 'mismatched' } }),
   );
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await expect(page.getByRole('heading', { name: 'Data unavailable.' })).toBeVisible();
   await expect(page.getByRole('slider')).toHaveCount(0);
   await page.unroute('**/data/release.json');
@@ -87,7 +87,7 @@ test('corrupt release and unavailable network fail closed, retry restores real d
 test('scrubbing loaded observations makes no external requests and reproduction downloads exist', async ({
   page,
 }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await expect(page.getByRole('slider')).toBeVisible();
   await page.locator('canvas').first().waitFor();
   await page.waitForLoadState('networkidle');
@@ -102,7 +102,7 @@ test('scrubbing loaded observations makes no external requests and reproduction 
 for (const width of [1440, 768, 390, 360, 320])
   test(`responsive Explorer ${width}`, async ({ page }) => {
     await page.setViewportSize({ width, height: 900 });
-    await page.goto('/explore');
+    await page.goto('/explore?legacy=1');
     await expect(page.getByRole('slider')).toBeVisible();
     await page.evaluate(() => document.fonts.ready);
     expect(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth)).toBe(

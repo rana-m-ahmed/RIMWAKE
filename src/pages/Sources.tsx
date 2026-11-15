@@ -21,6 +21,44 @@ export default function Sources() {
         </p>
       </header>
       <section className={s.sourceSection}>
+        <h2>THE MISSION ATLAS / 90 DAYS</h2>
+        <p>
+          The separate atlas release covers six documented viewpoints from 14 November 2026 through
+          12 February 2027, 00:00 UTC. Its 25,932 hourly Sun/Earth readings are archived from JPL
+          Horizons. Only the selected site bundles load in Explorer; each is checked against its
+          manifest hash before analysis.
+        </p>
+        <p>
+          Published landing coordinates come from NASA NSSDCA. The observers are hypothetical at
+          zero reference-ellipsoid height. The response signature is API 1.2, while the current
+          documentation is labeled 1.3; the accepted response headers, columns, model and complete
+          UTC grid are checked explicitly. Independent astronomical validation and exact frame
+          reconciliation remain open.
+        </p>
+        <p>
+          <a className="quietLink" href="/data/atlas/index.json">
+            Atlas catalog &amp; source register
+          </a>{' '}
+          /{' '}
+          <a className="quietLink" href="/data/atlas/manifest.json">
+            Manifest
+          </a>{' '}
+          /{' '}
+          <a className="quietLink" href="/data/atlas/raw/nssdca.html">
+            Archived coordinate catalog
+          </a>
+        </p>
+        <p>
+          Window percentages count hourly samples with inclusive endpoints. Missing values remain
+          unknown; endpoint spans do not prove uninterrupted availability. Terrain, finite discs,
+          eclipses, usable power and RF-link performance are excluded. Scientific status remains
+          provisional.
+        </p>
+        <Link className="quietLink" href="/explore">
+          Open the mission comparison {String.fromCharCode(8599)}
+        </Link>
+      </section>
+      <section className={s.sourceSection}>
         <h2>NASA RESOURCE USE / CONFIRMED</h2>
         <p>
           Verified on 14 November 2026: the official challenge Resources tab lists JPL Horizons
@@ -42,7 +80,7 @@ export default function Sources() {
         </a>
       </section>
       <section className={s.sourceSection}>
-        <h2>THE SCIENTIFIC RELEASE</h2>
+        <h2>THE ORIGINAL OBSERVATION RELEASE / PRESERVED</h2>
         {r ? (
           <>
             <div className={s.release}>
@@ -121,6 +159,16 @@ export default function Sources() {
       </section>
       <section id="credits" className={s.sourceSection}>
         <h2>THE IMAGES & PEOPLE</h2>
+        <p>
+          Six optional historical site images and previews: NASA/GSFC/Arizona State University,
+          LROC. The Apollo images use the small official previews; their source pages provide
+          full-resolution imagery.{' '}
+          <a href="/assets/atlas-sites/provenance.json">
+            Image sources, original hashes and derivative details
+          </a>
+          . These images do not show the selected date's lighting and never determine the computed
+          horizon.
+        </p>
         <p>
           Lunar model: NASA’s Goddard Space Flight Center, production Dan Gallagher, data Ernie
           Wright / LRO. The model’s color texture is optimized for the web; scene lighting and

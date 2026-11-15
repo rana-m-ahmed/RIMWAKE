@@ -3,7 +3,7 @@ import AxeBuilder from '@axe-core/playwright';
 test('polar site picker changes shared observations and remains keyboard accessible', async ({
   page,
 }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await expect(page.getByRole('slider')).toBeVisible();
   await page.getByRole('button', { name: 'Choose places' }).click();
   await page.getByRole('button', { name: 'Place B', exact: true }).click();
@@ -40,7 +40,7 @@ test('complete guided investigation drives the same UTC and evidence and can res
 test('finder returns real sampled runs, crossing brackets and honest no-match results', async ({
   page,
 }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await page.getByRole('button', { name: 'Find a moment', exact: true }).click();
   const finder = page.getByRole('region', { name: 'Find a moment' });
   await expect(finder).toContainText('matching times');
@@ -56,7 +56,7 @@ test('finder returns real sampled runs, crossing brackets and honest no-match re
 test('canonical URL survives refresh; invalid times are rejected and CSV matches the selected state', async ({
   page,
 }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await page.getByRole('slider').fill('150');
   await page.getByRole('button', { name: 'Swap A and B' }).click();
   await page.getByRole('button', { name: 'Calibrated 2D view' }).click();
@@ -90,7 +90,7 @@ test('canonical URL survives refresh; invalid times are rejected and CSV matches
 });
 test('discovery, export and map dialogs remain accessible at phone width', async ({ page }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await page.getByRole('button', { name: 'Share & export', exact: true }).click();
   let result = await new AxeBuilder({ page }).withTags(['wcag2a', 'wcag2aa', 'wcag21aa']).analyze();
   expect(result.violations).toEqual([]);
@@ -119,7 +119,7 @@ test('changing observers clears stale crossing context', async ({ page }) => {
 test('continuous scrubbing coalesces URL writes and shares the latest exact sample', async ({
   page,
 }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await expect(page).toHaveURL(/r=rimwake/);
   await page.evaluate(() => {
     (window as any).__urlWrites = 0;
@@ -157,7 +157,7 @@ test('denied clipboard access exposes exact link and summary text for manual cop
       },
     }),
   );
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await page.getByRole('button', { name: 'Share & export', exact: true }).click();
   await page.getByRole('button', { name: 'Copy observation link', exact: true }).click();
   await expect(page.getByRole('textbox', { name: 'Copy manually' })).toHaveValue(

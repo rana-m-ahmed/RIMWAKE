@@ -91,7 +91,11 @@ def main():
     with zipfile.ZipFile(ROOT/'public/data/evidence.zip') as archive:
         assert archive.testzip() is None
         assert archive.read('release.json')==path.read_bytes()
-        for raw in sorted((ROOT/'science/raw').iterdir()):assert archive.read(str(raw.relative_to(ROOT)).replace('\\','/'))==raw.read_bytes()
+        # The original archive defines its immutable evidence set. New releases live in
+        # separately verified subdirectories and are not members of this historical ZIP.
+        members=[name for name in archive.namelist() if name.startswith('science/raw/') and not name.endswith('/')]
+        assert members,'Original raw evidence set is empty'
+        for name in members:assert archive.read(name)==(ROOT/name).read_bytes()
     print('PASS: source hashes, raw sample equality, cadence, shared sample matrix, brackets, manifest, intervals and archived evidence. Read-only; science provisional.')
 
 if __name__=='__main__':main()

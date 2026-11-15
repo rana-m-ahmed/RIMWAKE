@@ -17,7 +17,7 @@ for (const path of ['/', '/explore', '/field-guide', '/sources'])
 test('evidence dialog has accessible contrast, trapped focus and restores its trigger', async ({
   page,
 }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   const trigger = page.getByRole('button', { name: 'Evidence & method' });
   await trigger.click();
   await expect(page.getByRole('dialog')).toBeVisible();
@@ -48,6 +48,7 @@ test('mobile menu and observer sheet remain accessible at 320px; primary control
     .getByRole('navigation', { name: 'Mobile primary' })
     .getByRole('link', { name: 'Explorer', exact: true })
     .click();
+  await page.goto('/explore?legacy=1');
   await page.getByRole('button', { name: 'Choose places' }).click();
   const result = await new AxeBuilder({ page })
     .withTags(['wcag2a', 'wcag2aa', 'wcag21a', 'wcag21aa'])
@@ -61,7 +62,7 @@ test('mobile menu and observer sheet remain accessible at 320px; primary control
   expect(box!.height).toBeGreaterThanOrEqual(44);
 });
 test('sites without refined events show an explicit neutral state', async ({ page }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await page
     .getByRole('combobox', { name: 'Sampling window', exact: true })
     .selectOption('refined');
@@ -77,7 +78,7 @@ test('sites without refined events show an explicit neutral state', async ({ pag
 test('calibrated view and expanded Horizon Loom retain accessible contrast and names', async ({
   page,
 }) => {
-  await page.goto('/explore');
+  await page.goto('/explore?legacy=1');
   await page.getByRole('button', { name: 'Calibrated 2D view' }).click();
   await expect(page.getByRole('button', { name: 'Hide Horizon Loom' })).toBeVisible();
   const result = await new AxeBuilder({ page })

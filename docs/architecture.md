@@ -1,5 +1,15 @@
 # RIMWAKE implementation
 
+## Current mission atlas
+
+The default Explorer now uses the separate `src/atlas/` subsystem. Typed comparison requests select two sites, an original window, a delay and one active inspection cursor. A dedicated worker verifies the archive index and selected per-site bundles, derives window summaries and discards stale replies through generation IDs. Geographic context is rendered by a single on-demand canvas with occluded SVG A/B labels; time scrubbing does not reconstruct the geographic scene. Signed SVG charts, timeline tracks and exact values derive from the worker's matching result.
+
+The six-act landing is loaded separately from the Explorer and uses the same analysis engine. It requests its scientific data when the explanatory acts are reached. Shared loading markup preserves query-independent hydration and then selects the atlas or original Explorer according to the URL. Atlas requests encode schema v2; complete original-release links and the original named investigations continue through the preserved adapter.
+
+The new archive is independent of the original release: six sites, 90 days, hourly Sun/Earth positions. Per-site checksums and complete source matrices gate display; raw responses, API signature review and image provenance are retained. See [the current implementation and QA record](ATLAS_IMPLEMENTATION.md). The sections below describe the preserved original observation subsystem.
+
+## Preserved observation subsystem
+
 The package root is the repository root. Vite builds a React/TypeScript static application with CSS Modules and original SVG instruments. Fonts are local; the application does not depend on remote fonts, images or live astronomy calls.
 
 `science/pipeline.py` archives source documents and Horizons responses, verifies returned target, Moon centre, east-positive geodetic coordinates, airless convention and MEAN_ME frame, and parses signed degree values between the response delimiters. It records exact request parameters, URLs, hashes and retrieval timestamps. A 35-day hourly discovery scan precedes a ten-minute refinement of the first crossing in processing order. A separately requested initial Sun sample at each site tests query/parse consistency.

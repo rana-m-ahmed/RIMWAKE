@@ -32,13 +32,13 @@ RIMWAKE
 
 ## High-level summary
 
-On the Moon, where you stand changes your view. RIMWAKE turns NASA/JPL Sun and Earth observations into a synchronized comparison of two documented southern lunar locations. A cinematic introduction, geographic site picker, paired scientific skies, guided investigations and a shared timeline help people ask a question, find a supported moment and inspect the evidence behind it.
+On the Moon, where you stand changes your view. RIMWAKE turns NASA/JPL Sun and Earth observations into a synchronized comparison of two viewpoints selected from six documented lunar locations. An immersive atlas, ninety-day archive and linked horizon charts/timelines help people compare an original mission window with a delayed one, inspect exact supported samples and export the evidence.
 
 ## Detailed description
 
-RIMWAKE compares apparent airless centre-of-disc azimuth and signed elevation from hypothetical observers at approximate published Odysseus and Athena landing coordinates. A shared UTC drives every scientific reading. The source release contains 3,364 hourly body/site readings spanning 14 November to 19 December 2026, plus 28 ten-minute refined readings around a disclosed Sun crossing example.
+RIMWAKE compares apparent airless centre-of-disc azimuth and signed elevation from hypothetical observers at six documented landing coordinates. A shared UTC drives every scientific reading. The separate atlas release contains 25,932 hourly body/site readings from 14 November 2026 through 12 February 2027. The original two-site release and its refined crossing example remain intact and accessible through existing links.
 
-The flagship interaction shows two places at the same moment. Visitors can inspect the actual 14 November contrast or follow the 16 November Sun-centre crossing bracket, find matching sampled runs, choose geographic observers, switch between spatial and calibrated SVG views, inspect source records, copy an exact observation link and export a four-row scientific summary. Unknown and boundary values remain distinct; no positions are interpolated.
+The flagship interaction compares a mission window with the same duration after a schedule delay. Visitors choose two viewpoints, move the original window, adjust the delay, inspect exact supported samples, filter linked timeline tracks and follow chronological crossing brackets. Globe and signed sky views share one inspection cursor. Reproducible comparison links, source-linked CSV, comparison JSON and a printable brief keep the evidence with the result. Unknown and boundary values remain distinct; no numerical positions are interpolated.
 
 NASA NSSDCA supplies approximate historical coordinates. JPL Horizons supplies Sun/Earth positions and archived request/response lineage. The frontend verifies the release manifest and schema before displaying observations. NASA Goddard's Moon model and CGI Moon Kit imagery provide credited visual context only. Static pre-rendering improves first paint while essential results retain readable HTML and SVG alternatives.
 
@@ -58,7 +58,7 @@ The implementation uses React, TypeScript, Vite, GSAP, Three.js, React Three Fib
 
 - `docs/demo-slides.html` and `docs/demo-slides.pdf`: six-slide review deck.
 - `docs/DEMO_WALKTHROUGH.md`: short real-data demonstration sequence.
-- `docs/PRODUCT_TRANSFORMATION.md`: working feature matrix, QA evidence and remaining gates.
+- `docs/ATLAS_IMPLEMENTATION.md`: current product, QA evidence and remaining gates.
 - `docs/before-after.html`: actual rendered comparison images.
 
 No submission, public access, independent scientific certification or award outcome is claimed.

@@ -7,8 +7,8 @@ test('static route content appears without JavaScript and production hydration h
   const context = await browser.newContext({ javaScriptEnabled: false }),
     staticPage = await context.newPage();
   for (const [path, text] of [
-    ['/', 'WHERE'],
-    ['/explore', 'COMPARE THE SKIES'],
+    ['/', 'THE PLACE.'],
+    ['/explore', 'WHAT IF THE DATE CHANGES'],
     ['/field-guide', 'A LITTLE CONTEXT'],
     ['/sources', 'AN EVIDENCE TRAIL'],
   ]) {
@@ -24,11 +24,12 @@ test('static route content appears without JavaScript and production hydration h
   for (const path of ['/', '/explore', '/field-guide', '/sources', '/method', '/unknown']) {
     await page.goto(path);
     await page.waitForLoadState('networkidle');
-    if (path === '/explore') await expect(page.getByRole('slider')).toBeVisible();
+    if (path === '/explore')
+      await expect(page.getByTestId('atlas-utc')).toHaveAttribute('data-utc', /.+Z/);
   }
   expect(errors).toEqual([]);
 });
-test('local sky renders on changes and stops drawing when idle', async ({ page }) => {
+test('atlas globe renders on camera changes and stops drawing when idle', async ({ page }) => {
   await page.addInitScript(() => {
     (window as any).__draws = 0;
     for (const name of [
@@ -46,12 +47,13 @@ test('local sky renders on changes and stops drawing when idle', async ({ page }
     }
   });
   await page.goto('/explore');
-  await expect(page.locator('canvas')).toHaveCount(2);
+  await expect(page.locator('canvas')).toHaveCount(1);
   await page.waitForLoadState('networkidle');
-  await page.waitForTimeout(400);
+  await expect(page.locator('canvas')).toHaveAttribute('data-flight', 'settled');
+  await page.waitForTimeout(150);
   const before = await page.evaluate(() => (window as any).__draws);
   await page.waitForTimeout(600);
   expect(await page.evaluate(() => (window as any).__draws)).toBe(before);
-  await page.getByRole('button', { name: 'Next sample', exact: true }).click();
+  await page.getByRole('combobox', { name: 'Viewpoint A', exact: true }).selectOption('ap11');
   await expect.poll(() => page.evaluate(() => (window as any).__draws)).toBeGreaterThan(before);
 });

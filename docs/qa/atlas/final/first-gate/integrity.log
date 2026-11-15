@@ -1,0 +1,17 @@
+fatal: path 'science/raw/atlas-v1' exists on disk, but not in 'rimwake-pre-v6'
+Traceback (most recent call last):
+  File "D:\Horizon\scripts\check_v6_integrity.py", line 10, in <module>
+    previous=subprocess.check_output(['git','-c','safe.directory=D:/Horizon','show',f'rimwake-pre-v6:science/raw/{path.name}'],cwd=root)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ranam\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 466, in check_output
+    return run(*popenargs, stdout=PIPE, timeout=timeout, check=True,
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\ranam\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['git', '-c', 'safe.directory=D:/Horizon', 'show', 'rimwake-pre-v6:science/raw/atlas-v1']' returned non-zero exit status 128.
+Traceback (most recent call last):
+  File "D:\Horizon\scripts\check_cinema_integrity.py", line 5, in <module>
+    subprocess.run(['python','scripts/check_v6_integrity.py'],cwd=root,check=True)
+  File "C:\Users\ranam\AppData\Local\Programs\Python\Python312\Lib\subprocess.py", line 571, in run
+    raise CalledProcessError(retcode, process.args,
+subprocess.CalledProcessError: Command '['python', 'scripts/check_v6_integrity.py']' returned non-zero exit status 1.
